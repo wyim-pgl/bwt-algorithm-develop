@@ -1,0 +1,3 @@
+{"label": "Human GRCh38 \u2014 chr1 \u03b1-satellite", "fasta_exists": true, "region": ["chr1", 122257803, 122317803, 1866], "overlapping_deposited_calls": [[122236948, 122264929, 1866], [122257803, 122338029, 1866]]}
+{"label": "Arabidopsis Col-CEN \u2014 Chr4 CEN180", "fasta_exists": true, "region": ["Chr4", 4985644, 5045644, 178], "overlapping_deposited_calls": [[4981142, 4989662, 178], [4985644, 5079605, 178]]}
+{"label": "Maize Mo17 \u2014 CentC array", "fasta_exists": true, "region": ["CM039157.1", 53652014, 53678133, 155], "overlapping_deposited_calls": [[53649189, 53654782, 155], [53652014, 53678133, 155]]}

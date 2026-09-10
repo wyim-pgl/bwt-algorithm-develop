@@ -1,0 +1,591 @@
+table	manuscript_line	row	column	printed	artifact_value	verdict	source
+1a	129	TRF	Regions	962,837	962837	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	129	TRF	Region Recall (%)	31.88	31.88	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	129	TRF	Region Prec. (%)	94.86	94.86	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	129	TRF	Support rate (%)	99.94	99.94	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	129	TRF	BP Recall (%)	30.26	30.26	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	129	TRF	BP Prec. (%)	52.40	52.40	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	129	TRF	Unique Regions	18,904	18904	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	129	TRF	Runtime (h)	33.7	33.72944444444444444444444444	REJECTED	results/competitor_logs/trf__GCA_000001405.15_GRCh38_genomic_run.log
+1a	129	TRF	Memory (GiB)	1.45	1.448314666748046875	REJECTED	results/competitor_logs/trf__GCA_000001405.15_GRCh38_genomic_run.log
+1a	130	mreps	Runtime (h)	0.9	0.9114111111111111111111111111	REJECTED	results/competitor_logs/mreps__GCA_000001405.15_GRCh38_genomic_run.log
+1a	130	mreps	Memory (GiB)	6.38	6.381244659423828125	REJECTED	results/competitor_logs/mreps__GCA_000001405.15_GRCh38_genomic_run.log
+1a	131	ULTRA	Regions	3,216,710	3216710	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	131	ULTRA	Region Recall (%)	81.62	81.62	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	131	ULTRA	Region Prec. (%)	53.66	53.66	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	131	ULTRA	Support rate (%)	78.44	78.44	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	131	ULTRA	BP Recall (%)	38.14	38.14	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	131	ULTRA	BP Prec. (%)	61.33	61.33	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	131	ULTRA	Unique Regions	518,440	518440	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	131	ULTRA	Runtime (h)	29.8	29.78027777777777777777777778	REJECTED	results/competitor_logs/ultra__GCA_000001405.15_GRCh38_genomic_run.log
+1a	131	ULTRA	Memory (GiB)	1.68	1.677074432373046875	REJECTED	results/competitor_logs/ultra__GCA_000001405.15_GRCh38_genomic_run.log
+1a	132	BWTandem	Regions	4,014,108	4014108	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	132	BWTandem	Region Recall (%)	80.53	80.53	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	132	BWTandem	Region Prec. (%)	50.50	50.50	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	132	BWTandem	Support rate (%)	79.45	79.45	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	132	BWTandem	BP Recall (%)	43.34	43.34	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	132	BWTandem	BP Prec. (%)	42.74	42.74	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	132	BWTandem	Unique Regions	893,480	893480	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	132	BWTandem	Runtime (h)	12.6	12.645	REJECTED	sacct:6110901.batch
+1a	132	BWTandem	Memory (GiB)	28.08	28.0837554931640625	REJECTED	sacct:6110901.batch
+1a	133	tantan	Regions	3,319,523	3319523	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	133	tantan	Region Recall (%)	78.00	78.00	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	133	tantan	Region Prec. (%)	57.66	57.66	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	133	tantan	Support rate (%)	82.93	82.93	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	133	tantan	BP Recall (%)	23.54	23.54	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	133	tantan	BP Prec. (%)	70.22	70.22	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	133	tantan	Unique Regions	518,488	518488	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	133	tantan	Runtime (h)	0.9	0.8630388888888888888888888889	REJECTED	results/competitor_logs/tantan__GCA_000001405.15_GRCh38_genomic_run.log
+1a	133	tantan	Memory (GiB)	0.27	0.268283843994140625	REJECTED	results/competitor_logs/tantan__GCA_000001405.15_GRCh38_genomic_run.log
+1a	134	TRASH	Regions	5,134	5134	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	134	TRASH	Region Recall (%)	1.16	1.16	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	134	TRASH	Region Prec. (%)	95.25	95.25	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	134	TRASH	Support rate (%)	99.86	99.86	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	134	TRASH	BP Recall (%)	10.24	10.24	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	134	TRASH	BP Prec. (%)	24.96	24.96	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	134	TRASH	Unique Regions	0	0	REJECTED	results/regen/score_table1_p100.txt: BASELINE/published support; pass3-checks.py human: unique_unfiltered
+1a	134	TRASH	Runtime (h)	107.6	107.6266666666666666666666667	REJECTED	results/competitor_logs/trash__GCA_000001405.15_GRCh38_genomic_run.log
+1a	134	TRASH	Memory (GiB)	14.59	14.589542388916015625	REJECTED	results/competitor_logs/trash__GCA_000001405.15_GRCh38_genomic_run.log
+1a	135	longdust (2026)	Regions	1,428,327	1428327	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	135	longdust (2026)	Region Recall (%)	41.16	41.16	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	135	longdust (2026)	Region Prec. (%)	57.16	57.16	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	135	longdust (2026)	BP Recall (%)	22.71	22.71	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	135	longdust (2026)	BP Prec. (%)	42.48	42.48	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	135	longdust (2026)	Runtime (h)	0.47	0.4654194444444444444444444444	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_human_default.time
+1a	135	longdust (2026)	Memory (GiB)	0.47	0.4688262939453125	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_human_default.time
+1a	136	longdust `-k8 -w20000` (2026)	Regions	1,154,976	1154976	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	136	longdust `-k8 -w20000` (2026)	Region Recall (%)	35.42	35.42	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	136	longdust `-k8 -w20000` (2026)	Region Prec. (%)	60.08	60.08	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	136	longdust `-k8 -w20000` (2026)	BP Recall (%)	20.74	20.74	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	136	longdust `-k8 -w20000` (2026)	BP Prec. (%)	40.06	40.06	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	136	longdust `-k8 -w20000` (2026)	Runtime (h)	2.01	2.01	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_human_k8w20000.time
+1a	136	longdust `-k8 -w20000` (2026)	Memory (GiB)	0.47	0.4685821533203125	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_human_k8w20000.time
+1a	137	AniAnn's (2026)	Regions	364	364	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	137	AniAnn's (2026)	Region Recall (%)	0.10	0.10	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	137	AniAnn's (2026)	Region Prec. (%)	83.79	83.79	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	137	AniAnn's (2026)	BP Recall (%)	3.85	3.85	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	137	AniAnn's (2026)	BP Prec. (%)	12.46	12.46	REJECTED	results/comparators2026/score_2026_human.txt: BASELINE
+1a	137	AniAnn's (2026)	Runtime (h)	2.32	2.320277777777777777777777778	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/anianns_human.time
+1a	137	AniAnn's (2026)	Memory (GiB)	0.53	0.525188446044921875	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/anianns_human.time
+1b	143	ULTRA	Regions	3,216,710	3216710	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	143	ULTRA	Region Recall (%)	81.62	81.62	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	143	ULTRA	Region Prec. (%)	53.66	53.66	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	143	ULTRA	BP Recall (%)	38.14	38.14	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	143	ULTRA	BP Prec. (%)	61.33	61.33	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	144	BWTandem	Regions	3,911,182	3911182	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	144	BWTandem	Region Recall (%)	78.87	78.87	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	144	BWTandem	Region Prec. (%)	50.13	50.13	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	144	BWTandem	BP Recall (%)	30.00	30.00	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	144	BWTandem	BP Prec. (%)	53.89	53.89	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	145	tantan	Regions	3,319,523	3319523	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	145	tantan	Region Recall (%)	78.00	78.00	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	145	tantan	Region Prec. (%)	57.66	57.66	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	145	tantan	BP Recall (%)	23.54	23.54	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	145	tantan	BP Prec. (%)	70.22	70.22	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	146	TRF	Regions	912,084	912084	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	146	TRF	Region Recall (%)	30.80	30.80	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	146	TRF	Region Prec. (%)	94.73	94.73	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	146	TRF	BP Recall (%)	20.81	20.81	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	146	TRF	BP Prec. (%)	93.16	93.16	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	147	TRASH	Regions	3,707	3707	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	147	TRASH	Region Recall (%)	0.91	0.91	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	147	TRASH	Region Prec. (%)	96.98	96.98	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	147	TRASH	BP Recall (%)	5.01	5.01	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	147	TRASH	BP Prec. (%)	54.49	54.49	REJECTED	results/regen/score_table1_p100.txt: MATCHED RANGE
+1b	148	AniAnn's (2026)	Regions	114	114	REJECTED	results/comparators2026/score_2026_human.txt: MATCHED
+1b	148	AniAnn's (2026)	Region Recall (%)	0.01	0.01	REJECTED	results/comparators2026/score_2026_human.txt: MATCHED
+1b	148	AniAnn's (2026)	Region Prec. (%)	85.09	85.09	REJECTED	results/comparators2026/score_2026_human.txt: MATCHED
+1b	148	AniAnn's (2026)	BP Recall (%)	0.92	0.92	REJECTED	results/comparators2026/score_2026_human.txt: MATCHED
+1b	148	AniAnn's (2026)	BP Prec. (%)	54.50	54.50	REJECTED	results/comparators2026/score_2026_human.txt: MATCHED
+1c	154	BWTandem	Regions	102,926	102926	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	154	BWTandem	Region Recall (%)	3.43	3.43	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	154	BWTandem	Region Prec. (%)	64.60	64.60	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	154	BWTandem	BP Recall (%)	13.39	13.39	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	154	BWTandem	BP Prec. (%)	29.25	29.25	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	155	TRF	Regions	50,753	50753	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	155	TRF	Region Recall (%)	2.02	2.02	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	155	TRF	Region Prec. (%)	97.18	97.18	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	155	TRF	BP Recall (%)	11.83	11.83	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	155	TRF	BP Prec. (%)	31.19	31.19	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	156	tantan (2,000 bp re-run)	Regions	37,700	37700	REJECTED	results/regen/score_table1_p100.txt: STRATUM tantan-w2000
+1c	156	tantan (2,000 bp re-run)	Region Recall (%)	0.61	0.61	REJECTED	results/regen/score_table1_p100.txt: STRATUM tantan-w2000
+1c	156	tantan (2,000 bp re-run)	Region Prec. (%)	47.29	47.29	REJECTED	results/regen/score_table1_p100.txt: STRATUM tantan-w2000
+1c	156	tantan (2,000 bp re-run)	BP Recall (%)	4.82	4.82	REJECTED	results/regen/score_table1_p100.txt: STRATUM tantan-w2000
+1c	156	tantan (2,000 bp re-run)	BP Prec. (%)	18.65	18.65	REJECTED	results/regen/score_table1_p100.txt: STRATUM tantan-w2000
+1c	157	AniAnn's (2026)	Regions	205	205	REJECTED	results/comparators2026/score_2026_human.txt: STRATUM
+1c	157	AniAnn's (2026)	Region Recall (%)	0.03	0.03	REJECTED	results/comparators2026/score_2026_human.txt: STRATUM
+1c	157	AniAnn's (2026)	Region Prec. (%)	81.46	81.46	REJECTED	results/comparators2026/score_2026_human.txt: STRATUM
+1c	157	AniAnn's (2026)	BP Recall (%)	2.69	2.69	REJECTED	results/comparators2026/score_2026_human.txt: STRATUM
+1c	157	AniAnn's (2026)	BP Prec. (%)	10.03	10.03	REJECTED	results/comparators2026/score_2026_human.txt: STRATUM
+1c	158	TRASH	Regions	1,427	1427	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	158	TRASH	Region Recall (%)	0.25	0.25	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	158	TRASH	Region Prec. (%)	90.75	90.75	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	158	TRASH	BP Recall (%)	5.23	5.23	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1c	158	TRASH	BP Prec. (%)	16.42	16.42	REJECTED	results/regen/score_table1_p100.txt: STRATUM
+1d	166	BWTandem-P (catch-all off)	Calls	2,085,734	2085734	REJECTED	results/regen/score_table1_p100.txt: native BWT-P-p100
+1d	166	BWTandem-P (catch-all off)	Region Recall (%)	54.69	54.69	REJECTED	results/regen/score_table1_p100.txt: native BWT-P-p100
+1d	166	BWTandem-P (catch-all off)	Region Prec. (%)	62.16	62.16	REJECTED	results/regen/score_table1_p100.txt: native BWT-P-p100
+1d	166	BWTandem-P (catch-all off)	BP Recall (%)	26.65	26.65	REJECTED	results/regen/score_table1_p100.txt: native BWT-P-p100
+1d	166	BWTandem-P (catch-all off)	BP Prec. (%)	63.77	63.77	REJECTED	results/regen/score_table1_p100.txt: native BWT-P-p100
+1d	166	BWTandem-P (catch-all off)	Support rate (%)	77.12	77.12	REJECTED	results/regen/score_table1_p100.txt: native BWT-P-p100
+1d	166	BWTandem-P (catch-all off)	Runtime (h)	3.2	03:12:24	BLOCKED-ON-MISSING-ARTIFACT	results/manifest.tsv; original sacct absent for 6141841_0
+1d	167	BWTandem-B (id 0.76)	Calls	3,410,417	3410417	REJECTED	results/regen/score_table1_p100.txt: native BWT-B-p100
+1d	167	BWTandem-B (id 0.76)	Region Recall (%)	71.89	71.89	REJECTED	results/regen/score_table1_p100.txt: native BWT-B-p100
+1d	167	BWTandem-B (id 0.76)	Region Prec. (%)	53.28	53.28	REJECTED	results/regen/score_table1_p100.txt: native BWT-B-p100
+1d	167	BWTandem-B (id 0.76)	BP Recall (%)	31.02	31.02	REJECTED	results/regen/score_table1_p100.txt: native BWT-B-p100
+1d	167	BWTandem-B (id 0.76)	BP Prec. (%)	58.10	58.10	REJECTED	results/regen/score_table1_p100.txt: native BWT-B-p100
+1d	167	BWTandem-B (id 0.76)	Support rate (%)	78.28	78.28	REJECTED	results/regen/score_table1_p100.txt: native BWT-B-p100
+1d	167	BWTandem-B (id 0.76)	Runtime (h)	4.5	04:31:17	BLOCKED-ON-MISSING-ARTIFACT	results/manifest.tsv; original sacct absent for 6143150_1
+1d	168	BWTandem-F (id 0.72, ≥3 copies)	Calls	3,993,151	3993151	REJECTED	results/regen/score_table1_p100.txt: native BWT-F-p100
+1d	168	BWTandem-F (id 0.72, ≥3 copies)	Region Recall (%)	79.88	79.88	REJECTED	results/regen/score_table1_p100.txt: native BWT-F-p100
+1d	168	BWTandem-F (id 0.72, ≥3 copies)	Region Prec. (%)	50.62	50.62	REJECTED	results/regen/score_table1_p100.txt: native BWT-F-p100
+1d	168	BWTandem-F (id 0.72, ≥3 copies)	BP Recall (%)	32.55	32.55	REJECTED	results/regen/score_table1_p100.txt: native BWT-F-p100
+1d	168	BWTandem-F (id 0.72, ≥3 copies)	BP Prec. (%)	55.51	55.51	REJECTED	results/regen/score_table1_p100.txt: native BWT-F-p100
+1d	168	BWTandem-F (id 0.72, ≥3 copies)	Support rate (%)	79.85	79.85	REJECTED	results/regen/score_table1_p100.txt: native BWT-F-p100
+1d	168	BWTandem-F (id 0.72, ≥3 copies)	Runtime (h)	5.4	05:22:09	BLOCKED-ON-MISSING-ARTIFACT	results/manifest.tsv; original sacct absent for 6143150_2
+1d	169	BWTandem-H (id 0.72)	Calls	4,355,741	4355741	REJECTED	results/regen/score_table1_p100.txt: native BWT-H-p100
+1d	169	BWTandem-H (id 0.72)	Region Recall (%)	81.60	81.60	REJECTED	results/regen/score_table1_p100.txt: native BWT-H-p100
+1d	169	BWTandem-H (id 0.72)	Region Prec. (%)	48.44	48.44	REJECTED	results/regen/score_table1_p100.txt: native BWT-H-p100
+1d	169	BWTandem-H (id 0.72)	BP Recall (%)	33.40	33.40	REJECTED	results/regen/score_table1_p100.txt: native BWT-H-p100
+1d	169	BWTandem-H (id 0.72)	BP Prec. (%)	53.86	53.86	REJECTED	results/regen/score_table1_p100.txt: native BWT-H-p100
+1d	169	BWTandem-H (id 0.72)	Support rate (%)	78.08	78.08	REJECTED	results/regen/score_table1_p100.txt: native BWT-H-p100
+1d	169	BWTandem-H (id 0.72)	Runtime (h)	4.1	04:04:46	BLOCKED-ON-MISSING-ARTIFACT	results/manifest.tsv; original sacct absent for 6143150_3
+1d	170	ULTRA	Calls	3,216,710	3216710	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	170	ULTRA	Region Recall (%)	81.62	81.62	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	170	ULTRA	Region Prec. (%)	53.66	53.66	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	170	ULTRA	BP Recall (%)	38.14	38.14	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	170	ULTRA	BP Prec. (%)	61.33	61.33	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	170	ULTRA	Support rate (%)	78.44	78.44	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	170	ULTRA	Runtime (h)	29.8	29.78027777777777777777777778	REJECTED	results/competitor_logs/ultra__GCA_000001405.15_GRCh38_genomic_run.log
+1d	171	tantan	Calls	3,319,523	3319523	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	171	tantan	Region Recall (%)	78.00	78.00	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	171	tantan	Region Prec. (%)	57.66	57.66	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	171	tantan	BP Recall (%)	23.54	23.54	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	171	tantan	BP Prec. (%)	70.22	70.22	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	171	tantan	Support rate (%)	82.93	82.93	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	171	tantan	Runtime (h)	0.9	0.8630388888888888888888888889	REJECTED	results/competitor_logs/tantan__GCA_000001405.15_GRCh38_genomic_run.log
+1d	172	TRF	Calls	912,084	912084	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	172	TRF	Region Recall (%)	30.80	30.80	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	172	TRF	Region Prec. (%)	94.73	94.73	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	172	TRF	BP Recall (%)	20.81	20.81	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	172	TRF	BP Prec. (%)	93.16	93.16	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	172	TRF	Support rate (%)	99.99	99.99	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	172	TRF	Runtime (h)	33.7	33.72944444444444444444444444	REJECTED	results/competitor_logs/trf__GCA_000001405.15_GRCh38_genomic_run.log
+1d	173	TRASH	Calls	3,707	3707	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	173	TRASH	Region Recall (%)	0.91	0.91	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	173	TRASH	Region Prec. (%)	96.98	96.98	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	173	TRASH	BP Recall (%)	5.01	5.01	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	173	TRASH	BP Prec. (%)	54.49	54.49	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	173	TRASH	Support rate (%)	100.00	100.00	REJECTED	results/regen/score_table1_p100.txt: MATCHED and banded support
+1d	173	TRASH	Runtime (h)	107.6	107.6266666666666666666666667	REJECTED	results/competitor_logs/trash__GCA_000001405.15_GRCh38_genomic_run.log
+1e	179	TRASH	Support rate, published rule (%)	99.86	99.86	REJECTED	results/regen/score_table1_p100.txt: full-range support blocks
+1e	179	TRASH	Support rate, leave-one-out (%)	100.00	100.00	REJECTED	results/regen/score_table1_p100.txt: full-range support blocks
+1e	180	TRF	Support rate, published rule (%)	99.94	99.94	REJECTED	results/regen/score_table1_p100.txt: full-range support blocks
+1e	180	TRF	Support rate, leave-one-out (%)	99.99	99.99	REJECTED	results/regen/score_table1_p100.txt: full-range support blocks
+1e	181	tantan	Support rate, published rule (%)	82.93	82.93	REJECTED	results/regen/score_table1_p100.txt: full-range support blocks
+1e	181	tantan	Support rate, leave-one-out (%)	87.98	87.98	REJECTED	results/regen/score_table1_p100.txt: full-range support blocks
+1e	182	BWTandem	Support rate, published rule (%)	79.45	79.45	REJECTED	results/regen/score_table1_p100.txt: full-range support blocks
+1e	182	BWTandem	Support rate, leave-one-out (%)	79.82	79.82	REJECTED	results/regen/score_table1_p100.txt: full-range support blocks
+1e	183	ULTRA	Support rate, published rule (%)	78.44	78.44	REJECTED	results/regen/score_table1_p100.txt: full-range support blocks
+1e	183	ULTRA	Support rate, leave-one-out (%)	86.78	86.78	REJECTED	results/regen/score_table1_p100.txt: full-range support blocks
+2	205	TRF	Regions	27,538	27538	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/Col-CEN_v1.2_output.bed; pass3-checks.py colcen
+2	205	TRF	Cen. Coverage (%)	84.39	84.3861106616844	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/Col-CEN_v1.2_output.bed; pass3-checks.py colcen
+2	205	TRF	CEN180 Count	191	191	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/Col-CEN_v1.2_output.bed; pass3-checks.py colcen
+2	205	TRF	CEN180 BP Prec. (%)	82.79	82.78886150845806	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/Col-CEN_v1.2_output.bed; pass3-checks.py colcen
+2	205	TRF	CEN180 Monomer Recall (%)	97.55	97.54960034791476	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/Col-CEN_v1.2_output.bed; pass3-checks.py colcen
+2	205	TRF	Runtime (h)	131.95	131.95	REJECTED	results/competitor_logs/trf__Col-CEN_v1.2_run.log
+2	205	TRF	Memory (GiB)	1.26	1.26116180419921875	REJECTED	results/competitor_logs/trf__Col-CEN_v1.2_run.log
+2	206	mreps	Regions	27,762	27762	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/mreps_colcen_150_400.bed; pass3-checks.py colcen
+2	206	mreps	Cen. Coverage (%)	58.48	58.47613517554462	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/mreps_colcen_150_400.bed; pass3-checks.py colcen
+2	206	mreps	CEN180 Count	25,021	25021	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/mreps_colcen_150_400.bed; pass3-checks.py colcen
+2	206	mreps	CEN180 BP Prec. (%)	98.33	98.32666054133192	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/mreps_colcen_150_400.bed; pass3-checks.py colcen
+2	206	mreps	CEN180 Monomer Recall (%)	78.45	78.45327894665807	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/mreps_colcen_150_400.bed; pass3-checks.py colcen
+2	206	mreps	Runtime (h)	0.12	0.1158333333333333333333333333	REJECTED	sacct:5981987.batch
+2	206	mreps	Memory (GiB)	0.17	0.169956207275390625	REJECTED	sacct:5981987.batch
+2	207	ULTRA	Regions	150,122	150122	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_colcen_p500.bed; pass3-checks.py colcen
+2	207	ULTRA	Cen. Coverage (%)	84.44	84.43952210203324	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_colcen_p500.bed; pass3-checks.py colcen
+2	207	ULTRA	CEN180 Count	766	766	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_colcen_p500.bed; pass3-checks.py colcen
+2	207	ULTRA	CEN180 BP Prec. (%)	58.08	58.078330061295475	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_colcen_p500.bed; pass3-checks.py colcen
+2	207	ULTRA	CEN180 Monomer Recall (%)	99.80	99.80054886552794	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_colcen_p500.bed; pass3-checks.py colcen
+2	207	ULTRA	Runtime (h)	10.12	10.11972222222222222222222222	REJECTED	sacct:5981977.batch
+2	207	ULTRA	Memory (GiB)	4.20	4.20154571533203125	REJECTED	sacct:5981977.batch
+2	208	BWTandem	Regions	160,883	160883	REJECTED	results/beds/bwtandem_colcen.bed.gz; pass3-checks.py colcen
+2	208	BWTandem	Cen. Coverage (%)	84.54	84.53696839490526	REJECTED	results/beds/bwtandem_colcen.bed.gz; pass3-checks.py colcen
+2	208	BWTandem	CEN180 Count	1,533	1533	REJECTED	results/beds/bwtandem_colcen.bed.gz; pass3-checks.py colcen
+2	208	BWTandem	CEN180 BP Prec. (%)	57.08	57.08007163953652	REJECTED	results/beds/bwtandem_colcen.bed.gz; pass3-checks.py colcen
+2	208	BWTandem	CEN180 Monomer Recall (%)	99.72	99.71506980789707	REJECTED	results/beds/bwtandem_colcen.bed.gz; pass3-checks.py colcen
+2	208	BWTandem	Runtime (h)	0.67	0.6697222222222222222222222222	REJECTED	sacct:6110900.batch
+2	208	BWTandem	Memory (GiB)	2.16	2.163787841796875	REJECTED	sacct:6110900.batch
+2	209	tantan	Regions	147,654	147654	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_colcen_w500.bed; pass3-checks.py colcen
+2	209	tantan	Cen. Coverage (%)	81.50	81.49945794078813	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_colcen_w500.bed; pass3-checks.py colcen
+2	209	tantan	CEN180 Count	5,749	5749	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_colcen_w500.bed; pass3-checks.py colcen
+2	209	tantan	CEN180 BP Prec. (%)	76.88	76.8789368533847	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_colcen_w500.bed; pass3-checks.py colcen
+2	209	tantan	CEN180 Monomer Recall (%)	99.24	99.23668701168214	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_colcen_w500.bed; pass3-checks.py colcen
+2	209	tantan	Runtime (h)	0.20	0.2002777777777777777777777778	REJECTED	sacct:6085141.batch
+2	209	tantan	Memory (GiB)	0.10	0.0959930419921875	REJECTED	sacct:6085141.batch
+2	210	NCRF	Regions	74	74	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/ncrf/Col-CEN_v1.2_output.bed; pass3-checks.py colcen
+2	210	NCRF	Cen. Coverage (%)	85.17	85.16958027126311	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/ncrf/Col-CEN_v1.2_output.bed; pass3-checks.py colcen
+2	210	NCRF	CEN180 Count	0	0	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/ncrf/Col-CEN_v1.2_output.bed; pass3-checks.py colcen
+2	210	NCRF	CEN180 BP Prec. (%)	95.82	95.82008366121647	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/ncrf/Col-CEN_v1.2_output.bed; pass3-checks.py colcen
+2	210	NCRF	CEN180 Monomer Recall (%)	99.63	99.63259001544621	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/ncrf/Col-CEN_v1.2_output.bed; pass3-checks.py colcen
+2	210	NCRF	Runtime (h)	0.80	0.7954527777777777777777777778	REJECTED	results/competitor_logs/ncrf__Col-CEN_v1.2_run.log
+2	210	NCRF	Memory (GiB)	80.96	80.960540771484375	REJECTED	results/competitor_logs/ncrf__Col-CEN_v1.2_run.log
+2	211	TRASH (de novo)	Regions	234	234	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/Col-CEN_v1.2_trash_denovo.bed; pass3-checks.py colcen
+2	211	TRASH (de novo)	Cen. Coverage (%)	85.03	85.03234451226379	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/Col-CEN_v1.2_trash_denovo.bed; pass3-checks.py colcen
+2	211	TRASH (de novo)	CEN180 Count	74	74	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/Col-CEN_v1.2_trash_denovo.bed; pass3-checks.py colcen
+2	211	TRASH (de novo)	CEN180 BP Prec. (%)	86.40	86.40425535821501	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/Col-CEN_v1.2_trash_denovo.bed; pass3-checks.py colcen
+2	211	TRASH (de novo)	CEN180 Monomer Recall (%)	99.69	99.69107568645681	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/Col-CEN_v1.2_trash_denovo.bed; pass3-checks.py colcen
+2	211	TRASH (de novo)	Runtime (h)	5.79	5.791666666666666666666666667	REJECTED	results/competitor_logs/trash__Col-CEN_v1.2_denovo_run.log
+2	211	TRASH (de novo)	Memory (GiB)	1.29	1.294376373291015625	REJECTED	results/competitor_logs/trash__Col-CEN_v1.2_denovo_run.log
+2	212	TRASH (template)	Regions	397	397	REJECTED	results/regen/colcen_trash_template_union.bed; pass3-checks.py colcen
+2	212	TRASH (template)	Cen. Coverage (%)	85.03	85.03234451226379	REJECTED	results/regen/colcen_trash_template_union.bed; pass3-checks.py colcen
+2	212	TRASH (template)	CEN180 Count	115	115	REJECTED	results/regen/colcen_trash_template_union.bed; pass3-checks.py colcen
+2	212	TRASH (template)	CEN180 BP Prec. (%)	86.40	86.40425535821501	REJECTED	results/regen/colcen_trash_template_union.bed; pass3-checks.py colcen
+2	212	TRASH (template)	CEN180 Monomer Recall (%)	99.69	99.69107568645681	REJECTED	results/regen/colcen_trash_template_union.bed; pass3-checks.py colcen
+2	212	TRASH (template)	Runtime (h)	31.69	31.68583333333333333333333333	REJECTED	results/competitor_logs/trash__Col-CEN_v1.2_CEN159_run.log + results/competitor_logs/trash__Col-CEN_v1.2_CEN178_run.log
+2	212	TRASH (template)	Memory (GiB)	2.63	2.6337432861328125	REJECTED	results/competitor_logs/trash__Col-CEN_v1.2_CEN159_run.log + results/competitor_logs/trash__Col-CEN_v1.2_CEN178_run.log
+2	213	longdust (2026)	Regions	46,975	46975	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_colcen_default.bed; pass3-checks.py colcen
+2	213	longdust (2026)	Cen. Coverage (%)	84.76	84.75733643797972	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_colcen_default.bed; pass3-checks.py colcen
+2	213	longdust (2026)	CEN180 Count	0	0	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_colcen_default.bed; pass3-checks.py colcen
+2	213	longdust (2026)	CEN180 BP Prec. (%)	81.79	81.79362009596693	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_colcen_default.bed; pass3-checks.py colcen
+2	213	longdust (2026)	CEN180 Monomer Recall (%)	99.86	99.86203380171858	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_colcen_default.bed; pass3-checks.py colcen
+2	213	longdust (2026)	Runtime (h)	0.03	0.0321	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_colcen_default.time
+2	213	longdust (2026)	Memory (GiB)	0.06	0.062961578369140625	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_colcen_default.time
+2	214	longdust `-k8 -w20000` (2026)	Regions	30,602	30602	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_colcen_k8w20000.bed; pass3-checks.py colcen
+2	214	longdust `-k8 -w20000` (2026)	Cen. Coverage (%)	85.02	85.01646041210923	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_colcen_k8w20000.bed; pass3-checks.py colcen
+2	214	longdust `-k8 -w20000` (2026)	CEN180 Count	0	0	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_colcen_k8w20000.bed; pass3-checks.py colcen
+2	214	longdust `-k8 -w20000` (2026)	CEN180 BP Prec. (%)	81.31	81.30570057007357	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_colcen_k8w20000.bed; pass3-checks.py colcen
+2	214	longdust `-k8 -w20000` (2026)	CEN180 Monomer Recall (%)	99.85	99.84553784322841	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_colcen_k8w20000.bed; pass3-checks.py colcen
+2	214	longdust `-k8 -w20000` (2026)	Runtime (h)	0.17	0.1730972222222222222222222222	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_colcen_k8w20000.time
+2	214	longdust `-k8 -w20000` (2026)	Memory (GiB)	0.06	0.063266754150390625	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_colcen_k8w20000.time
+2	215	AniAnn's (2026)	Regions	60	60	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_colcen.bed; pass3-checks.py colcen
+2	215	AniAnn's (2026)	Cen. Coverage (%)	86.97	86.9655193205327	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_colcen.bed; pass3-checks.py colcen
+2	215	AniAnn's (2026)	CEN180 Count	19	19	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_colcen.bed; pass3-checks.py colcen
+2	215	AniAnn's (2026)	CEN180 BP Prec. (%)	83.41	83.4101786041151	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_colcen.bed; pass3-checks.py colcen
+2	215	AniAnn's (2026)	CEN180 Monomer Recall (%)	99.24	99.23818664427215	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_colcen.bed; pass3-checks.py colcen
+2	215	AniAnn's (2026)	Runtime (h)	0.12	0.1217805555555555555555555556	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/anianns_colcen.time
+2	215	AniAnn's (2026)	Memory (GiB)	0.48	0.480621337890625	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/anianns_colcen.time
+3A	228	TRF	Total SSR (bp)	4,793,515	4793515	REJECTED	results/regen/maize_extra_evidence.json: table3a/trf_3a
+3A	228	TRF	Regions	29,559	29559	REJECTED	results/regen/maize_extra_evidence.json: table3a/trf_3a
+3A	228	TRF	TAG Arrays	5,263	5263	REJECTED	results/regen/maize_extra_evidence.json: table3a/trf_3a
+3A	228	TRF	Longest TAG (kb)	562.79	562.788	REJECTED	results/regen/maize_extra_evidence.json: table3a/trf_3a
+3A	228	TRF	Runtime (h)	5.2	5.216944444444444444444444444	REJECTED	results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3A_microsatellite_run.log
+3A	228	TRF	Memory (GiB)	1.20	1.196598052978515625	REJECTED	results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3A_microsatellite_run.log
+3A	229	ULTRA	Total SSR (bp)	46,963,400	46963400	REJECTED	results/regen/maize_extra_evidence.json: table3a/ultra_3a
+3A	229	ULTRA	Regions	1,114,556	1114556	REJECTED	results/regen/maize_extra_evidence.json: table3a/ultra_3a
+3A	229	ULTRA	TAG Arrays	4,554	4554	REJECTED	results/regen/maize_extra_evidence.json: table3a/ultra_3a
+3A	229	ULTRA	Longest TAG (kb)	29.12	29.119	REJECTED	results/regen/maize_extra_evidence.json: table3a/ultra_3a
+3A	229	ULTRA	Runtime (h)	0.23	0.2299611111111111111111111111	REJECTED	results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3A_microsatellite_run.log
+3A	229	ULTRA	Memory (GiB)	2.23	2.225147247314453125	REJECTED	results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3A_microsatellite_run.log
+3A	230	BWTandem	Total SSR (bp)	41,313,352	41313352	REJECTED	results/regen/maize_extra_evidence.json: table3a/bwt
+3A	230	BWTandem	Regions	1,508,788	1508788	REJECTED	results/regen/maize_extra_evidence.json: table3a/bwt
+3A	230	BWTandem	TAG Arrays	38,999	38999	REJECTED	results/regen/maize_extra_evidence.json: table3a/bwt
+3A	230	BWTandem	Longest TAG (kb)	175.60	175.598	REJECTED	results/regen/maize_extra_evidence.json: table3a/bwt
+3A	230	BWTandem	Runtime (h)	15.9	15.85083333333333333333333333	REJECTED	sacct:6124640.batch
+3A	230	BWTandem	Memory (GiB)	28.45	28.449993133544921875	REJECTED	sacct:6124640.batch
+3A	231	tantan	Total SSR (bp)	54,933,424	54933424	REJECTED	results/regen/maize_extra_evidence.json: table3a/tantan_3a
+3A	231	tantan	Regions	1,303,967	1303967	REJECTED	results/regen/maize_extra_evidence.json: table3a/tantan_3a
+3A	231	tantan	TAG Arrays	181,205	181205	REJECTED	results/regen/maize_extra_evidence.json: table3a/tantan_3a
+3A	231	tantan	Longest TAG (kb)	210.09	210.094	REJECTED	results/regen/maize_extra_evidence.json: table3a/tantan_3a
+3A	231	tantan	Runtime (h)	0.5	0.5481861111111111111111111111	REJECTED	results/competitor_logs/tantan__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_tantan_exp3A_microsatellite_run.log
+3A	231	tantan	Memory (GiB)	0.50	0.50218963623046875	REJECTED	results/competitor_logs/tantan__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_tantan_exp3A_microsatellite_run.log
+3A	232	NCRF	Total SSR (bp)	2,604,968	2604968	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/ncrf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ncrf_TAG_exp3A_microsatellite.bed; scan_3a
+3A	232	NCRF	Regions	214	214	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/ncrf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ncrf_TAG_exp3A_microsatellite.bed; scan_3a
+3A	232	NCRF	TAG Arrays	214	214	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/ncrf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ncrf_TAG_exp3A_microsatellite.bed; scan_3a
+3A	232	NCRF	Longest TAG (kb)	235.40	235.404	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/ncrf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ncrf_TAG_exp3A_microsatellite.bed; scan_3a
+3A	232	NCRF	Runtime (h)	0.13	0.1316416666666666583333333333	REJECTED	results/competitor_logs/ncrf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ncrf_TAG_exp3A_microsatellite_run.log
+3A	232	NCRF	Memory (GiB)	17.47	17.46514892578125	REJECTED	results/competitor_logs/ncrf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ncrf_TAG_exp3A_microsatellite_run.log
+3A	233	TRASH (de novo)	Total SSR (bp)	47,519,576	47519576	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3A_microsatellite.bed; scan_3a
+3A	233	TRASH (de novo)	Regions	3,034	3034	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3A_microsatellite.bed; scan_3a
+3A	233	TRASH (de novo)	TAG Arrays	1,893	1893	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3A_microsatellite.bed; scan_3a
+3A	233	TRASH (de novo)	Longest TAG (kb)	490.00	489.999	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3A_microsatellite.bed; scan_3a
+3A	233	TRASH (de novo)	Runtime (h)	59.9	59.8525	REJECTED	results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3A_microsatellite_run.log
+3A	233	TRASH (de novo)	Memory (GiB)	12.78	12.778522491455078125	REJECTED	results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3A_microsatellite_run.log
+3A	234	TRASH (template)	Total SSR (bp)	47,525,434	47525434	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_TAG_exp3A_microsatellite.bed; scan_3a
+3A	234	TRASH (template)	Regions	3,016	3016	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_TAG_exp3A_microsatellite.bed; scan_3a
+3A	234	TRASH (template)	TAG Arrays	1,884	1884	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_TAG_exp3A_microsatellite.bed; scan_3a
+3A	234	TRASH (template)	Longest TAG (kb)	490.00	489.999	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_TAG_exp3A_microsatellite.bed; scan_3a
+3A	234	TRASH (template)	Runtime (h)	65.5	65.50333333333333333333333333	REJECTED	results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_TAG_exp3A_microsatellite_run.log
+3A	234	TRASH (template)	Memory (GiB)	12.78	12.778850555419921875	REJECTED	results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_TAG_exp3A_microsatellite_run.log
+3A-b	240	ULTRA	Total SSR (bp)	46,963,400	46963400	REJECTED	results/regen/maize_extra_evidence.json: table3a/ultra_3a/band_1_6
+3A-b	240	ULTRA	Regions	1,114,556	1114556	REJECTED	results/regen/maize_extra_evidence.json: table3a/ultra_3a/band_1_6
+3A-b	240	ULTRA	TAG arrays	7,031	7031	REJECTED	results/regen/maize_extra_evidence.json: table3a/ultra_3a/band_1_6
+3A-b	240	ULTRA	Longest TAG (kb)	235.40	235.404	REJECTED	results/regen/maize_extra_evidence.json: table3a/ultra_3a/band_1_6
+3A-b	241	BWTandem	Total SSR (bp)	41,313,352	41313352	REJECTED	results/regen/maize_extra_evidence.json: table3a/bwt/band_1_6
+3A-b	241	BWTandem	Regions	1,508,788	1508788	REJECTED	results/regen/maize_extra_evidence.json: table3a/bwt/band_1_6
+3A-b	241	BWTandem	TAG arrays	34,247	34247	REJECTED	results/regen/maize_extra_evidence.json: table3a/bwt/band_1_6
+3A-b	241	BWTandem	Longest TAG (kb)	235.43	235.428	REJECTED	results/regen/maize_extra_evidence.json: table3a/bwt/band_1_6
+3A-b	242	tantan	Total SSR (bp)	13,701,969	13701969	REJECTED	results/regen/maize_extra_evidence.json: table3a/tantan_3a/band_1_6
+3A-b	242	tantan	Regions	751,581	751581	REJECTED	results/regen/maize_extra_evidence.json: table3a/tantan_3a/band_1_6
+3A-b	242	tantan	TAG arrays	11,752	11752	REJECTED	results/regen/maize_extra_evidence.json: table3a/tantan_3a/band_1_6
+3A-b	242	tantan	Longest TAG (kb)	235.40	235.404	REJECTED	results/regen/maize_extra_evidence.json: table3a/tantan_3a/band_1_6
+3A-b	243	TRF	Total SSR (bp)	4,793,515	4793515	REJECTED	results/regen/maize_extra_evidence.json: table3a/trf_3a/band_1_6
+3A-b	243	TRF	Regions	29,559	29559	REJECTED	results/regen/maize_extra_evidence.json: table3a/trf_3a/band_1_6
+3A-b	243	TRF	TAG arrays	1,379	1379	REJECTED	results/regen/maize_extra_evidence.json: table3a/trf_3a/band_1_6
+3A-b	243	TRF	Longest TAG (kb)	562.79	562.788	REJECTED	results/regen/maize_extra_evidence.json: table3a/trf_3a/band_1_6
+3B	260	TRF	knob180 (of 25)	25	25	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	260	TRF	TR-1 (of 17)	17	17	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	260	TRF	knob180 Frag. Score	0.00	0.0	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	260	TRF	knob180 Offset (bp)	651.96	651.96	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	260	TRF	TR-1 Offset (bp)	884.85	884.85	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	260	TRF	Runtime (h)	5.5	5.514166666666666666666666667	REJECTED	results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite_run.log
+3B	260	TRF	Memory (GiB)	1.20	1.1993560791015625	REJECTED	results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite_run.log
+3B	261	ULTRA	knob180 (of 25)	25	25	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize raw calls
+3B	261	ULTRA	TR-1 (of 17)	17	17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize raw calls
+3B	261	ULTRA	knob180 Frag. Score	0.00	0.0	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize raw calls
+3B	261	ULTRA	knob180 Offset (bp)	203.4	203.38	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize raw calls
+3B	261	ULTRA	TR-1 Offset (bp)	475.9	475.88	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize raw calls
+3B	261	ULTRA	Runtime (h)	34.7	34.73222222222222222222222222	REJECTED	results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3B_satellite_run.log
+3B	261	ULTRA	Memory (GiB)	9.68	9.6768646240234375	REJECTED	results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3B_satellite_run.log
+3B	262	BWTandem	knob180 (of 25)	25	25	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize raw calls
+3B	262	BWTandem	TR-1 (of 17)	17	17	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize raw calls
+3B	262	BWTandem	knob180 Frag. Score	0.00	0.0	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize raw calls
+3B	262	BWTandem	knob180 Offset (bp)	251.8	251.78	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize raw calls
+3B	262	BWTandem	TR-1 Offset (bp)	770.7	770.65	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize raw calls
+3B	262	BWTandem	Runtime (h)	15.9	15.85083333333333333333333333	REJECTED	sacct:6124640.batch
+3B	262	BWTandem	Memory (GiB)	28.45	28.449993133544921875	REJECTED	sacct:6124640.batch
+3B	263	tantan	knob180 (of 25)	25	25	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize raw calls
+3B	263	tantan	TR-1 (of 17)	17	17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize raw calls
+3B	263	tantan	knob180 Frag. Score	0.00	0.0	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize raw calls
+3B	263	tantan	knob180 Offset (bp)	156.0	156.0	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize raw calls
+3B	263	tantan	TR-1 Offset (bp)	658.3	658.32	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize raw calls
+3B	263	tantan	Runtime (h)	3.3	3.283333333333333333333333333	REJECTED	sacct:6085142.batch
+3B	263	tantan	Memory (GiB)	0.48	0.4837799072265625	REJECTED	sacct:6085142.batch
+3B	264	TRASH (de novo)	knob180 (of 25)	25	25	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	264	TRASH (de novo)	TR-1 (of 17)	17	17	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	264	TRASH (de novo)	knob180 Frag. Score	0.05	0.05	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	264	TRASH (de novo)	knob180 Offset (bp)	9,845	9845.2	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	264	TRASH (de novo)	TR-1 Offset (bp)	10,561	10561.32	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	264	TRASH (de novo)	Runtime (h)	58.8	58.845	REJECTED	results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite_run.log
+3B	264	TRASH (de novo)	Memory (GiB)	12.78	12.778438568115234375	REJECTED	results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite_run.log
+3B	265	TRASH (template)	knob180 (of 25)	25	25	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_knob180_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	265	TRASH (template)	TR-1 (of 17)	17	17	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_knob180_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	265	TRASH (template)	knob180 Frag. Score	0.05	0.05	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_knob180_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	265	TRASH (template)	knob180 Offset (bp)	10,086	10086.16	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_knob180_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	265	TRASH (template)	TR-1 Offset (bp)	8,973	8973.15	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_knob180_exp3B_satellite.bed; pass3-checks.py maize raw calls
+3B	265	TRASH (template)	Runtime (h)	101.7	101.745	REJECTED	results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_knob180_exp3B_satellite_run.log
+3B	265	TRASH (template)	Memory (GiB)	120.64	120.640270233154296875	REJECTED	results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_knob180_exp3B_satellite_run.log
+3B	266	longdust (2026)	knob180 (of 25)	0	0	REJECTED	results/comparators2026/score_2026_maize.txt: no calls at gap zero
+3B	266	longdust (2026)	TR-1 (of 17)	0	0	REJECTED	results/comparators2026/score_2026_maize.txt: no calls at gap zero
+3B	266	longdust (2026)	Runtime (h)	0.30	0.3000416666666666666666666667	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_maize_default.time
+3B	266	longdust (2026)	Memory (GiB)	0.58	0.575347900390625	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_maize_default.time
+3B	267	longdust `-k8 -w20000` (2026)	knob180 (of 25)	0	0	REJECTED	results/comparators2026/score_2026_maize.txt: no calls at gap zero
+3B	267	longdust `-k8 -w20000` (2026)	TR-1 (of 17)	0	0	REJECTED	results/comparators2026/score_2026_maize.txt: no calls at gap zero
+3B	267	longdust `-k8 -w20000` (2026)	Runtime (h)	3.89	3.894444444444444444444444444	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_maize_k8w20000.time
+3B	267	longdust `-k8 -w20000` (2026)	Memory (GiB)	0.58	0.57546234130859375	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_maize_k8w20000.time
+3B	268	AniAnn's (2026)	knob180 (of 25)	22	22	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed; pass3-checks.py maize raw calls
+3B	268	AniAnn's (2026)	TR-1 (of 17)	14	14	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed; pass3-checks.py maize raw calls
+3B	268	AniAnn's (2026)	knob180 Frag. Score	0.18	0.18	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed; pass3-checks.py maize raw calls
+3B	268	AniAnn's (2026)	knob180 Offset (bp)	22,581	22580.77	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed; pass3-checks.py maize raw calls
+3B	268	AniAnn's (2026)	TR-1 Offset (bp)	83,740	83740.04	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed; pass3-checks.py maize raw calls
+3B	268	AniAnn's (2026)	Runtime (h)	1.57	1.573888888888888888888888889	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/anianns_maize.time
+3B	268	AniAnn's (2026)	Memory (GiB)	0.55	0.546062469482421875	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/anianns_maize.time
+3B-b	274	knob180/TRASH (de novo)/unfiltered	Detected	25/25	25/25	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed; pass3-checks.py maize unfiltered
+3B-b	274	knob180/TRASH (de novo)/unfiltered	Coverage (%)	81.23	81.2250210716241	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed; pass3-checks.py maize unfiltered
+3B-b	274	knob180/TRASH (de novo)/unfiltered	Offset (bp)	9,845	9845.2	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed; pass3-checks.py maize unfiltered
+3B-b	275	knob180/BWTandem/unfiltered	Detected	25/25	25/25	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize unfiltered
+3B-b	275	knob180/BWTandem/unfiltered	Coverage (%)	79.79	79.79471335240267	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize unfiltered
+3B-b	275	knob180/BWTandem/unfiltered	Offset (bp)	251.8	251.78	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize unfiltered
+3B-b	276	knob180/TRF/unfiltered	Detected	25/25	25/25	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize unfiltered
+3B-b	276	knob180/TRF/unfiltered	Coverage (%)	80.01	80.0096715686096	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize unfiltered
+3B-b	276	knob180/TRF/unfiltered	Offset (bp)	652.0	651.96	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize unfiltered
+3B-b	277	knob180/ULTRA/unfiltered	Detected	25/25	25/25	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize unfiltered
+3B-b	277	knob180/ULTRA/unfiltered	Coverage (%)	78.71	78.70912512936675	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize unfiltered
+3B-b	277	knob180/ULTRA/unfiltered	Offset (bp)	203.4	203.38	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize unfiltered
+3B-b	278	knob180/tantan/unfiltered	Detected	25/25	25/25	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize unfiltered
+3B-b	278	knob180/tantan/unfiltered	Coverage (%)	71.92	71.92355636951125	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize unfiltered
+3B-b	278	knob180/tantan/unfiltered	Offset (bp)	156.0	156.0	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize unfiltered
+3B-b	279	knob180/BWTandem/banded	Detected	25/25	25/25	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize banded
+3B-b	279	knob180/BWTandem/banded	Coverage (%)	64.20	64.20234882686118	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize banded
+3B-b	279	knob180/BWTandem/banded	Offset (bp)	4,265	4265.3	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize banded
+3B-b	280	knob180/TRF/banded	Detected	25/25	25/25	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize banded
+3B-b	280	knob180/TRF/banded	Coverage (%)	79.38	79.37667310179027	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize banded
+3B-b	280	knob180/TRF/banded	Offset (bp)	610.6	610.64	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize banded
+3B-b	281	knob180/ULTRA/banded	Detected	25/25	25/25	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize banded
+3B-b	281	knob180/ULTRA/banded	Coverage (%)	77.51	77.51106049515248	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize banded
+3B-b	281	knob180/ULTRA/banded	Offset (bp)	660.8	660.82	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize banded
+3B-b	282	knob180/tantan/banded	Detected	25/25	25/25	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize banded
+3B-b	282	knob180/tantan/banded	Coverage (%)	71.42	71.41703148327913	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize banded
+3B-b	282	knob180/tantan/banded	Offset (bp)	687.3	687.34	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize banded
+3B-b	283	TR-1/TRASH (de novo)/unfiltered	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed; pass3-checks.py maize unfiltered
+3B-b	283	TR-1/TRASH (de novo)/unfiltered	Coverage (%)	53.17	53.17191463050009	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed; pass3-checks.py maize unfiltered
+3B-b	283	TR-1/TRASH (de novo)/unfiltered	Offset (bp)	10,561	10561.32	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed; pass3-checks.py maize unfiltered
+3B-b	284	TR-1/BWTandem/unfiltered	Detected	17/17	17/17	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize unfiltered
+3B-b	284	TR-1/BWTandem/unfiltered	Coverage (%)	50.34	50.335993757089206	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize unfiltered
+3B-b	284	TR-1/BWTandem/unfiltered	Offset (bp)	770.7	770.65	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize unfiltered
+3B-b	285	TR-1/TRF/unfiltered	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize unfiltered
+3B-b	285	TR-1/TRF/unfiltered	Coverage (%)	45.77	45.77091609020762	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize unfiltered
+3B-b	285	TR-1/TRF/unfiltered	Offset (bp)	884.9	884.85	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize unfiltered
+3B-b	286	TR-1/ULTRA/unfiltered	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize unfiltered
+3B-b	286	TR-1/ULTRA/unfiltered	Coverage (%)	36.36	36.361650167835855	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize unfiltered
+3B-b	286	TR-1/ULTRA/unfiltered	Offset (bp)	475.9	475.88	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize unfiltered
+3B-b	287	TR-1/tantan/unfiltered	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize unfiltered
+3B-b	287	TR-1/tantan/unfiltered	Coverage (%)	22.74	22.739453392752175	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize unfiltered
+3B-b	287	TR-1/tantan/unfiltered	Offset (bp)	658.3	658.32	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize unfiltered
+3B-b	288	TR-1/BWTandem/banded	Detected	17/17	17/17	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize banded
+3B-b	288	TR-1/BWTandem/banded	Coverage (%)	17.33	17.326009710139918	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize banded
+3B-b	288	TR-1/BWTandem/banded	Offset (bp)	7,973	7973.15	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize banded
+3B-b	289	TR-1/TRF/banded	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize banded
+3B-b	289	TR-1/TRF/banded	Coverage (%)	44.23	44.230222929137405	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize banded
+3B-b	289	TR-1/TRF/banded	Offset (bp)	1,462	1461.59	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed; pass3-checks.py maize banded
+3B-b	290	TR-1/ULTRA/banded	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize banded
+3B-b	290	TR-1/ULTRA/banded	Coverage (%)	33.55	33.54630622128298	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize banded
+3B-b	290	TR-1/ULTRA/banded	Offset (bp)	1,856	1855.68	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed; pass3-checks.py maize banded
+3B-b	291	TR-1/tantan/banded	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize banded
+3B-b	291	TR-1/tantan/banded	Coverage (%)	21.36	21.36200272144265	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize banded
+3B-b	291	TR-1/tantan/banded	Offset (bp)	3,693	3692.59	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed; pass3-checks.py maize banded
+3C	306	TRASH (template)	CentC (of 17)	17	17	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_CentC_exp3C_centc.bed; pass3-checks.py maize raw calls
+3C	306	TRASH (template)	Cen. Coverage (%)	58.68	58.68451580604715	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_CentC_exp3C_centc.bed; pass3-checks.py maize raw calls
+3C	306	TRASH (template)	Frag. Score	0.05	0.05	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_CentC_exp3C_centc.bed; pass3-checks.py maize raw calls
+3C	306	TRASH (template)	Mean Offset (bp)	5,319	5318.71	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_CentC_exp3C_centc.bed; pass3-checks.py maize raw calls
+3C	306	TRASH (template)	Runtime (h)	97.8	97.75	REJECTED	results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_CentC_exp3C_centc_run.log
+3C	306	TRASH (template)	Memory (GiB)	42.83	42.830265045166015625	REJECTED	results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_CentC_exp3C_centc_run.log
+3C	307	BWTandem	CentC (of 17)	17	17	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize raw calls
+3C	307	BWTandem	Cen. Coverage (%)	58.55	58.548616573354025	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize raw calls
+3C	307	BWTandem	Frag. Score	0.00	0.0	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize raw calls
+3C	307	BWTandem	Mean Offset (bp)	170.1	170.12	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize raw calls
+3C	307	BWTandem	Runtime (h)	15.9	15.85083333333333333333333333	REJECTED	sacct:6124640.batch
+3C	307	BWTandem	Memory (GiB)	28.45	28.449993133544921875	REJECTED	sacct:6124640.batch
+3C	308	TRF	CentC (of 17)	17	17	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed; pass3-checks.py maize raw calls
+3C	308	TRF	Cen. Coverage (%)	58.50	58.504213696130364	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed; pass3-checks.py maize raw calls
+3C	308	TRF	Frag. Score	0.01	0.01	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed; pass3-checks.py maize raw calls
+3C	308	TRF	Mean Offset (bp)	69.6	69.62	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed; pass3-checks.py maize raw calls
+3C	308	TRF	Runtime (h)	5.5	5.482222222222222222222222222	REJECTED	results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc_run.log
+3C	308	TRF	Memory (GiB)	1.20	1.196598052978515625	REJECTED	results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc_run.log
+3C	309	ULTRA	CentC (of 17)	17	17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed; pass3-checks.py maize raw calls
+3C	309	ULTRA	Cen. Coverage (%)	57.73	57.72782405443484	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed; pass3-checks.py maize raw calls
+3C	309	ULTRA	Frag. Score	0.00	0.0	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed; pass3-checks.py maize raw calls
+3C	309	ULTRA	Mean Offset (bp)	58.1	58.09	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed; pass3-checks.py maize raw calls
+3C	309	ULTRA	Runtime (h)	12.9	12.85666666666666666666666667	REJECTED	results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3C_centc_run.log
+3C	309	ULTRA	Memory (GiB)	3.38	3.380706787109375	REJECTED	results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3C_centc_run.log
+3C	310	tantan	CentC (of 17)	17	17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed; pass3-checks.py maize raw calls
+3C	310	tantan	Cen. Coverage (%)	56.51	56.50881462387826	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed; pass3-checks.py maize raw calls
+3C	310	tantan	Frag. Score	0.00	0.0	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed; pass3-checks.py maize raw calls
+3C	310	tantan	Mean Offset (bp)	59.5	59.53	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed; pass3-checks.py maize raw calls
+3C	310	tantan	Runtime (h)	1.4	1.380555555555555555555555556	REJECTED	sacct:6085143.batch
+3C	310	tantan	Memory (GiB)	0.37	0.3729400634765625	REJECTED	sacct:6085143.batch
+3C	311	longdust (2026)	CentC (of 17)	0	0	REJECTED	results/comparators2026/score_2026_maize.txt: no calls at gap zero
+3C	311	longdust (2026)	Cen. Coverage (%)	0.00	0	REJECTED	results/comparators2026/score_2026_maize.txt: no calls at gap zero
+3C	311	longdust (2026)	Runtime (h)	0.30	0.3000416666666666666666666667	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_maize_default.time
+3C	311	longdust (2026)	Memory (GiB)	0.58	0.575347900390625	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_maize_default.time
+3C	312	AniAnn's (2026)	CentC (of 17)	17	17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed; pass3-checks.py maize raw calls
+3C	312	AniAnn's (2026)	Cen. Coverage (%)	81.42	81.41614610568537	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed; pass3-checks.py maize raw calls
+3C	312	AniAnn's (2026)	Frag. Score	0.21	0.21	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed; pass3-checks.py maize raw calls
+3C	312	AniAnn's (2026)	Mean Offset (bp)	14,917	14916.76	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed; pass3-checks.py maize raw calls
+3C	312	AniAnn's (2026)	Runtime (h)	1.57	1.573888888888888888888888889	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/anianns_maize.time
+3C	312	AniAnn's (2026)	Memory (GiB)	0.55	0.546062469482421875	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/anianns_maize.time
+3C-b	318	BWTandem/unfiltered	Detected	17/17	17/17	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize unfiltered
+3C-b	318	BWTandem/unfiltered	Coverage (%)	58.55	58.548616573354025	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize unfiltered
+3C-b	318	BWTandem/unfiltered	Offset (bp)	170.1	170.12	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize unfiltered
+3C-b	319	TRF/unfiltered	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed; pass3-checks.py maize unfiltered
+3C-b	319	TRF/unfiltered	Coverage (%)	58.50	58.504213696130364	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed; pass3-checks.py maize unfiltered
+3C-b	319	TRF/unfiltered	Offset (bp)	69.6	69.62	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed; pass3-checks.py maize unfiltered
+3C-b	320	ULTRA/unfiltered	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed; pass3-checks.py maize unfiltered
+3C-b	320	ULTRA/unfiltered	Coverage (%)	57.73	57.72782405443484	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed; pass3-checks.py maize unfiltered
+3C-b	320	ULTRA/unfiltered	Offset (bp)	58.1	58.09	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed; pass3-checks.py maize unfiltered
+3C-b	321	tantan/unfiltered	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed; pass3-checks.py maize unfiltered
+3C-b	321	tantan/unfiltered	Coverage (%)	56.51	56.50881462387826	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed; pass3-checks.py maize unfiltered
+3C-b	321	tantan/unfiltered	Offset (bp)	59.5	59.53	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed; pass3-checks.py maize unfiltered
+3C-b	322	BWTandem/banded	Detected	17/17	17/17	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize banded
+3C-b	322	BWTandem/banded	Coverage (%)	40.71	40.70963726320024	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize banded
+3C-b	322	BWTandem/banded	Offset (bp)	3,036	3035.97	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize banded
+3C-b	322	BWTandem/banded	Loss under band (pp)	−17.84	-17.838979310153782	REJECTED	results/beds/bwtandem_maize.bed.gz; pass3-checks.py maize banded
+3C-b	323	TRF/banded	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed; pass3-checks.py maize banded
+3C-b	323	TRF/banded	Coverage (%)	57.63	57.632530608173745	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed; pass3-checks.py maize banded
+3C-b	323	TRF/banded	Offset (bp)	1,779	1779.35	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed; pass3-checks.py maize banded
+3C-b	323	TRF/banded	Loss under band (pp)	−0.87	-0.8716830879566189	REJECTED	/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed; pass3-checks.py maize banded
+3C-b	324	ULTRA/banded	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed; pass3-checks.py maize banded
+3C-b	324	ULTRA/banded	Coverage (%)	55.84	55.83508972000157	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed; pass3-checks.py maize banded
+3C-b	324	ULTRA/banded	Offset (bp)	1,795	1794.71	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed; pass3-checks.py maize banded
+3C-b	324	ULTRA/banded	Loss under band (pp)	−1.89	-1.8927343344332712	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed; pass3-checks.py maize banded
+3C-b	325	tantan/banded	Detected	17/17	17/17	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed; pass3-checks.py maize banded
+3C-b	325	tantan/banded	Coverage (%)	55.59	55.59416152314765	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed; pass3-checks.py maize banded
+3C-b	325	tantan/banded	Offset (bp)	1,770	1770.44	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed; pass3-checks.py maize banded
+3C-b	325	tantan/banded	Loss under band (pp)	−0.91	-0.9146531007306109	REJECTED	/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed; pass3-checks.py maize banded
+S2	524	Calls	Unique to BWTandem	875,084	875084	REJECTED	results/regen/s2_F_p100.txt: Calls
+S2	524	Calls	Shared	3,118,067	3118067	REJECTED	results/regen/s2_F_p100.txt: Calls
+S2	525	Share of BWTandem output (%)	Unique to BWTandem	21.9	21.914623313769003	REJECTED	results/regen/s2_F_p100.txt: Share of BWTandem output (%)
+S2	525	Share of BWTandem output (%)	Shared	78.1	78.085376686231	REJECTED	results/regen/s2_F_p100.txt: Share of BWTandem output (%)
+S2	526	Median call length (bp)	Unique to BWTandem	25	25	REJECTED	results/regen/s2_F_p100.txt: Median call length (bp)
+S2	526	Median call length (bp)	Shared	24	24	REJECTED	results/regen/s2_F_p100.txt: Median call length (bp)
+S2	527	Mean motif entropy (bits)	Unique to BWTandem	1.24	1.241	REJECTED	results/regen/s2_F_p100.txt: Mean motif entropy (bits)
+S2	527	Mean motif entropy (bits)	Shared	1.03	1.03	REJECTED	results/regen/s2_F_p100.txt: Mean motif entropy (bits)
+S2	528	Motif entropy below 1 bit (%)	Unique to BWTandem	38.9	38.9	REJECTED	results/regen/s2_F_p100.txt: Motif entropy below 1 bit (%)
+S2	528	Motif entropy below 1 bit (%)	Shared	46.4	46.4	REJECTED	results/regen/s2_F_p100.txt: Motif entropy below 1 bit (%)
+S2	529	Period 1–2 bp (%)	Unique to BWTandem	13.2	13.2	REJECTED	results/regen/s2_F_p100.txt: Period 1–2 bp (%)
+S2	529	Period 1–2 bp (%)	Shared	24.8	24.8	REJECTED	results/regen/s2_F_p100.txt: Period 1–2 bp (%)
+S2	530	Period 21–100 bp (%)	Unique to BWTandem	21.9	21.9	REJECTED	results/regen/s2_F_p100.txt: Period 21–100 bp (%)
+S2	530	Period 21–100 bp (%)	Shared	6.1	6.1	REJECTED	results/regen/s2_F_p100.txt: Period 21–100 bp (%)
+S2	531	Outside the adotto catalog (%)	Unique to BWTandem	91.3	91.2864365020958	REJECTED	results/regen/s2_F_p100.txt: Outside the adotto catalog (%)
+S2	531	Outside the adotto catalog (%)	Shared	37.6	37.61416929142318	REJECTED	results/regen/s2_F_p100.txt: Outside the adotto catalog (%)
+S3	537	pass disabled	Region recall (%)	62.59	62.59	REJECTED	results/regen/score_table1_idsweep.txt: BASELINE
+S3	537	pass disabled	Region precision (%)	54.72	54.72	REJECTED	results/regen/score_table1_idsweep.txt: BASELINE
+S3	538	0.80	Region recall (%)	71.36	71.36	REJECTED	results/regen/score_table1_idsweep.txt: BASELINE
+S3	538	0.80	Region precision (%)	53.42	53.42	REJECTED	results/regen/score_table1_idsweep.txt: BASELINE
+S3	539	0.76	Region recall (%)	71.53	71.53	REJECTED	results/regen/score_table1_idsweep.txt: BASELINE
+S3	539	0.76	Region precision (%)	53.35	53.35	REJECTED	results/regen/score_table1_idsweep.txt: BASELINE
+S3	540	0.72	Region recall (%)	80.53	80.53	REJECTED	results/regen/score_table1_idsweep.txt: BASELINE
+S3	540	0.72	Region precision (%)	50.50	50.50	REJECTED	results/regen/score_table1_idsweep.txt: BASELINE
+S3	541	0.68	Region recall (%)	81.46	81.46	REJECTED	results/regen/score_table1_idsweep.txt: BASELINE
+S3	541	0.68	Region precision (%)	48.92	48.92	REJECTED	results/regen/score_table1_idsweep.txt: BASELINE
+S4a	549	ULTRA	Matched	554,179	554179	REJECTED	results/one_to_one/one_to_one_ultra_r50.json
+S4a	549	ULTRA	1:1 sens. (%)	31.05	31.04985197254152	REJECTED	results/one_to_one/one_to_one_ultra_r50.json
+S4a	549	ULTRA	1:1 prec. (%)	17.23	17.228130605494435	REJECTED	results/one_to_one/one_to_one_ultra_r50.json
+S4a	550	BWTandem	Matched	348,464	348464	REJECTED	results/one_to_one/one_to_one_bwtandem_r50.json
+S4a	550	BWTandem	1:1 sens. (%)	19.52	19.523936521881396	REJECTED	results/one_to_one/one_to_one_bwtandem_r50.json
+S4a	550	BWTandem	1:1 prec. (%)	8.68	8.680982175865722	REJECTED	results/one_to_one/one_to_one_bwtandem_r50.json
+S4a	551	TRF	Matched	197,087	197087	REJECTED	results/one_to_one/one_to_one_trf_r50.json
+S4a	551	TRF	1:1 sens. (%)	11.04	11.042501025322668	REJECTED	results/one_to_one/one_to_one_trf_r50.json
+S4a	551	TRF	1:1 prec. (%)	20.47	20.469404478639685	REJECTED	results/one_to_one/one_to_one_trf_r50.json
+S4a	552	tantan	Matched	113,649	113649	REJECTED	results/one_to_one/one_to_one_tantan_r50.json
+S4a	552	tantan	1:1 sens. (%)	6.37	6.367589942649165	REJECTED	results/one_to_one/one_to_one_tantan_r50.json
+S4a	552	tantan	1:1 prec. (%)	3.42	3.4236545431376735	REJECTED	results/one_to_one/one_to_one_tantan_r50.json
+S4a	553	TRASH	Matched	1,241	1241	REJECTED	results/one_to_one/one_to_one_trash_r50.json
+S4a	553	TRASH	1:1 sens. (%)	0.07	0.06953144434907138	REJECTED	results/one_to_one/one_to_one_trash_r50.json
+S4a	553	TRASH	1:1 prec. (%)	24.17	24.172185430463575	REJECTED	results/one_to_one/one_to_one_trash_r50.json
+S4b	559	ULTRA	Matched	1,122,910	1122910	REJECTED	results/one_to_one/one_to_one_ultra_annot_r50.json
+S4b	559	ULTRA	1:1 sens. (%)	62.92	62.915031566491336	REJECTED	results/one_to_one/one_to_one_ultra_annot_r50.json
+S4b	559	ULTRA	1:1 prec. (%)	34.91	34.908648899030375	REJECTED	results/one_to_one/one_to_one_ultra_annot_r50.json
+S4b	559	ULTRA	Δstart med. (bp)	1	1.0	REJECTED	results/one_to_one/one_to_one_ultra_annot_r50.json
+S4b	559	ULTRA	Period exact (%)	59.61	59.61	REJECTED	results/one_to_one/one_to_one_ultra_annot_r50.json
+S4b	559	ULTRA	Sens. 1–6 (%)	57.77	57.7707076247943	REJECTED	results/one_to_one/one_to_one_ultra_annot_r50.json
+S4b	559	ULTRA	7–20 (%)	72.32	72.31733394804557	REJECTED	results/one_to_one/one_to_one_ultra_annot_r50.json
+S4b	559	ULTRA	21–100 (%)	80.90	80.90284157506257	REJECTED	results/one_to_one/one_to_one_ultra_annot_r50.json
+S4b	559	ULTRA	101–500 (%)	8.36	8.36341090764155	REJECTED	results/one_to_one/one_to_one_ultra_annot_r50.json
+S4b	560	BWTandem	Matched	1,050,831	1050831	REJECTED	results/one_to_one/one_to_one_bwtandem_annot_r50.json
+S4b	560	BWTandem	1:1 sens. (%)	58.88	58.87654890957214	REJECTED	results/one_to_one/one_to_one_bwtandem_annot_r50.json
+S4b	560	BWTandem	1:1 prec. (%)	26.18	26.17844362931939	REJECTED	results/one_to_one/one_to_one_bwtandem_annot_r50.json
+S4b	560	BWTandem	Δstart med. (bp)	2	2	REJECTED	results/one_to_one/one_to_one_bwtandem_annot_r50.json
+S4b	560	BWTandem	Period exact (%)	58.66	58.66	REJECTED	results/one_to_one/one_to_one_bwtandem_annot_r50.json
+S4b	560	BWTandem	Copy med. rel. err. (%)	34.15	34.15	REJECTED	results/one_to_one/one_to_one_bwtandem_annot_r50.json
+S4b	560	BWTandem	Sens. 1–6 (%)	59.21	59.209520856686304	REJECTED	results/one_to_one/one_to_one_bwtandem_annot_r50.json
+S4b	560	BWTandem	7–20 (%)	58.24	58.243234885669146	REJECTED	results/one_to_one/one_to_one_bwtandem_annot_r50.json
+S4b	560	BWTandem	21–100 (%)	62.38	62.37779960084899	REJECTED	results/one_to_one/one_to_one_bwtandem_annot_r50.json
+S4b	560	BWTandem	101–500 (%)	46.39	46.39401253293771	REJECTED	results/one_to_one/one_to_one_bwtandem_annot_r50.json
+S4b	561	tantan	Matched	961,163	961163	REJECTED	results/one_to_one/one_to_one_tantan_annot_r50.json
+S4b	561	tantan	1:1 sens. (%)	53.85	53.8525798911253	REJECTED	results/one_to_one/one_to_one_tantan_annot_r50.json
+S4b	561	tantan	1:1 prec. (%)	28.95	28.95485285084634	REJECTED	results/one_to_one/one_to_one_tantan_annot_r50.json
+S4b	561	tantan	Δstart med. (bp)	0	0	REJECTED	results/one_to_one/one_to_one_tantan_annot_r50.json
+S4b	561	tantan	Period exact (%)	73.54	73.54	REJECTED	results/one_to_one/one_to_one_tantan_annot_r50.json
+S4b	561	tantan	Sens. 1–6 (%)	60.31	60.306708960385414	REJECTED	results/one_to_one/one_to_one_tantan_annot_r50.json
+S4b	561	tantan	7–20 (%)	49.27	49.27087257277687	REJECTED	results/one_to_one/one_to_one_tantan_annot_r50.json
+S4b	561	tantan	21–100 (%)	41.41	41.40906643013273	REJECTED	results/one_to_one/one_to_one_tantan_annot_r50.json
+S4b	561	tantan	101–500 (%)	1.67	1.6695821615996103	REJECTED	results/one_to_one/one_to_one_tantan_annot_r50.json
+S4b	562	TRF	Matched	518,719	518719	REJECTED	results/one_to_one/one_to_one_trf_annot_r50.json
+S4b	562	TRF	1:1 sens. (%)	29.06	29.06307919525057	REJECTED	results/one_to_one/one_to_one_trf_annot_r50.json
+S4b	562	TRF	1:1 prec. (%)	53.87	53.874020213182504	REJECTED	results/one_to_one/one_to_one_trf_annot_r50.json
+S4b	562	TRF	Δstart med. (bp)	0	0	REJECTED	results/one_to_one/one_to_one_trf_annot_r50.json
+S4b	562	TRF	Period exact (%)	63.53	63.53	REJECTED	results/one_to_one/one_to_one_trf_annot_r50.json
+S4b	562	TRF	Sens. 1–6 (%)	17.87	17.865057597366977	REJECTED	results/one_to_one/one_to_one_trf_annot_r50.json
+S4b	562	TRF	7–20 (%)	33.88	33.88395057563678	REJECTED	results/one_to_one/one_to_one_trf_annot_r50.json
+S4b	562	TRF	21–100 (%)	77.60	77.59559033167548	REJECTED	results/one_to_one/one_to_one_trf_annot_r50.json
+S4b	562	TRF	101–500 (%)	62.40	62.401186864772704	REJECTED	results/one_to_one/one_to_one_trf_annot_r50.json
+S4b	563	TRASH	Matched	892	892	REJECTED	results/one_to_one/one_to_one_trash_annot_r50.json
+S4b	563	TRASH	1:1 sens. (%)	0.05	0.049977476518430035	REJECTED	results/one_to_one/one_to_one_trash_annot_r50.json
+S4b	563	TRASH	1:1 prec. (%)	17.37	17.374366965329177	REJECTED	results/one_to_one/one_to_one_trash_annot_r50.json
+S4b	563	TRASH	Δstart med. (bp)	494	494.0	REJECTED	results/one_to_one/one_to_one_trash_annot_r50.json
+S4b	563	TRASH	Period exact (%)	33.41	33.41	REJECTED	results/one_to_one/one_to_one_trash_annot_r50.json
+S4b	563	TRASH	Sens. 1–6 (%)	0.01	0.005628562570058909	REJECTED	results/one_to_one/one_to_one_trash_annot_r50.json
+S4b	563	TRASH	7–20 (%)	0.02	0.02248947211586576	REJECTED	results/one_to_one/one_to_one_trash_annot_r50.json
+S4b	563	TRASH	21–100 (%)	0.21	0.20654480945290968	REJECTED	results/one_to_one/one_to_one_trash_annot_r50.json
+S4b	563	TRASH	101–500 (%)	0.86	0.8569340802905161	REJECTED	results/one_to_one/one_to_one_trash_annot_r50.json

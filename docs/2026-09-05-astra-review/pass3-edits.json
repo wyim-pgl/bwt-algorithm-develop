@@ -1,0 +1,186 @@
+[
+  {
+    "old": "| TRF | 962,837 | 31.88 | 94.86 | 99.94 | 30.26 | 52.40 | 18,900 | 33.7 | 1.45 |",
+    "new": "| TRF | 962,837 | 31.88 | 94.86 | 99.94 | 30.26 | 52.40 | 18,904 | 33.7 | 1.45 |"
+  },
+  {
+    "old": "| ULTRA | 3,216,710 | 81.62 | 53.66 | 78.44 | 38.14 | 61.33 | 518,405 | 29.8 | 1.68 |",
+    "new": "| ULTRA | 3,216,710 | 81.62 | 53.66 | 78.44 | 38.14 | 61.33 | 518,440 | 29.8 | 1.68 |"
+  },
+  {
+    "old": "| tantan | 3,319,523 | 78.00 | 57.66 | 82.93 | 23.54 | 70.22 | 518,443 | 0.9 | 0.27 |",
+    "new": "| tantan | 3,319,523 | 78.00 | 57.66 | 82.93 | 23.54 | 70.22 | 518,488 | 0.9 | 0.27 |"
+  },
+  {
+    "old": "at H the region-recall gap to ULTRA is 0.02 percentage points (81.60 versus 81.62)",
+    "new": "at H the region-recall gap to ULTRA is 0.03 percentage points (81.60 versus 81.62 after rounding)"
+  },
+  {
+    "old": "Under it the three high-recall tools span 79.80% to 87.98%.",
+    "new": "Under it the three high-recall tools span 79.82% to 87.98%."
+  },
+  {
+    "old": "so their cost cells are comparable to the BWTandem row but not to the 2024 competitor rows",
+    "new": "so their input scope matches BWTandem; their GNU-time memory cells remain distinct from its cgroup peak, and the 2024 competitor rows used a larger FASTA"
+  },
+  {
+    "old": "The 2026 tools likewise have no rows: longdust's intervals carry no period to stratify on, and AniAnn's array-level inferred monomer lengths, where they fall in 101–2,000 bp, describe whole arrays rather than calls comparable to this panel's; both are reported at Table 1a's full-range rule only.",
+    "new": "longdust has no row because its intervals carry no period to stratify on. AniAnn's enters under the same preregistered prediction-period rule as Table 1b; its reported monomer lengths describe whole arrays, and its row is shown below."
+  },
+  {
+    "old": "Within the range all tools shared, periods of 100 bp or less,",
+    "new": "Within the common output-period band, periods of 100 bp or less (with the FASTA scope differences of Table 1a),"
+  },
+  {
+    "old": "ULTRA and tantan natively search this range.",
+    "new": "ULTRA and tantan natively search this range. This matches the output-period band, not the execution range or FASTA scope: BWTandem and AniAnn's consumed chromosome-only FASTAs, while the original competitors also processed unplaced sequences before primary-chromosome scoring."
+  },
+  {
+    "old": "differing ranges and implementations prevent attributing that contrast to one design choice.",
+    "new": "differing ranges, FASTA scopes and implementations prevent attributing that contrast to one design choice."
+  },
+  {
+    "old": "TRF, capped at 200 bp, required 131.9 hours",
+    "new": "TRF, capped at 200 bp, required 131.95 hours"
+  },
+  {
+    "old": "| TRF | 27,538 | 84.39 | 191 | 82.79 | 97.55 | 131.9 | 1.26 |",
+    "new": "| TRF | 27,538 | 84.39 | 191 | 82.79 | 97.55 | 131.95 | 1.26 |"
+  },
+  {
+    "old": "| tantan § | 147,654 | 81.50 | 5,749 | 76.88 | 99.24 | 0.20 | 0.09 |",
+    "new": "| tantan § | 147,654 | 81.50 | 5,749 | 76.88 | 99.24 | 0.20 | 0.10 |"
+  },
+  {
+    "old": "| tantan § | 25 | 17 | 0.00 | 156.0 | 658.3 | 3.3 | 0.50 |",
+    "new": "| tantan § | 25 | 17 | 0.00 | 156.0 | 658.3 | 3.3 | 0.48 |"
+  },
+  {
+    "old": "| tantan § | 17 | 56.51 | 0.00 | 59.5 | 1.4 | 0.50 |",
+    "new": "| tantan § | 17 | 56.51 | 0.00 | 59.5 | 1.4 | 0.37 |"
+  },
+  {
+    "old": "at 0.09 GiB, so on this assembly it detects the arrays at roughly three-tenths of BWTandem's wall clock and one twenty-fourth of its memory.",
+    "new": "at 0.10 GiB, so on this assembly it detects the arrays at roughly three-tenths of BWTandem's wall clock and about one twenty-third of its memory (ratios from unrounded accounting)."
+  },
+  {
+    "old": "tantan's 0.09 GiB the smallest.",
+    "new": "tantan's 0.10 GiB below it; the two longdust runs are smaller still at 0.06 GiB."
+  },
+  {
+    "old": "roughly three and a third times the wall clock and twenty-four times the memory.",
+    "new": "roughly three and a third times the wall clock and twenty-three times the memory (from unrounded accounting)."
+  },
+  {
+    "old": "Its runtime was measured on a shared node and is an upper bound rather than a matched figure, but no plausible correction to it reverses the direction.",
+    "new": "Its runtime was measured on a shared node under a different period ceiling, so this is an observed cost comparison rather than a matched measurement."
+  },
+  {
+    "old": "AniAnn's is also band-invariant, at 99.15% in both windows — the highest banded recall of any tool here, above TRF's 97.55% and above BWTandem in both bands — with 19 of its 60 array-level calls falling inside 150–200 bp.",
+    "new": "AniAnn's is also band-invariant, at 99.15% in both windows, above TRF's 97.55% and BWTandem in both bands, but below ULTRA in the wider band. The two TRASH outputs each reach 99.39% in both bands; they lead the narrow band, while ULTRA leads the wider band. AniAnn's has 19 of its 60 array-level calls inside 150–200 bp."
+  },
+  {
+    "old": "the smallest banded losses among the four tools with banded rows here (TRASH is shown unfiltered only; its banded losses, 0.32 and 18.42, are smaller on knob180 and far larger on TR-1)",
+    "new": "the smallest knob180 loss among the four tools with banded rows here; on TR-1 it loses more than TRF on knob180 but less than TRF's TR-1 loss"
+  },
+  {
+    "old": "the smallest knob180 loss among the four tools with banded rows here; on TR-1 it loses more than TRF on knob180 but less than TRF's TR-1 loss",
+    "new": "the smallest losses among the four tools with banded rows here in each class"
+  },
+  {
+    "old": "The 2026 tools are unfiltered-only throughout (Section 2.2.4): longdust has no period column and AniAnn's periodicity is array-level, so neither can enter the banded rule.",
+    "new": "The deposited maize scoring run includes only unfiltered results for the 2026 tools (Section 2.2.4). longdust has no period column; AniAnn's has an array-level period, as used in the human and CEN180 panels, but no maize banded scoring artifact is deposited here."
+  },
+  {
+    "old": "A coordinate-only post-merge exposes the contiguity/boundary trade-off on the regenerated BED.",
+    "new": "A coordinate-only post-merge exposes the contiguity/boundary trade-off on the regenerated BED. Its gap-zero baseline first merges overlapping or touching calls and then measures offsets from the outer endpoints of merged intervals intersecting each truth array. Table 3B instead uses the outer endpoints of raw calls that directly intersect each array. A merged interval can extend through a chain of calls outside the truth boundary, so these are different call sets even at gap zero; the TR-1 baselines are 4,282 bp after coordinate merging and 770.65 bp on raw calls."
+  },
+  {
+    "old": "BWTandem is within 0.13 percentage points of the original comparison's best coverage",
+    "new": "BWTandem is 0.14 percentage points below the original comparison's best coverage"
+  },
+  {
+    "old": "The top three sit within 0.18 points of each other",
+    "new": "The top three span approximately 0.18 points"
+  },
+  {
+    "old": "Across the three maize classes BWTandem is therefore within the leading group on coverage in all three without leading any of them outright",
+    "new": "Among the original tools at their differing execution ranges, BWTandem is therefore within the leading group on unfiltered coverage in all three maize classes without leading any of them outright; AniAnn's has higher coverage in every class"
+  },
+  {
+    "old": "against at most 1.54 points for TRF and 2.82 for ULTRA across the same three classes, and 0.34 or less for TRASH on knob180 and CentC though 18.57 on TR-1 (Tables 3B-b and 3C-b).",
+    "new": "against maximum losses that round to 1.54 points for TRF and 2.82 for ULTRA across the same three classes; TRASH loses 0.34 on knob180, 0.03 on CentC and 18.57 on TR-1 (rounded from the unrounded coverages; Tables 3B-b and 3C-b)."
+  },
+  {
+    "old": "TRF leading BWTandem by 15.18, 26.90 and 16.92 points",
+    "new": "TRF leading BWTandem by 15.17, 26.90 and 16.92 points (differences rounded from the unrounded coverages)"
+  },
+  {
+    "old": "| AniAnn's (2026) | 17 | 81.42 | 0.22 | 14,917 | 1.57 | 0.55 |",
+    "new": "| AniAnn's (2026) | 17 | 81.42 | 0.21 | 14,917 | 1.57 | 0.55 |"
+  },
+  {
+    "old": "ordered by coverage for readability, Section 3.3.3 does not read the order as a ranking",
+    "new": "with the original rows ordered by coverage and the 2026 additions appended; Section 3.3.3 distinguishes their coverage from boundary accuracy"
+  },
+  {
+    "old": "\t\tTable 3B. Satellite array detection (knob180 and TR-1) in the Zea mays Mo17 genome, scored without a period filter for every tool; Table 3B-b gives both rules. Frag. Score is the normalized fragmentation score. On the regenerated BED, the corresponding banded offsets are 4,265 bp and 7,973 bp; all BWTandem accuracy cells in Tables 3B and 3B-b come from the same regenerated file. TRASH reports fixed analysis windows rather than repeat intervals, 14–18% of them carrying no identified repeat, so its fragmentation score and boundary offsets measure window geometry rather than call contiguity; dropping the empty windows moves its coverage by at most 0.20 points. ¶ ULTRA's detections were lost to the conversion fault of Table 3A, and its cost cells had been copied from the microsatellite experiment; the satellite-experiment values are shown. § The tantan row is a re-run at a 500 bp window, matching the cap already applied to TRF and ULTRA for this experiment; at its default 100 bp window tantan detected 24 of 25 knob180 arrays at 1.39% coverage and all 17 TR-1 arrays at 1.58%, with offsets of 7,065 and 5,616 bp. A 200 bp re-run covers knob180 better (74.96%) and TR-1 worse (11.25%) than the 500 bp run tabulated here; we report the window matched to the experiment's band rather than the window best for each class, and give both so the choice is visible. Its runtime cell comes from a node shared with unrelated jobs and is not comparable with the other rows. As in Table 3A, runtimes and search ranges are not like-for-like: BWTandem searched 1–2,000 bp while TRF, ULTRA and the re-run tantan were capped at 500 bp, and unfiltered coverage can only rise with range.",
+    "new": "\t\tTable 3B. Satellite array detection (knob180 and TR-1) in the Zea mays Mo17 genome, scored without a period filter for every tool; Table 3B-b gives both rules. Frag. Score is the normalized fragmentation score. On the regenerated BED, the corresponding banded offsets are 4,265 bp and 7,973 bp; all BWTandem accuracy cells in Tables 3B and 3B-b come from the same regenerated file. TRASH reports fixed analysis windows rather than repeat intervals, 14–18% of them carrying no identified repeat, so its fragmentation score and boundary offsets measure window geometry rather than call contiguity; dropping the empty windows moves its coverage by at most 0.20 points. ¶ ULTRA's detections were lost to the conversion fault of Table 3A, and its cost cells had been copied from the microsatellite experiment; the satellite-experiment values are shown. § The tantan row is a re-run at a 500 bp window, matching the cap already applied to TRF and ULTRA for this experiment; at its default 100 bp window tantan detected 24 of 25 knob180 arrays at 1.39% coverage and all 17 TR-1 arrays at 1.58%, with offsets of 7,065 and 5,616 bp. A 200 bp re-run covers knob180 better (74.96%) and TR-1 worse (11.25%) than the 500 bp run tabulated here; we report the window matched to the experiment's band rather than the window best for each class, and give both so the choice is visible. Its runtime cell comes from a node shared with unrelated jobs and is not comparable with the other rows. As in Table 3A, runtimes and search ranges are not like-for-like: BWTandem searched 1–2,000 bp while TRF, ULTRA and the re-run tantan were capped at 500 bp, and filtering a fixed output can only reduce its coverage, while a native rerun at a different ceiling can change the call set in either direction."
+  },
+  {
+    "old": "\t\t Table 3C. CentC centromeric array detection in the Zea mays Mo17 genome, scored without a period filter for every tool and with the original rows ordered by coverage and the 2026 additions appended; Section 3.3.3 distinguishes their coverage from boundary accuracy. BWTandem was previously reported at 41.54% coverage and a 3,051 bp offset under a 100–200 bp filter applied to that row alone. Coverage is computed on merged intervals. Runtimes and search ranges are not like-for-like: BWTandem searched 1–2,000 bp while TRF and ULTRA were capped at 200 bp, and unfiltered coverage can only rise with range. ¶ ULTRA as in Table 3B; its centromeric-experiment cost was 12 h 51 m and 3.38 GiB. § The tantan row is a re-run at a 200 bp window, matching the cap already applied to TRF and ULTRA for this experiment; at its default 100 bp window tantan covered 1.10% of the arrays with a 9,244 bp mean offset. A 500 bp re-run gives 55.44% coverage, slightly below the 200 bp run tabulated here. Its runtime cell comes from a shared node and is not comparable with the other rows. ‖ TRASH is reported in template mode only: the de novo run did not complete on this experiment, and the file previously presented as its output is byte-identical to the template output.",
+    "new": "\t\t Table 3C. CentC centromeric array detection in the Zea mays Mo17 genome, scored without a period filter for every tool and with the original rows ordered by coverage and the 2026 additions appended; Section 3.3.3 distinguishes their coverage from boundary accuracy. BWTandem was previously reported at 41.54% coverage and a 3,051 bp offset under a 100–200 bp filter applied to that row alone. Coverage is computed on merged intervals. Runtimes and search ranges are not like-for-like: BWTandem searched 1–2,000 bp while TRF and ULTRA were capped at 200 bp, and filtering a fixed output can only reduce its coverage, while a native rerun at a different ceiling can change the call set in either direction. ¶ ULTRA as in Table 3B; its centromeric-experiment cost was 12 h 51 m and 3.38 GiB. § The tantan row is a re-run at a 200 bp window, matching the cap already applied to TRF and ULTRA for this experiment; at its default 100 bp window tantan covered 1.10% of the arrays with a 9,244 bp mean offset. A 500 bp re-run gives 55.44% coverage, slightly below the 200 bp run tabulated here. Its runtime cell comes from a shared node and is not comparable with the other rows. ‖ TRASH is reported in template mode only: the de novo run did not complete on this experiment, and the file previously presented as its output is byte-identical to the template output."
+  },
+  {
+    "old": "(197 times the wall clock, 98 times the core-hours)",
+    "new": "(197 times the wall clock, 98.5 times the core-hours)"
+  },
+  {
+    "old": "ULTRA needed 10.1 hours once raised to a 500 bp maximum, 15 times BWTandem's single pass.",
+    "new": "ULTRA needed 10.1 hours once raised to a 500 bp maximum, 15 times BWTandem's single pass. These runs consumed the same assembly but searched different period ranges; their observed costs are not a range-matched comparison."
+  },
+  {
+    "old": "The outside-catalog fraction is unchanged by whether the periodicity pass is enabled: the P run's unique calls are likewise 91.3% outside the catalog.",
+    "new": "The outside-catalog fractions of the two configurations both round to 91.3%: this also holds for the P run's unique calls."
+  },
+  {
+    "old": "SLURM job 6146229, repository commit `43543da`, deposited under `results/one_to_one/`; mreps is not scored on human",
+    "new": "SLURM job 6146229, repository commit `43543da`, with the corrected TRF annotation-period arm from scorer commit `903245c`, deposited under `results/one_to_one/`; mreps is not scored on human"
+  },
+  {
+    "old": "SLURM job 6146343, metric-identical to the deposited arm",
+    "new": "SLURM job 6146343, identical for matching and stratum counts; its pre-fix TRF period statistics are superseded by the corrected unsplit JSON"
+  },
+  {
+    "old": "the paper's evidence above 500 bp is the satellite experiments (Tables 2, 3B–3C) and the prediction-side stratum of Table 1c.",
+    "new": "the satellite panels and Table 1c contain predictions above 500 bp, but neither is a truth-period stratum validating period assignment above that ceiling."
+  },
+  {
+    "old": " Figure 1. Detection performance on human GRCh38 against the GIAB adotto benchmark, restricted to periods of 100 bp or less so that every tool is scored over a range it searched. (a) Region level, (b) base pair level. BWTandem appears as a line connecting its four operating points, P to H, since its sensitivity is set at run time; the line is a visual guide only, the configurations differ in more than one parameter (Table 1d), so intermediate positions on it are not directly achievable. The other tools each occupy a single point. P disables the optional periodicity pass. The figure is rendered from the regenerated native period-100 values in `results/figures/figure_curve_data.csv` (SLURM jobs 6141841 and 6143150, commit `0363d8b`); the withdrawn earlier-build CSV, renderer, PNG and PDF are retained only under filenames containing `superseded`.",
+    "new": " Figure 1. Human GRCh38 performance against the GIAB adotto catalog. (A) Region and (B) base-pair precision–recall: BWTandem's four native period-100 operating points P–H are connected as a visual guide, and the original competitor points use the ≤100 bp output band. Intermediate positions are not measured configurations. The 2026 points use their full-range outputs and are not matched to that band. (C) Region recall at ≤100 bp under one-base, 25% reciprocal and 50% reciprocal overlap. Here BWTandem is the full-range output filtered post hoc, as in Table 1b; ULTRA is first and BWTandem second among the plotted rows under all three rules. The 2026 tools are not plotted in C; AniAnn's has a deposited one-base banded row in Table 1b, while its reciprocal-band scores are not deposited. Source CSVs are `results/figures/paper_figs/data/fig1ab_pr_points.csv` and `fig1c_overlap_rules.csv`; A/B's BWTandem points derive from `results/figures/figure_curve_data.csv`. Execution range and FASTA scope remain distinct as described in Table 1b."
+  },
+  {
+    "old": "The human paired range-cost ratio is therefore measured for BWTandem alone.",
+    "new": "The human paired range-cost ratio is therefore measured for BWTandem alone. Figure 2 shows the paired measurements and the separate cross-tool cost observations.\n\n Figure 2. (A) Paired human range-cost measurements at commit `0363d8b`: widening the maximum period from 100 to 2,000 bp gives ratios of 1.77–1.82 (mean 1.79), computed from per-arm elapsed seconds. (B) Observed maize ULTRA and TRF runtimes at their three period ceilings. (C) Human wall-time-based core-hour allocations and peak memory. These cross-tool observations differ in period range; the original ULTRA/TRF FASTA includes unplaced sequence, while the 2026 inputs match BWTandem's chromosome-only scope. BWTandem memory is the cgroup peak and the 2026 memory is GNU-time RSS. Sources: `results/figures/paper_figs/data/fig2a_paired_runs.csv`, `fig2b_maize_scaling.csv` and `fig2c_human_cost.csv`."
+  },
+  {
+    "old": "These calls should therefore be read as predominantly over-calls under the stated criterion, not as undiscovered repeats (Section 4.4).",
+    "new": "These calls should therefore be read as predominantly over-calls under the stated criterion, not as undiscovered repeats (Section 4.4). Figure 3 shows the identity sweep and the audit counts.\n\n Figure 3. (A) The full-range identity sweep of Supplementary Table S3, evaluated on the catalog used to choose the operating point. (B) Single-reader verdicts for 100 calls per period stratum: 4 supported, 346 unsupported and 50 unsure. The 1.0% proportion is 4/400; excluding unsure calls gives 4/350, or 1.1%, with the descriptive Wilson 95% interval 0.4–2.9%. Equal sampling across strata does not make this a population-weighted estimate. Sources: `results/figures/paper_figs/data/fig3a_idsweep.csv` and `fig3b_audit.csv`."
+  },
+  {
+    "old": "we did not tabulate the periods the moved-window arm accepted.",
+    "new": "we did not tabulate the periods the moved-window arm accepted. Figure 4 places the unfiltered plant measurements beside the maize band losses.\n\n Figure 4. (A) Col-CEN coverage and monomer recall for the plotted subset of Table 2. (B) Unfiltered maize coverage, including the higher-coverage AniAnn's rows. Execution ceilings differ across tools. (C) Coverage changes under the 100–500 bp knob180/TR-1 bands and the 100–200 bp CentC band, computed before rounding. TRASH and the 2026 tools are absent from C; the 2026 maize banded scores are not deposited. Sources: `results/figures/paper_figs/data/fig4a_colcen.csv`, `fig4b_maize_coverage.csv` and `fig4c_band_filter_delta.csv`."
+  },
+  {
+    "old": "A user who needs contiguity should therefore stop well before that point.",
+    "new": "A user who needs contiguity should therefore stop well before that point. Figure S2 plots this coordinate-only sweep.\n\n Figure S2. Coverage, boundary offset and calls per detected array after coordinate-only merging of the regenerated maize output. Gap zero already merges overlapping or touching calls and therefore differs from Table 3B's raw-call offset baseline. Source: `results/figures/paper_figs/data/figS2_postmerge.csv`, derived from `results/regen/maize_extra_evidence.json`."
+  },
+  {
+    "old": "The superseded operating-point values are not carried forward.",
+    "new": "The superseded operating-point values are not carried forward. Figure S1 shows the chromosome-subset sensitivity analysis for the post-filtered full-range output.\n\n Figure S1. Region recall and precision at ≤100 bp on the 22 non-selection chromosomes, chr21/22, and all 24 chromosomes. The BWTandem series is the full-range output filtered after detection, not one of the native period-100 operating points. ULTRA, BWTandem and tantan retain their recall ordering across these subsets; these are post-selection checks. Source: `results/figures/paper_figs/data/figS1_subset_sensitivity.csv` and the three deposited `heldout_*.txt` reports."
+  },
+  {
+    "old": "\t\t 4. Discussion",
+    "new": "Selected intervals from the deposited calls illustrate internal self-similarity (Figure 5); these examples do not measure period-assignment accuracy or establish species-wide higher-order structure.\n\n![Figure 5: self-similarity of selected repeat intervals](results/figures/paper_figs/rendered/fig5_array_structure.png)\n\n Figure 5. Self-similarity in three intervals drawn from deposited BWTandem calls: human chr1:122,257,803–122,317,803, Arabidopsis Chr4:4,985,644–5,045,644, and maize CM039157.1:53,652,014–53,678,133 (BED coordinates). The first two are 60 kb excerpts; the maize interval is the full 26,119 bp call. Their reported motif lengths are 1,866, 178 and 155 bp. Left: shared canonical 13-mer containment, |A∩B|/min(|A|,|B|), between 1,000 bp windows sampled every 250 bp; this is a k-mer similarity statistic, not aligned nucleotide identity. Height is half the separation between window starts, so a feature at height h corresponds to separation 2h. Right: exact forward-strand 21-mer self matches sampled at the panel-specific strides. These are selected illustrations, not a systematic comparison of species or an independent validation of the reported motifs. Source: `results/figures/paper_figs/plot_fig5_array_structure.py`, whose `REGIONS` entries identify the FASTAs and intervals.\n\n\t\t 4. Discussion"
+  }
+]

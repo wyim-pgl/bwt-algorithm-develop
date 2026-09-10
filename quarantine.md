@@ -1,6 +1,6 @@
 # quarantine.md — BWTandem 격리 대장
 
-> 📌 **정본**: 이 파일이 "**쓰면 안 되는 것**"의 유일한 정본이다. 최종 갱신 **2026-09-04**.
+> 📌 **정본**: 이 파일이 "**쓰면 안 되는 것**"의 유일한 정본이다. 최종 갱신 **2026-09-10** (§1.4·§3.7 마커·§3.11–3.15·§8.8 추가).
 
 ## 이 파일에 무엇을 두는가
 
@@ -93,6 +93,26 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 
 ---
 
+### 1.4 ASTRA 리뷰 P3 실행 — 중단됨 (2026-09-05)
+
+- **무엇**: GPT-6-Astra(Codex 0.153.4) 4패스 리뷰 중 **P3(Results·표)** 실행. 원고 편집 46건을
+  적용한 뒤 21:41 마지막 exec — `bedtools intersect -v -a <human TRF BED> -b <BWTandem, ULTRA,
+  tantan, TRASH BED>` — 에서 로그가 끊겼다. 보고서(`pass3-*.md`)는 생성되지 않았다.
+- **왜**: 호스트 Claude 세션 잡 `6147604`(`run-claude-container`, 4 GB 요청, cpu-51)가
+  2026-09-06 06:49:57 에 `OUT_OF_MEMORY` 로 종료됐다(`sacct -j 6147604`). 마지막 명령이 전장
+  BED 위 intersect 였으므로 그것이 유력 원인이나, **sacct 는 원인 프로세스를 지목하지 않는다** — 추정이다.
+- **언제**: 2026-09-05 21:41 (로그 정지) → 2026-09-06 06:49 (잡 종료).
+- **대체물**: 보고서 **없음**. 남은 산출물은 `docs/2026-09-05-astra-review/pass3-edits.json`(old/new
+  46쌍, 45건이 `manuscript.md` 에 존재), `pass3-table-cells{,-before}.tsv`, `pass3-*.json`, `pass3.log`.
+  ~~복구 방식(재구성 vs 재실행)은 `todo.md` §0-1 의 저자 결정.~~ ✅ **결정 (2026-09-10, 저자): (a) 산출물로 재구성** — `pass3-results-tables.md` (같은 날 완료; 근거 미복구 편집 5건은 P3-16). 재실행 규칙 §8.8 은 장래 참조용.
+  원고 치환은 **46건 순차 적용**이며(`pass3.log:7925`), 21번째 결과를 22번째가 다시 치환해 최종 문자열이 45개다 — "45건 적용" 은 미적용 1건을 뜻하지 않는다. JSON 밖 후속 수정 1건(`pass3.log:8123`, `manuscript.md:496`)도 P3 몫이다 (Codex 장부 리뷰 L-01·L-02).
+- **근거**: `pass3.log` 끝 3 KB; `~/.codex/sessions/2026/09/05/rollout-2026-09-05T21-26-51-*.jsonl`
+  (마지막 레코드가 `custom_tool_call_output`, `task_complete` 없음); `sacct -j 6147604 -o State,MaxRSS,ReqMem,End`.
+- ⚠️ **쓰면 안 되는 주장**: "ASTRA 4패스 완료", "P3 보고서". P1·P2 만 완료다. P3 의 원고 편집 45건은
+  **보고서 없는 편집**이므로 근거 대조(`todo.md` §0-1) 전에는 채택된 것으로 인용하지 않는다.
+
+---
+
 ## §2 수치 — 값이 바뀐 것
 
 | 대상 | 폐기값 | 대체값 | 왜 / 근거 |
@@ -100,6 +120,7 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 | Col-CEN 비용 | 0.31 h / 1.31 GB | **0.51 h / 1.95 GB** | 잘못된 배열 + per-worker 메모리 |
 | human 비용 | 7.4 h / 12.99 GB | **12.1 h / 21.86 GB** | 〃 |
 | maize 비용 | 6.6 h / 14.37 GB | **15.4 h / 22.41 GB** | 〃 |
+| ❌ SUPERSEDED (2026-09-10) 위 3행의 "대체값" | 0.51 / 12.1 / 15.4 h, 1.95 / 21.86 / 22.41 GB | **0.67 / 12.65 / 15.85 h, 2.16 / 28.08 / 28.45 GiB** (잡 `6110900`/`6110901`/`6124640`) | 그 대체값도 이전 세대(5983792/93/94)다. 현행 원고 헤드라인은 재생성 실행이며 `pass1-evidence.md` P1-09(:190–194)·`results/sacct_provenance.txt` 가 근거 (Codex 장부 리뷰 L-06) |
 | chr22 region recall | 84.50 | **84.38** | align_accel 수정 (§1.2) |
 | chr22 region precision | 52.34 | **52.74** | 〃 |
 | Col-CEN CEN180 count | "1,380 → 21로 붕괴" | **1,380 (변화 없음)** | 스코어링 버그(§8.1), 붕괴는 허상 |
@@ -110,7 +131,7 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 | range-cost 비율 (human) | 1.30 / 1.30 / 1.41, 평균 1.34 | **1.82 / 1.77 / 1.77, 평균 1.79** | 발표값은 `07ad6fa` — 좁은 arm 이 버릴 탐색을 수행 (§6.17) |
 | range-cost p100 런타임 | 6.61 / 6.58 / 5.50 h | **4.02 / 4.11 / 4.02 h** | 〃 |
 | range-cost p2000 런타임 | 8.61 / 8.58 / 7.75 h | **7.31 / 7.28 / 7.13 h** | 〃 |
-| range-cost p100 런타임 | 6.61 / 6.58 / 5.50 h (`07ad6fa`) | **4.02 / 4.11 / 4.02 h** (`0363d8b`) | 좁은 arm의 Tier 3 장주기 탐색이 실제로 제거됨(§6.17) |
+| range-cost p100 런타임 (위 행과 동일 사실; 커밋 구분만 추가) | 6.61 / 6.58 / 5.50 h (`07ad6fa`) | **4.02 / 4.11 / 4.02 h** (`0363d8b`) | 좁은 arm의 Tier 3 장주기 탐색이 실제로 제거됨(§6.17) |
 | range-cost p2000 런타임 | 8.61 / 8.58 / 7.75 h (`07ad6fa`) | **7.31 / 7.28 / 7.13 h** (`0363d8b`) | 같은 릴리스 빌드 재측정(§6.17) |
 | range-cost 비율 | 1.30 / 1.30 / 1.41 (평균 1.34) | **1.82 / 1.77 / 1.77 (평균 1.79)** | 20× 범위 확장은 여전히 선형 미만이지만 near-flat은 아님(§6.17) |
 
@@ -125,6 +146,14 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 | Table 2 longdust 메모리 ×2 | 0.07 GB | **0.06** | §6.4 |
 | Table 2 AniAnn's Col-CEN 메모리 | 0.50 GB | **0.48** | §6.4 |
 | gap-fill 유효염기 게이트 | 70% | **80%** (catch-all 도 동일) | §6.21 |
+
+### 2026-09-10 적용분 — 소수점 두 자리 통일 후 반올림 규약 변경
+
+| 대상 | 폐기값 | 대체값 | 이유 |
+|---|--:|--:|---|
+| BWTandem 인간 전장 런타임 (Table 1a, 본문 4곳) | 12.6 → (같은 날 잠시) 12.64 | **12.65 h** | 12.645 h(sacct 6110901.batch 45,522 s)를 float `:.2f` 로 찍으면 12.64. 저자 결정으로 **decimal half-up** 채택 |
+| TRASH (de novo) maize 런타임 (Table 3B) | 58.8 → 58.84 | **58.85 h** | 58.845 h, 같은 이유 |
+| 1자리 측정값 59셀 + 본문 29곳 | 1자리 | 2자리 (`docs/2026-09-10-precision/precision-edits.json`, 88건) | 예치물에서 재계산; mreps/tantan 0.9 → 0.91/0.86, TRF maize 5.5/5.5 → 5.51/5.48. **S2 여섯 셀(38.9/46.4, 13.2/24.8, 21.9/6.1)은 원천 요약이 1자리라 되돌렸다** — 자릿수 덧붙이기 금지 (Codex 장부 리뷰 L-09) |
 
 **메모리 단위 주의**: 위 GB 표기는 `sacct MaxRSS`의 KiB를 1024²로 나눈 값이므로 **GiB**다.
 원고·증거 트리 전반의 "GB" 표기는 §6.4 참조.
@@ -159,7 +188,7 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
   같은 것은 자기보고 **버전 문자열**뿐이다.
 - **언제**: 2026-09-02 자체 감사(`24cd12a`), 검증 `ccf04dd`.
 - **대체물**: "self-reported-version-matched", 또는 "invocation- and input-matched".
-- ⚠️ **미완**: 원고는 고쳤지만 `results/manifest.tsv:67`에 원문이 남아 있다 → §6.2.
+- ⚠️ **미완**: 원고는 고쳤지만 `results/manifest.tsv:67`에 원문이 남아 있다 → §6.2. ✅ (2026-09-04) §6.2 적용됨 — 네 주장 전부 교체 (`todo.md` A-2 §6.2).
 
 ### 3.5 "the matched measurement" (환경 매칭) — 아님
 
@@ -176,13 +205,16 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 
 ### 3.7 "the arrays it recovers lie inside regions the other phases already touch"
 
+> ✏️ **PARTIAL → 완료 (2026-09-05, ASTRA P2):** 이 설명은 Discussion 에서 이미 철회됐고, P2 가 **Methods 에서도 제거**했다.
+> 원고 어디에도 남아 있지 않아야 한다 — `grep -n "already touch" manuscript.md` 가 0 이어야 정상.
+
 - **왜**: 해당 모드가 "every run reported here"에서 **비활성**이라고 같은 문장이 말한다.
   근거가 되는 실행이 보고되지 않았다. (Kimi 라운드 1, manuscript.md:62)
-- **대체물**: 없음 — 수치를 부록에 넣거나 문장을 삭제. **미적용 상태.**
+- **대체물**: 없음 — 수치를 부록에 넣거나 문장을 삭제. ~~**미적용 상태.**~~ ✅ Discussion 에서 철회, Methods 에서도 제거 (위 배너, P2, 2026-09-05).
 
 ### 3.8 catch-all 식별도 0.72 를 평가 벤치마크 위에서 골랐다
 
-> ✏️ **PARTIAL (2026-09-03, `d580840`, 저자 결정 (a)):** 본문 S3 에 "0.72 는 in-sample 운영점" 명시 (커밋은 아래 §3.9 와 동일). **원장 예치는 미완** — `results/` 를 건드리므로 A-2 재해시와 함께 처리한다.
+> ✏️ **PARTIAL (2026-09-03, `d580840`, 저자 결정 (a)):** 본문 S3 에 "0.72 는 in-sample 운영점" 명시 (커밋은 아래 §3.9 와 동일). ~~**원장 예치는 미완**~~ ✅ (2026-09-03, `e4ae632`) `results/tuning_ledger/` 에 예치됨. 예치 완료와 "최종 선택 규칙 추적 가능" 은 다르다 — 잔여는 `todo.md` §0-2 P1-13 (L-17).
 
 - **무엇**: 운영점 `CATCHALL_MIN_IDENTITY=0.72`.
 - **왜**: 부록 S3가 스스로 밝힌다 — 스윕이 "scored with the Table 1a pipeline"으로,
@@ -194,11 +226,11 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
   스파이크 집기는 아니다.
 - **대체물**: 없음 — 다만 **선택과 무관한 증거 1개**가 필요하다(maize/Arabidopsis 진실셋이나
   보류된 human 염색체 부분집합에서 0.72 확인). 부록이 아니라 **본문**에 선정 경위를 밝힐 것.
-- **근거**: `manuscript.md:508, 475, 479`. (Kimi 라운드 3, R3c#2 — 미조치)
+- **근거**: `manuscript.md:508, 475, 479`. (Kimi 라운드 3, R3c#2 — ~~미조치~~ ✏️ 2026-09-10: 최소 공개 (a) 는 위 배너대로 적용됨; "선택과 무관한 증거 1개" 는 채택되지 않은 요구이며 `todo.md` 에 없다)
 
 ### 3.9 "selected empirically on chromosomes 21 and 22" — 캠페인 규모가 공개되지 않았다
 
-> ✏️ **PARTIAL (2026-09-03, `d580840`, 저자 결정 (a)):** 본문 2.2.3 에 캠페인 규모(44건), 코드변경 포함, 관찰 후 accept/reject, ULTRA 표적, 22번 염색체는 post-selection validation 임을 명시. **원장 예치 미완**.
+> ✏️ **PARTIAL (2026-09-03, `d580840`, 저자 결정 (a)):** 본문 2.2.3 에 캠페인 규모(44건), 코드변경 포함, 관찰 후 accept/reject, ULTRA 표적, 22번 염색체는 post-selection validation 임을 명시. ~~**원장 예치 미완**~~ ✅ (2026-09-03, `e4ae632`, `results/tuning_ledger/`).
 
 - **무엇**: 설정 선택 경위에 대한 원고의 유일한 서술.
 - **왜**: 외부 원장 `exp1_human/loop/ledger.tsv` 에 **채점된 설정 평가 44건**이 있고(헤더 포함 45행),
@@ -210,7 +242,7 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
   공개하지 않는다. 원장과 `best.json` 은 **저장소 밖에 있다.**
 - **대체물**: 평가 설정 수, 코드변경 대 파라미터전용 구분, 최초·수정 목표, 경쟁도구 표적,
   수용/중단 규칙, 최종 선택 규칙을 명시하고 원장을 예치할 것. 22번 염색체 결과는
-  **선택 후 검증(post-selection validation)** 으로 서술할 것. **미조치.**
+  **선택 후 검증(post-selection validation)** 으로 서술할 것. ~~**미조치.**~~ ✏️ (2026-09-10) 본문 공개·원장 예치는 완료(위 배너); pending 17건의 사후 판정은 기록 없이 만들지 않는다 — 잔여는 `todo.md` §0-2 P1-13.
 - **근거**: `manuscript.md:94`; `exp1_human/loop/{ledger.tsv,best.json}`;
   `docs/superpowers/plans/2026-06-23-exp1-recall-loop.md`. (Codex 라운드 1, 발견 2)
 - 🔗 [[3.8]] 과 같은 뿌리다 — 3.8은 임계값 하나, 이것은 캠페인 전체.
@@ -227,8 +259,68 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
   즉 제출된 Table 2 설정은 **목표 평가 지표를 본 뒤** 불리한 precision을 피하려고 선택됐다.
   보류된 Arabidopsis 위성 진실셋은 없고, catch-all-on 의 현재 빌드 행도 예치돼 있지 않다.
 - **대체물**: 없음 — Col-CEN을 튜닝 데이터로 선언하고 보류셋에서 평가하거나, 최소한 Table 2에
-  두 설정을 모두 보고하고 in-sample 임을 표시할 것. **미조치.** (Codex 라운드 2 발견 2)
+  두 설정을 모두 보고하고 in-sample 임을 표시할 것. ~~**미조치.**~~ ✅ 최소 공개 (a) 채택 (2026-09-03, `d580840`, C-11: S2 에 65.54 vs 60.72 와 보류셋 부재 명시). 보류셋 평가는 채택하지 않았다 — 원하면 `todo.md` 에 새 항목으로 (L-17). (Codex 라운드 2 발견 2)
 - 🔗 [[3.8]] [[3.9]] 와 같은 계열 — 세 게놈 중 둘에서 같은 패턴이 확인됐다.
+
+---
+
+### 3.11 "시딩은 occurrence 에서 후보 주기를 선형 비용으로 읽으며 서열 스캔이 없다" / "suffix 구성은 실제로 near-linear" — 폐기 (2026-09-05, ASTRA P2-01)
+
+- **무엇**: Methods 의 시딩 비용 문장(옛 `manuscript.md:46`)과 S1.5 의 체크포인트 저장 추정(옛 :459).
+- **왜**: `bwtandem/bwt_seed.py:177–195` 는 서열을 **샘플링**하고 k-mer 를 캐시한다; `:232` 는 occurrence 를
+  **정렬**한다(O(occ log occ)). rank/search 의 O(k) 는 고정 체크포인트 간격에서만 성립하고 SA 슬라이스 추출은
+  O(occ). "near-linear in practice" 는 측정된 적이 없는 주장이었다.
+- **대체물**: 현행 §2 문구 — 유도된 per-query 상계, 샘플링과 정렬을 분리해 서술, 체크포인트 추정은 한정.
+  인용된 suffix 구성 복잡도는 **문헌 상계**로만 남긴다.
+- **근거**: `docs/2026-09-05-astra-review/pass2-methods-vs-code.md` P2-01;
+  `nl -ba bwtandem/bwt_seed.py | sed -n '177,238p'`.
+
+### 3.12 "anchor verification 이 메가베이스 배열의 이차(quadratic) DP 비용을 피한다" — 폐기 (2026-09-05, ASTRA P2-06)
+
+- **무엇**: 옛 `manuscript.md:68` 과 S1.3(:451) 의 Tier 3 비용 서술.
+- **왜**: per-copy DP 는 **주기(period)에 이차**이고 카피 수에는 선형이다 — 배열 길이에 이차가 아니다.
+  `c_extensions/align_accel.c:59–107` 은 전폭 traceback 행렬을 유지하고, `tier3.py:184–195` 의 anchor 분기는
+  처음 20 카피까지만 consensus 를 만들며 `refine_repeat` 를 호출하지 않는다. 옛 문장은 없는 비용을 피한다고 말했다.
+- **대체물**: 현행 §2·S1.3 — semi-global edit-distance, 고정 refinement mismatch 0.20/indel 0.10, anchor consensus
+  샘플링(≤20 카피), primitive refinement 부재를 명시. "banded Smith-Waterman"(CLAUDE.md) 과 "Needleman-Wunsch"(옛 원고)
+  라벨도 모두 부정확 — `todo.md` §0-3 P2-18.
+- **근거**: pass2 P2-06; `git show 0363d8b:src/tier3.py | nl -ba | sed -n '172,242p'`.
+
+### 3.13 자기상관 identity = raw equalities/(w−p), valid-*base* 게이트, catch-all 종점 = 마지막 통과 창 — 폐기 (2026-09-05, ASTRA P2-08)
+
+- **무엇**: 옛 `manuscript.md:72,74,453–457` 의 보충 주기성 패스 정의.
+- **왜**: `autocorr.py:51–79` 는 valid-match / valid-comparison 을 쓰고 유효 쌍 80% 미만이면 0 을 돌려준다.
+  satellite 분절(`finder.py:611–650`)과 catch-all(`:696–738`)은 **전체 비교 창**을 분모로 쓰며 분모가 둘이다.
+  종점은 satellite `b−1+q+p`, catch-all `b+q` 로 다르다. 옛 문장은 다른 통계량을 같은 이름으로 불렀다.
+- **대체물**: 현행 §2·S1.4 — 식 교체, 분모·게이트 둘을 분리, 종점 공식 둘, 전체 염색체·주기별 스캔 공개.
+  §6.21 의 70%→80% 정정은 그대로 유지된다(이 항목은 그 값을 다시 열지 않는다).
+- **근거**: pass2 P2-08; `git show 0363d8b:src/autocorr.py | nl -ba | sed -n '43,79p'`;
+  `AAAAAAAAAAN` lag 1 에서 scalar identity 1.0 vs full-window support 0.9.
+
+### 3.14 "launch wrapper 는 스케줄링 지시만 더하며 JSON 블록이 완전한 설정이다" — 폐기 (2026-09-05, ASTRA P2-12)
+
+- **무엇**: 옛 `manuscript.md:488`.
+- **왜**: `scripts/benchmark/regen_345.sbatch:34–91` 은 인터프리터·저장소를 고정하고 탐지 env 를 export 하며
+  커밋을 검사하고 provenance 를 캡처한다. `results/range_cost_0363d8b/run_rangerep0363.sbatch:10–35` 는
+  PATH/컴파일러를 고르고 게이트를 export 한다. 어느 런처도 상속된 튜닝 변수를 전부 초기화하지 않는다.
+  JSON 명령만으로는 실행 환경이 재현되지 않는다.
+- **대체물**: 현행 문구 — 래퍼의 실제 책임 서술, 예치 런처 지시, 미지정 튜닝 변수 unset 후 재현 지시.
+  오염이 **일어났다**는 주장은 아니다. 옛 R3-4 "런처가 하나도 예치되지 않았다" 는 전체 게놈·range-pair 런처에
+  대해 더 이상 참이 아니다.
+- **근거**: pass2 P2-12; `sed -n '53,105p' scripts/benchmark/run_with_provenance.sh`.
+
+### 3.15 R3-14 REJECTED → **재개** (정정의 정정, 2026-09-05, ASTRA P2-03)
+
+- **무엇**: `docs/2026-09-03-finding-dispositions.md` R3-14 는 "`_base_freqs` 가 최대 2백만 염기를 샘플링" 이
+  참이라고 보고 REJECTED 했다. P2-03 이 **실행 증거**로 재개했다.
+- **왜**: `tier1.py:364–366` 의 stride 는 `n // 2_000_000` 의 floor 라 하드 캡이 아니다. 실제 루프 본문을
+  카운팅 객체로 실행하면 n=3,000,000 에서 **3,000,000** 위치를 방문한다. 앞선 기각은 정수 나눗셈을 캡으로 오독했다.
+- **언제**: 2026-09-05. 원 처분(REJECTED, 2026-09-03)은 dispositions 파일에 **그대로 둔다** — 지우지 않고 옆에 잇는다.
+- **대체물**: 원고에서 "up to two million bases" 수치 캡 문구 삭제(적용됨). 함께 정정: gap 은 "두 카피 간격" 이
+  아니라 **건너뛴 두 카피**(`(max_gap_copies+1)*p`), 열거는 잔여 서열만이 아니라 **전체 인덱스** 질의 후 점별 제외.
+- **근거**: pass2 P2-03; `nl -ba bwtandem/tier1.py | sed -n '359,421p;465,518p'`.
+- ⚠️ 이 항목은 §6.6·§6.9·§6.16·§6.27 의 "철회" 와 반대 방향이다 — 부재가 아니라 **실행 결과**가 근거이므로 재개가 정당하다.
+  재개 기준은 BRIEF.md "새롭고 구체적인 증거 + 어떤 항목을 왜 여는지 명시".
 
 ---
 
@@ -261,7 +353,7 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 |---|---|---|
 | 5912536 (Jul 16 배열) | 런타임 출처, **BED 출처 아님** | §1.1 |
 | 5935102 (Jul 21 배열) | 발표 BED의 출처 | 런타임은 이 배열 것을 쓸 것 |
-| 5983792/93/94 | 현행 비용 정본 | BED·시간·메모리 동일 실행 |
+| 5983792/93/94 | ~~현행 비용 정본~~ ❌ SUPERSEDED (2026-09-10): 이전 비용 세대. **현행 헤드라인은 6110900/6110901/6124640** (§2 의 09-10 행, P1-09) | BED·시간·메모리 동일 실행이었던 것은 사실 (L-06) |
 | 6146742 | **크래시한** 2026-tool 채점 실행 | 예치 전용, 인용 금지 |
 | 6147179 | 그 재실행 (정본) | |
 | 6145581 | ULTRA p2000, **저자 취소** 1 d 22 h 15 m | 완주 아님 |
@@ -270,6 +362,8 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 ---
 
 ## §6 결과 셀 — 개별 폐기 (2026-09-03 확정, **수정 미적용**)
+
+> ⚠️ **CAUTION (2026-09-10):** 이 절은 27개 **역사적** 항목이며 이제 대부분 적용됐다. 철회는 §6.6·6.9·6.16·6.27. §6.19 스코어러 3개 예치, §6.20 헤드라인 sacct 예치, §6.23 TRF JSON 교체는 완료(`todo.md` D, `e4ae632`; P1-09/P1-11), §6.25 의 그림 스텁 상태도 해소(`results/figures/paper_figs/README.md`). 각 항목의 ✅ APPLIED 배너가 현행이고, 배너 아래 "미적용/미산출/아직 그대로" 는 당시 기록이다. 남은 작업은 `todo.md` 만 본다 (Codex 장부 리뷰 L-05·L-17).
 
 > ⚠️ 아래 25건은 (§6.6·§6.16 은 오탐으로 철회, 기록은 보존) Codex 리뷰 4회(6.1-6.6, 6.17-6.26)와 Kimi 라운드 2·3(6.7-6.16)이 지적하고 **내가 실물 파일·표로 재현**한 것이다.
 > 원고·증거 트리에 **아직 그대로 있다**. 인용 금지, 수정 대상.
@@ -299,7 +393,7 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
   1,389,316 KiB → 1.3249 GiB). de novo 행은 자기 로그(5:47:30 / 1,357,252 KiB)조차 안 쓴다.
   234행 파일은 591행 파일의 **부분집합**이므로 각주의 "distinct deposited output files"도
   독립성을 오도한다.
-- **대체값**: 3개 순차 합계 **37:28:39**, 최대 RSS **2,761,680 KiB = 2.63 GiB**;
+- ~~**대체값**: 3개 순차 합계 **37:28:39**~~ ❌ SUPERSEDED (2026-09-03 적용, 마커 2026-09-10): 최종 계약은 위 배너의 **397행 합집합, 31:41:09 = 31.69 h**; de novo 5:47:30 = 5.79 h 는 별도 행. 37:28:39 는 de novo 를 포함한 폐기 계약 — 인용 금지 (L-07). 당시 문장: 최대 RSS **2,761,680 KiB = 2.63 GiB**;
   de novo 단독은 **5:47:30 / 1.29 GiB**.
 - **근거**: `/data/gpfs/assoc/pgl/filip/bwtandem_results/benchmarking_results/trash/logs/Col-CEN_v1.2_{CEN159,CEN178,denovo}_run.log`.
 - ⚠️ 각주의 "재검증 불가한 상속값"이라는 면제 사유는 `a38201b`가 로그를 찾아낸 시점에
@@ -376,7 +470,7 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
   above BWTandem".
 - **왜**: 같은 표의 손실 열이 TRF **−0.87** 로 tantan보다 작다 — 최상급이 거짓이다.
   차이값도 55.59 − 40.71 = **14.88** 이지 14.36이 아니며, 표의 어떤 조합도 14.36을 주지 않는다.
-- **대체값**: "TRF loses least (0.87); tantan 0.92" / **14.88**.
+- **대체값**: "TRF loses least (0.87); tantan 0.92" / **14.88**. ✏️ (2026-09-10) tantan 0.92 는 뒤의 R2-9(예치본 기준)로 **0.91** 재정정, 원고 현행 0.91 (L-08).
 - **근거**: `manuscript.md:298` 캡션 vs `manuscript.md:306-309` 표.
 - ⚠️ Table 3B-b(254행)의 같은 문형은 참이다(0.50 < 0.63 < 1.20) — 재검산 없이 옮겨 쓴 흔적.
 
@@ -386,7 +480,7 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 
 - **왜**: TRF의 최대 손실은 **1.54**, ULTRA는 **2.81**. "at most"는 정확한 상계이므로
   내림 반올림은 허용되지 않는다.
-- **대체값**: 1.6 / 2.9, 또는 1.54 / 2.81 을 그대로.
+- **대체값**: 1.6 / 2.9, 또는 1.54 / 2.81 을 그대로. ✏️ (2026-09-10) ULTRA 2.81 은 R2-9 로 **2.82** 재정정(예치본 뺄셈; `todo.md` A-1 R2-9, 원고 Table 3C-b·§4.4). 이 행의 2.81 을 복사하지 말 것 (L-08).
 - **근거**: `manuscript.md:280`.
 
 ### 6.9 ~~Table 1c 캡션이 네 도구, 표는 세 행~~ — ❌ **철회 (2026-09-03): 오탐이었다**
@@ -480,7 +574,7 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 
 > ✅ **APPLIED (2026-09-04, `da9e484`):** C-1 이 이것을 실증했다. `0363d8b` 재측정 결과 비율이 **1.34 → 1.79** 로 올랐고, 움직인 것은 좁은 arm(6.6 → 4.0 h)이다 — `07ad6fa` 에서 그 arm 이 장주기 탐색을 하고 버리고 있었다는 뜻이다. 원고·Figure 2·매니페스트에 반영, 옛 행은 superseded 로 보존. 증거: `results/range_cost_0363d8b/`.
 
-> ✅ **APPLIED (2026-09-04):** `0363d8b` 재측정 3쌍(잡 6147698/99/700)을 원고·매니페스트·Figure 2 소스에 적용하고, Methods 2.1.4와 S1.3을 현행 Tier 3 범위와 jitter tolerance로 교체했다. 기존 `07ad6fa` 실행은 삭제하지 않고 superseded로 표시했다. 렌더링은 별도로 남았다.
+> ✅ **APPLIED (2026-09-04):** `0363d8b` 재측정 3쌍(잡 6147698/99/700)을 원고·매니페스트·Figure 2 소스에 적용하고, Methods 2.1.4와 S1.3을 현행 Tier 3 범위와 jitter tolerance로 교체했다. 기존 `07ad6fa` 실행은 삭제하지 않고 superseded로 표시했다. ~~렌더링은 별도로 남았다.~~ ✏️ (2026-09-10) Figure 2 재렌더 상태는 P1-14 가 README 를 정정했다 — 현행은 `results/figures/paper_figs/README.md` 를 본다 (L-17).
 
 - **왜**: 현재 코드와 헤드라인 커밋 `0363d8b` 모두 `tier3_min = max(100, min_period)` /
   `tier3_max = min(100_000, max_period)` 로 CLI 인자가 **탐색 자체를 좁힌다**. 소스 주석이
@@ -568,7 +662,7 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 > 바뀌고 나머지 30개 필드는 예치본과 동일 — matched 518,719, sensitivity 29.06, precision 53.87, 층화 전부 불변.
 > **TRF period-exact = 63.53%** (Codex 보고치와 일치). 새 순위: tantan 73.54 > **TRF 63.53** >
 > ULTRA 59.61 > BWTandem 58.66 > TRASH 33.41 — BWTandem 이 3위/3에서 **4위/5**가 된다.
-> 원고 S4 표·캡션 반영 완료. **예치 JSON 교체는 `results/` 라 A-2 재해시와 함께.**
+> 원고 S4 표·캡션 반영 완료. ~~**예치 JSON 교체는 `results/` 라 A-2 재해시와 함께.**~~ ✅ (2026-09-03, `e4ae632`) JSON 교체 완료, P1-11 확인.
 >
 > ⚠️ **이 버그가 살아남은 이유**: 통과하는 테스트가 옛 동작을 고정하고 있었다 —
 > `test_pred_motif_is_sequence_disables_period_metric` 이 `scored_pairs == 0` 을 단언했고,
@@ -584,7 +678,7 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 - **영향**: Codex가 같은 518,719 쌍에 5열을 제대로 읽어 재계산한 값은 TRF **63.53% exact** —
   BWTandem 58.66%, ULTRA 59.61% 를 **앞선다**. 즉 S4의 period 순위가 뒤집힌다.
   (기전은 내가 검증했고, 63.53% 수치 자체는 재실행 전까지 미검증.)
-- **대체값**: 스코어러에 명시적 `period` 필드를 두고 S4 재실행 후 예치. **미산출.**
+- **대체값**: 스코어러에 명시적 `period` 필드를 두고 S4 재실행 후 예치. ~~**미산출.**~~ ✅ (2026-09-03, C-10) 63.53% 재채점·예치 완료(`results/one_to_one/one_to_one_trf_annot_r50.json`).
 - **근거**: `scripts/scoring/convert_to_bed.py:72-94`, `scripts/scoring/score_one_to_one.py`,
   `manuscript.md:518,537`.
 
@@ -716,6 +810,8 @@ BWTandem 발표값은 `cpu-s2-core-0`(intelv5), 재측정과 모든 경쟁 도�
 `cpu-s1-pgl-0`(intelv4). 같은 입력·같은 워커 수·같은 `/usr/bin/time`에서
 7:49:08 vs 12:05:37 — **1.55×는 하드웨어 세대다.** 경쟁 도구와 비교할 값은 재측정 쪽이다.
 
+> ⚠️ **CAUTION (2026-09-10):** 이 비교는 그 역사적 실행쌍에만 적용된다. 현행 원고의 헤드라인 비용은 재생성 실행 6110900/6110901/6124640 이며(§2 09-10 행), 이 절을 "현행 비용 선택 규칙" 으로 읽어 세대를 다시 바꾸지 말 것 (L-06).
+
 ### 8.7 되돌아온 실패는 다시 시도하지 말 것
 
 | 시도 | 언제 | 결과 |
@@ -728,6 +824,28 @@ BWTandem 발표값은 `cpu-s2-core-0`(intelv5), 재측정과 모든 경쟁 도�
 | Wavelet-tree 메모리 재작성 | — | 이 논문 범위 밖 |
 
 env 레버 기반 recall/precision 프런티어는 **천장**에 있다.
+
+### 8.8 4 GB 세션 안에서 전장 BED 위 `bedtools intersect` 를 돌리지 말 것
+
+2026-09-05 ASTRA P3 가 인간 TRF BED(962,837 regions) 를 BWTandem·ULTRA·tantan·TRASH BED 넷과
+`intersect -v` 하다가 호스트 잡 `6147604`(4 GB) 가 `OUT_OF_MEMORY` 로 죽었다(§1.4; 원인 프로세스는 추정).
+`-b` 에 파일 여러 개를 주면 bedtools 가 전부 메모리에 올린다. 외부 mreps BED 하나가 679 MB 다.
+
+**규칙**: 리뷰·검증 패스에서 전장 BED 교차가 필요하면 (a) 별도 sbatch(s2 파티션, `env -u SBATCH_PARTITION
+-u SBATCH_ACCOUNT -u SBATCH_TIMELIMIT`, ≥16 GB) 로 빼거나, (b) 이미 예치된 스코어러 JSON 으로 대신하거나,
+(c) BRIEF 에 "bedtools 전장 실행 금지" 를 명시한다. `pass3-checks.py` 류 스크립트가 subprocess 로 bedtools 를
+부르는지 실행 전에 `grep -n bedtools` 로 본다. §8.3 의 conda solve 금지와 같은 계열이다.
+
+### 8.9 반올림된 셀끼리 빼거나 곱하지 말 것 — 측정값은 두 자리, 계산은 예치물에서
+
+같은 값이 표에서는 `81.62`, 본문에서는 "0.02 points" 였다가 예치물로 계산하면 0.03 이 되는 일이 반복됐다
+(§6.8 의 1.5/2.8 → 1.54/2.81 → 2.82, R2-9 의 14.36 → 14.88, ASTRA P3 의 "0.02 → 0.03 after rounding").
+원인은 **반올림된 셀에서 파생값을 만든 것**이고, 자릿수를 섞은 것(`33.7 h` 옆에 `1.45 GiB`)이 그것을 숨겼다.
+`0.9 h` 로 찍혀 있던 mreps 와 tantan 은 실제로 0.91 과 0.86 이었다.
+
+**규칙** (`CLAUDE.md` "Numeric presentation", 2026-09-10): 측정값은 전부 두 자리 **decimal half-up**(저자 결정; float `:.2f` 아님 — 12.645 는 12.65); 차이·비율·core-hours 는
+`results/` 의 전정밀도 값에서 계산한 뒤 반올림; 예치물 없이 자릿수를 **덧붙이지 않는다**(그건 숫자를 지어내는 것).
+파라미터(`0.02002`, `0.72`)와 버전은 원형 유지.
 
 ---
 

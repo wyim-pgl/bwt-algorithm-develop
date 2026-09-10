@@ -354,6 +354,36 @@ After all tiers run: merge adjacent repeats with same canonical motif (gap ≤ m
 - `refine_repeat()` always reduces to the primitive period (e.g., ATAT → AT) using both exact and approximate (≤2% error) periodicity tests.
 - The sentinel `$` is appended to sequences for BWT construction and excluded from repeat detection.
 
+## Numeric presentation — two decimals, computed from the deposit (2026-09-10)
+
+Rounding was the recurring source of "the table says X but the text says Y"
+(quarantine.md §6.8, Codex R2-9, ASTRA P3 "0.02 → 0.03 after rounding"). The rule:
+
+1. **Every measured quantity** in a table or in prose — percentages, hours, GiB,
+   bp offsets, ratios, core-hours — is printed with **exactly two decimals**,
+   rounded **decimal half-up** (`Decimal(str(x)).quantize(Decimal("0.01"), ROUND_HALF_UP)`;
+   author decision 2026-09-10 — `12.645 h` prints `12.65`, not float `:.2f`'s `12.64`).
+   The scorers print with `:.2f`; on 2026-09-10 all 345 deposited two-decimal cells (349 with the Unicode minus)
+   agreed with half-up, so no scorer output has changed. Audit again after any rescoring.
+   A deposited summary that itself prints one decimal (e.g. `results/regen/s2_F_p100.txt`)
+   cannot be widened — regenerate it at two decimals first (Codex ledger review L-09).
+   Counts stay integers; parameters, thresholds and version strings keep their
+   native form (`0.02002`, `0.72`, `4.10.0rc2`).
+2. **Compute from the deposited artifact, never from a rounded cell.** A difference,
+   ratio or core-hour figure is derived from the full-precision value in
+   `results/` (JSON, GNU-time log, sacct seconds) and *then* rounded. Subtracting
+   two two-decimal cells is how 2.81 became 2.82 and 14.36 became 14.88.
+3. **Never widen precision by appending a digit.** `33.7 h` becomes `33.73` only
+   because `results/competitor_logs/trf__…` says 33.729444 h. If no artifact
+   gives the extra digit, leave the value and record it in the todo list.
+4. When a printed difference of rounded cells would differ from the deposited
+   difference, print the deposited one and say "after rounding" once.
+5. Tool: `docs/2026-09-10-precision/normalize_precision.py` (dry run by default,
+   `--apply` to write). It reads the cell→artifact map in
+   `docs/2026-09-05-astra-review/pass3-table-cells.tsv`, writes
+   `precision-edits.json` (old/new/source per edit) and `precision-report.md`
+   (what was left and why). Re-run it after any table regeneration.
+
 ## Test Data
 
 `arabadopsis_chrs/` contains Arabidopsis chromosome FASTAs and small test sequences (`test_seq1.fa` through `test_seq5.fa`) for development.

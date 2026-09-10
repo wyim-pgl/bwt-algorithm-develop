@@ -1,0 +1,149 @@
+{
+  "BWTandem": {
+    "source": "results/beds/bwtandem_human.bed.gz",
+    "unique_unfiltered": 893480,
+    "unique_outside_catalog": 809886,
+    "scores": {
+      "full": {
+        "calls": 4014108,
+        "truth_hits": 1437370,
+        "pred_hits": 2026978,
+        "recall": 80.5337728960715,
+        "precision": 50.49634937575173
+      },
+      "le100": {
+        "calls": 3911182,
+        "truth_hits": 1407753,
+        "pred_hits": 1960490,
+        "recall": 78.87437500140071,
+        "precision": 50.125256252457696
+      },
+      "101-2000": {
+        "calls": 102926,
+        "truth_hits": 61253,
+        "pred_hits": 66488,
+        "recall": 3.431917454241474,
+        "precision": 64.59786642830771
+      }
+    }
+  },
+  "TRF": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "unique_unfiltered": 18904,
+    "unique_outside_catalog": 1987,
+    "scores": {
+      "full": {
+        "calls": 962837,
+        "truth_hits": 569046,
+        "pred_hits": 913301,
+        "recall": 31.882828590702395,
+        "precision": 94.85520394417746
+      },
+      "le100": {
+        "calls": 912084,
+        "truth_hits": 549776,
+        "pred_hits": 863981,
+        "recall": 30.803158217933174,
+        "precision": 94.72603400563983
+      },
+      "101-2000": {
+        "calls": 50753,
+        "truth_hits": 36089,
+        "pred_hits": 49320,
+        "recall": 2.022014742235002,
+        "precision": 97.17652158493094
+      }
+    }
+  },
+  "ULTRA": {
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_human_GCA.bed",
+    "unique_unfiltered": 518440,
+    "unique_outside_catalog": 457509,
+    "scores": {
+      "full": {
+        "calls": 3216710,
+        "truth_hits": 1456790,
+        "pred_hits": 1725926,
+        "recall": 81.62184755300862,
+        "precision": 53.65500775637219
+      },
+      "le100": {
+        "calls": 3216710,
+        "truth_hits": 1456790,
+        "pred_hits": 1725926,
+        "recall": 81.62184755300862,
+        "precision": 53.65500775637219
+      },
+      "101-2000": {
+        "calls": 0,
+        "truth_hits": 0,
+        "pred_hits": 0,
+        "recall": 0.0,
+        "precision": 0
+      }
+    }
+  },
+  "tantan": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/tantan/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "unique_unfiltered": 518488,
+    "unique_outside_catalog": 424320,
+    "scores": {
+      "full": {
+        "calls": 3319523,
+        "truth_hits": 1392092,
+        "pred_hits": 1913951,
+        "recall": 77.9969117057111,
+        "precision": 57.657410417099086
+      },
+      "le100": {
+        "calls": 3319523,
+        "truth_hits": 1392092,
+        "pred_hits": 1913951,
+        "recall": 77.9969117057111,
+        "precision": 57.657410417099086
+      },
+      "101-2000": {
+        "calls": 0,
+        "truth_hits": 0,
+        "pred_hits": 0,
+        "recall": 0.0,
+        "precision": 0
+      }
+    }
+  },
+  "TRASH": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_000001405.15_GRCh38_genomic_trash.bed",
+    "unique_unfiltered": 0,
+    "unique_outside_catalog": 0,
+    "scores": {
+      "full": {
+        "calls": 5134,
+        "truth_hits": 20671,
+        "pred_hits": 4890,
+        "recall": 1.1581663868973848,
+        "precision": 95.24737047136736
+      },
+      "le100": {
+        "calls": 3707,
+        "truth_hits": 16304,
+        "pred_hits": 3595,
+        "recall": 0.913489660489331,
+        "precision": 96.97868896681953
+      },
+      "101-2000": {
+        "calls": 1427,
+        "truth_hits": 4393,
+        "pred_hits": 1295,
+        "recall": 0.246133468997156,
+        "precision": 90.74982480728802
+      }
+    }
+  },
+  "native-H": {
+    "calls": 4355741,
+    "truth_hits": 1456319,
+    "pred_hits": 2109873,
+    "recall": 81.59545810072143,
+    "precision": 48.43889937441184
+  }
+}
