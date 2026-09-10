@@ -52,10 +52,10 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 
 ### 0-1. 트리 정리 (Phase 0)
 
-- [ ] **[1·제출 전]** `git diff manuscript.md` 출처 대조 — 순서: P2 보고서 → `pass3-edits.json`(46 순차 치환, 21→22 연쇄) → `pass3.log:8123` 의 JSON 밖 수정(`manuscript.md:496`) → `precision-edits.json`(88). **잔여를 자동으로 P2 에 귀속하지 않는다**; 출처 미복구 편집은 `APPLIED-RATIONALE-NOT-RECOVERED` 로 표시해 저자 판단 (Codex 장부 리뷰 L-01·L-02)
-- [ ] **[1·제출 전]** `results/` 15개 diff 를 `pass1-evidence.md` 의 REHASH REQUIRED 목록·각 finding 과 대조
-- [ ] **[1·제출 전]** `quarantine.md` §8.2 순서로 **재해시 → 체크섬 포함 `git add` → `git diff --cached` → 가드 테스트 → 커밋**
-- [ ] **[1·제출 전]** 커밋 2개 후 origin 푸시 — (a) 채택 원고·results 편집 + 체크섬 / (b) `intend.md`·`todo.md`·`quarantine.md`·`CLAUDE.md` + `docs/2026-09-05-astra-review/`·`docs/2026-09-10-precision/`·`docs/2026-09-10-ledger-review/`. `resume.md` 는 비추적(`.gitignore:24`) (L-13)
+- [x] **[1·제출 전]** `git diff manuscript.md` 출처 대조 ✅ (2026-09-10, `docs/2026-09-10-ledger-review/phase0-attribution.md` — P2 37블록 · P3 46+E47 · precision 88, 미설명 0) — 순서: P2 보고서 → `pass3-edits.json`(46 순차 치환, 21→22 연쇄) → `pass3.log:8123` 의 JSON 밖 수정(`manuscript.md:496`) → `precision-edits.json`(88). **잔여를 자동으로 P2 에 귀속하지 않는다**; 출처 미복구 편집은 `APPLIED-RATIONALE-NOT-RECOVERED` 로 표시해 저자 판단 (Codex 장부 리뷰 L-01·L-02)
+- [x] **[1·제출 전]** `results/` 15개 diff 를 P1 REHASH REQUIRED 목록과 대조 ✅ (2026-09-10, 집합 일치, 같은 보고서)
+- [x] **[1·제출 전]** §8.2 순서로 재해시 → `git add` → `git diff --cached` → 가드 테스트 → 커밋 ✅ (2026-09-10, `744ef3a`; manifest.sha256 15줄 갱신, external 불변, `sha256sum -c` 통과, 43 passed 1 skipped)
+- [x] **[1·제출 전]** 커밋 2개 후 origin 푸시 ✅ (2026-09-10, `744ef3a` 원고+results / `7556727` 장부+docs, `3e728cc..7556727` 푸시됨) — (a) 채택 원고·results 편집 + 체크섬 / (b) `intend.md`·`todo.md`·`quarantine.md`·`CLAUDE.md` + `docs/2026-09-05-astra-review/`·`docs/2026-09-10-precision/`·`docs/2026-09-10-ledger-review/`. `resume.md` 는 비추적(`.gitignore:24`) (L-13)
 - [x] **P3 복구 방식 — 저자 결정: (a) 산출물로 보고서 재구성** ✅ (2026-09-10) 재실행 없음
 - [x] P3 보고서 재구성 ✅ (2026-09-10, `docs/2026-09-05-astra-review/pass3-results-tables.md` 36 KB + `pass3-reconstruct.py`) — 13 CONFIRMED / 1 REJECTED(586 셀 일치) / 1 BLOCKED / 1 APPLIED-RATIONALE-NOT-RECOVERED(5 편집). 표 셀 8개가 예치물과 달랐고 전부 경쟁 도구 값이 BWTandem 에 불리한 쪽으로 정정됨. `results/` 는 P3 가 건드리지 않았다(15개는 전부 P1 몫)
 - [x] **P3-16** 근거 미복구 편집 5건 — **저자 결정: 5건 전부 채택** ✅ (2026-09-10) E19(L188 tantan 비용: 검증 불가 단정 제거, 사실만), E26(L294: 예치값 58.6845−58.5042=0.1803 → 0.18 정확), E35(L188: 범위 차이는 §2.2·quarantine §3.5 기록), E39(L543: 위성 실험은 period 배정을 검증하지 않음), E47(L496: C-2 결정과 정합 — 네이티브 p100 F 실행은 1b 민감도 분석). 근거: `pass3-results-tables.md` P3-16 + 2026-09-10 세션 대조(`docs/2026-09-10-ledger-review/p3-16-decision.md`)

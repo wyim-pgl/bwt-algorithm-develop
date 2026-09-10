@@ -20,7 +20,7 @@ BWTandem 을 Bioinformatics **Application Note** 로 제출한다. 증거 저장
 
 > 미착수 항목의 등급(1 제출 전 / 2 공개 문장 / 3 제출 후)은 `todo.md` 머리 표. 아래 Phase 는 1·2등급만 다룬다; 3등급은 제출 뒤.
 
-### Phase 0 — 트리 정리 (한 세션 안에 끝낸다)
+### Phase 0 — 트리 정리 (한 세션 안에 끝낸다) — ✅ 완료 2026-09-10 (`744ef3a`, `7556727`, 푸시됨)
 
 1. `git diff manuscript.md` 를 **순서대로** 대조한다 — P2 보고서(`pass2-methods-vs-code.md`, §2·보충 Methods) →
    `pass3-edits.json`(46건 순차 치환; 21→22 는 연쇄) → P3 의 JSON 밖 후속 수정(`pass3.log:8123`, 현재 `manuscript.md:496`) →
