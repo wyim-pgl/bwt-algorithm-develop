@@ -76,7 +76,7 @@ discarded TRF's period, because `load()` kept column 5 only when it
 meant copies and `period_of()` then fell back to motif length: every TRF
 pair scored no period and the first deposited JSON recorded
 `"scored_pairs": 0`. The scorer now keeps an explicit period, and TRF's
-annotation-arm JSON was regenerated — only the five period fields move,
+annotation-arm JSON was regenerated — only the five numerical period fields move (the `strata_spec` metadata is also added),
 and TRF's period-exact rate is 63.53%. The region-truth arm still shows
 zero for every tool, which is structural: that truth carries no period. Ranges are those of each tool's Table 1a run (ULTRA
 default ≤100 bp, tantan default ~100 bp window, TRF ≤500 bp, BWTandem
@@ -102,7 +102,7 @@ precision is what the 1:1 assignment adds):
 | Tool | Matched | Sens. (%) | Prec. (%) |
 |---|--:|--:|--:|
 | ULTRA | 554,179 | 31.05 | 17.23 |
-| BWTandem | 348,464 | 19.52 | **8.68** (lowest) |
+| BWTandem | 348,464 | 19.52 | **8.68** (second-lowest) |
 | TRF | 197,087 | 11.04 | 20.47 |
 | tantan | 113,649 | 6.37 | 3.42 |
 | TRASH | 1,241 | 0.07 | 24.17 |
@@ -114,17 +114,18 @@ Annotation truth:
 | ULTRA | 1,122,910 | 62.92 | 34.91 | 1 | 59.61 | — | 57.77 | 72.32 | 80.90 | 8.36 |
 | BWTandem | 1,050,831 | 58.88 | 26.18 | 2 | 58.66 | 34.15 | 59.21 | 58.24 | 62.38 | 46.39 |
 | tantan | 961,163 | 53.85 | 28.95 | 0 | 73.54 | — | 60.31 | 49.27 | 41.41 | 1.67 |
-| TRF | 518,719 | 29.06 | 53.87 | 0 | — | — | 17.87 | 33.88 | 77.60 | 62.40 |
+| TRF | 518,719 | 29.06 | 53.87 | 0 | 63.53 | — | 17.87 | 33.88 | 77.60 | 62.40 |
 | TRASH | 892 | 0.05 | 17.37 | 494 | 33.41 | — | 0.01 | 0.02 | 0.21 | 0.86 |
 
 What the strict metric shows, stated plainly: ULTRA leads one-to-one
 sensitivity in both arms and precision among the three high-recall callers;
-BWTandem is second on sensitivity in both arms and **has the lowest
-region-arm precision of the five tools** — the same per-region call
+BWTandem is second on sensitivity in both arms and **has the second-lowest
+region-arm precision, above tantan (8.68% versus 3.42%)** — the same per-region call
 granularity (several calls per catalog region) disclosed as fragmentation
 in the manuscript's limitations, charged per extra call by the 1:1
 assignment. A split-band verification run (`*_annot_r50_bands.json`, job
-6146343, metric-identical to the deposited arm) found **zero truth
+6146343, identical on matching, boundaries and strata; its TRF period fields
+predate the fix) found **zero truth
 annotations with primitive period above 500 bp** — the long band is really
 101–500 bp and is labelled so. **TRF leads it at 62.40%** with BWTandem
 second at 46.39%, entirely within TRF's 500 bp cap and at TRF's measured
@@ -135,27 +136,30 @@ tantan (1.67%) emit no call above period 100, so the calls matching those
 truths are their shorter-period calls. Each tool's matched-pair statistics
 are computed over its *own* matched set, which differ in size and
 composition (e.g. the 21–100 bp band is 11.4% of ULTRA's matched pairs but
-6.8% of tantan's); the period-exact ordering (tantan 73.54 > ULTRA 59.61 ≈
-BWTandem 58.66) should be read with that selection effect, and tantan's
+6.8% of tantan's); the period-exact ordering (tantan 73.54 > TRF 63.53 > ULTRA 59.61 >
+BWTandem 58.66 > TRASH 33.41) should be read with that selection effect, and tantan's
 smaller matched set, in mind. Copy error is measurable only for BWTandem
 (34.15% median relative error against the rescaled annotation copy count).
 
 
 ## Scorer provenance after the 2026-09-03 period fix
 
-The deposited JSONs were produced by two different versions of
-`scripts/scoring/score_one_to_one.py` and the manifest keeps both, rather than
+The current JSONs were produced by three versions of
+`scripts/scoring/score_one_to_one.py` (original, split-band, and period fix),
+and the manifest preserves those versions rather than
 overwriting execution history with a hash that did not produce those files:
 
-- Every arm except TRF's annotation arm is the original execution, SLURM job
-  6146229 at repo commit `43543da`, and its manifest rows keep the scorer hash
-  recorded then.
+- The unsplit arms except TRF's annotation arm are the original execution,
+  SLURM job 6146229 at repo commit `43543da`; the split-band arms are job
+  6146343 at `fd21e38`. Their manifest rows retain the historical scorer hashes.
 - `one_to_one_trf_annot_r50.json` was regenerated on 2026-09-03 with the fixed
-  scorer, whose sha256 begins `1972ef4727de1613`. Only the five `period` fields differ
-  from the file it replaces; `matched`, both sensitivities, both precisions, the
+  scorer at `903245c`, whose sha256 begins `1972ef4727de1613`. The five `period`
+  fields change and the `strata_spec` metadata field is added; `matched`, both sensitivities, both precisions, the
   boundary statistics and all four strata are byte-identical, which is the check
   that the fix did nothing but stop discarding column 5.
 
-Do not replace the historical scorer hashes on rows 106-120 with the new one. A
-hash in this manifest names the code that produced the artefact, and for those
-rows that is still the old scorer.
+The TRF annotation row now names the corrected scorer; preserve the historical
+hashes on the other S4 rows. The split-band TRF JSON retains zero period scores
+from the old scorer and is superseded for period agreement only. Its matching,
+boundary and stratum values remain valid; use `one_to_one_trf_annot_r50.json`
+for the corrected period statistics. No historical JSON has been rewritten here.

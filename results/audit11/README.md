@@ -16,7 +16,12 @@ seed 20260827, 100 calls per period stratum 1-6 / 7-20 / 21-100 / 101-2000 bp).
   after all 400 verdicts were recorded.
 - `aggregate_reviewer2_20260831.txt`: per-stratum aggregation with Wilson 95%
   CIs. Headline: 4 SUPPORTED / 346 UNSUPPORTED / 50 UNSURE, supported rate
-  1.0% (CI 0.4-2.9% on definitive verdicts), 0 supported above period 20 bp.
+  1.0% over all 400 calls; 1.14% over the 350 definitive verdicts
+  (Wilson 95% CI 0.4-2.9%), 0 supported above period 20 bp.
 
-The 400 dot-plot renderings (32 MB) are not deposited; they regenerate
-deterministically from the sampler, the deposited sheet and the hg38 FASTA.
+The 400 original dot-plot renderings (reported as 32 MB) and their renderer
+are not deposited. The named sampler writes the sheet and answer key, not
+dot plots. The deposited sequence-bearing sheet permits new visualizations,
+but does not reproduce the exact images the reader saw without the original
+renderer and its settings. Exact visual-audit reproduction remains blocked
+on those artifacts.

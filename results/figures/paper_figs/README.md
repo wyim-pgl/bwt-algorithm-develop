@@ -1,13 +1,13 @@
 # Paper figures — delivered 2026-09-03
 
-All six figures are implemented and rendered. `rendered/` holds the PNG and PDF
+All seven figures (Figures 1–5 and S1–S2) are implemented and rendered. `rendered/` holds the PNG and PDF
 of each; the `plot_*.py` scripts that produced them are here, no longer stubs,
 and read their inputs from `data/*.csv`.
 
 | Figure | Renders | Status after the 2026-09-04 C-1 application |
 |---|---|---|
 | Fig 1 accuracy trade-off | ✅ | current |
-| Fig 2 range cost | ✅ | source and data current; **rerender pending** |
+| Fig 2 range cost | ✅ | source, data and both renders current |
 | Fig 3 sweep + audit | ✅ | current |
 | Fig 4 plant satellites | ✅ | current |
 | Fig S1 chromosome subset | ✅ | current |
@@ -28,7 +28,7 @@ stays native — so F reads 79.88% there and 78.87% in Table 1b. That is not a
 contradiction, but it is the kind of thing a referee asks about, and the caption
 should say which panel is which arm before submission.
 
-## Fig 2 — release-build data applied; rerender pending
+## Fig 2 — release-build data and renders applied
 
 All three source defects are fixed as of 2026-09-04. The memory axis reads GiB,
 the range-matching caveat is in the caption with the measured 3.92%, and panel A
@@ -45,9 +45,10 @@ now uses the release-build re-measurement.
 3. ~~Axis said "Peak memory (GB)".~~ It now says GiB.
 4. ~~Footnote said "~5% larger".~~ It now says 3.92% in the caption.
 
-The tracked PNG and PDF still show the superseded panel. They remain stale until
-the plotting script is rerun; this update intentionally changes only its source
-and input data.
+The tracked PNG and PDF show the release-build panel (rerendered in
+`da9e484`). The root copies and `rendered/` copies are byte-identical.
+The superseded 1.30–1.41 ratios appear only in the explicitly labelled
+historical caveat, not as the active plotted measurements.
 
 ## Fig 4 panel A omits three tools — now said in the caption
 
@@ -59,8 +60,9 @@ does not touch this figure, but the omission should be stated.
 ## Regeneration
 
 `prep_data.py` builds `data/*.csv` from the deposited evidence; each `plot_*.py`
-reads one or more of those and writes to `rendered/`. Rerender Fig 2 from the
-updated source and CSV before submission.
+reads one or more of those and writes its PNG/PDF in the working directory
+(run it from this directory). The deposited `rendered/` copies must be kept
+in sync with those outputs; the scripts do not themselves write into `rendered/`.
 
 
 ## Colour (2026-09-03)
@@ -73,7 +75,8 @@ are the only two series. Do not raise a competitor's saturation to make it
 visible; if one needs emphasis in a panel, say so in that panel's caption.
 
 Rendered with `/data/gpfs/assoc/pgl/bin/conda/conda_envs/anianns/bin/python`
-(matplotlib 3.10.9, seaborn 0.13.2). The `bwtandem` env has no matplotlib.
+(matplotlib 3.10.9, seaborn 0.13.2). This names the rendering environment used for the deposit, not a claim about
+which packages are currently installed in other environments.
 
 
 ## Fig 5 — array self-similarity (new, 2026-09-03)

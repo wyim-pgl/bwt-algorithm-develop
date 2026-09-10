@@ -3,7 +3,9 @@
 The three whole-genome BWTandem outputs behind Tables 1a, 1c, 2 and 3, gzipped.
 Every accuracy figure attributed to BWTandem in those tables is computed from one
 of these files, so a reader can re-run the scoring scripts in `../../scripts/scoring/`
-without access to our cluster.
+once they also obtain the truth sets and comparator inputs. Human truth and
+most comparator BEDs are external; depositing these three BWTandem BEDs alone
+does not make every scoring invocation independent of the cluster.
 
 | file | genome | calls | assembly | configuration |
 |---|---|--:|---|---|

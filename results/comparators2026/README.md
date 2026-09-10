@@ -12,8 +12,9 @@ Tables 1a, 2, 3B and 3C.
 | AniAnn's | 0.7.1 (git 0d79851), shared conda env `anianns` (bioconda pysam 0.24.0), no `--classify` DB | 6146422 (human), 6146483 (Col-CEN), 6146484 (maize) | defaults, `-j 2` |
 
 Inputs are the chromosome-only FASTAs of the regenerated BWTandem runs, so
-cost cells are comparable to the BWTandem rows and NOT to the 2024
-competitor rows (which consumed the accession-flavoured FASTA, larger by 3.92% in bases:
+input scopes agree with the BWTandem rows. Memory accounting still differs:
+these are GNU-time process maxima, while BWTandem headlines are sacct cgroup
+peaks. Input scopes differ from the 2024 competitor rows (which consumed the accession-flavoured FASTA, larger by 3.92% in bases:
 3,209,286,105 against 3,088,269,832, or 3.80% counting unambiguous bases only).
 Reproducer warning: AniAnn's exits 0 having annotated nothing when its
 pysam `.fai` build fails on an unwritable FASTA directory (first attempt,
@@ -77,7 +78,8 @@ Three further points a sceptical reader needs, since the claim is about what the
   interval is the four-line wrapper edit in `score_2026_tools.py` that adds
   `--adj ""`, plus the scratch directory being added and then removed.
 - **`--adj` reaches only the corroborator loop.** In `score_table1.py`, `adj_rules`
-  is used at `for rule in adj_rules:` (line 408) and nowhere earlier; the crash was
+  controls the numerical corroborator loop at `for rule in adj_rules:`
+  (line 408) and an earlier informational note at line 403; the crash was
   at line 421 inside that loop, on `prepared[("ULTRA", variant)]`. The baseline,
   matched-range and stratum blocks — the ones these tables read — are computed and
   printed before that loop begins, which is why they appear in full in the crashed
@@ -103,13 +105,13 @@ Three further points a sceptical reader needs, since the claim is about what the
   monomer recall (99.86%) with no repeat units (CEN180 count 0,
   structural).
 - **Maize satellites**: longdust emits **zero calls inside any curated
-  knob180/TR-1/CentC array** in either arm — these satellites are not
-  low-complexity under its model. AniAnn's leads array-level coverage
+  knob180/TR-1/CentC array** in either arm. This establishes zero overlap on these inputs,
+  not its mechanistic cause. AniAnn's leads array-level coverage
   (knob180 87.61%, TR-1 67.98%, CentC 81.42% versus BWTandem's
   79.79/50.34/58.55) with boundary offsets of 14.9–83.7 kb versus
   BWTandem's 253 bp (knob180, gap 0).
 
 The complementary profile these numbers draw — interval-only speed
 (longdust), array-level coverage with coarse boundaries (AniAnn's),
-per-copy structured records at base-pair boundaries (BWTandem) — is the
+per-array structured records at base-pair boundaries (BWTandem) — is the
 positioning stated in the Related Work.

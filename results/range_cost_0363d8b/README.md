@@ -27,9 +27,9 @@ Call counts are identical across all three replicates: **3,993,151** at p100 and
 Table 1d's F row, which is an independent check that the same configuration produced the
 same output. All six arms exited 0.
 
-## What changed against the published pairs
+## What changed against the superseded published pairs
 
-| | published (`07ad6fa`) | this run (`0363d8b`) |
+| | superseded published (`07ad6fa`) | this run (`0363d8b`) |
 |---|--:|--:|
 | p100 | 6.61 / 6.58 / 5.50 h | 4.02 / 4.11 / 4.02 h |
 | p2000 | 8.61 / 8.58 / 7.75 h | 7.31 / 7.28 / 7.13 h |

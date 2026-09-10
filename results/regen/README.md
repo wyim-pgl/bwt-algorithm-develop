@@ -25,7 +25,8 @@ These files support the manuscript rows regenerated from clean source commit
   `../../scripts/scoring/score_maize_regen_evidence.py`.
 
 - `bwt_human_{P,B,F,H}_p100_0363.provenance.json`: the four native
-  `--max-period 100` operating-point runs behind Tables 1b/1d and Figure 1
+  `--max-period 100` operating-point runs behind Table 1d and Figure 1
+  (the Table 1b native F arm is now only a sensitivity analysis)
   (SLURM jobs 6141841_0 and 6143150_1..3, four threads each).
 - `bwt_human_idsweep_{off,0.80,0.76,0.72,0.68}_p2000_0363.provenance.json`:
   the five full-range identity-sweep arms behind Supplementary Table S3
@@ -45,6 +46,14 @@ To reproduce the extra maize report on a system with the recorded external
 inputs mounted, run the exact command stored in its top-level `command` field.
 The output is deterministic: it contains no timestamp, and rerunning it at the
 same output path must reproduce the deposited file byte for byte.
+
+Additional deposited reports include `colcen_banded_regen.txt` (current
+BWTandem banded recalls), `colcen_trash_template_union.bed` and
+`colcen_trash_template_scored.txt` (template-only correction), `heldout_*.txt`
+(chromosome partitions), and `recip_*.txt` (overlap-rule sensitivity).
+The historical BWTandem baseline printed by the Col-CEN scorer is not the
+regenerated row; use the explicit `BWTandem-regen` row for current values.
+Raw SLURM accounting is one directory up in `../sacct_provenance.txt`.
 
 Full SHA-256 hashes are recorded in `../manifest.sha256`; row-level provenance
 and scorer hashes are recorded in `../manifest.tsv`.

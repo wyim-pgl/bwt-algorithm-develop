@@ -1,4 +1,7 @@
-# sacct provenance for every SLURM job named in results/manifest.tsv
+# sacct provenance for the recovered subset of jobs named in results/manifest.tsv
+# Inventory: 37 allocations, 40 job/task records, 120 rows including batch/extern.
+# Native p100 tasks 6141841_0 and 6143150_1..3 and identity-sweep tasks
+# 6143151_0..4 are not present. The three headline whole-genome jobs are present.
 # captured 2026-09-04T11:35:36-07:00 on cpu-51
 # command: sacct -j <ids> --format=JobID,JobName%28,Elapsed,MaxRSS,State,Start -P
 #
