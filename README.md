@@ -156,11 +156,13 @@ are in [MANUAL.md §4](MANUAL.md#4-the-three-tier-pipeline).
 
 ## Benchmarks
 
-All manuscript benchmarks were regenerated from clean commit `0363d8b` with
-full provenance (SLURM job, elapsed time, sacct peak memory, SHA-256 of every
-output). **The authoritative numbers live in [`manuscript.md`](manuscript.md)
-and [`results/manifest.tsv`](results/manifest.tsv)** — every reported cell is
-linked there to its source BED, scoring script and hash. Deposited evidence:
+The regenerated whole-genome BWTandem results use execution commit `0363d8b`.
+Competitor baselines and historical ablations have distinct provenance; some
+raw accounting, visual-audit artifacts and external inputs remain unavailable.
+**The full tables and limitations live in [`supplementary.md`](supplementary.md)
+and [`results/manifest.tsv`](results/manifest.tsv)**; the short Application Note
+is [`manuscript.md`](manuscript.md). Manifest links do not imply every external
+artifact is deposited. Deposited evidence:
 [`results/regen/`](results/regen/) (score reports, per-run provenance),
 [`results/beds/`](results/beds/) (the three whole-genome BWTandem BEDs),
 [`results/audit11/`](results/audit11/) (blinded specificity audit),
@@ -174,16 +176,16 @@ Col-CEN, maize Mo17; see the manuscript for every caveat):
 
 | Claim | Measurement |
 |---|---|
-| One wide-range pass | periods 1–2,000 bp in 12.6 h / 25.3 core-hours on GRCh38 (ULTRA: 29.8 h / 59.6 core-hours capped at 100 bp; not range-matched) |
-| Sublinear range cost | widening the maximum period 100→2,000 bp costs 1.77–1.82× (mean 1.79) in release-build paired runs; the superseded 1.30–1.41× estimate was too favourable because its narrow arm performed and discarded the long-period Tier 3 search; the TRF and ULTRA 2,000 bp attempts on human were terminated incomplete after 6.6 d and 1 d 22 h |
+| One wide-range pass | periods 1–2,000 bp in 12.65 h / 25.29 core-hours on GRCh38 (ULTRA: 29.78 h / 59.56 core-hours capped at 100 bp; execution ranges and FASTA scopes differ) |
+| Sublinear range cost | widening the maximum period 100→2,000 bp costs 1.77–1.82× (mean 1.79) in release-build paired runs; the superseded 1.30–1.41× estimate was too favourable because its narrow arm performed and discarded the long-period Tier 3 search; the TRF and ULTRA 2,000 bp attempts on human were terminated incomplete after 6.58 d and 1 d 22 h |
 | Shared-range accuracy | non-leading: ULTRA ranks first in region recall (81.62%); BWTandem 78.87% at the whole-genome configuration, restricted the same way its competitors are, 81.60% at a permissive setting with lower precision |
-| Long-period stratum | 3.43% of catalog regions above period 100 (ULTRA: none by construction) |
-| Plant satellites | Col-CEN CEN180 monomer recall 99.72% in 40 min; maize unfiltered coverage in the leading group |
+| Long-period stratum | calls reporting periods 101–2,000 bp overlap 3.43% of the whole catalog; this is not truth-period-stratified recall (original ULTRA ceiling: 100 bp) |
+| Plant satellites | Col-CEN unfiltered CEN180 monomer recall 99.72% in 0.67 h; maize CentC unfiltered coverage 58.55%, below AniAnn's 81.42% |
 | Specificity audit | 4 of 400 blinded BWTandem-only calls supported (single reader) — unmatched calls are predominantly over-calls |
-| Cost of the design | 28.08 GB peak memory on human (ULTRA: 1.68 GB) and fragmented satellite calls |
+| Cost of the design | 28.08 GiB sampled cgroup peak on human (ULTRA: 1.68 GiB GNU-time maximum; different accounting) and fragmented satellite calls |
 
 Reproducing any number requires the environment overrides in Supplementary
-Methods S2 of the manuscript — the benchmarked operating points differ from
+Methods S2 in [`supplementary.md`](supplementary.md) — the benchmarked operating points differ from
 the built-in defaults ([MANUAL.md §9](MANUAL.md#9-reproducing-the-manuscript-numbers-checkout-only)).
 
 ## Documentation
@@ -194,8 +196,11 @@ the built-in defaults ([MANUAL.md §9](MANUAL.md#9-reproducing-the-manuscript-nu
   repository artifact policy
 - [CLAUDE.md](CLAUDE.md) — architecture notes and the complete sensitivity
   env-var list (kept in sync with the code by `tests/test_env_var_docs.py`)
-- [manuscript.md](manuscript.md) — the paper, with Supplementary Methods S2
-  giving the exact configuration of every benchmarked run
+- [manuscript.md](manuscript.md) — the short Application Note
+- [supplementary.md](supplementary.md) — all tables, detailed methods and limitations;
+  Methods S2 gives benchmark configurations and their provenance limits
+- [manuscript_full.md](manuscript_full.md) — frozen long source after P4 and C-8
+- [submission/](submission/) — author-review PDF/DOCX proofs and release/DOI gates
 - [CHANGELOG.md](CHANGELOG.md) — release history
 
 ## Citation

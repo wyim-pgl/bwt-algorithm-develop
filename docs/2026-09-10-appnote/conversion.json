@@ -1,0 +1,16 @@
+{
+  "long_source_commit": "94df01e",
+  "p4_commit": "7df3e6a",
+  "presubmit_baseline": "64964e1",
+  "full_manuscript_sha256": "613540a12eb11c707cb243d2fc75c014fd2bb4c599fac1bb480c45b41a714995",
+  "table_blocks": 19,
+  "figure_files": {
+    "1": "fig1_accuracy_tradeoff",
+    "2": "fig2_range_cost",
+    "3": "fig3_sweep_audit",
+    "4": "fig4_plant_satellites",
+    "5": "fig5_array_structure",
+    "S1": "figS1_subset",
+    "S2": "figS2_postmerge"
+  }
+}

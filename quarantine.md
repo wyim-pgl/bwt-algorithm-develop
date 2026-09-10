@@ -324,6 +324,27 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 
 ---
 
+### 3.16 P4에서 좁힌 주장 — 모집단 외삽·밴드 초과·native 경로 독립성 (2026-09-10)
+
+근거: `docs/2026-09-05-astra-review/pass4-manuscript-consistency.md` P4-05/06/07,
+수정 `7df3e6a`. 다음 표현은 다시 쓰지 않는다.
+
+- 동일한 100개씩 층화 추출한 4/400 비율을 모집단에 곱해 `10^4` 참 후보를 추정하는 주장.
+  **893,480**은 도구-유일 호출, 감사 모집단 **809,886**은 catalog에도 없는 부분집합이다.
+  비가중 표본은 모집단 참 호출 수를 주지 않는다. 4/346/50 판정과 원시 자료는 그대로다.
+- CentC period-band 총량이 큐레이션 footprint를 넘는다는 사실만으로 모든 도구의
+  over-calling이 입증됐다는 주장. knob180 등 다른 family가 같은 band에 들어가며
+  family 분류를 하지 않았다. 별개의 인간 감사 over-calling 근거는 유지한다.
+- "No figure here depends on the affected path"라는 native 문제 독립성 보장.
+  한 chromosome 회귀검사에서 관찰되지 않았다는 제한된 관찰이지 모든 benchmark 경로의
+  안전성 보장이 아니다. 수치가 손상됐다는 새 판정도 아니다.
+
+P4는 maize TRF ceiling 순서(6/200/500 bp에 5.22/5.48/5.51 h), S4의 절 참조,
+1,380→25의 과거 gate 비교와 현재 1,533의 구분, 비용 출처 예외도 바로잡았다.
+표 셀은 바꾸지 않았다. 형식 전환은 `manuscript_full.md`에 긴 원문을 동결하고 모든 표·
+프로즈를 `supplementary.md`에 보존한다. 그림에 박힌 낡은 캡션은 `submission/figures/`
+표시용 복사본에서만 제거했다; 원본 `results/`는 변경하지 않았다.
+
 ## §4 명명 — 쓰면 안 되는 이름
 
 ### 4.1 `CATCHALL_MAX_SEEDS`

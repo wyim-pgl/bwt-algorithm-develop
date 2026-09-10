@@ -243,9 +243,9 @@ pure-Python fallbacks. Developer details are in
 
 Requires a full repository checkout — the provenance evidence and scoring
 code are not shipped in the wheel. Every benchmarked run is an
-environment-override configuration on top of the defaults; the complete
-per-run blocks are in **Supplementary Methods S2** of
-[manuscript.md](manuscript.md). The provenance chain:
+environment-override configuration on top of the defaults; configurations
+and the limits of the surviving per-run records are in **Supplementary Methods S2** of
+[supplementary.md](supplementary.md). The provenance chain:
 
 - [`results/manifest.tsv`](results/manifest.tsv) — every reported table cell
   → source BED, SLURM job, elapsed, sacct peak, scorer + hash, commit.

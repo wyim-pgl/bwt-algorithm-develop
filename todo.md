@@ -26,7 +26,7 @@ grep -n '^- \[?\]' todo.md    # 저자 결정 대기
 
 ## 우선순위 등급 (2026-09-10, 저자 지시)
 
-초기 분류는 미착수 37건이었다. Phase 0 및 제출 전 수치·공개 문장 수습 후 **현재 미착수는 16건(1등급 5 · 2등급 0 · 3등급 11)**이다. 아래 표의 건수·묶음은 초기 범위 이력이며 현행 상태는 각 항목 체크와 이 문장으로 확인한다. 항목은 원래 절에 그대로 두고(절 번호를 `resume.md`·`intend.md`·`quarantine.md` 가
+초기 분류는 미착수 37건이었다. Phase 0 및 제출 전 수치·공개 문장 수습 후 **현재 미착수는 11건(1등급 0 · 2등급 0 · 3등급 11)**이다. 아래 표의 건수·묶음은 초기 범위 이력이며 현행 상태는 각 항목 체크와 이 문장으로 확인한다. 항목은 원래 절에 그대로 두고(절 번호를 `resume.md`·`intend.md`·`quarantine.md` 가
 참조한다) 각 줄 머리에 등급 태그를 붙였다. **전부 다 할 필요는 없다** — 3등급은 제출 뒤로 미루거나 버린다.
 
 | 등급 | 뜻 | 건수 | 묶음 |
@@ -61,7 +61,7 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 - [x] **P3-16** 근거 미복구 편집 5건 — **저자 결정: 5건 전부 채택** ✅ (2026-09-10) E19(L188 tantan 비용: 검증 불가 단정 제거, 사실만), E26(L294: 예치값 58.6845−58.5042=0.1803 → 0.18 정확), E35(L188: 범위 차이는 §2.2·quarantine §3.5 기록), E39(L543: 위성 실험은 period 배정을 검증하지 않음), E47(L496: C-2 결정과 정합 — 네이티브 p100 F 실행은 1b 민감도 분석). 근거: `pass3-results-tables.md` P3-16 + 2026-09-10 세션 대조(`docs/2026-09-10-ledger-review/p3-16-decision.md`)
 - [x] **[2·공개 문장]** **P3-14** Table 1d 런타임 셀 4개(잡 6141841_0, 6143150_1–3) — 원시 sacct 부재로 BLOCKED. P1-08 과 같은 묶음으로 처리 ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 예치/재현 한계 명시, 숫자·원자료 불변; provenance-dispositions.md)
 - [ ] **[3·제출 후]** **P3 미완 교차검증** — Table 1a 의 새 unique 카운트 3개(TRF 18,904 / ULTRA 518,440 / tantan 518,488)는 `pass3-checks.py human` 한 방법에만 의존. 독립 `bedtools intersect -v` 검증은 OOM 으로 미완 — 원하면 별도 sbatch(≥16 GB, §8.8)로
-- [ ] **[1·제출 전]** P4(원고 일관성) 실행 — BRIEF.md 계약 그대로
+- [x] **[1·제출 전]** P4(원고 일관성) 실행 ✅ (2026-09-10, `7df3e6a`, `pass4-manuscript-consistency.md`: 8 CONFIRMED / 3 REJECTED; 프로즈 7건 수정, 그림 캡션 1건은 `submission/figures/` 복사본에서 처리; 원본 results 불변)
 - [x] **[1·제출 전]** `resume.md` 스냅샷 갱신 (Phase 0·1 끝날 때마다) ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 이번 수정 스냅샷 갱신; P4는 미착수, 추후 종료 시 다시 갱신)
 
 ### 0-2. P1 이 넘긴 통합 항목 (`pass1-evidence.md` "Not fixed, and why")
@@ -173,15 +173,15 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 - [x] **C-5. TRASH = de novo** ✅ (2026-09-03, 저자 결정: TRASH 에 de novo 모드가 있다) — 326행을 human 한정으로 좁히고 TRASH 를 de novo 로 재분류. §6.15
 - [x] **C-6. 투고처 — Bioinformatics Application Note** ✅ (2026-09-03, 저자 결정)
 - [x] **C-7. 제목 — 현행 유지** ✅ (2026-09-03) `BWTandem: FM-index seeding for wide-period-range tandem repeat detection in assembled genomes` — 저자가 지정한 문구가 원고 현행과 동일. **#27(FM-index 인과 프레이밍 지적)은 저자 유지 결정으로 종결**
-- [ ] **[1·제출 전]** **C-8. Abstract 재구성 — 전체 이슈 정리 후로 연기** (저자 결정 2026-09-03)
+- [x] **[1·제출 전]** **C-8. Abstract 재구성** ✅ (2026-09-10, `94df01e`: 초기 새 초록 140단어, 비선도 정확도·감사 한계 유지; 최종 아카이브 URL은 아래 DOI 차단 항목). 종전 2026-09-03의 연기를 P4 후 해소.
 ---
 
 ## D. 재실행·재측정이 필요한 것
 
-- [ ] **[1·제출 전]** **App Note 전환 실행** — 계획서는 있고 전환된 원고는 없다. 본문 약 24,500 단어,
-      표가 전부 본문에 있다. 표는 삭제가 아니라 **보충자료로 이동**한다
-- [ ] **[1·제출 전]** **릴리스** — LICENSE·CITATION.cff·pyproject·CI 는 이미 있다. 없는 것은 **태그·DOI·제출본 스냅샷**.
-      Bioinformatics 는 초록에 안정 아카이브 URL 을 요구한다
+- [x] **[1·제출 전]** **App Note 전환 실행** ✅ (2026-09-10, `docs/2026-09-10-appnote/`): `manuscript.md` 축약, `manuscript_full.md` 원문 동결, `supplementary.md`에 **19개 표 블록의 모든 셀·순서와 상세 본문 보존**, 본문 그림 2개·보충 그림 7개. PDF/DOCX는 `submission/`. 실제 제출 승인·현행 규정 확인은 아래 별도 게이트.
+- [~] **[1·제출 전]** **릴리스** — 0.9.0 정합성·검증 가능한 제출 후보 PDF/DOCX·체크섬 준비 (`submission/`). 정확한 CI 통과 커밋에 `v0.9.0` 태그와 GitHub **draft** 릴리스를 만든 뒤 실제 상태는 `resume.md`에 기록한다. DOI·초록 아카이브 URL·최종 제출 승인 전에는 완료로 표시하지 않는다.
+- [!] **[1·제출 전]** **DOI/아카이브 URL** ⛔ Zenodo 토큰·GitHub 연동 미확인(저장소 webhook 0). 소유자가 연동/예치 권한을 제공하고 실제 DOI 발급·해결을 확인해야 한다. GitHub draft나 저장소 URL을 DOI로 대체하지 않는다 (`submission/README.md`).
+- [?] **[1·제출 전]** **최종 제출 확인** — 저자의 Funding·COI·CRediT·AI 사용 공개 및 원고 승인, 현행 Bioinformatics 지침 확인 필요. 지침 사이트는 이번 조회에서 403; 작업용 길이 기준 통과를 현행 지침 인증으로 읽지 않는다 (`submission/README.md`).
 - [x] **Fig 5 본문 참조·이미지·캡션 삽입** ✅ (2026-09-05, P3 — `manuscript.md:327–331`; `pass3-edits.json` 마지막 항목). 미커밋 편집의 채택 검토는 §0-1 에서 (L-03)
 
 - [x] **§6.20** `sacct -j ... --format=JobID,Elapsed,MaxRSS,State -P` 원문을 체크섬과 함께 예치. ✅ (2026-09-03, `e4ae632`) 34개 잡 sacct 예치, 헤드라인 3개 정확히 일치
@@ -193,7 +193,7 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 - [x] **Codex 발견 8** §2.2.4 채점 경로 정확화 ✅ (2026-09-03) "no second scoring implementation exists" 는 거짓 — human 은 EXTRA·argv 도 덮고, maize 는 `score_maize_postmerge.py`(좌표 전용 진단)를 쓰지 정본 `rescore_tables_3bc.py` 가 아니다
 - [x] **#30** 경쟁 도구 GNU-time 로그 예치 + 해시 (현재 저장소 밖) ✅ (2026-09-03, `e4ae632`) 40개 예치, 5개 도구 전부 재현 확인
 - [x] **Codex 발견 10** CEN180 진실셋 생성 과정(BLAST 버전·명령·원시 68,840 hit) 복구 또는 ✅ (2026-09-03, `e4ae632`) **원시 hit 68,840개가 살아 있었다** — 예치하고 원고 정정
-- [ ] **[1·제출 전]** **#14** [HIGH] 잔여 범위 = 릴리스 태그·버전 정합성(`pyproject` 0.9.0 vs Docker LABEL v1.0)·아카이브(DOI). LICENSE·CITATION.cff·CI 는 **이미 있다** — 생성 작업이 아니다 (L-15)
+- [~] **[1·제출 전]** **#14** [HIGH] 버전 정합성은 0.9.0으로 통일 (`pyproject`, `CITATION.cff`, Docker LABEL). 태그·draft 릴리스는 위 릴리스 절차와 동일 범위; **DOI·최종 제출본은 미완료**. LICENSE·CITATION.cff·CI 를 새로 만들지 않았다 (`submission/README.md`, 2026-09-10).
 - [x] **#26** 2026-tool 벤치마크 반영 ✅ (2026-09-03) C-9(a) 로 Table 1b·1c·§3.2 에 진입, 본문 언급 32곳 · **GitHub 닫힘**
 - [x] **#27** 제목의 FM-index 인과 프레이밍 — **저자 유지 결정으로 종결** ✅ (2026-09-03, C-7)
 - [x] ~~#28~~ — **C-8 에 흡수**: Abstract 재구성 안에서 함께 처리된다
@@ -205,6 +205,7 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
       재발 방지는 `quarantine.md` 의 "대체물 없으면 없음이라 적는다" 규약이 맡는다 · **GitHub 닫힘**
 - [~] **#33** 2차 의견 리뷰 — Kimi 3라운드·Codex 4라운드 **전부 완료**. 남은 것은 미검증분 처리(B절)
       > ✏️ **PARTIAL (2026-09-10):** "B절" 은 없다 — 미검증분은 A-2 의 세 항목(R2·R3 17건 / 첫 리뷰 14건 / Kimi MEDIUM·LOW). ASTRA 4패스(2026-09-05)는 P1·P2 만 완료, P3 중단·P4 미착수 — §0-1.
+      > ✏️ **현행 상태 갱신 (2026-09-10):** 위 ASTRA 상태는 중단 당시 이력. P3 보고서 복구 및 P4 검토(`7df3e6a`)는 완료. 미검증 리뷰 후속은 A-2의 현행 재정의 항목으로 확인한다.
 
 ---
 

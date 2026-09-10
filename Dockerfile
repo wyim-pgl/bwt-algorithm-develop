@@ -1,7 +1,7 @@
 FROM --platform=linux/amd64 continuumio/miniconda3
 
 LABEL author="Filip Ramazan"
-LABEL version="v1.0"
+LABEL version="0.9.0"
 LABEL description="BWTandem — BWT-based tandem repeat finder"
 
 ENV LC_ALL=C.UTF-8

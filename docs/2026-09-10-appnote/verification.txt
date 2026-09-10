@@ -1,0 +1,14 @@
+Verification on 2026-09-10, after conversion-review fixes
+{
+  "table_blocks_preserved": 19,
+  "all_supplemental_prose_replayed": true,
+  "main_words_whitespace": 1136,
+  "abstract_words_whitespace": 141,
+  "main_figures": 2,
+  "supplement_figures": 7
+}
+PASS: 18 submission payload hashes
+PASS: deposited internal evidence hashes
+PASS: results/ unchanged from 64964e1
+.s..........................................                             [100%]
+43 passed, 1 skipped in 7.16s
