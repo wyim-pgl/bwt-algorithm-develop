@@ -26,7 +26,7 @@ grep -n '^- \[?\]' todo.md    # 저자 결정 대기
 
 ## 우선순위 등급 (2026-09-10, 저자 지시)
 
-미착수 37건은 세 등급으로 나뉜다. 항목은 원래 절에 그대로 두고(절 번호를 `resume.md`·`intend.md`·`quarantine.md` 가
+초기 분류는 미착수 37건이었다. Phase 0 및 제출 전 수치·공개 문장 수습 후 **현재 미착수는 16건(1등급 5 · 2등급 0 · 3등급 11)**이다. 아래 표의 건수·묶음은 초기 범위 이력이며 현행 상태는 각 항목 체크와 이 문장으로 확인한다. 항목은 원래 절에 그대로 두고(절 번호를 `resume.md`·`intend.md`·`quarantine.md` 가
 참조한다) 각 줄 머리에 등급 태그를 붙였다. **전부 다 할 필요는 없다** — 3등급은 제출 뒤로 미루거나 버린다.
 
 | 등급 | 뜻 | 건수 | 묶음 |
@@ -59,29 +59,29 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 - [x] **P3 복구 방식 — 저자 결정: (a) 산출물로 보고서 재구성** ✅ (2026-09-10) 재실행 없음
 - [x] P3 보고서 재구성 ✅ (2026-09-10, `docs/2026-09-05-astra-review/pass3-results-tables.md` 36 KB + `pass3-reconstruct.py`) — 13 CONFIRMED / 1 REJECTED(586 셀 일치) / 1 BLOCKED / 1 APPLIED-RATIONALE-NOT-RECOVERED(5 편집). 표 셀 8개가 예치물과 달랐고 전부 경쟁 도구 값이 BWTandem 에 불리한 쪽으로 정정됨. `results/` 는 P3 가 건드리지 않았다(15개는 전부 P1 몫)
 - [x] **P3-16** 근거 미복구 편집 5건 — **저자 결정: 5건 전부 채택** ✅ (2026-09-10) E19(L188 tantan 비용: 검증 불가 단정 제거, 사실만), E26(L294: 예치값 58.6845−58.5042=0.1803 → 0.18 정확), E35(L188: 범위 차이는 §2.2·quarantine §3.5 기록), E39(L543: 위성 실험은 period 배정을 검증하지 않음), E47(L496: C-2 결정과 정합 — 네이티브 p100 F 실행은 1b 민감도 분석). 근거: `pass3-results-tables.md` P3-16 + 2026-09-10 세션 대조(`docs/2026-09-10-ledger-review/p3-16-decision.md`)
-- [ ] **[2·공개 문장]** **P3-14** Table 1d 런타임 셀 4개(잡 6141841_0, 6143150_1–3) — 원시 sacct 부재로 BLOCKED. P1-08 과 같은 묶음으로 처리
+- [x] **[2·공개 문장]** **P3-14** Table 1d 런타임 셀 4개(잡 6141841_0, 6143150_1–3) — 원시 sacct 부재로 BLOCKED. P1-08 과 같은 묶음으로 처리 ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 예치/재현 한계 명시, 숫자·원자료 불변; provenance-dispositions.md)
 - [ ] **[3·제출 후]** **P3 미완 교차검증** — Table 1a 의 새 unique 카운트 3개(TRF 18,904 / ULTRA 518,440 / tantan 518,488)는 `pass3-checks.py human` 한 방법에만 의존. 독립 `bedtools intersect -v` 검증은 OOM 으로 미완 — 원하면 별도 sbatch(≥16 GB, §8.8)로
 - [ ] **[1·제출 전]** P4(원고 일관성) 실행 — BRIEF.md 계약 그대로
-- [ ] **[1·제출 전]** `resume.md` 스냅샷 갱신 (Phase 0·1 끝날 때마다)
+- [x] **[1·제출 전]** `resume.md` 스냅샷 갱신 (Phase 0·1 끝날 때마다) ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 이번 수정 스냅샷 갱신; P4는 미착수, 추후 종료 시 다시 갱신)
 
 ### 0-2. P1 이 넘긴 통합 항목 (`pass1-evidence.md` "Not fixed, and why")
 
 - [ ] **[3·제출 후]** **P1-07** sacct 예치 두 세대 구분 — 9월 3일 예치(34 할당) vs 9월 4일 재수집(37 할당 / 40 잡-태스크). `todo.md` D 절·요약문의 "34" 에 마커
-- [ ] **[2·공개 문장]** **P1-08** 네이티브 p100·identity-sweep 9개 태스크의 cgroup 셀(`manifest.tsv:89–98`) — 원시 sacct 를 복구·예치하거나 "예치 원시 근거 없음" 을 명시. 값은 바꾸지 않는다
-- [ ] **[2·공개 문장]** **P1-11** S4 TRF 보정 팔 출처 — 원고 S4 의 `43543da`/6146229 "metric-identical" 출처 문장에 TRF-only 예외를 달고, C-10 JSON 교체 완료를 `todo.md`·`quarantine.md` 에 append
-- [ ] **[2·공개 문장]** **P1-13** 튜닝 원장(`results/tuning_ledger/`) — 예치 완료와 "최종 선택 규칙 추적 가능" 을 구분. pending 17건은 남은 기록으로만 설명, 사후 accept/reject 발명 금지
-- [ ] **[2·공개 문장]** **P1-15** 원고 전수 검색 — "처리 비율(percentage processed)", "버전 일치", "취소된 실행 비용 비율" 문장을 `results/range_cost_attempts/README.md`·`comparator_baselines.md` 정정과 맞춘다 (취소 실행은 **하한**으로 유지)
-- [ ] **[2·공개 문장]** **P1-19** `results/audit11/` 원본 이미지·렌더러 설정·판독자/모집단 출처 — 복구하거나 "정확한 시각 재현 불가" 를 README 와 원고에 명시 (R2-6/R3-2 의 산출물 한계와 동일; 오류로 승격 금지)
+- [x] **[2·공개 문장]** **P1-08** 네이티브 p100·identity-sweep 9개 태스크의 cgroup 셀(`manifest.tsv:89–98`) — 원시 sacct 를 복구·예치하거나 "예치 원시 근거 없음" 을 명시. 값은 바꾸지 않는다 ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 예치/재현 한계 명시, 숫자·원자료 불변; provenance-dispositions.md)
+- [x] **[2·공개 문장]** **P1-11** S4 TRF 보정 팔 출처 — 원고 S4 의 `43543da`/6146229 "metric-identical" 출처 문장에 TRF-only 예외를 달고, C-10 JSON 교체 완료를 `todo.md`·`quarantine.md` 에 append ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 예치/재현 한계 명시, 숫자·원자료 불변; provenance-dispositions.md)
+- [x] **[2·공개 문장]** **P1-13** 튜닝 원장(`results/tuning_ledger/`) — 예치 완료와 "최종 선택 규칙 추적 가능" 을 구분. pending 17건은 남은 기록으로만 설명, 사후 accept/reject 발명 금지 ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 예치/재현 한계 명시, 숫자·원자료 불변; provenance-dispositions.md)
+- [x] **[2·공개 문장]** **P1-15** 원고 전수 검색 — "처리 비율(percentage processed)", "버전 일치", "취소된 실행 비용 비율" 문장을 `results/range_cost_attempts/README.md`·`comparator_baselines.md` 정정과 맞춘다 (취소 실행은 **하한**으로 유지) ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 예치/재현 한계 명시, 숫자·원자료 불변; provenance-dispositions.md)
+- [x] **[2·공개 문장]** **P1-19** `results/audit11/` 원본 이미지·렌더러 설정·판독자/모집단 출처 — 복구하거나 "정확한 시각 재현 불가" 를 README 와 원고에 명시 (R2-6/R3-2 의 산출물 한계와 동일; 오류로 승격 금지) ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 예치/재현 한계 명시, 숫자·원자료 불변; provenance-dispositions.md)
 - [x] **P1-14** Figure README 정정은 P1 완료; Fig 5 는 P3 가 삽입 완료(D 절 참조) ✅ (2026-09-10, L-03)
 
 ### 0-3. P2 가 넘긴 통합 항목 (`pass2-methods-vs-code.md` "Not fixed, and why")
 
 - [ ] **[3·제출 후]** **P2-18** `CLAUDE.md:318–355` 아키텍처 요약을 코드에 맞춘다 — 10 Mb 임계값(실제는 mode 0/1/2), Tier 3 고정 k=20/stride=100(실제 적응형), gap 규칙, "Smith-Waterman"(실제 semi-global prefix edit distance), ≤2% 요약. **코드를 옛 서술에 맞추지 말 것**
-- [ ] **[2·공개 문장]** **P2-22** 상속 환경·바이너리 신원 — 전체 게놈(3.11.14/2.3.1) vs 패널(3.11.15/2.4.6) 환경의 완전한 기록이 없다. 복구하거나 S2 에 한계 명시 (BLOCKED)
-- [ ] **[2·공개 문장]** **P2-23** 고아 thread-scaling 설정 행 — **Supplementary Methods S2 설정표**(`manuscript.md:502` "Thread-scaling pair"; P3 셀 파서가 3C-b 로 잘못 분류했던 행) — 예치 근거를 찾거나 행을 한정 (BLOCKED) (위치 정정 L-20)
-- [ ] **[2·공개 문장]** **P2-24** 옛 경쟁 도구 버전·컨테이너 빌드 재구성 불가 — 원고 S2 와 `results/competitor_logs/README.md` 에 명시 (BLOCKED)
-- [ ] **[2·공개 문장]** **P2-13 후속** `environment.yml:6`·`environment.core.lock.yml:1`·`Dockerfile:16` 주석을 "후기 환경만 동결" 로 한정
-- [ ] **[2·공개 문장]** 외부 런처 예치 — p100·identity-sweep·seeding-ablation 의 sbatch/래퍼를 `results/` 아래로 (저장소 자기완결 주장 전에). `results/` 편집이므로 0-2 의 P1-08·P1-13 과 **한 번에** 재해시
+- [x] **[2·공개 문장]** **P2-22** 상속 환경·바이너리 신원 — 전체 게놈(3.11.14/2.3.1) vs 패널(3.11.15/2.4.6) 환경의 완전한 기록이 없다. 복구하거나 S2 에 한계 명시 (BLOCKED) ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 예치/재현 한계 명시, 숫자·원자료 불변; provenance-dispositions.md)
+- [x] **[2·공개 문장]** **P2-23** 고아 thread-scaling 설정 행 — **Supplementary Methods S2 설정표**(`manuscript.md:502` "Thread-scaling pair"; P3 셀 파서가 3C-b 로 잘못 분류했던 행) — 예치 근거를 찾거나 행을 한정 (BLOCKED) (위치 정정 L-20) ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 예치/재현 한계 명시, 숫자·원자료 불변; provenance-dispositions.md)
+- [x] **[2·공개 문장]** **P2-24** 옛 경쟁 도구 버전·컨테이너 빌드 재구성 불가 — 원고 S2 와 `results/competitor_logs/README.md` 에 명시 (BLOCKED) ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 예치/재현 한계 명시, 숫자·원자료 불변; provenance-dispositions.md)
+- [x] **[2·공개 문장]** **P2-13 후속** `environment.yml:6`·`environment.core.lock.yml:1`·`Dockerfile:16` 주석을 "후기 환경만 동결" 로 한정 ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 예치/재현 한계 명시, 숫자·원자료 불변; provenance-dispositions.md)
+- [x] **[2·공개 문장]** 외부 런처 예치 — p100·identity-sweep·seeding-ablation 의 sbatch/래퍼를 `results/` 아래로 (저장소 자기완결 주장 전에). `results/` 편집이므로 0-2 의 P1-08·P1-13 과 **한 번에** 재해시 ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 예치/재현 한계 명시, 숫자·원자료 불변; provenance-dispositions.md)
 - [x] P2 의 quarantine 항목(P2-01·06·08·12 폐기 문구, P2-03 의 R3-14 재개, §3.7 Methods 제거) ✅ (2026-09-10, `quarantine.md` §3.7 마커·§3.11–3.15)
 
 ### 0-5. 장부 위생 — Codex 장부 리뷰 (2026-09-10, `docs/2026-09-10-ledger-review/`) 잔여분
@@ -93,14 +93,18 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 
 ### 0-4. 수치 표기 — 소수점 두 자리 통일 (2026-09-10 저자 지시, 규칙은 `CLAUDE.md` "Numeric presentation")
 
+> ✅ **2026-09-10 제출 전 수습**: 118개 분류·지원되는 값 재계산·Methods 규칙 완료. 세부는 `docs/2026-09-10-presubmit/README.md`. 원천 정밀도 예외는 완료 표시로 지우지 않는다.
+- [!] **잔여 정밀도 10토큰** ⛔ post-merge calls-per-array 8곳은 예치 JSON이 한 자리만 보존한다. 캐시 0.6 s는 unlogged 과거 관찰, Chr4 18.8 Mb는 과거 회귀검사 요약만 확인됨. 추가 자릿수는 복구/재생성 전까지 금지; 현행 표기와 한계를 유지. S2 여섯 셀은 아래의 별도 3등급 작업 그대로다. 근거: `one-decimal-classification.tsv`.
+> **파생 주장 출처 한계**: above-100 merged-bp의 33.4%/65.7%와 native-F 1.01 pp는 정확한 피연산자가 예치되지 않아 현행 수치 주장 대신 한계/표시 recall 값으로 교체했다. TRASH empty-window ≤0.20 pp는 과거 요약이며 미검증 한계를 명시했다. 이는 원자료 오류 판정이 아니다 (`remaining-sources.json`, `derived-claims.json`).
+
 - [x] 표 셀 1자리 → 2자리 **59건**(65 적용 − S2 6셀 되돌림) + 본문 인용 24곳 + 문맥 지정 5곳(TRF 5.22/5.51/5.48 h, core-hours 25.29/59.56/33.73) ✅ (2026-09-10, `docs/2026-09-10-precision/precision-edits.json` 88건 유효, `reverted` 6건 표시)
 - [ ] **[3·제출 후]** **S2 여섯 셀 재생성** — `results/regen/s2_F_p100.txt` 가 1자리(38.9/46.4, 13.2/24.8, 21.9/6.1)라 되돌렸다(L-09). `scripts/scoring/analyze_unique_regions.py` 의 `:.1f` 를 `:.2f` 로 바꿔 요약을 재생성·예치(재해시)한 뒤 다시 넓힌다
-- [ ] **[1·제출 전]** **본문 1자리 후보 토큰 118개 — 먼저 분류** — `docs/2026-09-10-precision/precision-report.md` "Remaining 1-dp tokens" 가 목록. 절 번호(2.1, 2.2, 3.x)·버전(longdust 1.4)·파라미터·정의 상수는 **제외**하고(L-11), 남는 측정값만 예치물에서 재계산(자릿수 덧붙이기 금지). 큰 묶음: %(L21·L78·L86·L94·L119·L121), kb 오프셋(L70·L248·L250·L294), calls-per-array(L250), range-cost "6.6 h→4.0 h / 8.6→7.3"(L105, `quarantine.md` §2 의 4.02/4.11/4.02 · 7.31/7.28/7.13 로), "6.6 days"(L38·L78·L107 — **TRF** p2000 취소 실행 잡 `6076847`, 6-13:57:48, `results/sacct_provenance.txt:40–42`; 취소 실행은 완료비용 **하한** 한정 유지, L-12), Wilson CI(L119·L121). 분류 후 실제 측정값 건수를 여기 기록
-- [ ] **[1·제출 전]** **파생값 전수 재계산** — "points", "percentage points", "×"/"times", "factor of" 가 붙은 문장을 grep 해 예치 전정밀도 값에서 다시 계산(반올림 셀끼리 뺀 값 금지). §6.8 과 R2-9 가 이 계열
-- [ ] **[1·제출 전]** E26 후속 — L294 "span approximately 0.18 points" 의 **"approximately" 삭제** (예치값 차이 0.1803, 두 자리 0.18 정확; 저자 채택 2026-09-10)
+- [x] **[1·제출 전]** **본문 1자리 후보 토큰 118개 — 먼저 분류** — `docs/2026-09-10-precision/precision-report.md` "Remaining 1-dp tokens" 가 목록. 절 번호(2.1, 2.2, 3.x)·버전(longdust 1.4)·파라미터·정의 상수는 **제외**하고(L-11), 남는 측정값만 예치물에서 재계산(자릿수 덧붙이기 금지). 큰 묶음: %(L21·L78·L86·L94·L119·L121), kb 오프셋(L70·L248·L250·L294), calls-per-array(L250), range-cost "6.6 h→4.0 h / 8.6→7.3"(L105, `quarantine.md` §2 의 4.02/4.11/4.02 · 7.31/7.28/7.13 로), "6.6 days"(L38·L78·L107 — **TRF** p2000 취소 실행 잡 `6076847`, 6-13:57:48, `results/sacct_provenance.txt:40–42`; 취소 실행은 완료비용 **하한** 한정 유지, L-12), Wilson CI(L119·L121). 분류 후 실제 측정값 건수를 여기 기록 ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 118개 전수 분류: 측정 후보91(81 재계산/재서술,10 원천 정밀도 유지), 제외27; one-decimal-classification.tsv)
+- [x] **[1·제출 전]** **파생값 전수 재계산** — "points", "percentage points", "×"/"times", "factor of" 가 붙은 문장을 grep 해 예치 전정밀도 값에서 다시 계산(반올림 셀끼리 뺀 값 금지). §6.8 과 R2-9 가 이 계열 ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 125개 등록 비교/정의 검토,102개 수치 식 재계산; source-limited는 명시/수치 주장 한정. derived-claims.json·remaining-sources.json)
+- [x] **[1·제출 전]** E26 후속 — L294 "span approximately 0.18 points" 의 **"approximately" 삭제** (예치값 차이 0.1803, 두 자리 0.18 정확; 저자 채택 2026-09-10) ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: approximately 삭제; numeric-edits.json)
 - [ ] **[3·제출 후]** 그림 주석 — `plot_fig4_plant_satellites.py`·`plot_figS2_postmerge.py` 의 `:.1f` 라벨을 `:.2f` 로, 재렌더는 `bwtandem` env 로(재렌더 자체는 별도 결정)
 - [ ] **[3·제출 후]** 스코어러 콘솔 출력 `:.1f`/`:.3f` (`fp_check*.py`, `analyze_unique_regions.py`, `score_cen180_identity_strata.py`, `score_maize_3a.py`) → `:.2f`. 예치 JSON 은 전정밀도라 결과값은 안 바뀐다; 출력을 다시 예치할 때만 재해시
-- [ ] **[1·제출 전]** 원고 Methods 에 표기 규칙 한 문장(측정값 2자리, 예치물에서 계산, 파라미터는 원형)
+- [x] **[1·제출 전]** 원고 Methods 에 표기 규칙 한 문장(측정값 2자리, 예치물에서 계산, 파라미터는 원형) ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: Methods2.2.3: half-up·두자리·전정밀도 계산, 카운트/파라미터/원천 정밀도 예외; numeric-edits.json)
 - [x] **반올림 규약 — 저자 결정: decimal half-up** ✅ (2026-09-10, `docs/2026-09-10-precision/reapply_halfup.py`) 94건 재적용, `:.2f` 와 달라진 값 6곳(12.645 h → **12.65** ×5, 58.845 → **58.85**). 기존 2자리 셀 345개(유니코드 음수 포함 349)는 half-up 과 전부 일치(감사 결과 `precision-report.md` 부록; "586" 은 P3 셀 판정 REJECTED 수였다, L-10). `normalize_precision.py`·`CLAUDE.md` 규칙 갱신
 
 
@@ -124,7 +128,7 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 - [x] ~~§6.6 stride 공식~~ · ~~§6.16 stride 축소 모순~~ — **오탐으로 철회** ✅ (2026-09-03, `quarantine.md` §6.6·§6.16)
 - [x] **§6.5** "roughly 5% more sequence" → 두 값을 같은 단위(염기)로 재계산 후 교체
 - [x] **§6.4** 2026 도구 메모리 셀 2개: AniAnn's Col-CEN 0.50 → **0.48**, longdust 0.07 → **0.06**
-- [ ] **[1·제출 전]** **§6.12** TR-1 경계 오차 네 값(771 bp / 4.3 kb / 4,265 / 7,973)의 통계 정의 후 일치
+- [x] **[1·제출 전]** **§6.12** TR-1 경계 오차 네 값(771 bp / 4.3 kb / 4,265 / 7,973)의 통계 정의 후 일치 ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: TR-1 raw770.65 /merged4282 /banded7973.15; 4265.30은 knob180. tr1-source-report.md)
 - [x] **§6.24** Discussion 4.3 — Tier 1 도 FM-index 열거를 돌린다(`TIER1_FMSCAN=1`). 메커니즘 서술 정정
 - [x] **§6.25** Abstract 의 "per-figure provenance manifest" 약속 삭제 (매핑 0건, 그림 프로그램 6/6 스텁)
 - [x] **§6.26** S1.3 파라미터 범위를 "핵 염색체 5개"로 한정하거나 ChrC/ChrM 값 추가
@@ -224,3 +228,5 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 - [x] Codex 원고 라운드 1 (코드 ↔ 원고 대조) ✅ (2026-09-03, `docs/2026-09-03-codex-review-findings.md`)
 - [x] 확정 결함 21건을 `quarantine.md` §6 에 기록 ✅ (2026-09-03, 전건 실물 파일 재현)
 - [x] 랩 위키 반영 ✅ (2026-09-03, wiki `eecf950`)
+
+> ✏️ **C-10/P1-11 완료 확인 (2026-09-10)**: 위 C-10의 "예치 JSON 교체 대기"는 오래된 상태다. `e4ae632` 교체 완료; 수치 period 필드5개와 `strata_spec` 메타데이터 변화 및 `903245c` TRF-only 출처를 원고 S4·quarantine에 반영. 이번에는 JSON 불변 (`docs/2026-09-10-presubmit/s4-check.txt`).

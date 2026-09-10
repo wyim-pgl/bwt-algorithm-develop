@@ -1,10 +1,10 @@
 # Benchmarking environment for BWTandem and its comparator tools.
 #
-# The manuscript's measured environment is Python 3.11.15 (conda env
-# "bwtandem"); this file used to request python=3.13 and force
-# CONDA_SUBDIR: osx-64, both of which contradicted every recorded run.
-# Core versions are pinned to what the published numbers were measured on --
-# see environment.core.lock.yml for the exact core freeze.
+# Core pins describe only the later panel/sweep environment (Python 3.11.15,
+# numpy 2.4.6), not the earlier whole-genome environment (reported as
+# Python 3.11.14, numpy 2.3.1) or the historical competitor container.
+# See environment.core.lock.yml; complete inherited environments and native
+# binary identities were not preserved (manuscript Supplementary Methods S2).
 name: bwt
 channels:
   - conda-forge

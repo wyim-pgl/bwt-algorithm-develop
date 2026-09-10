@@ -24,4 +24,7 @@ are not deposited. The named sampler writes the sheet and answer key, not
 dot plots. The deposited sequence-bearing sheet permits new visualizations,
 but does not reproduce the exact images the reader saw without the original
 renderer and its settings. Exact visual-audit reproduction remains blocked
-on those artifacts.
+on those artifacts. The source population BED and a separate reader attestation
+are also not deposited here; the sheet/key/verdict files do not independently
+establish the original sampling-population provenance or reader identity. This
+absence does not by itself invalidate any recorded judgment.

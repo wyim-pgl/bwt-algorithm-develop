@@ -520,6 +520,8 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 
 ### 6.12 TR-1 경계 오차 — 같은 값이 771 bp 이자 4.3 kb
 
+> ✅ **정의 정리·적용 (2026-09-10, `docs/2026-09-10-presubmit/tr1-source-report.md`)**: 아래의 "같은 값" 가정은 폐기한다. 원시 호출 TR-1 **770.65 bp**(17배열), 좌표 병합 gap=0 TR-1 **4,282 bp**(원천 정수 bp, 4.28 kb), period 100–500 원시 호출 **knob180 4,265.30 bp**(25배열) / **TR-1 7,973.15 bp**(17배열)는 서로 다른 모집단·전처리다. `score_exp3.py::array_metrics` 는 탐지된 각 진실 배열에 직접 겹치는 호출의 최소 시작·최대 끝과 진실 경계의 절대 차이 두 개를 평균한 뒤, 배열 간 동일 가중 평균을 낸다. 호출별 평균이나 중앙값이 아니다. 원고 Methods·본문·캡션·banded 두 셀을 일치시켰다. 아래는 당시 문제 제기의 이력이며 새 수치의 근거가 아니다.
+
 - **왜**: 234행은 "50.34% at a 771 bp mean boundary offset", 236행은 같은 재생성 파일의
   병합 전 상태를 "50.34% ... 4.3 to 19.8 kb offset" 이라 한다. 커버리지가 동일한데 병합 전
   평균 오차가 둘일 수 없다. 캡션(240행)은 또 banded 4,265 bp / 7,973 bp 를 제시한다.
@@ -657,6 +659,8 @@ grep -rn 'quarantine.md' resume.md CLAUDE.md todo.md   # 이 파일로 연결된
 
 ### 6.23 "TRF's period column is empty because its BED's motif column holds the full array sequence"
 
+> ✏️ **C-10 예치 완료 재확인 (2026-09-10, P1-11)**: corrected unsplit JSON 교체는 `e4ae632`로 완료되어 있다. `903245c` scorer의 TRF-only 보정은 기존 `43543da`/6146229 실행에 통째로 귀속하지 않는다. 숫자 period 필드 5개 외에 `strata_spec` 메타데이터도 추가됐다. split-band JSON의 matching·strata는 유효하고 옛 TRF period 통계만 superseded. 원고 S4와 출처를 맞췄으며 JSON은 이번에 변경하지 않았다. 근거: `results/one_to_one/README.md`, `docs/2026-09-10-presubmit/s4-check.txt`.
+>
 > ✅ **APPLIED (2026-09-03, 저자 결정 C-10):** 스코어러를 고치고 TRF 만 재채점했다.
 > `load()` 에 col5=="period" 분기, `period_of()` 가 명시 period 우선. 재채점 결과 **period 5개 필드만**
 > 바뀌고 나머지 30개 필드는 예치본과 동일 — matched 518,719, sensitivity 29.06, precision 53.87, 층화 전부 불변.
@@ -837,6 +841,8 @@ env 레버 기반 recall/precision 프런티어는 **천장**에 있다.
 부르는지 실행 전에 `grep -n bedtools` 로 본다. §8.3 의 conda solve 금지와 같은 계열이다.
 
 ### 8.9 반올림된 셀끼리 빼거나 곱하지 말 것 — 측정값은 두 자리, 계산은 예치물에서
+
+> ✏️ **추가 정정 (2026-09-10, `docs/2026-09-10-presubmit/`)**: 남아 있던 Arabidopsis 세 도구 spread 0.20 → **0.15 pp**, H–ULTRA 0.02 → **0.03 pp**, full→matched 최대 region recall 이동 1.1 → **1.66 pp**. TRASH–BWTandem coverage 우위는 knob180 **1.43**, TR-1 **2.84**, CentC **0.14 pp**. 기존 원고의 1.44/2.83/0.13을 재인용하지 않는다. 모든 계산은 `derived-claims.json`의 출처·피연산자·식으로 추적한다. 앞선 33.4%/65.7% above-100 merged-bp 비율은 정확한 분자·분모가 예치 요약에 없고 재생성 결과에도 확립되지 않아 현행 원고의 수치 주장에서는 제외했다. **부재를 숫자가 틀렸다는 판정으로 승격한 것은 아니다.** Native-F의 1.01 pp 차이 역시 정확한 truth-hit 분자가 없어 표시된 recall 두 값으로 대체하고 한계를 밝혔다.
 
 같은 값이 표에서는 `81.62`, 본문에서는 "0.02 points" 였다가 예치물로 계산하면 0.03 이 되는 일이 반복됐다
 (§6.8 의 1.5/2.8 → 1.54/2.81 → 2.82, R2-9 의 14.36 → 14.88, ASTRA P3 의 "0.02 → 0.03 after rounding").

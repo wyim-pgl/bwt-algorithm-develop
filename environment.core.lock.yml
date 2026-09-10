@@ -1,8 +1,9 @@
-# Exact core freeze of the environment the published numbers were measured on:
-# conda env "bwtandem" at /data/gpfs/assoc/pgl/bin/conda/conda_envs/bwtandem,
-# recorded 2026-08-27. This is the detector's runtime; comparator tools live in
-# environment.yml. numba is NOT installed in the measured environment -- the
-# numba-accelerated paths were not part of any recorded run.
+# Core package pins recorded for the later detector environment, not a freeze
+# of every published execution. The earlier whole-genome runs report Python
+# 3.11.14/numpy 2.3.1; the later panel/sweep records report 3.11.15/2.4.6.
+# This is not a complete inherited-environment or native-binary snapshot and
+# does not reconstruct the historical competitor container. numba is absent
+# from these pins; that fact alone does not establish its status in every run.
 name: bwtandem
 channels:
   - conda-forge

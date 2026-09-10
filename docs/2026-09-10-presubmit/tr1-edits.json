@@ -1,0 +1,98 @@
+[
+  {
+    "line": 92,
+    "old": "Metrics were detection sensitivity, array coverage, mean boundary offset error, and a normalized fragmentation score",
+    "new": "Metrics were detection sensitivity, array coverage, mean absolute outer-boundary offset, and a normalized fragmentation score",
+    "source": "score_exp3.py array_metrics"
+  },
+  {
+    "line": 92,
+    "old": "Experiment 3C assessed 17 CentC centromeric arrays (~156 bp) under the same four metrics.",
+    "new": "Experiment 3C assessed 17 CentC centromeric arrays (~156 bp) under the same four metrics. For each detected truth array [g_s, g_e), the boundary statistic is (|g_s − min(s)| + |g_e − max(e)|)/2 over calls with positive overlap; the reported offset is the equally weighted mean across detected arrays, not a per-call mean or a one-to-one match. Endpoints are not clipped to truth boundaries. Tables 3B/3C use raw calls; their banded counterparts additionally restrict reported periods before selecting overlaps, whereas the coordinate-only post-merge diagnostic first merges chromosome-wide and then selects overlaps.",
+    "source": "scripts/scoring/score_exp3.py:66–86; rescore_tables_3bc.py:121–127; score_maize_regen_evidence.py:148–168"
+  },
+  {
+    "line": 248,
+    "old": "a 771 bp",
+    "new": "a 770.65 bp",
+    "source": "pass3-maize.json 3B/BWTandem/TR-1.unfiltered.offset; table3bc_replacement.md"
+  },
+  {
+    "line": 248,
+    "old": "45.77%/885 bp",
+    "new": "45.77%/884.85 bp",
+    "source": "pass3-maize.json 3B/TRF/TR-1.unfiltered.offset; table3bc_replacement.md"
+  },
+  {
+    "line": 248,
+    "old": "36.36%/476 bp",
+    "new": "36.36%/475.88 bp",
+    "source": "pass3-maize.json 3B/ULTRA/TR-1.unfiltered.offset; table3bc_replacement.md"
+  },
+  {
+    "line": 248,
+    "old": "22.74%/658 bp",
+    "new": "22.74%/658.32 bp",
+    "source": "pass3-maize.json 3B/tantan/TR-1.unfiltered.offset; table3bc_replacement.md"
+  },
+  {
+    "line": 248,
+    "old": "at 252 bp",
+    "new": "at 251.78 bp",
+    "source": "pass3-maize.json 3B/BWTandem/knob180.unfiltered.offset; table3bc_replacement.md"
+  },
+  {
+    "line": 248,
+    "old": "at 156 bp",
+    "new": "at 156.00 bp",
+    "source": "pass3-maize.json 3B/tantan/knob180.unfiltered.offset; table3bc_replacement.md"
+  },
+  {
+    "line": 250,
+    "old": "the TR-1 baselines are 4,282 bp after coordinate merging and 770.65 bp on raw calls.",
+    "new": "across the same 17 detected TR-1 arrays, the baselines are 4,282 bp (4.28 kb, stored only to whole bp) after coordinate merging and 770.65 bp on raw calls.",
+    "source": "maize_extra_evidence.json coordinate_postmerge/TR-1/BWTandem/0; pass3-maize.json 3B/BWTandem/TR-1.unfiltered"
+  },
+  {
+    "line": 256,
+    "old": "the corresponding banded offsets are 4,265 bp and 7,973 bp;",
+    "new": "the raw-call offsets after the inclusive 100–500 bp period filter are 4,265.30 bp for knob180 (25 detected arrays) and 7,973.15 bp for TR-1 (17 detected arrays);",
+    "source": "table3bc_replacement.md Table3B-b and pass3-maize.json banded entries; 4265 is knob180 not TR-1"
+  },
+  {
+    "line": 279,
+    "old": "| 4,265 |",
+    "new": "| 4,265.30 |",
+    "source": "pass3-maize.json 3B/BWTandem/knob180.banded.offset=4265.3"
+  },
+  {
+    "line": 288,
+    "old": "| 7,973 |",
+    "new": "| 7,973.15 |",
+    "source": "pass3-maize.json 3B/BWTandem/TR-1.banded.offset=7973.15"
+  },
+  {
+    "line": 294,
+    "old": "58 bp and 60 bp",
+    "new": "58.09 bp and 59.53 bp",
+    "source": "pass3-maize.json 3C unfiltered offsets ULTRA and tantan"
+  },
+  {
+    "line": 294,
+    "old": "TRF at 70 bp",
+    "new": "TRF at 69.62 bp",
+    "source": "pass3-maize.json 3C unfiltered offsets TRF"
+  },
+  {
+    "line": 294,
+    "old": "BWTandem at 170 bp",
+    "new": "BWTandem at 170.12 bp",
+    "source": "pass3-maize.json 3C unfiltered offsets BWTandem"
+  },
+  {
+    "line": 350,
+    "old": "an 18.8 Mb Arabidopsis Chr4, gave byte-identical output",
+    "new": "an Arabidopsis Chr4 reported in that historical regression summary as 18.8 Mb, gave byte-identical output",
+    "source": "CLAUDE.md historical regression summary; extra digits not independently established"
+  }
+]

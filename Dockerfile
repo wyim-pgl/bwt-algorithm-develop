@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential procps \
     && rm -rf /var/lib/apt/lists/*
 
-# The exact pinned core the published numbers were measured on
+# Core pins for the later detector environment only; not the earlier
+# whole-genome environment or historical competitor container
 COPY environment.core.lock.yml /tmp/environment.core.lock.yml
 RUN conda env update -n base -f /tmp/environment.core.lock.yml && conda clean -a -y
 

@@ -23,6 +23,15 @@ exactly: ULTRA 29:46:49 / 1,758,540 KiB, TRF 33:43:46 / 1,518,668 KiB, tantan
 6,691,220 KiB. Divide the kibibyte counts by 1024² for the GiB figures printed in
 the tables.
 
+## Reconstruction limits
+
+The command lines record `singularity exec ./bwtbench.sif`, not a contemporaneous
+package inventory, tool-binary hashes or an immutable container snapshot. They
+do not independently establish the original tool-version strings or whether
+that path was an image or writable sandbox at execution. The manuscript retains
+the original versions as author-reported; current release environment/lock files
+and Dockerfile do not reconstruct this historical competitor container.
+
 ## Two things they also show
 
 The three Col-CEN TRASH runs are separate executions with separate costs —

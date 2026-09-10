@@ -1,0 +1,7 @@
+{
+  "JSON operands": 144,
+  "formula results": 102,
+  "other cited operands (not source-replayed here)": 106,
+  "cost-cache operands": 58
+}
+PASS: registered arithmetic; other cited operands require their recorded source checks

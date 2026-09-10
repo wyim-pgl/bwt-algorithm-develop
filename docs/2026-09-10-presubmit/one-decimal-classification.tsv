@@ -1,0 +1,119 @@
+id	baseline_line	token	context	category	evidence
+N001	21	3.4	…Above period 100 it recovers 3.4% of regions against capp…	RECOMPUTED_OR_REWORDED	pass3-human.json BWTandem 101-2000 truth_hits / 1784804 *100; source BED identified in JSON; decimal ROUND_HALF_UP to .01
+N002	21	2.0	…regions against capped TRF's 2.0%. A blinded single-reade…	RECOMPUTED_OR_REWORDED	pass3-human.json TRF 101-2000 truth_hits / 1784804 *100; source BED identified in JSON; decimal ROUND_HALF_UP to .01
+N003	21	99.7	…s. On Arabidopsis it recovers 99.7% of the conserved CEN180…	RECOMPUTED_OR_REWORDED	pass3-colcen.json BWTandem.recall; underlying BED identified in JSON; decimal ROUND_HALF_UP to .01
+N004	21	99.2	…-window tantan re-run reaches 99.2% in 12. On maize CentC,…	RECOMPUTED_OR_REWORDED	pass3-colcen.json tantan (500bp re-run).recall; underlying BED identified in JSON; decimal ROUND_HALF_UP to .01
+N005	21	22.9	…ite annotator AniAnn's covers 22.9 points more, at boundary…	RECOMPUTED_OR_REWORDED	D002
+N006	32	94.3	…e: Naish et al. (2021) report 94.3–97.3% identity between A…	EXEMPT_QUOTED_LITERATURE	Naish et al. quoted precision retained; no extra digits inferred.
+N007	32	97.3	…ish et al. (2021) report 94.3–97.3% identity between Arabid…	EXEMPT_QUOTED_LITERATURE	Naish et al. quoted precision retained; no extra digits inferred.
+N008	38	6.6	…ts 2,000 bp attempt there ran 6.6 days without completing…	RECOMPUTED_OR_REWORDED	results/sacct_provenance.txt JobID=6076847 Elapsed=6-13:57:48 /86400; decimal ROUND_HALF_UP to .01
+N009	38	3.3	…d re-runs of Sections 3.2 and 3.3 are the exception and ar…	EXEMPT_SECTION	Section heading/cross-reference, not a measurement.
+N010	44	2.1	…2.1 BWTandem Algorithm Archi…	EXEMPT_SECTION	Section heading/cross-reference, not a measurement.
+N011	66	1.2	…y 2, integer truncation of a ±1.2 shift), sampling stride…	EXEMPT_PARAMETER_OR_DEFINITION	Algorithm parameter, formula or design-size illustration, not measured outcome.
+N012	66	16.5	…ch tolerance spans roughly 15–16.5% with each chromosome's…	EXEMPT_PARAMETER_OR_DEFINITION	Algorithm parameter, formula or design-size illustration, not measured outcome.
+N013	70	17.8	…nomer separated by as much as 17.8 kb of unclaimed sequence…	EXEMPT_PARAMETER_OR_DEFINITION	Algorithm parameter, formula or design-size illustration, not measured outcome.
+N014	70	17.8	…tif period, the condition the 17.8 kb monomer merge above i…	EXEMPT_PARAMETER_OR_DEFINITION	Algorithm parameter, formula or design-size illustration, not measured outcome.
+N015	75	2.2	…2.2 Benchmarking Methodology…	EXEMPT_SECTION	Section heading/cross-reference, not a measurement.
+N016	76	1.4	…published in 2026 — longdust 1.4 and AniAnn's 0.7.1 — wer…	EXEMPT_VERSION	longdust version, native notation preserved.
+N017	78	6.6	…ated without completing after 6.6 days, 4.7 times its 33.7…	RECOMPUTED_OR_REWORDED	results/sacct_provenance.txt JobID=6076847 Elapsed=6-13:57:48 /86400; decimal ROUND_HALF_UP to .01
+N018	78	4.7	…ut completing after 6.6 days, 4.7 times its 33.73-hour 500…	RECOMPUTED_OR_REWORDED	D027
+N019	78	124.8	…tted calls only for the first 124.8 Mb of chromosome 1, abou…	RECOMPUTED_OR_REWORDED	results/range_cost_attempts/README.md last COMPLETE emitted End=124785432; not processing progress; decimal ROUND_HALF_UP to .01
+N020	78	1.1	…gion recall shifts by at most 1.1 percentage points and re…	RECOMPUTED_OR_REWORDED	D025
+N021	78	1.7	…d region precision by at most 1.7 (Tables 1a, 1b), but bas…	RECOMPUTED_OR_REWORDED	D026
+N022	78	33.4	…mparable between tools, since 33.4% of BWTandem's called ba…	RECOMPUTED_OR_REWORDED	remaining-sources.json L78: missing exact merged-bp operands; do not fabricate current shares or derive them from rounded bpRecall/bpPrec
+N023	78	65.7	…f BWTandem's called bases and 65.7% of TRF's lie above peri…	RECOMPUTED_OR_REWORDED	remaining-sources.json L78: missing exact merged-bp operands; do not fabricate current shares or derive them from rounded bpRecall/bpPrec
+N024	84	3.1	…uman GRCh38 reference genome (3.1 Gb) served as the primar…	RECOMPUTED_OR_REWORDED	quarantine.md §6.5 exact primary FASTA length 3088269832 / 1e9; 3.09 is rounded
+N025	86	2.6	…tratum), since such calls are 2.6% of the total, and the b…	RECOMPUTED_OR_REWORDED	pass3-human.json BWTandem counts 102926/4014108*100; decimal ROUND_HALF_UP to .01
+N026	90	94.6	…ts. Of the surviving monomers 94.6% fall within 175–179 bp,…	RECOMPUTED_OR_REWORDED	results/ground_truth/colcen_cen180.bed count length 175..179: 63077/66683*100; decimal ROUND_HALF_UP to .01
+N027	92	1.0	…rmalized fragmentation score (1.0 = single contiguous call…	EXEMPT_PARAMETER_OR_DEFINITION	Algorithm parameter, formula or design-size illustration, not measured outcome.
+N028	94	2.7	…(48,344 of 1,784,804 regions, 2.7%), whereas the competito…	RECOMPUTED_OR_REWORDED	results/regen/heldout_select_chr21_22.txt GT regions 48344 / full truth 1784804 *100; decimal ROUND_HALF_UP to .01
+N029	99	1.4	…any run was scored): longdust 1.4 (Li and Li, 2026), a low…	EXEMPT_VERSION	longdust version, native notation preserved.
+N030	102	3.1	…3.1 Tandem Repeat Detection…	EXEMPT_SECTION	Section heading/cross-reference, not a measurement.
+N031	103	3.1	…en runs were attempted on the 3.1 Gb human GRCh38 genome a…	RECOMPUTED_OR_REWORDED	quarantine.md §6.5 exact primary FASTA length 3088269832 / 1e9; 3.09 is rounded
+N032	105	6.6	…he narrow arm fell from about 6.6 h to 4.0 h while the wid…	RECOMPUTED_OR_REWORDED	remaining-sources.json runtime_series; sum(seconds)/(3*3600), decimal half-up; old sacct batch vs new per-arm GNU-time, not same-run comparison
+N033	105	4.0	…arm fell from about 6.6 h to 4.0 h while the wide arm fel…	RECOMPUTED_OR_REWORDED	remaining-sources.json runtime_series; sum(seconds)/(3*3600), decimal half-up; old sacct batch vs new per-arm GNU-time, not same-run comparison
+N034	105	8.6	…while the wide arm fell from 8.6 h to 7.3 h. These are no…	RECOMPUTED_OR_REWORDED	remaining-sources.json runtime_series; sum(seconds)/(3*3600), decimal half-up; old sacct batch vs new per-arm GNU-time, not same-run comparison
+N035	105	7.3	…e wide arm fell from 8.6 h to 7.3 h. These are not the num…	RECOMPUTED_OR_REWORDED	remaining-sources.json runtime_series; sum(seconds)/(3*3600), decimal half-up; old sacct batch vs new per-arm GNU-time, not same-run comparison
+N036	107	6.6	…TRF attempt was stopped after 6.6 days (Section 2.2). The…	RECOMPUTED_OR_REWORDED	results/sacct_provenance.txt JobID=6076847 Elapsed=6-13:57:48 /86400; decimal ROUND_HALF_UP to .01
+N037	111	5.5	…lls and changed wall clock by 5.5%, from 21 m 18 s to 22 m…	RECOMPUTED_OR_REWORDED	D049
+N038	111	0.6	…cache loads a stored index in 0.6 s where construction tak…	SOURCE_LIMITED	Unlogged historical cache timing; no additional precision is evidenced.
+N039	119	1.0	…0 UNSURE, a supported rate of 1.0% (1.1% excluding UNSURE,…	RECOMPUTED_OR_REWORDED	results/audit11/verdicts_reviewer2.tsv: 4 supported /400; decimal ROUND_HALF_UP to .01
+N040	119	1.1	…RE, a supported rate of 1.0% (1.1% excluding UNSURE, Wilso…	RECOMPUTED_OR_REWORDED	results/audit11/verdicts_reviewer2.tsv: 4 supported /350 definitive; decimal ROUND_HALF_UP to .01
+N041	119	0.4	…cluding UNSURE, Wilson 95% CI 0.4 to 2.9%), with no suppor…	RECOMPUTED_OR_REWORDED	Wilson score interval, 4/350, z=1.959963984540054; verdicts_reviewer2.tsv; decimal ROUND_HALF_UP to .01
+N042	119	2.9	…UNSURE, Wilson 95% CI 0.4 to 2.9%), with no supported cal…	RECOMPUTED_OR_REWORDED	Wilson score interval, 4/350, z=1.959963984540054; verdicts_reviewer2.tsv; decimal ROUND_HALF_UP to .01
+N043	121	1.0	…nsupported and 50 unsure. The 1.0% proportion is 4/400; ex…	RECOMPUTED_OR_REWORDED	results/audit11/verdicts_reviewer2.tsv: 4 supported /400; decimal ROUND_HALF_UP to .01
+N044	121	1.1	…unsure calls gives 4/350, or 1.1%, with the descriptive W…	RECOMPUTED_OR_REWORDED	results/audit11/verdicts_reviewer2.tsv: 4 supported /350 definitive; decimal ROUND_HALF_UP to .01
+N045	121	0.4	…scriptive Wilson 95% interval 0.4–2.9%. Equal sampling acr…	RECOMPUTED_OR_REWORDED	Wilson score interval, 4/350, z=1.959963984540054; verdicts_reviewer2.tsv; decimal ROUND_HALF_UP to .01
+N046	121	2.9	…ptive Wilson 95% interval 0.4–2.9%. Equal sampling across…	RECOMPUTED_OR_REWORDED	Wilson score interval, 4/350, z=1.959963984540054; verdicts_reviewer2.tsv; decimal ROUND_HALF_UP to .01
+N047	123	2.6	…gion level the two are within 2.6 points over the full ran…	RECOMPUTED_OR_REWORDED	D053
+N048	123	0.9	….53 against 78.00) and within 0.9 at the matched range (78…	RECOMPUTED_OR_REWORDED	D054
+N049	125	2.2	…the others have two (Methods 2.2). Because the tools sear…	EXEMPT_SECTION	Section heading/cross-reference, not a measurement.
+N050	150	19.2	…Arabidopsis. Its wall clock, 19.2 h against BWTandem's 12.…	RECOMPUTED_OR_REWORDED	results/sacct_provenance.txt 6085144.batch Elapsed=19:13:30; decimal ROUND_HALF_UP to .01
+N051	185	3.2	…3.2 Centromeric Satellite De…	EXEMPT_SECTION	Section heading/cross-reference, not a measurement.
+N052	188	98.5	…wo (197 times the wall clock, 98.5 times the core-hours), o…	RECOMPUTED_OR_REWORDED	D062
+N053	188	10.1	…ook 33.73 hours. ULTRA needed 10.1 hours once raised to a 5…	RECOMPUTED_OR_REWORDED	results/sacct_provenance.txt 5981977.batch Elapsed=10:07:11; decimal ROUND_HALF_UP to .01
+N054	188	1.2	…runs in 0.80 h at 80.96 GiB, 1.2 times BWTandem's wall cl…	RECOMPUTED_OR_REWORDED	D061
+N055	194	5.0	…rs only partly, the remaining 5.0 points coming from calls…	RECOMPUTED_OR_REWORDED	D072
+N056	201	94.6	…ith a 177 bp consensus query; 94.6% of the 66,683 resulting…	RECOMPUTED_OR_REWORDED	results/ground_truth/colcen_cen180.bed count length 175..179: 63077/66683*100; decimal ROUND_HALF_UP to .01
+N057	217	3.3	…3.3 Repeat Detection across…	EXEMPT_SECTION	Section heading/cross-reference, not a measurement.
+N058	222	15.4	…he rotation rule, a factor of 15.4, and BWTandem 475,732 ag…	RECOMPUTED_OR_REWORDED	D077
+N059	222	13.9	…2 against 34,247, a factor of 13.9; TRF moves by 3.8 and UL…	RECOMPUTED_OR_REWORDED	D079
+N060	222	3.8	…factor of 13.9; TRF moves by 3.8 and ULTRA moves the othe…	RECOMPUTED_OR_REWORDED	D078
+N061	248	22.6	…98%) with boundary offsets of 22.6 and 83.7 kb, while longd…	RECOMPUTED_OR_REWORDED	pass3-maize.json 3B/AniAnn's (2026)/knob180.unfiltered.offset /1000 (bp to kb); decimal ROUND_HALF_UP to .01
+N062	248	83.7	…boundary offsets of 22.6 and 83.7 kb, while longdust place…	RECOMPUTED_OR_REWORDED	pass3-maize.json 3B/AniAnn's (2026)/TR-1.unfiltered.offset /1000 (bp to kb); decimal ROUND_HALF_UP to .01
+N063	248	10.6	…ports fixed windows and has a 10.6 kb offset. On knob180, T…	RECOMPUTED_OR_REWORDED	pass3-maize.json 3B/TRASH-de-novo/TR-1.unfiltered.offset /1000 (bp to kb); decimal ROUND_HALF_UP to .01
+N064	250	286.6	…500, 2,000 and 5,000 bp give 286.6, 122.4, 37.8 and 4.3 cal…	SOURCE_LIMITED	coordinate_postmerge JSON stores calls_per_array rounded to one decimal; no raw numerator is deposited in that summary.
+N065	250	122.4	…,000 and 5,000 bp give 286.6, 122.4, 37.8 and 4.3 calls per…	SOURCE_LIMITED	coordinate_postmerge JSON stores calls_per_array rounded to one decimal; no raw numerator is deposited in that summary.
+N066	250	37.8	…d 5,000 bp give 286.6, 122.4, 37.8 and 4.3 calls per detect…	SOURCE_LIMITED	coordinate_postmerge JSON stores calls_per_array rounded to one decimal; no raw numerator is deposited in that summary.
+N067	250	4.3	…p give 286.6, 122.4, 37.8 and 4.3 calls per detected array…	SOURCE_LIMITED	coordinate_postmerge JSON stores calls_per_array rounded to one decimal; no raw numerator is deposited in that summary.
+N068	250	2.3	…n offset moves from 253 bp to 2.3, 6.2 and 130.4 kb. At a…	RECOMPUTED_OR_REWORDED	results/regen/maize_extra_evidence.json postmerge/knob180/BWTandem/500/mean_offset_bp /1000; decimal ROUND_HALF_UP to .01
+N069	250	6.2	…set moves from 253 bp to 2.3, 6.2 and 130.4 kb. At a 2,000…	RECOMPUTED_OR_REWORDED	results/regen/maize_extra_evidence.json postmerge/knob180/BWTandem/2000/mean_offset_bp /1000; decimal ROUND_HALF_UP to .01
+N070	250	130.4	…s from 253 bp to 2.3, 6.2 and 130.4 kb. At a 2,000 bp gap, C…	RECOMPUTED_OR_REWORDED	results/regen/maize_extra_evidence.json postmerge/knob180/BWTandem/5000/mean_offset_bp /1000; decimal ROUND_HALF_UP to .01
+N071	250	354.6	…,000 bp gap, CentC moves from 354.6 to 35.9 calls per array,…	SOURCE_LIMITED	coordinate_postmerge JSON stores calls_per_array rounded to one decimal; no raw numerator is deposited in that summary.
+N072	250	35.9	…ap, CentC moves from 354.6 to 35.9 calls per array, 58.55%…	SOURCE_LIMITED	coordinate_postmerge JSON stores calls_per_array rounded to one decimal; no raw numerator is deposited in that summary.
+N073	250	3.4	…3.21% coverage, and 171 bp to 3.4 kb offset; TR-1 moves fr…	RECOMPUTED_OR_REWORDED	results/regen/maize_extra_evidence.json postmerge/CentC/BWTandem/2000/mean_offset_bp /1000; decimal ROUND_HALF_UP to .01
+N074	250	203.4	….4 kb offset; TR-1 moves from 203.4 to 27.5 calls, 50.34% to…	SOURCE_LIMITED	coordinate_postmerge JSON stores calls_per_array rounded to one decimal; no raw numerator is deposited in that summary.
+N075	250	27.5	…set; TR-1 moves from 203.4 to 27.5 calls, 50.34% to 77.24%…	SOURCE_LIMITED	coordinate_postmerge JSON stores calls_per_array rounded to one decimal; no raw numerator is deposited in that summary.
+N076	250	4.3	…0.34% to 77.24% coverage, and 4.3 to 19.8 kb offset. A 10…	RECOMPUTED_OR_REWORDED	maize_extra_evidence.json TR-1 gap0 mean_offset_bp=4282 /1000
+N077	250	19.8	…o 77.24% coverage, and 4.3 to 19.8 kb offset. A 10 kb gap c…	RECOMPUTED_OR_REWORDED	results/regen/maize_extra_evidence.json postmerge/TR-1/BWTandem/2000/mean_offset_bp /1000; decimal ROUND_HALF_UP to .01
+N078	250	4.1	…, but mean offsets range from 4.1 to 17.0 Mb, which is chr…	RECOMPUTED_OR_REWORDED	maize_extra_evidence.json postmerge/CentC/BWTandem/10000/mean_offset_bp /1e6; decimal ROUND_HALF_UP to .01
+N079	250	17.0	…ean offsets range from 4.1 to 17.0 Mb, which is chromosome-…	RECOMPUTED_OR_REWORDED	maize_extra_evidence.json postmerge/TR-1/BWTandem/10000/mean_offset_bp /1e6; decimal ROUND_HALF_UP to .01
+N080	294	14.9	…y a wide margin, 81.42%, at a 14.9 kb mean offset — the arr…	RECOMPUTED_OR_REWORDED	pass3-maize.json 3C/AniAnn's (2026)/CentC.unfiltered.offset /1000; decimal ROUND_HALF_UP to .01
+N081	294	2.2	…tantan (56.51%), a spread of 2.2 points. The top three sp…	RECOMPUTED_OR_REWORDED	D086
+N082	294	5.3	…Tandem at 170 bp and TRASH at 5.3 kb; on this class BWTand…	RECOMPUTED_OR_REWORDED	pass3-maize.json 3C/TRASH-template/CentC.unfiltered.offset /1000; decimal ROUND_HALF_UP to .01
+N083	300	12.6	…0–200 bp period band than the 12.6 Mb of curated CentC arra…	RECOMPUTED_OR_REWORDED	results/ground_truth/mo17_centc_arrays.bed sum(end-start)=12562249 /1e6; decimal ROUND_HALF_UP to .01
+N084	300	47.3	…C array: regenerated BWTandem 47.3 Mb, ULTRA 46.5 Mb, TRF 4…	RECOMPUTED_OR_REWORDED	results/regen/maize_extra_evidence.json period_100_200_merged_bp/BWTandem /1e6; decimal ROUND_HALF_UP to .01
+N085	300	46.5	…rated BWTandem 47.3 Mb, ULTRA 46.5 Mb, TRF 41.2 Mb and the…	RECOMPUTED_OR_REWORDED	results/regen/maize_extra_evidence.json period_100_200_merged_bp/ULTRA /1e6; decimal ROUND_HALF_UP to .01
+N086	300	41.2	…m 47.3 Mb, ULTRA 46.5 Mb, TRF 41.2 Mb and the re-run tantan…	RECOMPUTED_OR_REWORDED	results/regen/maize_extra_evidence.json period_100_200_merged_bp/TRF /1e6; decimal ROUND_HALF_UP to .01
+N087	300	34.2	…41.2 Mb and the re-run tantan 34.2 Mb; TRASH is excluded he…	RECOMPUTED_OR_REWORDED	results/regen/maize_extra_evidence.json period_100_200_merged_bp/tantan-w200 /1e6; decimal ROUND_HALF_UP to .01
+N088	300	29.7	…rated arrays alone contribute 29.7 Mb; we did not classify…	RECOMPUTED_OR_REWORDED	results/ground_truth/mo17_knob180_arrays.bed sum(end-start)=29655996 /1e6; decimal ROUND_HALF_UP to .01
+N089	300	2.7	…lls the band like the others, 2.7 times the curated array.…	RECOMPUTED_OR_REWORDED	D100
+N090	334	4.1	…4.1 Practical significance f…	EXEMPT_SECTION	Section heading/cross-reference, not a measurement.
+N091	335	5.2	…TRF's cost is flat on maize (5.2 to 5.5 h; Tables 3A–3C)…	RECOMPUTED_OR_REWORDED	results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3A_microsatellite_run.log elapsed seconds /3600 (pass3-costs.json cross-check); decimal ROUND_HALF_UP to .01
+N092	335	5.5	…cost is flat on maize (5.2 to 5.5 h; Tables 3A–3C) but not…	RECOMPUTED_OR_REWORDED	results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite_run.log elapsed seconds /3600 (pass3-costs.json cross-check); decimal ROUND_HALF_UP to .01
+N093	336	4.2	…4.2 Why recall over precisio…	EXEMPT_SECTION	Section heading/cross-reference, not a measurement.
+N094	339	5.5	…ded Arabidopsis wall clock by 5.5% and left its output byt…	RECOMPUTED_OR_REWORDED	D110
+N095	341	58.5	…ur. Under the published rule, 58.5% of BWTandem's out-of-ca…	RECOMPUTED_OR_REWORDED	results/regen/score_table1_regen_v2.txt supported/outGT = 1162197/1987130*100; published then all-other-tools block; decimal ROUND_HALF_UP to .01
+N096	341	53.5	…d by ULTRA or tantan, against 53.5% and 59.7% for those two…	RECOMPUTED_OR_REWORDED	results/regen/score_table1_regen_v2.txt supported/outGT = 797270/1490784*100; published then all-other-tools block; decimal ROUND_HALF_UP to .01
+N097	341	59.7	…or tantan, against 53.5% and 59.7% for those two, but that…	RECOMPUTED_OR_REWORDED	results/regen/score_table1_regen_v2.txt supported/outGT = 839049/1405572*100; published then all-other-tools block; decimal ROUND_HALF_UP to .01
+N098	341	59.2	…e is essentially unchanged at 59.2% while ULTRA's and tanta…	RECOMPUTED_OR_REWORDED	results/regen/score_table1_regen_v2.txt supported/outGT = 1177244/1987130*100; published then all-other-tools block; decimal ROUND_HALF_UP to .01
+N099	341	71.5	…and tantan's rise to roughly 71.5% and 71.6%. BWTandem's o…	RECOMPUTED_OR_REWORDED	results/regen/score_table1_regen_v2.txt supported/outGT = 1065430/1490784*100; published then all-other-tools block; decimal ROUND_HALF_UP to .01
+N100	341	71.6	…n's rise to roughly 71.5% and 71.6%. BWTandem's out-of-cata…	RECOMPUTED_OR_REWORDED	results/regen/score_table1_regen_v2.txt supported/outGT = 1006546/1405572*100; published then all-other-tools block; decimal ROUND_HALF_UP to .01
+N101	342	4.3	…4.3 Comparison with existing…	EXEMPT_SECTION	Section heading/cross-reference, not a measurement.
+N102	344	131.9	…TRF took 131.9 hours on the 132 Mb Arab…	RECOMPUTED_OR_REWORDED	results/competitor_logs/trf__Col-CEN_v1.2_run.log elapsed seconds /3600 (pass3-costs.json cross-check); decimal ROUND_HALF_UP to .01
+N103	344	5.5	…132 Mb Arabidopsis genome and 5.5 hours on the 2.18 Gb mai…	RECOMPUTED_OR_REWORDED	results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc_run.log elapsed seconds /3600 (pass3-costs.json cross-check); decimal ROUND_HALF_UP to .01
+N104	345	4.4	…4.4 Limitations…	EXEMPT_SECTION	Section heading/cross-reference, not a measurement.
+N105	346	5.3	…0.13 points more on CentC at 5.3 kb), but its reported-pe…	RECOMPUTED_OR_REWORDED	pass3-maize.json 3C/TRASH-template/CentC.unfiltered.offset /1000; decimal ROUND_HALF_UP to .01
+N106	350	1.0	…0 unsure: a supported rate of 1.0% overall (Wilson 95% CI…	RECOMPUTED_OR_REWORDED	results/audit11/verdicts_reviewer2.tsv: 4 supported /400; decimal ROUND_HALF_UP to .01
+N107	350	0.4	…f 1.0% overall (Wilson 95% CI 0.4 to 2.9% on the definitiv…	RECOMPUTED_OR_REWORDED	Wilson score interval, 4/350, z=1.959963984540054; verdicts_reviewer2.tsv; decimal ROUND_HALF_UP to .01
+N108	350	2.9	…overall (Wilson 95% CI 0.4 to 2.9% on the definitive verdi…	RECOMPUTED_OR_REWORDED	Wilson score interval, 4/350, z=1.959963984540054; verdicts_reviewer2.tsv; decimal ROUND_HALF_UP to .01
+N109	350	18.8	…chromosome tested for it, an 18.8 Mb Arabidopsis Chr4, gav…	SOURCE_LIMITED	Historical chromosome-scale regression summary reports one-decimal Mb only; original tested-file length not established here.
+N110	351	4.5	…4.5 Future directions…	EXEMPT_SECTION	Section heading/cross-reference, not a measurement.
+N111	437	6.0	…o for periodic hit testing of 6.0 against an independent-b…	EXEMPT_PARAMETER_OR_DEFINITION	Algorithm parameter, formula or design-size illustration, not measured outcome.
+N112	445	0.5	…m = 0.15 + 0.10 ·  GC − 0.5…	EXEMPT_PARAMETER_OR_DEFINITION	Algorithm parameter, formula or design-size illustration, not measured outcome.
+N113	447	0.5	…by genomic composition:  GC − 0.5  reaches 0.5 only at 0%…	EXEMPT_PARAMETER_OR_DEFINITION	Algorithm parameter, formula or design-size illustration, not measured outcome.
+N114	447	0.5	…mposition:  GC − 0.5  reaches 0.5 only at 0% or 100% GC, s…	EXEMPT_PARAMETER_OR_DEFINITION	Algorithm parameter, formula or design-size illustration, not measured outcome.
+N115	475	0.2	…per alphabet symbol (roughly 0.2 bytes per base against t…	EXEMPT_PARAMETER_OR_DEFINITION	Algorithm parameter, formula or design-size illustration, not measured outcome.
+N116	481	6.0	…ITY=0.45 TIER1_FMSCAN_MIN_LLR=6.0…	EXEMPT_PARAMETER_OR_DEFINITION	Algorithm parameter, formula or design-size illustration, not measured outcome.
+N117	520	91.3	…configurations both round to 91.3%: this also holds for th…	RECOMPUTED_OR_REWORDED	results/regen/s2_F_p100.txt: (875084-76251)/875084*100; s2_P_p100.txt: (517791-44827)/517791*100
+N118	543	6.6	…p attempt did not complete in 6.6 days, Section 2.2.2) — a…	RECOMPUTED_OR_REWORDED	results/sacct_provenance.txt JobID=6076847 Elapsed=6-13:57:48 /86400; decimal ROUND_HALF_UP to .01
