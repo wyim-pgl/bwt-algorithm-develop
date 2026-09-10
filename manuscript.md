@@ -8,15 +8,13 @@ Correspondence: wyim@unr.edu
 
 ## Abstract
 
-**Motivation:** A broad tandem-repeat search must balance period range, detection quality and computational cost.
+**Summary:** BWTandem combines FM-index seeding, candidate refinement and supplementary periodicity scans to report motifs, periods, copy counts and purity across 1–2,000 bp in assembled genomes; in three paired human runs, widening the maximum period from 100 to 2,000 bp increased runtime 1.77–1.82 times (mean 1.79). Its contribution is wide-range structured output with non-leading shared-range accuracy — shared-output-band region recall was 78.87% against ULTRA's 81.62%, and a stratified single-reader audit supported only 4 of 400 calls absent from both the catalog and four original comparators — not a demonstrated causal speed advantage of the index.
 
-**Results:** BWTandem combines FM-index seeding, candidate refinement and supplementary periodicity scans to report motifs, periods, copy counts and purity across 1–2,000 bp. In three paired human runs, widening the maximum period from 100 to 2,000 bp increased runtime 1.77–1.82 times (mean 1.79). Shared-output-band region recall was 78.87%, below ULTRA's 81.62%. A stratified single-reader audit supported only 4 of 400 calls absent from both the catalog and four original comparators. Plant results demonstrate satellite detection, but period assignment, fragmentation and memory remain limitations. The contribution is wide-range structured output with non-leading shared-range accuracy, not a demonstrated causal speed advantage of the index.
-
-**Availability and implementation:** MIT-licensed source and scoring scripts: https://github.com/wyim-pgl/bwt-algorithm. Benchmark configurations differ from defaults (Supplementary Methods S2).
+**Availability and Implementation:** MIT-licensed source and scoring scripts: https://github.com/wyim-pgl/bwt-algorithm. Benchmark configurations differ from defaults (Supplementary Methods S2).
 
 **Contact:** wyim@unr.edu
 
-**Supplementary information:** Supplementary information accompanies this manuscript.
+**Supplementary Information:** Supplementary information accompanies this manuscript.
 
 ## 1 Introduction
 
@@ -26,7 +24,7 @@ Tandem repeats span short motifs and satellite monomers. Detectors such as TRF (
 
 A chromosome-level FM-index supports short-motif enumeration and sampled-k-mer occurrence queries. Three overlapping detection tiers combine short-repeat scanning, longest-common-prefix analysis and sparse seeding with candidate refinement. Satellite gap filling and an optional catch-all pass use autocorrelation, not index queries. Reported performance belongs to this complete pipeline; human and maize benchmarks enable the catch-all pass, whereas Arabidopsis does not. Supplementary Sections 2.1–2.2 and Methods S1–S2 specify gates, configurations and scoring.
 
-Human evaluation uses the GRCh38 primary chromosomes and the adotto variable-repeat catalog (English et al., 2024); plant evaluation uses Col-CEN and maize Mo17 (Naish et al., 2021; Chen et al., 2023). Human region recovery requires one-base overlap. Reciprocal-overlap and one-to-one sensitivity analyses are supplementary. Catalog precision is not precision against all genomic repeats. Output-period filtering matches the human comparison band, not execution ranges. Historical competitors processed additional sequences; memory measurements mix sampled cgroup peaks and GNU-time maxima. These observations do not establish matched cross-tool speedups. Human operating points and the Arabidopsis catch-all choice were selected using their evaluation truth sets; these are in-sample comparisons, and competitors did not receive an equivalent tuning search. All tables, original identifiers, detailed caveats and source links are retained in the supplement.
+Human evaluation uses the GRCh38 primary chromosomes (GenBank assembly GCA_000001405.15; Genome Reference Consortium, 2013) and release v1.2.1 of the adotto variable-repeat catalog (English et al., 2024; dataset English, 2024a); plant evaluation uses Col-CEN v1.2 (Naish et al., 2021; dataset Schatzlab, n.d.) and maize Mo17 (GenBank assembly GCA_022117705.1; Chen et al., 2023; dataset China Agriculture University, n.d.). Human region recovery requires one-base overlap. Reciprocal-overlap and one-to-one sensitivity analyses are supplementary. Catalog precision is not precision against all genomic repeats. Output-period filtering matches the human comparison band, not execution ranges. Historical competitors processed additional sequences; memory measurements mix sampled cgroup peaks and GNU-time maxima. These observations do not establish matched cross-tool speedups. Human operating points and the Arabidopsis catch-all choice were selected using their evaluation truth sets; these are in-sample comparisons, and competitors did not receive an equivalent tuning search. All tables, original identifiers, detailed caveats and source links are retained in the supplement.
 
 ## 3 Results and limitations
 
@@ -54,11 +52,19 @@ Benson G. (1999) Tandem repeats finder: a program to analyze DNA sequences. *Nuc
 
 Chen J. et al. (2023) A complete telomere-to-telomere assembly of the maize genome. *Nat. Genet.*, 55, 1221–1231.
 
+China Agriculture University (n.d.) Zm-Mo17-REFERENCE-CAU-T2T-assembly assembly for Zea mays (dataset). GenBank/ENA assembly accession GCA_022117705.1. https://www.ebi.ac.uk/ena/browser/view/GCA_022117705.1
+
 English A.C. et al. (2024) Analysis and benchmarking of small and large genomic variants across tandem repeats. *Nat. Biotechnol.*, published online 26 April 2024; 43, 431–442 (2025).
+
+English A. (2024a) Project Adotto Tandem-Repeat Regions and Annotations, v1.2.1 (dataset). Zenodo. https://doi.org/10.5281/zenodo.13987414
+
+Genome Reference Consortium (2013) GRCh38 human reference genome assembly (dataset). GenBank assembly accession GCA_000001405.15. https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000001405.15/
 
 Li H. and Li B. (2026) Finding low-complexity DNA sequences with longdust. *Bioinformatics*, 42, btag112.
 
 Naish M. et al. (2021) The genetic and epigenetic landscape of the Arabidopsis centromeres. *Science*, 374, eabi7489.
+
+Schatzlab (n.d.) Col-CEN v1.2 genome assembly (dataset), Col-CEN_v1.2.fasta.gz. GitHub. https://github.com/schatzlab/Col-CEN/tree/main/v1.2
 
 Olson D.R. and Wheeler T.J. (2024) ULTRA-effective labeling of tandem repeats in genomic sequence. *Bioinform. Adv.*, 4, vbae149.
 
@@ -70,6 +76,10 @@ Sweeten A. et al. (2026) AniAnn's: alignment-free annotation of tandem repeat ar
 
 **Fig. 1.** Paired human range cost (A); separate maize runtime (B) and human core-hour/memory observations (C). Cross-tool ranges, FASTA scopes and memory accounting differ. Original Figure 2 and its complete caption are preserved as Supplementary Figure 2.
 
+**Alt text:** Three-panel chart. Panel A is a slope chart of three paired human runs: runtime rises from about 4 hours at a 100 bp maximum period to 7.1–7.3 hours at 2,000 bp, with the per-replicate ratios 1.77–1.82 labelled beside the endpoints. Panel B shows observed ULTRA and TRF maize runtimes rising with the maximum period on log–log axes. Panel C shows dot plots of per-tool human core-hours and peak memory, each point labelled with its period cap; ranges and inputs are not matched across tools.
+
 ![Accuracy trade-offs and overlap-rule sensitivity](submission/figures/fig1_accuracy_tradeoff.png)
 
 **Fig. 2.** Native-period-100 operating points (A–B) and reciprocal-overlap sensitivity of post-filtered full-range output (C). The 2026 points in A–B are full-range, not band-matched. Original Figure 1 and its complete caption are preserved as Supplementary Figure 1.
+
+**Alt text:** Three-panel chart. Panels A and B plot region-level and base-pair precision against recall on GRCh38: BWTandem's four operating points P, B, F and H form a connected line whose precision falls as recall rises, and each competing tool is a single labelled point. Panel C plots region recall at periods of 100 bp or less under the one-base, reciprocal-0.25 and reciprocal-0.50 overlap rules; every tool's recall falls under the stricter rules, with ULTRA highest and BWTandem second throughout.

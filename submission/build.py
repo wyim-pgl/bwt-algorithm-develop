@@ -73,14 +73,27 @@ for _ in range(2):
                     '-output-directory=' + str(out), str(tex)], check=True)
 
 # The full supplement retains the long source's tables and declarations.
-# -implicit_figures: images stay inline (no floats), so each full legend keeps
-# its place directly below its image and Pandoc adds no second "Figure N" label.
-subprocess.run(['pandoc', 'supplementary.md', '-f', 'markdown-implicit_figures',
+# Disable automatic numbering. Inline images alone do not guarantee that a
+# following legend stays on-page: group the tall structural image explicitly.
+supp = Path('supplementary.md').read_text()
+pattern = r'!\[Supplementary Figure 5\]\(([^)]+)\)\s+((?:Supplementary Figure 5\.)[^\n]+)'
+def structural_figure(match):
+    image, caption = match.groups()
+    return ('\n```{=latex}\n' + r'\noindent\begin{minipage}{\linewidth}\centering' + '\n' +
+            r'\includegraphics[height=140mm,width=0.95\linewidth,keepaspectratio]{' + image + '}\n' +
+            r'\par\medskip\raggedright ' + latex(caption).strip() + '\n' +
+            r'\end{minipage}' + '\n```\n')
+supp, grouped = re.subn(pattern, structural_figure, supp)
+assert grouped == 1
+supp_input = out / 'supplementary-layout.md'
+supp_input.write_text(supp)
+subprocess.run(['pandoc', str(supp_input), '-f', 'markdown-implicit_figures',
                 '-o', str(out / 'supplementary.pdf'),
                 '--pdf-engine=xelatex', '-V', 'geometry:a4paper,landscape,margin=15mm',
                 '-V', 'fontsize:10pt', '-V', 'mainfont:DejaVu Serif',
                 '-V', 'monofont:DejaVu Sans Mono', '-V', 'colorlinks:true',
                 '--include-in-header=submission/supplement-header.tex'], check=True)
 for name in ('manuscript', 'supplementary'):
-    subprocess.run(['pandoc', name + '.md', '-o', str(out / (name + '.docx'))], check=True)
+    subprocess.run(['pandoc', name + '.md', '-f', 'markdown-implicit_figures',
+                    '-o', str(out / (name + '.docx'))], check=True)
 print('Built PDFs and DOCX in submission/build/. Inspect layout and warnings before release.')

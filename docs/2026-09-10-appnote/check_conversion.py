@@ -62,6 +62,9 @@ for item in crops:
     for key in ('source', 'pdf', 'png'):
         assert hashlib.sha256((root / item[key]).read_bytes()).hexdigest() == item[key + '_sha256'], item[key]
 render = json.loads((root / 'submission/figures/render-receipt.json').read_text())
+assert hashlib.sha256((root / 'submission/render_main_figures.py').read_bytes()).hexdigest() == render['renderer_sha256']
+assert set(render['outputs']) == {stem + ext for stem in
+    ('fig1_accuracy_tradeoff', 'fig2_range_cost') for ext in ('.pdf', '.png')}
 for path, expected in render['inputs'].items():
     assert hashlib.sha256((root / path).read_bytes()).hexdigest() == expected, path
 for name, expected in render['outputs'].items():
