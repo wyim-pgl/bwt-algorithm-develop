@@ -41,6 +41,8 @@ def supplement_body(text):
             line = '## ' + line
         elif line in ('Data and Code Availability', 'References', 'Supplementary Methods'):
             line = '## ' + line
+        if line.startswith('## ') and (not out or out[-1] != ''):
+            out.append('')  # Pandoc needs a blank line before ATX headings (F4).
         m = re.match(r'^Supplementary Figure (\d|S\d)\. ', line)
         if m:
             image = receipt['figure_files'][m[1]]
@@ -55,21 +57,31 @@ for text in (main, supp):
 assert len(re.findall(r'!\[', main)) == 2
 assert len(re.findall(r'!\[', supp)) == 7
 crops = json.loads((root / 'submission/figures/crop-receipt.json').read_text())
-assert len(crops) == 6
+assert len(crops) == 5  # both main figures moved to render_main_figures.py (F5)
 for item in crops:
     for key in ('source', 'pdf', 'png'):
         assert hashlib.sha256((root / item[key]).read_bytes()).hexdigest() == item[key + '_sha256'], item[key]
-accuracy = json.loads((root / 'submission/figures/accuracy-export-receipt.json').read_text())
-for path, expected in accuracy['inputs'].items():
+render = json.loads((root / 'submission/figures/render-receipt.json').read_text())
+for path, expected in render['inputs'].items():
     assert hashlib.sha256((root / path).read_bytes()).hexdigest() == expected, path
-for name, expected in accuracy['outputs'].items():
+for name, expected in render['outputs'].items():
     assert hashlib.sha256((root / 'submission/figures' / name).read_bytes()).hexdigest() == expected, name
+assert not (root / 'submission/figures/accuracy-export-receipt.json').exists()  # superseded
 versions = [re.search(r'^version = "([^"]+)"', (root / 'pyproject.toml').read_text(), re.M).group(1),
             re.search(r'^version: "([^"]+)"', (root / 'CITATION.cff').read_text(), re.M).group(1),
             re.search(r'^LABEL version="([^"]+)"', (root / 'Dockerfile').read_text(), re.M).group(1)]
 assert versions == ['0.9.0'] * 3, versions
 abstract = main.split('## Abstract\n', 1)[1].split('## 1 Introduction', 1)[0]
 assert len(abstract.split()) <= 200
+# Application Note abstract structure (final-check F1): exactly these four
+# headings in order, and a Summary of at most two sentences.
+labels = re.findall(r'\*\*([^*]+):\*\*', abstract)
+assert labels == ['Summary', 'Availability and Implementation', 'Contact',
+                  'Supplementary Information'], labels
+summary = abstract.split('**Summary:**', 1)[1].split('**Availability', 1)[0].strip()
+assert len(re.findall(r'\.\s+[A-Z]', summary)) + 1 <= 2, 'Summary exceeds two sentences'
+# Both main legends carry the journal-requested accessibility description (F2).
+assert len(re.findall(r'\*\*Alt text:\*\* \S', main)) == 2
 # Conservative working budget: count even Markdown tokens/URLs plus 500 words
 # per display item. Author must still confirm the live journal instructions.
 assert len(main.split()) + 2 * 500 <= 2600

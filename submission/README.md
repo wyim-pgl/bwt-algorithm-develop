@@ -37,16 +37,20 @@ sha256sum -c submission/SHA256SUMS
 The committed PDFs/DOCX are frozen proof outputs, copied from `build/` after
 inspection. Rebuilding changes PDF timestamps; update the payload checksum file
 only after adopting a new proof. `build/` is ignored. To reproduce presentation
-copies, `prepare_figures.py` needs PyMuPDF; the accuracy export must use the
-`bwtandem` environment with the existing plotting dependencies:
+copies, `prepare_figures.py` needs PyMuPDF; both main figures are re-rendered
+for print readability (final-check F5) by `render_main_figures.py`, which must
+use the `bwtandem` environment with the existing plotting dependencies:
 
 ```sh
 python submission/prepare_figures.py
-/data/gpfs/assoc/pgl/bin/conda/conda_envs/bwtandem/bin/python submission/export_accuracy_figure.py
+/data/gpfs/assoc/pgl/bin/conda/conda_envs/bwtandem/bin/python submission/render_main_figures.py
 ```
 
-Neither command edits results/ or reruns a scorer. Cropping is not valid for
-the accuracy figure because its old caption overlaps the x-axis labels.
+Neither command edits results/ or reruns a scorer. The renderer runs the
+deposited plotting scripts on the deposited CSVs and changes presentation only
+(type size, label spacing, marker contrast); `render-receipt.json` records the
+input and output hashes and supersedes the former accuracy-export receipt and
+the fig2 crop entry.
 
 ## Release / DOI gates
 

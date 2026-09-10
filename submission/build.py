@@ -23,12 +23,15 @@ body, legends = ('## 1 Introduction' + rest).split('## Figure legends', 1)
 assert front.startswith('# ')
 title = front.splitlines()[0][2:]
 figures = []
-for image, number, caption in re.findall(r'!\[[^\]]*\]\(([^)]+)\)\s+\*\*Fig\. (\d)\.\*\* ([^\n]+)', legends):
+for image, number, caption, alt in re.findall(
+        r'!\[[^\]]*\]\(([^)]+)\)\s+\*\*Fig\. (\d)\.\*\* ([^\n]+)\s+\*\*Alt text:\*\* ([^\n]+)', legends):
     pdf = Path(image).with_suffix('.pdf')
     assert pdf.is_file(), pdf
     figures.append(r'\begin{figure*}[t]\centering' + '\n' +
                    r'\includegraphics[width=\textwidth]{' + str(pdf) + '}\n' +
                    r'\caption{' + latex(caption).strip() + '}\n' +
+                   # Journal figure-accessibility text, printed directly below the legend.
+                   r'{\footnotesize\emph{Alt text:} ' + latex(alt).strip() + '}\n' +
                    r'\label{fig:' + number + '}\n' + r'\end{figure*}')
 assert len(figures) == 2
 header = r'''\documentclass[unnumsec,webpdf,contemporary,large,namedate]{oup-authoring-template}
@@ -41,6 +44,8 @@ header = r'''\documentclass[unnumsec,webpdf,contemporary,large,namedate]{oup-aut
 \usepackage{newunicodechar}
 \newunicodechar{≤}{\ensuremath{\leq}}
 \newunicodechar{≥}{\ensuremath{\geq}}
+% Newer class releases (v1.5, 2026) dropped \authormark; keep it harmless.
+\providecommand{\authormark}[1]{}
 % Do not print the template's false "Published by OUP" copyright footer.
 \makeatletter\let\ps@opening\ps@plain\makeatother
 \begin{document}
@@ -68,7 +73,10 @@ for _ in range(2):
                     '-output-directory=' + str(out), str(tex)], check=True)
 
 # The full supplement retains the long source's tables and declarations.
-subprocess.run(['pandoc', 'supplementary.md', '-o', str(out / 'supplementary.pdf'),
+# -implicit_figures: images stay inline (no floats), so each full legend keeps
+# its place directly below its image and Pandoc adds no second "Figure N" label.
+subprocess.run(['pandoc', 'supplementary.md', '-f', 'markdown-implicit_figures',
+                '-o', str(out / 'supplementary.pdf'),
                 '--pdf-engine=xelatex', '-V', 'geometry:a4paper,landscape,margin=15mm',
                 '-V', 'fontsize:10pt', '-V', 'mainfont:DejaVu Serif',
                 '-V', 'monofont:DejaVu Sans Mono', '-V', 'colorlinks:true',

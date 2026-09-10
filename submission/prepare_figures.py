@@ -14,8 +14,8 @@ target = Path('submission/figures')
 target.mkdir(parents=True, exist_ok=True)
 records = []
 for path in sorted(source.glob('*.pdf')):
-    if path.name == 'fig1_accuracy_tradeoff.pdf':
-        continue  # Its overlapping caption needs export_accuracy_figure.py.
+    if path.name in ('fig1_accuracy_tradeoff.pdf', 'fig2_range_cost.pdf'):
+        continue  # Both main figures are re-rendered by render_main_figures.py (F5).
     doc = fitz.open(path)
     assert len(doc) == 1, path
     page = doc[0]
@@ -31,6 +31,6 @@ for path in sorted(source.glob('*.pdf')):
                     'crop_box_points': list(crop), 'pdf': str(pdf), 'png': str(png),
                     'pdf_sha256': hashlib.sha256(pdf.read_bytes()).hexdigest(),
                     'png_sha256': hashlib.sha256(png.read_bytes()).hexdigest()})
-assert len(records) == 6
+assert len(records) == 5
 (target / 'crop-receipt.json').write_text(json.dumps(records, indent=2) + '\n')
-print('Created six plot-only PDF/PNG pairs; results/ is untouched.')
+print('Created five plot-only PDF/PNG pairs; results/ is untouched.')
