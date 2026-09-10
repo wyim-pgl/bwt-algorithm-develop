@@ -87,3 +87,15 @@ Changing the Docker label does not validate the image build.
 
 These gates block a claim of final submission readiness, not preservation of
 the draft or a clearly labelled software/source snapshot.
+
+
+## Lab-style Word tables (2026-09-10)
+
+`build.py` now runs `submission/format_docx_tables.py` after Pandoc. This is
+an OOXML table-only adaptation of the lab wiki three-line table rules, not
+blind application of its body-paragraph run-rebuilding script. Tables use
+Arial 9 pt, repeating bold headers, wrapped cells and three horizontal rules;
+the supplement uses landscape A4 with 15 mm margins. Plain Pandoc exports
+remain in build/*-pandoc.docx for content and idempotence checks. Requires
+lxml (tested 5.3.2); Python-docx is not required by this formatter.
+Validation and review limits: docs/2026-09-10-humanizer-docx/README.md.

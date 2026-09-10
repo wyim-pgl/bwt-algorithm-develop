@@ -7,6 +7,8 @@ single-column landscape layout to keep all original wide tables readable.
 """
 import re
 import subprocess
+import shutil
+import sys
 from pathlib import Path
 
 out = Path('submission/build')
@@ -96,4 +98,8 @@ subprocess.run(['pandoc', str(supp_input), '-f', 'markdown-implicit_figures',
 for name in ('manuscript', 'supplementary'):
     subprocess.run(['pandoc', name + '.md', '-f', 'markdown-implicit_figures',
                     '-o', str(out / (name + '.docx'))], check=True)
+    # Preserve the plain Pandoc export for independent content/style comparison.
+    shutil.copyfile(out / (name + '.docx'), out / (name + '-pandoc.docx'))
+    subprocess.run([sys.executable, 'submission/format_docx_tables.py',
+                    str(out / (name + '.docx'))], check=True)
 print('Built PDFs and DOCX in submission/build/. Inspect layout and warnings before release.')
