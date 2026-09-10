@@ -173,15 +173,17 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 - [x] **C-5. TRASH = de novo** ✅ (2026-09-03, 저자 결정: TRASH 에 de novo 모드가 있다) — 326행을 human 한정으로 좁히고 TRASH 를 de novo 로 재분류. §6.15
 - [x] **C-6. 투고처 — Bioinformatics Application Note** ✅ (2026-09-03, 저자 결정)
 - [x] **C-7. 제목 — 현행 유지** ✅ (2026-09-03) `BWTandem: FM-index seeding for wide-period-range tandem repeat detection in assembled genomes` — 저자가 지정한 문구가 원고 현행과 동일. **#27(FM-index 인과 프레이밍 지적)은 저자 유지 결정으로 종결**
-- [x] **[1·제출 전]** **C-8. Abstract 재구성** ✅ (2026-09-10, `94df01e`: 초기 새 초록 140단어, 비선도 정확도·감사 한계 유지; 최종 아카이브 URL은 아래 DOI 차단 항목). 종전 2026-09-03의 연기를 P4 후 해소.
+- [x] **[1·제출 전]** **C-8. Abstract 재구성** ✅ (2026-09-10, `94df01e`: 초기 새 초록 140단어, 비선도 정확도·감사 한계 유지; 내용 재구성의 완료이며 현행 규정의 Summary 형식은 아래 F1 보완 대상. 최종 아카이브 URL은 아래 DOI 차단 항목). 종전 2026-09-03의 연기를 P4 후 해소.
 ---
 
 ## D. 재실행·재측정이 필요한 것
 
-- [x] **[1·제출 전]** **App Note 전환 실행** ✅ (2026-09-10, `docs/2026-09-10-appnote/`): `manuscript.md` 축약, `manuscript_full.md` 원문 동결, `supplementary.md`에 **19개 표 블록의 모든 셀·순서와 상세 본문 보존**, 본문 그림 2개·보충 그림 7개. PDF/DOCX는 `submission/`. 실제 제출 승인·현행 규정 확인은 아래 별도 게이트.
+- [x] **[1·제출 전]** **App Note 전환 실행** ✅ (2026-09-10, `docs/2026-09-10-appnote/`): `manuscript.md` 축약, `manuscript_full.md` 원문 동결, `supplementary.md`에 **19개 표 블록의 모든 셀·순서와 상세 본문 보존**, 본문 그림 2개·보충 그림 7개. PDF/DOCX는 `submission/`. 기계적 보존·전환의 완료이며, 현행 규정 대조에서 확인한 형식·출력 수정과 실제 제출 승인은 아래 별도 게이트.
+- [x] **[1·제출 전]** **현행 Bioinformatics 지침 확인·기술 최종점검** ✅ (2026-09-10, `docs/2026-09-10-final-check/`): Chrome으로 공식 현행 URL 확보, 기존 403 차단 해소. 3쪽/19표 보존·해시·43 passed/1 skipped 재확인. **제출 통과 판정은 아님**.
+- [x] **[1·제출 전]** **현행 규정·출력 보완 F1–F5** ✅ (2026-09-10, 저자 지시로 실행, `docs/2026-09-10-f1f5-fixes/README.md`) — F1 초록 4항목/Summary 2문장(120단어; 기존 C-8 문장 거의 그대로 재사용, 8개 needle 보존); F2 본문 그림 Alt text 2개(PDF에도 캡션 아래 인쇄); F3 데이터셋 참조 4건(GCA_000001405.15·Zenodo 13987414·Col-CEN/E-MTAB-10272/PRJEB46164·GCA_022117705.1, 식별자는 보충자료 기재값, 공식 Zenodo/ENA/GitHub 메타데이터로 서지 보정); F4 literal `##` 22→0·자동 그림번호 7→0·범례 7/7 이미지 동일 페이지(check_proofs.py, Fig 5 minipage 묶음), 검증기 supplement_body 미러링·19표 전셀 보존; F5 `submission/render_main_figures.py`(font_scale 2.0, 1.77× 라벨 분리, TRF/TRASH 대비 개선, 겹침 스팬 0건 측정, render-receipt.json). 검증: check_conversion 통과·43 passed/1 skipped·SHA256SUMS 18/18·results/ 불변·`v0.9.0`=`ef98c03` 불변. **잔여**: LaTeX 열 폭(W1)은 revision 단계, Summary 확정 문구·LLM 정책 판단은 저자 게이트로 존속.
 - [~] **[1·제출 전]** **릴리스** — 0.9.0 정합성·검증 가능한 제출 후보 PDF/DOCX·체크섬 준비 (`submission/`). 정확한 CI 통과 커밋에 `v0.9.0` 태그와 GitHub **draft** 릴리스를 만든 뒤 실제 상태는 `resume.md`에 기록한다. DOI·초록 아카이브 URL·최종 제출 승인 전에는 완료로 표시하지 않는다.
 - [!] **[1·제출 전]** **DOI/아카이브 URL** ⛔ Zenodo 토큰·GitHub 연동 미확인(저장소 webhook 0). 소유자가 연동/예치 권한을 제공하고 실제 DOI 발급·해결을 확인해야 한다. GitHub draft나 저장소 URL을 DOI로 대체하지 않는다 (`submission/README.md`).
-- [?] **[1·제출 전]** **최종 제출 확인** — 저자의 Funding·COI·CRediT·AI 사용 공개 및 원고 승인, 현행 Bioinformatics 지침 확인 필요. 지침 사이트는 이번 조회에서 403; 작업용 길이 기준 통과를 현행 지침 인증으로 읽지 않는다 (`submission/README.md`).
+- [?] **[1·제출 전]** **최종 제출 확인** — 현행 지침 조회는 완료했지만 제출 승인은 아님. 저자의 Funding·COI·CRediT·ORCID·AI 사용 공개·cover letter·원고 승인 및 유지관리 확인은 **요청대로 마지막 단계**. 기존 AI 축약/초록 재구성은 단순 맞춤법 수정으로 표현할 수 없으며, OUP/ISCB 작성 정책 적용을 저자/편집부와 해소해야 한다(공개문만으로 허용 보장 안 됨). 미예치 competitor BED·audit 원본 등도 공개 데이터 요건 충족 경로를 확인/협의해야 한다. 숫자 오류로 단정하거나 증거를 만들어 채우지 않는다 (`docs/2026-09-10-final-check/`). DOI 작업도 마지막에 진행한다.
 - [x] **Fig 5 본문 참조·이미지·캡션 삽입** ✅ (2026-09-05, P3 — `manuscript.md:327–331`; `pass3-edits.json` 마지막 항목). 미커밋 편집의 채택 검토는 §0-1 에서 (L-03)
 
 - [x] **§6.20** `sacct -j ... --format=JobID,Elapsed,MaxRSS,State -P` 원문을 체크섬과 함께 예치. ✅ (2026-09-03, `e4ae632`) 34개 잡 sacct 예치, 헤드라인 3개 정확히 일치
