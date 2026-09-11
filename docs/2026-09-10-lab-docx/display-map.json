@@ -1,0 +1,131 @@
+{
+  "baseline_commit": "b02c643f1e5b07528549fc9cbf6eae6cd5896a91",
+  "tables": [
+    {
+      "source_block": 1,
+      "old": "1a",
+      "sha256": "d49a296c47a22c40dd629c36ef9e5cafc07c453e1f03a2a82022dae7c283f9d6",
+      "destination": "S1"
+    },
+    {
+      "source_block": 2,
+      "old": "1b",
+      "sha256": "f114c78b692f7d4bcae710d8c4ee101bfa39cd9f28289e3de8cfc4a9221a9277",
+      "destination": "S2"
+    },
+    {
+      "source_block": 3,
+      "old": "1c",
+      "sha256": "b78349041cf411ae245db7988bf90f0e7db48512e215642919af8cc307428433",
+      "destination": "S3"
+    },
+    {
+      "source_block": 4,
+      "old": "1d",
+      "sha256": "48f8a21b6573d8b7f0ec85144dafa4aee4293e653566901bfc1b03d06682f418",
+      "destination": "S4"
+    },
+    {
+      "source_block": 5,
+      "old": "1e",
+      "sha256": "40839bc4dff8a79954db5869741bf83155109478901e243f27f3f68e5d2eb85f",
+      "destination": "S5"
+    },
+    {
+      "source_block": 6,
+      "old": "2",
+      "sha256": "fd70f9e958ac48c0968bd0b634b77084118cb4f900f9b83abebf754a2f67480d",
+      "destination": "S6"
+    },
+    {
+      "source_block": 7,
+      "old": "3A",
+      "sha256": "2b7b8be3fe1e36a64434b88812d229a525e2374386fe310b8ae1a3d655042ab8",
+      "destination": "S7"
+    },
+    {
+      "source_block": 8,
+      "old": "3A-b",
+      "sha256": "2d251fafd2976cbd3816172d561fa71e3b3077888a38bf15385fef5968d8a518",
+      "destination": "S8"
+    },
+    {
+      "source_block": 9,
+      "old": "3B",
+      "sha256": "8053a1f528fd4abb2d61cefaff021586d278ab7c1b19f9b8a5f60d7703ffd34e",
+      "destination": "S9"
+    },
+    {
+      "source_block": 10,
+      "old": "3B-b",
+      "sha256": "a0ee12ad1b6b72d710b1d7856a0b8c52cac53f4040d20669827622e2a058a11f",
+      "destination": "S10"
+    },
+    {
+      "source_block": 11,
+      "old": "3C",
+      "sha256": "e816fe432c08502cdd3a3dda7a183d746a57e3c26cc916f889d5f7bc8c49f452",
+      "destination": "S11"
+    },
+    {
+      "source_block": 12,
+      "old": "3C-b",
+      "sha256": "dc862eb90f20d89669c16f5597319a689c83f4063a3b8243c3c14d9c5f88fd5d",
+      "destination": "S12"
+    },
+    {
+      "source_block": 13,
+      "old": "unnumbered-parameters",
+      "sha256": "5cdc34678187a8381a64e9a853d82ea8e2633e4cfa6b90bd9965717d21b36f89",
+      "destination": "S13"
+    },
+    {
+      "source_block": 14,
+      "old": "unnumbered-configs",
+      "sha256": "e1c8a55f73d13f8710e74604a99181e97dab0195815bbc5ebb7c0a818c33dab5",
+      "destination": "S14"
+    },
+    {
+      "source_block": 15,
+      "old": "S1",
+      "sha256": "fd8a8a2ce98e57fc08f87d672c97c71ea183da54411bc003793517da4cd3f717",
+      "destination": "S15"
+    },
+    {
+      "source_block": 16,
+      "old": "S2",
+      "sha256": "14743df29f6da8bbb6528ac302b5d538b7b9b151d55ac052446f56398393855d",
+      "destination": "S16"
+    },
+    {
+      "source_block": 17,
+      "old": "S3",
+      "sha256": "99c4a849d82da55f52d693abda0d05b92a9347d7ac92d14512cdb509bb57d745",
+      "destination": "prose:identity-sweep"
+    },
+    {
+      "source_block": 18,
+      "old": "S4-region",
+      "sha256": "ca39225414eb40b3945402eb154f9d86676b3a5366dfc2303b9c53fb0497dc5a",
+      "destination": "S17"
+    },
+    {
+      "source_block": 19,
+      "old": "S4-annotation",
+      "sha256": "63326c0b44da129b50539eff3c8c146d35dae3c20f6a752c6777153717cfbce8",
+      "destination": "S18"
+    }
+  ],
+  "figures": {
+    "2": "S1",
+    "S1": "S2",
+    "3": "S3",
+    "1": "S4",
+    "4": "S5",
+    "S2": "S6",
+    "5": "S7"
+  },
+  "authorization": "User approved this structure after table inventory: unique numbers, S3 values to prose, long cells to Methods, content preserved.",
+  "supplementary_before_sha256": "a52fd20d188f34ebdb8fa24ee5696f145d14dd38be9b166a28ee7b4d900f2d05",
+  "main_before_sha256": "073e4717c51dec4554cd7125a2eae59464cc1d6ad5bc1ceaeb182a014571f5ac"
+}

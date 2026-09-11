@@ -1,0 +1,3970 @@
+{
+  "remote_root": "/data/gpfs/home/wyim/scratch/devel/bwt-algorithm",
+  "starting_commit": "139e361",
+  "manuscript": "manuscript.md",
+  "rounding": "Decimal full-precision inputs, ROUND_HALF_UP to 0.01",
+  "scope": "Derived comparisons throughout manuscript; TR-1 coverage included, TR-1 boundaries excluded.",
+  "method": "Read-only deposited pass3 full-precision JSON, integer counts, elapsed seconds and KiB. No jobs, reruns or intersections. Rounded offsets explicitly source-limited. One lightweight raw gzip stream counted unfiltered BWTandem TAG/CTA substring motifs; no interval intersections.",
+  "claims": [
+    {
+      "line": 21,
+      "old_substring": "0.14 percentage points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRASH-template/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.68451580604715",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/BWTandem/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.548616573354025",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.135899232693125",
+      "rounded_half_up": "0.14",
+      "replacement": "0.14 percentage points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D001"
+    },
+    {
+      "line": 21,
+      "old_substring": "22.9 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/AniAnn's (2026)/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "81.41614610568537",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/BWTandem/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.548616573354025",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "22.867529532331345",
+      "rounded_half_up": "22.87",
+      "replacement": "22.87 points",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D002"
+    },
+    {
+      "line": 21,
+      "old_substring": "1.77--1.82",
+      "operands": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 elapsed seconds",
+          "value": "14465"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26301"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 elapsed seconds",
+          "value": "14798"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26201"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 elapsed seconds",
+          "value": "14482"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 elapsed seconds",
+          "value": "25665"
+        }
+      ],
+      "formula": "min([a[1]/a[0],a[3]/a[2],a[5]/a[4]])",
+      "unrounded_result": "1.770577105014191106906338694",
+      "rounded_half_up": "1.77",
+      "replacement": "1.77--1.82",
+      "verdict": "confirmed",
+      "note": "Ratios [Decimal('1.818250950570342205323193916'), Decimal('1.770577105014191106906338694'), Decimal('1.772199972379505593150117387')]; maximum 1.818250950570342205323193916; each endpoint confirms with half-up.",
+      "claim_id": "D003"
+    },
+    {
+      "line": 21,
+      "old_substring": "1.30--1.41",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076848.batch/seconds",
+          "value": "23805"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076849.batch/seconds",
+          "value": "30995"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076850.batch/seconds",
+          "value": "23685"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076851.batch/seconds",
+          "value": "30872"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076852.batch/seconds",
+          "value": "19796"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076853.batch/seconds",
+          "value": "27884"
+        }
+      ],
+      "formula": "min([a[1]/a[0],a[3]/a[2],a[5]/a[4]])",
+      "unrounded_result": "1.302037387103549674438143247",
+      "rounded_half_up": "1.30",
+      "replacement": "1.30--1.41",
+      "verdict": "confirmed",
+      "note": "Ratios [Decimal('1.302037387103549674438143247'), Decimal('1.303440996411230736753219337'), Decimal('1.408567387350979995958779551')]; maximum 1.408567387350979995958779551; each endpoint confirms with half-up.",
+      "claim_id": "D004"
+    },
+    {
+      "line": 21,
+      "old_substring": "mean 1.79",
+      "operands": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 elapsed seconds",
+          "value": "14465"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26301"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 elapsed seconds",
+          "value": "14798"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26201"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 elapsed seconds",
+          "value": "14482"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 elapsed seconds",
+          "value": "25665"
+        }
+      ],
+      "formula": "(a[1]/a[0]+a[3]/a[2]+a[5]/a[4])/3",
+      "unrounded_result": "1.787009342654679635126549999",
+      "rounded_half_up": "1.79",
+      "replacement": "mean 1.79",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D005"
+    },
+    {
+      "line": 21,
+      "old_substring": "twentyfold",
+      "operands": [
+        {
+          "path": "manuscript.md",
+          "key": "maximum period wide",
+          "value": "2000"
+        },
+        {
+          "path": "manuscript.md",
+          "key": "maximum period narrow",
+          "value": "100"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "20",
+      "rounded_half_up": "20.00",
+      "replacement": "twentyfold",
+      "verdict": "confirmed",
+      "note": "Exact parameter ratio; native parameter precision exempt. At L96 this is range, not runtime, difference.",
+      "claim_id": "D006"
+    },
+    {
+      "line": 21,
+      "old_substring": "25.29 core-hours",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "6110901.batch/Elapsed",
+          "value": "45522"
+        },
+        {
+          "path": "manuscript.md",
+          "key": "active worker/thread count",
+          "value": "2"
+        }
+      ],
+      "formula": "a[0]*a[1]/3600",
+      "unrounded_result": "25.29",
+      "rounded_half_up": "25.29",
+      "replacement": "25.29 core-hours",
+      "verdict": "confirmed",
+      "note": "Integer elapsed seconds times thread count / 3600.",
+      "claim_id": "D007"
+    },
+    {
+      "line": 21,
+      "old_substring": "59.56 core-hours",
+      "operands": [
+        {
+          "path": "results/competitor_logs/ultra__GCA_000001405.15_GRCh38_genomic_run.log",
+          "key": "Elapsed wall clock",
+          "value": "107209"
+        },
+        {
+          "path": "manuscript.md",
+          "key": "active worker/thread count",
+          "value": "2"
+        }
+      ],
+      "formula": "a[0]*a[1]/3600",
+      "unrounded_result": "59.56055555555555555555555556",
+      "rounded_half_up": "59.56",
+      "replacement": "59.56 core-hours",
+      "verdict": "confirmed",
+      "note": "Integer elapsed seconds times thread count / 3600.",
+      "claim_id": "D008"
+    },
+    {
+      "line": 34,
+      "old_substring": "half the catalog regions BWTandem does",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "BWTandem",
+            "scores",
+            "full",
+            "recall"
+          ],
+          "value": "80.5337728960715",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": null,
+      "verdict": "missing_source_limitation",
+      "note": "Approximate half consistent with rounded longdust recall 41.16 versus BWTandem 80.5337728960715, but full-precision longdust recall/hit numerator not in consulted deposited outputs; no two-decimal ratio certified.",
+      "claim_id": "D009"
+    },
+    {
+      "line": 38,
+      "old_substring": "1.77–1.82",
+      "operands": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 elapsed seconds",
+          "value": "14465"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26301"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 elapsed seconds",
+          "value": "14798"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26201"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 elapsed seconds",
+          "value": "14482"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 elapsed seconds",
+          "value": "25665"
+        }
+      ],
+      "formula": "min([a[1]/a[0],a[3]/a[2],a[5]/a[4]])",
+      "unrounded_result": "1.770577105014191106906338694",
+      "rounded_half_up": "1.77",
+      "replacement": "1.77–1.82",
+      "verdict": "confirmed",
+      "note": "Ratios [Decimal('1.818250950570342205323193916'), Decimal('1.770577105014191106906338694'), Decimal('1.772199972379505593150117387')]; maximum 1.818250950570342205323193916; each endpoint confirms with half-up.",
+      "claim_id": "D010"
+    },
+    {
+      "line": 38,
+      "old_substring": "1.30–1.41",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076848.batch/seconds",
+          "value": "23805"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076849.batch/seconds",
+          "value": "30995"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076850.batch/seconds",
+          "value": "23685"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076851.batch/seconds",
+          "value": "30872"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076852.batch/seconds",
+          "value": "19796"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076853.batch/seconds",
+          "value": "27884"
+        }
+      ],
+      "formula": "min([a[1]/a[0],a[3]/a[2],a[5]/a[4]])",
+      "unrounded_result": "1.302037387103549674438143247",
+      "rounded_half_up": "1.30",
+      "replacement": "1.30–1.41",
+      "verdict": "confirmed",
+      "note": "Ratios [Decimal('1.302037387103549674438143247'), Decimal('1.303440996411230736753219337'), Decimal('1.408567387350979995958779551')]; maximum 1.408567387350979995958779551; each endpoint confirms with half-up.",
+      "claim_id": "D011"
+    },
+    {
+      "line": 38,
+      "old_substring": "mean 1.79",
+      "operands": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 elapsed seconds",
+          "value": "14465"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26301"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 elapsed seconds",
+          "value": "14798"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26201"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 elapsed seconds",
+          "value": "14482"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 elapsed seconds",
+          "value": "25665"
+        }
+      ],
+      "formula": "(a[1]/a[0]+a[3]/a[2]+a[5]/a[4])/3",
+      "unrounded_result": "1.787009342654679635126549999",
+      "rounded_half_up": "1.79",
+      "replacement": "mean 1.79",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D012"
+    },
+    {
+      "line": 38,
+      "old_substring": "twentyfold",
+      "operands": [
+        {
+          "path": "manuscript.md",
+          "key": "maximum period wide",
+          "value": "2000"
+        },
+        {
+          "path": "manuscript.md",
+          "key": "maximum period narrow",
+          "value": "100"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "20",
+      "rounded_half_up": "20.00",
+      "replacement": "twentyfold",
+      "verdict": "confirmed",
+      "note": "Exact parameter ratio; native parameter precision exempt. At L96 this is range, not runtime, difference.",
+      "claim_id": "D013"
+    },
+    {
+      "line": 42,
+      "old_substring": "25.29, 59.56 and 33.73 core-hours",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "6110901.batch/Elapsed",
+          "value": "45522"
+        },
+        {
+          "path": "manuscript.md",
+          "key": "active worker/thread count",
+          "value": "2"
+        },
+        {
+          "path": "results/competitor_logs/ultra__GCA_000001405.15_GRCh38_genomic_run.log",
+          "key": "seconds; two threads",
+          "value": "107209"
+        },
+        {
+          "path": "results/competitor_logs/trf__GCA_000001405.15_GRCh38_genomic_run.log",
+          "key": "seconds; one thread",
+          "value": "121426"
+        }
+      ],
+      "formula": "a[0]*a[1]/3600",
+      "unrounded_result": "25.29",
+      "rounded_half_up": "25.29",
+      "replacement": "25.29, 59.56 and 33.73 core-hours",
+      "verdict": "confirmed",
+      "note": "Integer elapsed seconds times thread count / 3600. Other values = 107209*2/3600=59.5605555556 and 121426/3600=33.7294444444.",
+      "claim_id": "D014"
+    },
+    {
+      "line": 48,
+      "old_substring": "half",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "half",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic half/twice threshold; native parameter precision exempt.",
+      "claim_id": "D015"
+    },
+    {
+      "line": 60,
+      "old_substring": "half",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "half",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic half/twice threshold; native parameter precision exempt.",
+      "claim_id": "D016"
+    },
+    {
+      "line": 66,
+      "old_substring": "three times",
+      "operands": [],
+      "formula": "1500/500",
+      "unrounded_result": "3",
+      "rounded_half_up": null,
+      "replacement": "three times",
+      "verdict": "parameter_or_definition",
+      "note": "Parameter/algorithm definition, not measured comparison. 90 Mb occurrence budget clamped at 1500, 250 Mb capped at 500.",
+      "claim_id": "D017"
+    },
+    {
+      "line": 70,
+      "old_substring": "half",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "half",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic half/twice threshold; native parameter precision exempt.",
+      "claim_id": "D018"
+    },
+    {
+      "line": 70,
+      "old_substring": "twice",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "twice",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic half/twice threshold; native parameter precision exempt.",
+      "claim_id": "D019"
+    },
+    {
+      "line": 70,
+      "old_substring": "twice",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "twice",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic half/twice threshold; native parameter precision exempt.",
+      "claim_id": "D020"
+    },
+    {
+      "line": 70,
+      "old_substring": "twice",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "twice",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic half/twice threshold; native parameter precision exempt.",
+      "claim_id": "D021"
+    },
+    {
+      "line": 70,
+      "old_substring": "twice",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "twice",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic half/twice threshold; native parameter precision exempt.",
+      "claim_id": "D022"
+    },
+    {
+      "line": 72,
+      "old_substring": "half",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "half",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic parameter/formula, not measured comparison. Native precision exempt.",
+      "claim_id": "D023"
+    },
+    {
+      "line": 74,
+      "old_substring": "twice",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "twice",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic parameter/formula, not measured comparison. Native precision exempt.",
+      "claim_id": "D024"
+    },
+    {
+      "line": 78,
+      "old_substring": "1.1 percentage points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "BWTandem",
+            "scores",
+            "full",
+            "recall"
+          ],
+          "value": "80.5337728960715",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "BWTandem",
+            "scores",
+            "le100",
+            "recall"
+          ],
+          "value": "78.87437500140071",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "TRF",
+            "scores",
+            "full",
+            "recall"
+          ],
+          "value": "31.882828590702395",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "TRF",
+            "scores",
+            "le100",
+            "recall"
+          ],
+          "value": "30.803158217933174",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "ULTRA",
+            "scores",
+            "full",
+            "recall"
+          ],
+          "value": "81.62184755300862",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "ULTRA",
+            "scores",
+            "le100",
+            "recall"
+          ],
+          "value": "81.62184755300862",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "tantan",
+            "scores",
+            "full",
+            "recall"
+          ],
+          "value": "77.9969117057111",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "tantan",
+            "scores",
+            "le100",
+            "recall"
+          ],
+          "value": "77.9969117057111",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "TRASH",
+            "scores",
+            "full",
+            "recall"
+          ],
+          "value": "1.1581663868973848",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "TRASH",
+            "scores",
+            "le100",
+            "recall"
+          ],
+          "value": "0.913489660489331",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "max([a[0]-a[1],a[2]-a[3],a[4]-a[5],a[6]-a[7],a[9]-a[8]])",
+      "unrounded_result": "1.65939789467079",
+      "rounded_half_up": "1.66",
+      "replacement": "1.66 percentage points",
+      "verdict": "replace",
+      "note": "Maximum recall change BWTandem; maximum precision change TRASH.",
+      "claim_id": "D025"
+    },
+    {
+      "line": 78,
+      "old_substring": "1.7",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "BWTandem",
+            "scores",
+            "full",
+            "precision"
+          ],
+          "value": "50.49634937575173",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "BWTandem",
+            "scores",
+            "le100",
+            "precision"
+          ],
+          "value": "50.125256252457696",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "TRF",
+            "scores",
+            "full",
+            "precision"
+          ],
+          "value": "94.85520394417746",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "TRF",
+            "scores",
+            "le100",
+            "precision"
+          ],
+          "value": "94.72603400563983",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "ULTRA",
+            "scores",
+            "full",
+            "precision"
+          ],
+          "value": "53.65500775637219",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "ULTRA",
+            "scores",
+            "le100",
+            "precision"
+          ],
+          "value": "53.65500775637219",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "tantan",
+            "scores",
+            "full",
+            "precision"
+          ],
+          "value": "57.657410417099086",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "tantan",
+            "scores",
+            "le100",
+            "precision"
+          ],
+          "value": "57.657410417099086",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "TRASH",
+            "scores",
+            "full",
+            "precision"
+          ],
+          "value": "95.24737047136736",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "TRASH",
+            "scores",
+            "le100",
+            "precision"
+          ],
+          "value": "96.97868896681953",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "max([a[0]-a[1],a[2]-a[3],a[4]-a[5],a[6]-a[7],a[9]-a[8]])",
+      "unrounded_result": "1.73131849545217",
+      "rounded_half_up": "1.73",
+      "replacement": "1.73",
+      "verdict": "replace",
+      "note": "Maximum recall change BWTandem; maximum precision change TRASH.",
+      "claim_id": "D026"
+    },
+    {
+      "line": 78,
+      "old_substring": "4.7 times",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076847.batch/seconds",
+          "value": "568669"
+        },
+        {
+          "path": "results/competitor_logs/trf__GCA_000001405.15_GRCh38_genomic_run.log",
+          "key": "results/competitor_logs/trf__GCA_000001405.15_GRCh38_genomic_run.log/seconds",
+          "value": "121426.0"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "4.683255645413667583548828093",
+      "rounded_half_up": "4.68",
+      "replacement": "4.68 times",
+      "verdict": "replace",
+      "note": "Runtime uses deposited elapsed seconds; memory uses KiB. Cross-source peaks remain not like-for-like.",
+      "claim_id": "D027"
+    },
+    {
+      "line": 78,
+      "old_substring": "1.55 times",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6145581.batch/seconds",
+          "value": "166509"
+        },
+        {
+          "path": "results/competitor_logs/ultra__GCA_000001405.15_GRCh38_genomic_run.log",
+          "key": "results/competitor_logs/ultra__GCA_000001405.15_GRCh38_genomic_run.log/seconds",
+          "value": "107209.0"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "1.553125204040705537781342984",
+      "rounded_half_up": "1.55",
+      "replacement": "1.55 times",
+      "verdict": "confirmed",
+      "note": "Runtime uses deposited elapsed seconds; memory uses KiB. Cross-source peaks remain not like-for-like.",
+      "claim_id": "D028"
+    },
+    {
+      "line": 78,
+      "old_substring": "twentyfold",
+      "operands": [
+        {
+          "path": "manuscript.md",
+          "key": "maximum period wide",
+          "value": "2000"
+        },
+        {
+          "path": "manuscript.md",
+          "key": "maximum period narrow",
+          "value": "100"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "20",
+      "rounded_half_up": "20.00",
+      "replacement": "twentyfold",
+      "verdict": "confirmed",
+      "note": "Exact parameter ratio; native parameter precision exempt. At L96 this is range, not runtime, difference.",
+      "claim_id": "D029"
+    },
+    {
+      "line": 78,
+      "old_substring": "more than three hundredfold",
+      "operands": [
+        {
+          "path": "manuscript.md",
+          "key": "maize BWTandem maximum",
+          "value": "2000"
+        },
+        {
+          "path": "manuscript.md",
+          "key": "maize SSR comparator maximum",
+          "value": "6"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "333.3333333333333333333333333",
+      "rounded_half_up": "333.33",
+      "replacement": "more than three hundredfold",
+      "verdict": "confirmed",
+      "note": "Parameter ratio 333.3333, exact inequality confirmed.",
+      "claim_id": "D030"
+    },
+    {
+      "line": 86,
+      "old_substring": "+0.15 percentage points",
+      "operands": [
+        {
+          "path": "results/regen/score_table1_p100.txt",
+          "key": "BWTandem matched inGT+supported",
+          "value": "3113420"
+        },
+        {
+          "path": "results/regen/score_table1_p100.txt",
+          "key": "BWTandem matched calls",
+          "value": "3911182"
+        },
+        {
+          "path": "results/regen/score_table1_p100.txt",
+          "key": "BWTandem full inGT+supported",
+          "value": "3189175"
+        },
+        {
+          "path": "results/regen/score_table1_p100.txt",
+          "key": "BWTandem full calls",
+          "value": "4014108"
+        }
+      ],
+      "formula": "100*(a[0]/a[1]-a[2]/a[3])",
+      "unrounded_result": "0.1538880107903830226821563200",
+      "rounded_half_up": "0.15",
+      "replacement": "+0.15 percentage points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D031"
+    },
+    {
+      "line": 96,
+      "old_substring": "0.20 percentage points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "BWTandem",
+            "coverage"
+          ],
+          "value": "84.53696839490526",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "TRF",
+            "coverage"
+          ],
+          "value": "84.3861106616844",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.15085773322086",
+      "rounded_half_up": "0.15",
+      "replacement": "0.15 percentage points",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D032"
+    },
+    {
+      "line": 96,
+      "old_substring": "0.02 percentage points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "ULTRA",
+            "scores",
+            "le100",
+            "recall"
+          ],
+          "value": "81.62184755300862",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "native-H",
+            "recall"
+          ],
+          "value": "81.59545810072143",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.02638945228719",
+      "rounded_half_up": "0.03",
+      "replacement": "0.03 percentage points",
+      "verdict": "replace",
+      "note": "Counts 1456790 and 1456319 over 1784804; subtracting rounded table cells falsely gives 0.02.",
+      "claim_id": "D033"
+    },
+    {
+      "line": 96,
+      "old_substring": "0.18",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRASH-template/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.68451580604715",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRF/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.504213696130364",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.180302109916786",
+      "rounded_half_up": "0.18",
+      "replacement": "0.18",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D034"
+    },
+    {
+      "line": 96,
+      "old_substring": "twentyfold",
+      "operands": [
+        {
+          "path": "manuscript.md",
+          "key": "maximum period wide",
+          "value": "2000"
+        },
+        {
+          "path": "manuscript.md",
+          "key": "maximum period narrow",
+          "value": "100"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "20",
+      "rounded_half_up": "20.00",
+      "replacement": "twentyfold",
+      "verdict": "confirmed",
+      "note": "Exact parameter ratio; native parameter precision exempt. At L96 this is range, not runtime, difference.",
+      "claim_id": "D035"
+    },
+    {
+      "line": 103,
+      "old_substring": "roughly a twenty-seventh of",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6110901.batch/seconds",
+          "value": "45522"
+        },
+        {
+          "path": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_human_default.time",
+          "key": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_human_default.time/seconds",
+          "value": "1675.51"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "27.16904106809270013309380427",
+      "rounded_half_up": "27.17",
+      "replacement": "1/27.17 of",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D036"
+    },
+    {
+      "line": 103,
+      "old_substring": "half of BWTandem's recall",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "BWTandem",
+            "scores",
+            "full",
+            "recall"
+          ],
+          "value": "80.5337728960715",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": null,
+      "verdict": "missing_source_limitation",
+      "note": "Approximate half consistent with rounded longdust recall 41.16 versus BWTandem 80.5337728960715, but full-precision longdust recall/hit numerator not in consulted deposited outputs; no two-decimal ratio certified.",
+      "claim_id": "D037"
+    },
+    {
+      "line": 105,
+      "old_substring": "1.77–1.82",
+      "operands": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 elapsed seconds",
+          "value": "14465"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26301"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 elapsed seconds",
+          "value": "14798"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26201"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 elapsed seconds",
+          "value": "14482"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 elapsed seconds",
+          "value": "25665"
+        }
+      ],
+      "formula": "min([a[1]/a[0],a[3]/a[2],a[5]/a[4]])",
+      "unrounded_result": "1.770577105014191106906338694",
+      "rounded_half_up": "1.77",
+      "replacement": "1.77–1.82",
+      "verdict": "confirmed",
+      "note": "Ratios [Decimal('1.818250950570342205323193916'), Decimal('1.770577105014191106906338694'), Decimal('1.772199972379505593150117387')]; maximum 1.818250950570342205323193916; each endpoint confirms with half-up.",
+      "claim_id": "D038"
+    },
+    {
+      "line": 105,
+      "old_substring": "1.30–1.41",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076848.batch/seconds",
+          "value": "23805"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076849.batch/seconds",
+          "value": "30995"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076850.batch/seconds",
+          "value": "23685"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076851.batch/seconds",
+          "value": "30872"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076852.batch/seconds",
+          "value": "19796"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076853.batch/seconds",
+          "value": "27884"
+        }
+      ],
+      "formula": "min([a[1]/a[0],a[3]/a[2],a[5]/a[4]])",
+      "unrounded_result": "1.302037387103549674438143247",
+      "rounded_half_up": "1.30",
+      "replacement": "1.30–1.41",
+      "verdict": "confirmed",
+      "note": "Ratios [Decimal('1.302037387103549674438143247'), Decimal('1.303440996411230736753219337'), Decimal('1.408567387350979995958779551')]; maximum 1.408567387350979995958779551; each endpoint confirms with half-up.",
+      "claim_id": "D039"
+    },
+    {
+      "line": 105,
+      "old_substring": "mean 1.79",
+      "operands": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 elapsed seconds",
+          "value": "14465"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26301"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 elapsed seconds",
+          "value": "14798"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26201"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 elapsed seconds",
+          "value": "14482"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 elapsed seconds",
+          "value": "25665"
+        }
+      ],
+      "formula": "(a[1]/a[0]+a[3]/a[2]+a[5]/a[4])/3",
+      "unrounded_result": "1.787009342654679635126549999",
+      "rounded_half_up": "1.79",
+      "replacement": "mean 1.79",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D040"
+    },
+    {
+      "line": 105,
+      "old_substring": "mean 1.34",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076848.batch/seconds",
+          "value": "23805"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076849.batch/seconds",
+          "value": "30995"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076850.batch/seconds",
+          "value": "23685"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076851.batch/seconds",
+          "value": "30872"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076852.batch/seconds",
+          "value": "19796"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076853.batch/seconds",
+          "value": "27884"
+        }
+      ],
+      "formula": "(a[1]/a[0]+a[3]/a[2]+a[5]/a[4])/3",
+      "unrounded_result": "1.338015256955253469050047378",
+      "rounded_half_up": "1.34",
+      "replacement": "mean 1.34",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D041"
+    },
+    {
+      "line": 105,
+      "old_substring": "twentyfold",
+      "operands": [
+        {
+          "path": "manuscript.md",
+          "key": "maximum period wide",
+          "value": "2000"
+        },
+        {
+          "path": "manuscript.md",
+          "key": "maximum period narrow",
+          "value": "100"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "20",
+      "rounded_half_up": "20.00",
+      "replacement": "twentyfold",
+      "verdict": "confirmed",
+      "note": "Exact parameter ratio; native parameter precision exempt. At L96 this is range, not runtime, difference.",
+      "claim_id": "D042"
+    },
+    {
+      "line": 105,
+      "old_substring": "1.82, 1.77 and 1.77",
+      "operands": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 elapsed seconds",
+          "value": "14465"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26301"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 elapsed seconds",
+          "value": "14798"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26201"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 elapsed seconds",
+          "value": "14482"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 elapsed seconds",
+          "value": "25665"
+        }
+      ],
+      "formula": "a[1]/a[0]",
+      "unrounded_result": "1.818250950570342205323193916",
+      "rounded_half_up": "1.82",
+      "replacement": "1.82, 1.77 and 1.77",
+      "verdict": "confirmed",
+      "note": "Individually half-up each wide/narrow pair; source seconds supplied.",
+      "claim_id": "D043"
+    },
+    {
+      "line": 105,
+      "old_substring": "1.79 times",
+      "operands": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 elapsed seconds",
+          "value": "14465"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26301"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 elapsed seconds",
+          "value": "14798"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26201"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 elapsed seconds",
+          "value": "14482"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 elapsed seconds",
+          "value": "25665"
+        }
+      ],
+      "formula": "(a[1]/a[0]+a[3]/a[2]+a[5]/a[4])/3",
+      "unrounded_result": "1.787009342654679635126549999",
+      "rounded_half_up": "1.79",
+      "replacement": "1.79 times",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D044"
+    },
+    {
+      "line": 107,
+      "old_substring": "83-fold",
+      "operands": [
+        {
+          "path": "manuscript.md",
+          "key": "ULTRA maize satellite maximum",
+          "value": "500"
+        },
+        {
+          "path": "manuscript.md",
+          "key": "ULTRA maize SSR maximum",
+          "value": "6"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "83.33333333333333333333333333",
+      "rounded_half_up": "83.33",
+      "replacement": "83.33-fold",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D045"
+    },
+    {
+      "line": 107,
+      "old_substring": "151-fold",
+      "operands": [
+        {
+          "path": "results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3B_satellite_run.log",
+          "key": "results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3B_satellite_run.log/seconds",
+          "value": "125036.0"
+        },
+        {
+          "path": "results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3A_microsatellite_run.log",
+          "key": "results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3A_microsatellite_run.log/seconds",
+          "value": "827.86"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "151.0351991882685478220955234",
+      "rounded_half_up": "151.04",
+      "replacement": "151.04-fold",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D046"
+    },
+    {
+      "line": 109,
+      "old_substring": "1.77–1.82",
+      "operands": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 elapsed seconds",
+          "value": "14465"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26301"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 elapsed seconds",
+          "value": "14798"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26201"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 elapsed seconds",
+          "value": "14482"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 elapsed seconds",
+          "value": "25665"
+        }
+      ],
+      "formula": "min([a[1]/a[0],a[3]/a[2],a[5]/a[4]])",
+      "unrounded_result": "1.770577105014191106906338694",
+      "rounded_half_up": "1.77",
+      "replacement": "1.77–1.82",
+      "verdict": "confirmed",
+      "note": "Ratios [Decimal('1.818250950570342205323193916'), Decimal('1.770577105014191106906338694'), Decimal('1.772199972379505593150117387')]; maximum 1.818250950570342205323193916; each endpoint confirms with half-up.",
+      "claim_id": "D047"
+    },
+    {
+      "line": 109,
+      "old_substring": "mean 1.79",
+      "operands": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 elapsed seconds",
+          "value": "14465"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26301"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 elapsed seconds",
+          "value": "14798"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26201"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 elapsed seconds",
+          "value": "14482"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 elapsed seconds",
+          "value": "25665"
+        }
+      ],
+      "formula": "(a[1]/a[0]+a[3]/a[2]+a[5]/a[4])/3",
+      "unrounded_result": "1.787009342654679635126549999",
+      "rounded_half_up": "1.79",
+      "replacement": "mean 1.79",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D048"
+    },
+    {
+      "line": 111,
+      "old_substring": "5.5%",
+      "operands": [
+        {
+          "path": "results/manifest.tsv",
+          "key": "seeding index arm elapsed seconds",
+          "value": "1278"
+        },
+        {
+          "path": "results/manifest.tsv",
+          "key": "seeding k-tuple arm elapsed seconds",
+          "value": "1349"
+        }
+      ],
+      "formula": "100*(a[1]-a[0])/a[0]",
+      "unrounded_result": "5.555555555555555555555555556",
+      "rounded_half_up": "5.56",
+      "replacement": "5.56%",
+      "verdict": "replace",
+      "note": "Manifest preserves per-arm integer seconds; original fractional GNU-time value not deposited in results.",
+      "claim_id": "D049"
+    },
+    {
+      "line": 113,
+      "old_substring": "2.75 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "ULTRA",
+            "scores",
+            "le100",
+            "recall"
+          ],
+          "value": "81.62184755300862",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "BWTandem",
+            "scores",
+            "le100",
+            "recall"
+          ],
+          "value": "78.87437500140071",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "2.74747255160791",
+      "rounded_half_up": "2.75",
+      "replacement": "2.75 points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D050"
+    },
+    {
+      "line": 115,
+      "old_substring": "0.03 percentage points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "ULTRA",
+            "scores",
+            "le100",
+            "recall"
+          ],
+          "value": "81.62184755300862",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "native-H",
+            "recall"
+          ],
+          "value": "81.59545810072143",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.02638945228719",
+      "rounded_half_up": "0.03",
+      "replacement": "0.03 percentage points",
+      "verdict": "confirmed",
+      "note": "Counts 1456790 and 1456319 over 1784804; subtracting rounded table cells falsely gives 0.02.",
+      "claim_id": "D051"
+    },
+    {
+      "line": 115,
+      "old_substring": "5.22 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "ULTRA",
+            "scores",
+            "le100",
+            "precision"
+          ],
+          "value": "53.65500775637219",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "native-H",
+            "precision"
+          ],
+          "value": "48.43889937441184",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "5.21610838196035",
+      "rounded_half_up": "5.22",
+      "replacement": "5.22 points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D052"
+    },
+    {
+      "line": 123,
+      "old_substring": "within 2.6 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "BWTandem",
+            "scores",
+            "full",
+            "recall"
+          ],
+          "value": "80.5337728960715",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "tantan",
+            "scores",
+            "full",
+            "recall"
+          ],
+          "value": "77.9969117057111",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "2.5368611903604",
+      "rounded_half_up": "2.54",
+      "replacement": "separated by 2.54 points",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D053"
+    },
+    {
+      "line": 123,
+      "old_substring": "within 0.9",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "BWTandem",
+            "scores",
+            "le100",
+            "recall"
+          ],
+          "value": "78.87437500140071",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "tantan",
+            "scores",
+            "le100",
+            "recall"
+          ],
+          "value": "77.9969117057111",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.87746329568961",
+      "rounded_half_up": "0.88",
+      "replacement": "separated by 0.88 points",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D054"
+    },
+    {
+      "line": 123,
+      "old_substring": "19 times",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6110901.batch/rss_kib",
+          "value": "29447952"
+        },
+        {
+          "path": "results/competitor_logs/trf__GCA_000001405.15_GRCh38_genomic_run.log",
+          "key": "results/competitor_logs/trf__GCA_000001405.15_GRCh38_genomic_run.log/rss_kib",
+          "value": "1518668"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "19.39064495992540831834212613",
+      "rounded_half_up": "19.39",
+      "replacement": "19.39 times",
+      "verdict": "replace",
+      "note": "Runtime uses deposited elapsed seconds; memory uses KiB. Cross-source peaks remain not like-for-like.",
+      "claim_id": "D055"
+    },
+    {
+      "line": 123,
+      "old_substring": "104 times",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6110901.batch/rss_kib",
+          "value": "29447952"
+        },
+        {
+          "path": "results/competitor_logs/tantan__GCA_000001405.15_GRCh38_genomic_run.log",
+          "key": "results/competitor_logs/tantan__GCA_000001405.15_GRCh38_genomic_run.log/rss_kib",
+          "value": "281316"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "104.6792645992407115130316086",
+      "rounded_half_up": "104.68",
+      "replacement": "104.68 times",
+      "verdict": "replace",
+      "note": "Runtime uses deposited elapsed seconds; memory uses KiB. Cross-source peaks remain not like-for-like.",
+      "claim_id": "D056"
+    },
+    {
+      "line": 123,
+      "old_substring": "per base it was several times slower",
+      "operands": [
+        {
+          "path": "results/competitor_logs/mreps__GCA_000001405.15_GRCh38_genomic_run.log",
+          "key": "results/competitor_logs/mreps__GCA_000001405.15_GRCh38_genomic_run.log/seconds",
+          "value": "3281.08"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6110901.batch/seconds",
+          "value": "45522"
+        }
+      ],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": null,
+      "verdict": "missing_source_limitation",
+      "note": "Missing completed-base denominator. Deposited partial mreps elapsed 3281.08 s versus BWTandem 45522 s contradicts comparable wall clock; per-base ratio cannot be established.",
+      "claim_id": "D057"
+    },
+    {
+      "line": 139,
+      "old_substring": "1.01 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": [
+            "BWTandem",
+            "scores",
+            "le100",
+            "recall"
+          ],
+          "value": "78.87437500140071",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": null,
+      "verdict": "missing_source_limitation",
+      "note": "Native-F truth-hit numerator not present in pass3-human.json or consulted score outputs; only rounded 79.88. Cannot certify two-decimal delta without unrounded recall.",
+      "claim_id": "D058"
+    },
+    {
+      "line": 188,
+      "old_substring": "197 times",
+      "operands": [
+        {
+          "path": "results/competitor_logs/trf__Col-CEN_v1.2_run.log",
+          "key": "results/competitor_logs/trf__Col-CEN_v1.2_run.log/seconds",
+          "value": "475020.0"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6110900.batch/seconds",
+          "value": "2411"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "197.0219825798423890501866445",
+      "rounded_half_up": "197.02",
+      "replacement": "197.02 times",
+      "verdict": "replace",
+      "note": "Runtime uses deposited elapsed seconds; memory uses KiB. Cross-source peaks remain not like-for-like.",
+      "claim_id": "D059"
+    },
+    {
+      "line": 188,
+      "old_substring": "15 times",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:5981977.batch/seconds",
+          "value": "36431"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6110900.batch/seconds",
+          "value": "2411"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "15.11032766486934881791787640",
+      "rounded_half_up": "15.11",
+      "replacement": "15.11 times",
+      "verdict": "replace",
+      "note": "Runtime uses deposited elapsed seconds; memory uses KiB. Cross-source peaks remain not like-for-like.",
+      "claim_id": "D060"
+    },
+    {
+      "line": 188,
+      "old_substring": "1.2 times",
+      "operands": [
+        {
+          "path": "results/competitor_logs/ncrf__Col-CEN_v1.2_run.log",
+          "key": "results/competitor_logs/ncrf__Col-CEN_v1.2_run.log/seconds",
+          "value": "2863.63"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6110900.batch/seconds",
+          "value": "2411"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "1.187735379510576524263790958",
+      "rounded_half_up": "1.19",
+      "replacement": "1.19 times",
+      "verdict": "replace",
+      "note": "Runtime uses deposited elapsed seconds; memory uses KiB. Cross-source peaks remain not like-for-like.",
+      "claim_id": "D061"
+    },
+    {
+      "line": 188,
+      "old_substring": "98.5 times",
+      "operands": [
+        {
+          "path": "results/competitor_logs/trf__Col-CEN_v1.2_run.log",
+          "key": "results/competitor_logs/trf__Col-CEN_v1.2_run.log/seconds",
+          "value": "475020.0"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6110900.batch/seconds",
+          "value": "2411"
+        }
+      ],
+      "formula": "a[0]/(2*a[1])",
+      "unrounded_result": "98.51099128992119452509332227",
+      "rounded_half_up": "98.51",
+      "replacement": "98.51 times",
+      "verdict": "replace",
+      "note": "One TRF active thread versus two BWTandem workers.",
+      "claim_id": "D062"
+    },
+    {
+      "line": 188,
+      "old_substring": "roughly three-tenths",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6085141.batch/seconds",
+          "value": "721"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6110900.batch/seconds",
+          "value": "2411"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "0.2990460389879717959352965574",
+      "rounded_half_up": "0.30",
+      "replacement": "0.30 times",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D063"
+    },
+    {
+      "line": 188,
+      "old_substring": "about one twenty-third",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6110900.batch/rss_kib",
+          "value": "2268896"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6085141.batch/rss_kib",
+          "value": "100656"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "22.54109044666984581147671276",
+      "rounded_half_up": "22.54",
+      "replacement": "1/22.54",
+      "verdict": "replace",
+      "note": "Reciprocal of memory ratio; replacement reads 1/22.54 of its memory.",
+      "claim_id": "D064"
+    },
+    {
+      "line": 190,
+      "old_substring": "0.15 percentage points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "BWTandem",
+            "coverage"
+          ],
+          "value": "84.53696839490526",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "TRF",
+            "coverage"
+          ],
+          "value": "84.3861106616844",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.15085773322086",
+      "rounded_half_up": "0.15",
+      "replacement": "0.15 percentage points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D065"
+    },
+    {
+      "line": 190,
+      "old_substring": "roughly three and a third times",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6110900.batch/seconds",
+          "value": "2411"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6085141.batch/seconds",
+          "value": "721"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "3.343966712898751733703190014",
+      "rounded_half_up": "3.34",
+      "replacement": "3.34 times",
+      "verdict": "replace",
+      "note": "Runtime uses deposited elapsed seconds; memory uses KiB. Cross-source peaks remain not like-for-like.",
+      "claim_id": "D066"
+    },
+    {
+      "line": 190,
+      "old_substring": "twenty-three times",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6110900.batch/rss_kib",
+          "value": "2268896"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6085141.batch/rss_kib",
+          "value": "100656"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "22.54109044666984581147671276",
+      "rounded_half_up": "22.54",
+      "replacement": "22.54 times",
+      "verdict": "replace",
+      "note": "Runtime uses deposited elapsed seconds; memory uses KiB. Cross-source peaks remain not like-for-like.",
+      "claim_id": "D067"
+    },
+    {
+      "line": 190,
+      "old_substring": "3.04 points below",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "BWTandem",
+            "coverage"
+          ],
+          "value": "84.53696839490526",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "tantan (500bp re-run)",
+            "coverage"
+          ],
+          "value": "81.49945794078813",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "3.03751045411713",
+      "rounded_half_up": "3.04",
+      "replacement": "3.04 points below",
+      "verdict": "confirmed",
+      "note": "Reference is BWTandem specifically, not an unspecified position within the tie.",
+      "claim_id": "D068"
+    },
+    {
+      "line": 190,
+      "old_substring": "3.04 points of centromere coverage",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "BWTandem",
+            "coverage"
+          ],
+          "value": "84.53696839490526",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "tantan (500bp re-run)",
+            "coverage"
+          ],
+          "value": "81.49945794078813",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "3.03751045411713",
+      "rounded_half_up": "3.04",
+      "replacement": "3.04 points of centromere coverage",
+      "verdict": "confirmed",
+      "note": "Reference is BWTandem specifically, not an unspecified position within the tie.",
+      "claim_id": "D069"
+    },
+    {
+      "line": 190,
+      "old_substring": "0.48 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "BWTandem",
+            "recall"
+          ],
+          "value": "99.71506980789707",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "tantan (500bp re-run)",
+            "recall"
+          ],
+          "value": "99.23668701168214",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.47838279621493",
+      "rounded_half_up": "0.48",
+      "replacement": "0.48 points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D070"
+    },
+    {
+      "line": 190,
+      "old_substring": "19.80 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "tantan (500bp re-run)",
+            "bp_precision"
+          ],
+          "value": "76.8789368533847",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "BWTandem",
+            "bp_precision"
+          ],
+          "value": "57.08007163953652",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "19.79886521384818",
+      "rounded_half_up": "19.80",
+      "replacement": "19.80 points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D071"
+    },
+    {
+      "line": 194,
+      "old_substring": "5.0 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "BWTandem",
+            "recall"
+          ],
+          "value": "99.71506980789707",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "BWTandem",
+            "band_recall",
+            "150-400"
+          ],
+          "value": "94.6808032032152",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "5.03426660468187",
+      "rounded_half_up": "5.03",
+      "replacement": "5.03 points",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D072"
+    },
+    {
+      "line": 196,
+      "old_substring": "5.82 percentage points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "gapfill base",
+            "coverage"
+          ],
+          "value": "84.77049364223906",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "gapfill off",
+            "coverage"
+          ],
+          "value": "78.9457580112134",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "5.82473563102566",
+      "rounded_half_up": "5.82",
+      "replacement": "5.82 percentage points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D073"
+    },
+    {
+      "line": 196,
+      "old_substring": "6.37 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "gapfill base",
+            "recall"
+          ],
+          "value": "99.75555988782749",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "gapfill off",
+            "recall"
+          ],
+          "value": "93.38961954321191",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "6.36594034461558",
+      "rounded_half_up": "6.37",
+      "replacement": "6.37 points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D074"
+    },
+    {
+      "line": 196,
+      "old_substring": "0.54",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "gapfill base",
+            "coverage"
+          ],
+          "value": "84.77049364223906",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "gapfill away",
+            "coverage"
+          ],
+          "value": "84.22969039544054",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.54080324679852",
+      "rounded_half_up": "0.54",
+      "replacement": "0.54",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D075"
+    },
+    {
+      "line": 196,
+      "old_substring": "0.47 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "gapfill base",
+            "recall"
+          ],
+          "value": "99.75555988782749",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-colcen.json",
+          "key": [
+            "gapfill away",
+            "recall"
+          ],
+          "value": "99.28917415233268",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.46638573549481",
+      "rounded_half_up": "0.47",
+      "replacement": "0.47 points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D076"
+    },
+    {
+      "line": 222,
+      "old_substring": "a factor of 15.4",
+      "operands": [
+        {
+          "path": "results/regen/maize_extra_evidence.json",
+          "key": [
+            "table3a",
+            "tantan_3a",
+            "published_rule",
+            "tag_substring"
+          ],
+          "value": "181205"
+        },
+        {
+          "path": "results/regen/maize_extra_evidence.json",
+          "key": [
+            "table3a",
+            "tantan_3a",
+            "published_rule",
+            "tag_rotation"
+          ],
+          "value": "11752"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "15.41907760381211708645336964",
+      "rounded_half_up": "15.42",
+      "replacement": "a factor of 15.42",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D077"
+    },
+    {
+      "line": 222,
+      "old_substring": "TRF moves by 3.8",
+      "operands": [
+        {
+          "path": "results/regen/maize_extra_evidence.json",
+          "key": [
+            "table3a",
+            "trf_3a",
+            "published_rule",
+            "tag_substring"
+          ],
+          "value": "5263"
+        },
+        {
+          "path": "results/regen/maize_extra_evidence.json",
+          "key": [
+            "table3a",
+            "trf_3a",
+            "published_rule",
+            "tag_rotation"
+          ],
+          "value": "1379"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "3.816533720087019579405366207",
+      "rounded_half_up": "3.82",
+      "replacement": "TRF moves by 3.82",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D078"
+    },
+    {
+      "line": 222,
+      "old_substring": "a factor of 13.9",
+      "operands": [
+        {
+          "path": "results/beds/bwtandem_maize.bed.gz",
+          "key": "stream count: TAG in motif OR CTA in motif, unfiltered",
+          "value": "475732"
+        },
+        {
+          "path": "results/regen/maize_extra_evidence.json",
+          "key": [
+            "table3a",
+            "bwt",
+            "band_1_6",
+            "tag_rotation"
+          ],
+          "value": "34247"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "13.89120214909335124244459369",
+      "rounded_half_up": "13.89",
+      "replacement": "a factor of 13.89",
+      "verdict": "replace",
+      "note": "Numerator counted directly by a read-only gzip stream over deposited BED; no intersections or benchmark reruns. Denominator 34247 from deposited maize_extra_evidence.json. Rotation includes reverse-complement conventions; do not replace denominator with forward-only TAG rotations.",
+      "claim_id": "D079"
+    },
+    {
+      "line": 256,
+      "old_substring": "at most 0.20 points",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": null,
+      "verdict": "missing_source_limitation",
+      "note": "No deposited full-precision before/after empty-window coverage pair found. pass3-maize.json retains empty windows, so this difference is unavailable.",
+      "claim_id": "D080"
+    },
+    {
+      "line": 270,
+      "old_substring": "0.51 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/tantan/knob180",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "71.92355636951125",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/tantan/knob180",
+            "banded",
+            "coverage"
+          ],
+          "value": "71.41703148327913",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.50652488623212",
+      "rounded_half_up": "0.51",
+      "replacement": "0.51 points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D081"
+    },
+    {
+      "line": 270,
+      "old_substring": "1.38",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/tantan/TR-1",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "22.739453392752175",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/tantan/TR-1",
+            "banded",
+            "coverage"
+          ],
+          "value": "21.36200272144265",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "1.377450671309525",
+      "rounded_half_up": "1.38",
+      "replacement": "1.38",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D082"
+    },
+    {
+      "line": 270,
+      "old_substring": "0.34",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/knob180",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "81.2250210716241",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/knob180",
+            "banded",
+            "coverage"
+          ],
+          "value": "80.88386240677939",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.34115866484471",
+      "rounded_half_up": "0.34",
+      "replacement": "0.34",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D083"
+    },
+    {
+      "line": 270,
+      "old_substring": "18.57 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/TR-1",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "53.17191463050009",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/TR-1",
+            "banded",
+            "coverage"
+          ],
+          "value": "34.60681459002422",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "18.56510004047587",
+      "rounded_half_up": "18.57",
+      "replacement": "18.57 points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D084"
+    },
+    {
+      "line": 294,
+      "old_substring": "approximately 0.18 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRASH-template/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.68451580604715",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRF/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.504213696130364",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.180302109916786",
+      "rounded_half_up": "0.18",
+      "replacement": "0.18 points",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D085"
+    },
+    {
+      "line": 294,
+      "old_substring": "2.2 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRASH-template/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.68451580604715",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/tantan/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "56.50881462387826",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "2.17570118216889",
+      "rounded_half_up": "2.18",
+      "replacement": "2.18 points",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D086"
+    },
+    {
+      "line": 294,
+      "old_substring": "a factor of about two and a half",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/BWTandem/CentC",
+            "unfiltered",
+            "offset"
+          ],
+          "value": "170.12",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRF/CentC",
+            "unfiltered",
+            "offset"
+          ],
+          "value": "69.62",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": null,
+      "verdict": "missing_source_limitation",
+      "note": "Deposited offsets 170.12 and 69.62 are already rounded by scorer. Cannot manufacture full-precision ratio. With 17 arrays and two endpoints each, integer sums 5784 and 2367 are uniquely compatible, implying 2.44359949 -> 2.44, but those sums are reconstructed, not deposited raw counts.",
+      "claim_id": "D087"
+    },
+    {
+      "line": 294,
+      "old_substring": "less than half TRF's on knob180",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/AniAnn's (2026)/knob180",
+            "unfiltered",
+            "offset"
+          ],
+          "value": "22580.77",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRF/knob180",
+            "unfiltered",
+            "offset"
+          ],
+          "value": "651.96",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": null,
+      "verdict": "missing_source_limitation",
+      "note": "False direction: deposited AniAnn offset 22580.77 bp versus TRF 651.96 bp, so AniAnn is larger, not less than half. Rounded offsets suffice to refute inequality, but not to derive two-decimal ratio. TR-1 boundaries not audited.",
+      "claim_id": "D088"
+    },
+    {
+      "line": 296,
+      "old_substring": "15.59",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/BWTandem/knob180",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "79.79471335240267",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/BWTandem/knob180",
+            "banded",
+            "coverage"
+          ],
+          "value": "64.20234882686118",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "15.59236452554149",
+      "rounded_half_up": "15.59",
+      "replacement": "15.59",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D089"
+    },
+    {
+      "line": 296,
+      "old_substring": "33.01",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/BWTandem/TR-1",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "50.335993757089206",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/BWTandem/TR-1",
+            "banded",
+            "coverage"
+          ],
+          "value": "17.326009710139918",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "33.009984046949288",
+      "rounded_half_up": "33.01",
+      "replacement": "33.01",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D090"
+    },
+    {
+      "line": 296,
+      "old_substring": "17.84",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/BWTandem/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.548616573354025",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/BWTandem/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "40.70963726320024",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "17.838979310153785",
+      "rounded_half_up": "17.84",
+      "replacement": "17.84",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D091"
+    },
+    {
+      "line": 296,
+      "old_substring": "1.54",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRF/knob180",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "80.0096715686096",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRF/knob180",
+            "banded",
+            "coverage"
+          ],
+          "value": "79.37667310179027",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRF/TR-1",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "45.77091609020762",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRF/TR-1",
+            "banded",
+            "coverage"
+          ],
+          "value": "44.230222929137405",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRF/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.504213696130364",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRF/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "57.632530608173745",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "max([a[0]-a[1],a[2]-a[3],a[4]-a[5]])",
+      "unrounded_result": "1.540693161070215",
+      "rounded_half_up": "1.54",
+      "replacement": "1.54",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D092"
+    },
+    {
+      "line": 296,
+      "old_substring": "2.82",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/ULTRA/knob180",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "78.70912512936675",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/ULTRA/knob180",
+            "banded",
+            "coverage"
+          ],
+          "value": "77.51106049515248",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/ULTRA/TR-1",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "36.361650167835855",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/ULTRA/TR-1",
+            "banded",
+            "coverage"
+          ],
+          "value": "33.54630622128298",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/ULTRA/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "57.72782405443484",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/ULTRA/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "55.83508972000157",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "max([a[0]-a[1],a[2]-a[3],a[4]-a[5]])",
+      "unrounded_result": "2.815343946552875",
+      "rounded_half_up": "2.82",
+      "replacement": "2.82",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D093"
+    },
+    {
+      "line": 296,
+      "old_substring": "0.34",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/knob180",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "81.2250210716241",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/knob180",
+            "banded",
+            "coverage"
+          ],
+          "value": "80.88386240677939",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.34115866484471",
+      "rounded_half_up": "0.34",
+      "replacement": "0.34",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D094"
+    },
+    {
+      "line": 296,
+      "old_substring": "0.03",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRASH-template/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.68451580604715",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRASH-template/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "58.65268233419032",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.03183347185683",
+      "rounded_half_up": "0.03",
+      "replacement": "0.03",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D095"
+    },
+    {
+      "line": 296,
+      "old_substring": "18.57",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/TR-1",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "53.17191463050009",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/TR-1",
+            "banded",
+            "coverage"
+          ],
+          "value": "34.60681459002422",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "18.56510004047587",
+      "rounded_half_up": "18.57",
+      "replacement": "18.57",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D096"
+    },
+    {
+      "line": 296,
+      "old_substring": "15.17",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRF/knob180",
+            "banded",
+            "coverage"
+          ],
+          "value": "79.37667310179027",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/BWTandem/knob180",
+            "banded",
+            "coverage"
+          ],
+          "value": "64.20234882686118",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "15.17432427492909",
+      "rounded_half_up": "15.17",
+      "replacement": "15.17",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D097"
+    },
+    {
+      "line": 296,
+      "old_substring": "26.90",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRF/TR-1",
+            "banded",
+            "coverage"
+          ],
+          "value": "44.230222929137405",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/BWTandem/TR-1",
+            "banded",
+            "coverage"
+          ],
+          "value": "17.326009710139918",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "26.904213218997487",
+      "rounded_half_up": "26.90",
+      "replacement": "26.90",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D098"
+    },
+    {
+      "line": 296,
+      "old_substring": "16.92 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRF/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "57.632530608173745",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/BWTandem/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "40.70963726320024",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "16.922893344973505",
+      "rounded_half_up": "16.92",
+      "replacement": "16.92 points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D099"
+    },
+    {
+      "line": 300,
+      "old_substring": "2.7 times",
+      "operands": [
+        {
+          "path": "results/regen/maize_extra_evidence.json",
+          "key": [
+            "period_100_200_merged_bp",
+            "tantan-w200"
+          ],
+          "value": "34170063"
+        },
+        {
+          "path": "results/ground_truth/mo17_centc_arrays.bed",
+          "key": "sum(end-start)",
+          "value": "12562249"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "2.720059361982078209085013360",
+      "rounded_half_up": "2.72",
+      "replacement": "2.72 times",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D100"
+    },
+    {
+      "line": 314,
+      "old_substring": "0.03 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRASH-template/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.68451580604715",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRASH-template/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "58.65268233419032",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.03183347185683",
+      "rounded_half_up": "0.03",
+      "replacement": "0.03 points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D101"
+    },
+    {
+      "line": 314,
+      "old_substring": "0.91 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/tantan/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "56.50881462387826",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/tantan/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "55.59416152314765",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.91465310073061",
+      "rounded_half_up": "0.91",
+      "replacement": "0.91 points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D102"
+    },
+    {
+      "line": 314,
+      "old_substring": "0.87",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRF/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.504213696130364",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRF/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "57.632530608173745",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.871683087956619",
+      "rounded_half_up": "0.87",
+      "replacement": "0.87",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D103"
+    },
+    {
+      "line": 314,
+      "old_substring": "14.88 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/tantan/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "55.59416152314765",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/BWTandem/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "40.70963726320024",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "14.88452425994741",
+      "rounded_half_up": "14.88",
+      "replacement": "14.88 points",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D104"
+    },
+    {
+      "line": 331,
+      "old_substring": "half the separation",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "half the separation",
+      "verdict": "parameter_or_definition",
+      "note": "Plot definition h=separation/2, not measured comparison.",
+      "claim_id": "D105"
+    },
+    {
+      "line": 335,
+      "old_substring": "1.77–1.82",
+      "operands": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 elapsed seconds",
+          "value": "14465"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26301"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 elapsed seconds",
+          "value": "14798"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26201"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 elapsed seconds",
+          "value": "14482"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 elapsed seconds",
+          "value": "25665"
+        }
+      ],
+      "formula": "min([a[1]/a[0],a[3]/a[2],a[5]/a[4]])",
+      "unrounded_result": "1.770577105014191106906338694",
+      "rounded_half_up": "1.77",
+      "replacement": "1.77–1.82",
+      "verdict": "confirmed",
+      "note": "Ratios [Decimal('1.818250950570342205323193916'), Decimal('1.770577105014191106906338694'), Decimal('1.772199972379505593150117387')]; maximum 1.818250950570342205323193916; each endpoint confirms with half-up.",
+      "claim_id": "D106"
+    },
+    {
+      "line": 335,
+      "old_substring": "1.30–1.41",
+      "operands": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076848.batch/seconds",
+          "value": "23805"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076849.batch/seconds",
+          "value": "30995"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076850.batch/seconds",
+          "value": "23685"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076851.batch/seconds",
+          "value": "30872"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076852.batch/seconds",
+          "value": "19796"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "sacct:6076853.batch/seconds",
+          "value": "27884"
+        }
+      ],
+      "formula": "min([a[1]/a[0],a[3]/a[2],a[5]/a[4]])",
+      "unrounded_result": "1.302037387103549674438143247",
+      "rounded_half_up": "1.30",
+      "replacement": "1.30–1.41",
+      "verdict": "confirmed",
+      "note": "Ratios [Decimal('1.302037387103549674438143247'), Decimal('1.303440996411230736753219337'), Decimal('1.408567387350979995958779551')]; maximum 1.408567387350979995958779551; each endpoint confirms with half-up.",
+      "claim_id": "D107"
+    },
+    {
+      "line": 335,
+      "old_substring": "mean 1.79",
+      "operands": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 elapsed seconds",
+          "value": "14465"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26301"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 elapsed seconds",
+          "value": "14798"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 elapsed seconds",
+          "value": "26201"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 elapsed seconds",
+          "value": "14482"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 elapsed seconds",
+          "value": "25665"
+        }
+      ],
+      "formula": "(a[1]/a[0]+a[3]/a[2]+a[5]/a[4])/3",
+      "unrounded_result": "1.787009342654679635126549999",
+      "rounded_half_up": "1.79",
+      "replacement": "mean 1.79",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D108"
+    },
+    {
+      "line": 335,
+      "old_substring": "twentyfold",
+      "operands": [
+        {
+          "path": "manuscript.md",
+          "key": "maximum period wide",
+          "value": "2000"
+        },
+        {
+          "path": "manuscript.md",
+          "key": "maximum period narrow",
+          "value": "100"
+        }
+      ],
+      "formula": "a[0]/a[1]",
+      "unrounded_result": "20",
+      "rounded_half_up": "20.00",
+      "replacement": "twentyfold",
+      "verdict": "confirmed",
+      "note": "Exact parameter ratio; native parameter precision exempt. At L96 this is range, not runtime, difference.",
+      "claim_id": "D109"
+    },
+    {
+      "line": 339,
+      "old_substring": "5.5%",
+      "operands": [
+        {
+          "path": "results/manifest.tsv",
+          "key": "seeding index arm elapsed seconds",
+          "value": "1278"
+        },
+        {
+          "path": "results/manifest.tsv",
+          "key": "seeding k-tuple arm elapsed seconds",
+          "value": "1349"
+        }
+      ],
+      "formula": "100*(a[1]-a[0])/a[0]",
+      "unrounded_result": "5.555555555555555555555555556",
+      "rounded_half_up": "5.56",
+      "replacement": "5.56%",
+      "verdict": "replace",
+      "note": "Manifest preserves per-arm integer seconds; original fractional GNU-time value not deposited in results.",
+      "claim_id": "D110"
+    },
+    {
+      "line": 346,
+      "old_substring": "15.59",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/BWTandem/knob180",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "79.79471335240267",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/BWTandem/knob180",
+            "banded",
+            "coverage"
+          ],
+          "value": "64.20234882686118",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "15.59236452554149",
+      "rounded_half_up": "15.59",
+      "replacement": "15.59",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D111"
+    },
+    {
+      "line": 346,
+      "old_substring": "33.01",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/BWTandem/TR-1",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "50.335993757089206",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/BWTandem/TR-1",
+            "banded",
+            "coverage"
+          ],
+          "value": "17.326009710139918",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "33.009984046949288",
+      "rounded_half_up": "33.01",
+      "replacement": "33.01",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D112"
+    },
+    {
+      "line": 346,
+      "old_substring": "17.84",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/BWTandem/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.548616573354025",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/BWTandem/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "40.70963726320024",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "17.838979310153785",
+      "rounded_half_up": "17.84",
+      "replacement": "17.84",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D113"
+    },
+    {
+      "line": 346,
+      "old_substring": "1.54",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRF/knob180",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "80.0096715686096",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRF/knob180",
+            "banded",
+            "coverage"
+          ],
+          "value": "79.37667310179027",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRF/TR-1",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "45.77091609020762",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRF/TR-1",
+            "banded",
+            "coverage"
+          ],
+          "value": "44.230222929137405",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRF/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.504213696130364",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRF/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "57.632530608173745",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "max([a[0]-a[1],a[2]-a[3],a[4]-a[5]])",
+      "unrounded_result": "1.540693161070215",
+      "rounded_half_up": "1.54",
+      "replacement": "1.54",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D114"
+    },
+    {
+      "line": 346,
+      "old_substring": "2.82",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/ULTRA/knob180",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "78.70912512936675",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/ULTRA/knob180",
+            "banded",
+            "coverage"
+          ],
+          "value": "77.51106049515248",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/ULTRA/TR-1",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "36.361650167835855",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/ULTRA/TR-1",
+            "banded",
+            "coverage"
+          ],
+          "value": "33.54630622128298",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/ULTRA/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "57.72782405443484",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/ULTRA/CentC",
+            "banded",
+            "coverage"
+          ],
+          "value": "55.83508972000157",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "max([a[0]-a[1],a[2]-a[3],a[4]-a[5]])",
+      "unrounded_result": "2.815343946552875",
+      "rounded_half_up": "2.82",
+      "replacement": "2.82",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D115"
+    },
+    {
+      "line": 346,
+      "old_substring": "0.34",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/knob180",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "81.2250210716241",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/knob180",
+            "banded",
+            "coverage"
+          ],
+          "value": "80.88386240677939",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.34115866484471",
+      "rounded_half_up": "0.34",
+      "replacement": "0.34",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D116"
+    },
+    {
+      "line": 346,
+      "old_substring": "18.57",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/TR-1",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "53.17191463050009",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/TR-1",
+            "banded",
+            "coverage"
+          ],
+          "value": "34.60681459002422",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "18.56510004047587",
+      "rounded_half_up": "18.57",
+      "replacement": "18.57",
+      "verdict": "confirmed",
+      "note": "",
+      "claim_id": "D117"
+    },
+    {
+      "line": 346,
+      "old_substring": "1.44",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/knob180",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "81.2250210716241",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/BWTandem/knob180",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "79.79471335240267",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "1.43030771922143",
+      "rounded_half_up": "1.43",
+      "replacement": "1.43",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D118"
+    },
+    {
+      "line": 346,
+      "old_substring": "2.83 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/TRASH-de-novo/TR-1",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "53.17191463050009",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3B/BWTandem/TR-1",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "50.335993757089206",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "2.835920873410884",
+      "rounded_half_up": "2.84",
+      "replacement": "2.84 points",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D119"
+    },
+    {
+      "line": 346,
+      "old_substring": "0.13 points",
+      "operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/TRASH-template/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.68451580604715",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        },
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-maize.json",
+          "key": [
+            "3C/BWTandem/CentC",
+            "unfiltered",
+            "coverage"
+          ],
+          "value": "58.548616573354025",
+          "evidence_class": "deposited full-precision score reconstruction JSON (not rounded manuscript cell)"
+        }
+      ],
+      "formula": "a[0]-a[1]",
+      "unrounded_result": "0.135899232693125",
+      "rounded_half_up": "0.14",
+      "replacement": "0.14 points",
+      "verdict": "replace",
+      "note": "",
+      "claim_id": "D120"
+    },
+    {
+      "line": 437,
+      "old_substring": "2×10⁷",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "2×10⁷",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic parameter/formula, not measured comparison. Native precision exempt.",
+      "claim_id": "D121"
+    },
+    {
+      "line": 449,
+      "old_substring": "three times",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "three times",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic parameter/formula, not measured comparison. Native precision exempt.",
+      "claim_id": "D122"
+    },
+    {
+      "line": 467,
+      "old_substring": "half",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "half",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic parameter/formula, not measured comparison. Native precision exempt.",
+      "claim_id": "D123"
+    },
+    {
+      "line": 473,
+      "old_substring": "twice",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "twice",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic parameter/formula, not measured comparison. Native precision exempt.",
+      "claim_id": "D124"
+    },
+    {
+      "line": 473,
+      "old_substring": "twice",
+      "operands": [],
+      "formula": null,
+      "unrounded_result": null,
+      "rounded_half_up": null,
+      "replacement": "twice",
+      "verdict": "parameter_or_definition",
+      "note": "Algorithmic parameter/formula, not measured comparison. Native precision exempt.",
+      "claim_id": "D125"
+    }
+  ],
+  "counts": {
+    "confirmed": 69,
+    "replace": 33,
+    "missing_source_limitation": 7,
+    "parameter_or_definition": 16
+  }
+}

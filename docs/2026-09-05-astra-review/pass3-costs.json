@@ -1,0 +1,512 @@
+{
+  "results/competitor_logs/mreps__Col-CEN_v1.2_b_exp_run.log": {
+    "seconds": 210.26,
+    "hours": 0.05840555555555555,
+    "rss_kib": 366792,
+    "gib": 0.34980010986328125
+  },
+  "results/competitor_logs/mreps__Col-CEN_v1.2_run.log": {
+    "seconds": 848.71,
+    "hours": 0.23575277777777778,
+    "rss_kib": 884668,
+    "gib": 0.8436851501464844
+  },
+  "results/competitor_logs/mreps__GCA_000001405.15_GRCh38_genomic_run.log": {
+    "seconds": 3281.08,
+    "hours": 0.9114111111111111,
+    "rss_kib": 6691220,
+    "gib": 6.381244659423828
+  },
+  "results/competitor_logs/mreps__GCF_000001405.26_GRCh38_genomic_run.log": {
+    "seconds": 3270.65,
+    "hours": 0.908513888888889,
+    "rss_kib": 6691220,
+    "gib": 6.381244659423828
+  },
+  "results/competitor_logs/ncrf__Col-CEN_v1.2_run.log": {
+    "seconds": 2863.63,
+    "hours": 0.7954527777777778,
+    "rss_kib": 84893280,
+    "gib": 80.96054077148438
+  },
+  "results/competitor_logs/ncrf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ncrf_CentC_exp3C_centc_run.log": {
+    "seconds": 1.83,
+    "hours": 0.0005083333333333334,
+    "rss_kib": 302824,
+    "gib": 0.28879547119140625
+  },
+  "results/competitor_logs/ncrf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ncrf_TAG_exp3A_microsatellite_run.log": {
+    "seconds": 473.90999999999997,
+    "hours": 0.13164166666666666,
+    "rss_kib": 18313536,
+    "gib": 17.46514892578125
+  },
+  "results/competitor_logs/ncrf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ncrf_knob180_TR1_exp3B_satellite_run.log": {
+    "seconds": 2.25,
+    "hours": 0.000625,
+    "rss_kib": 302824,
+    "gib": 0.28879547119140625
+  },
+  "results/competitor_logs/tantan__Col-CEN_v1.2_run.log": {
+    "seconds": 137.79,
+    "hours": 0.038274999999999997,
+    "rss_kib": 47084,
+    "gib": 0.044902801513671875
+  },
+  "results/competitor_logs/tantan__GCA_000001405.15_GRCh38_genomic_run.log": {
+    "seconds": 3106.94,
+    "hours": 0.8630388888888889,
+    "rss_kib": 281316,
+    "gib": 0.2682838439941406
+  },
+  "results/competitor_logs/tantan__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_tantan_exp3A_microsatellite_run.log": {
+    "seconds": 1973.47,
+    "hours": 0.5481861111111112,
+    "rss_kib": 526584,
+    "gib": 0.5021896362304688
+  },
+  "results/competitor_logs/tantan__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_tantan_exp3B_satellite_run.log": {
+    "seconds": 1968.4,
+    "hours": 0.5467777777777778,
+    "rss_kib": 526584,
+    "gib": 0.5021896362304688
+  },
+  "results/competitor_logs/tantan__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_tantan_exp3C_centc_run.log": {
+    "seconds": 2110.63,
+    "hours": 0.5862861111111112,
+    "rss_kib": 526584,
+    "gib": 0.5021896362304688
+  },
+  "results/competitor_logs/tantan__GCF_000001405.26_GRCh38_genomic_run.log": {
+    "seconds": 3374.94,
+    "hours": 0.9374833333333333,
+    "rss_kib": 281316,
+    "gib": 0.2682838439941406
+  },
+  "results/competitor_logs/trash__Col-CEN_v1.2_CEN159_run.log": {
+    "seconds": 22709.0,
+    "hours": 6.308055555555556,
+    "rss_kib": 1389316,
+    "gib": 1.3249549865722656
+  },
+  "results/competitor_logs/trash__Col-CEN_v1.2_CEN178_run.log": {
+    "seconds": 91360.0,
+    "hours": 25.377777777777776,
+    "rss_kib": 2761680,
+    "gib": 2.6337432861328125
+  },
+  "results/competitor_logs/trash__Col-CEN_v1.2_denovo_run.log": {
+    "seconds": 20850.0,
+    "hours": 5.791666666666667,
+    "rss_kib": 1357252,
+    "gib": 1.2943763732910156
+  },
+  "results/competitor_logs/trash__GCA_000001405.15_GRCh38_genomic_run.log": {
+    "seconds": 387456.0,
+    "hours": 107.62666666666667,
+    "rss_kib": 15298244,
+    "gib": 14.589542388916016
+  },
+  "results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3A_microsatellite_run.log": {
+    "seconds": 215469.0,
+    "hours": 59.8525,
+    "rss_kib": 13399252,
+    "gib": 12.778522491455078
+  },
+  "results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite_run.log": {
+    "seconds": 211842.0,
+    "hours": 58.845,
+    "rss_kib": 13399164,
+    "gib": 12.778438568115234
+  },
+  "results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_CentC_exp3C_centc_run.log": {
+    "seconds": 351900.0,
+    "hours": 97.75,
+    "rss_kib": 44910788,
+    "gib": 42.830265045166016
+  },
+  "results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_TAG_exp3A_microsatellite_run.log": {
+    "seconds": 235812.0,
+    "hours": 65.50333333333333,
+    "rss_kib": 13399596,
+    "gib": 12.778850555419922
+  },
+  "results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_TR1_exp3B_satellite_run.log": {
+    "seconds": 227175.0,
+    "hours": 63.104166666666664,
+    "rss_kib": 13584236,
+    "gib": 12.954936981201172
+  },
+  "results/competitor_logs/trash__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_knob180_exp3B_satellite_run.log": {
+    "seconds": 366282.0,
+    "hours": 101.745,
+    "rss_kib": 126500492,
+    "gib": 120.6402702331543
+  },
+  "results/competitor_logs/trash__GCF_000001405.26_GRCh38_genomic_run.log": {
+    "seconds": 401872.0,
+    "hours": 111.63111111111111,
+    "rss_kib": 15296552,
+    "gib": 14.587928771972656
+  },
+  "results/competitor_logs/trf__Col-CEN_v1.2_run.log": {
+    "seconds": 475020.0,
+    "hours": 131.95,
+    "rss_kib": 1322424,
+    "gib": 1.2611618041992188
+  },
+  "results/competitor_logs/trf__GCA_000001405.15_GRCh38_genomic_run.log": {
+    "seconds": 121426.0,
+    "hours": 33.72944444444445,
+    "rss_kib": 1518668,
+    "gib": 1.4483146667480469
+  },
+  "results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3A_microsatellite_run.log": {
+    "seconds": 18781.0,
+    "hours": 5.216944444444445,
+    "rss_kib": 1254724,
+    "gib": 1.1965980529785156
+  },
+  "results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite_run.log": {
+    "seconds": 19851.0,
+    "hours": 5.514166666666667,
+    "rss_kib": 1257616,
+    "gib": 1.1993560791015625
+  },
+  "results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc_run.log": {
+    "seconds": 19736.0,
+    "hours": 5.482222222222222,
+    "rss_kib": 1254724,
+    "gib": 1.1965980529785156
+  },
+  "results/competitor_logs/trf__GCF_000001405.26_GRCh38_genomic_run.log": {
+    "seconds": 121514.0,
+    "hours": 33.75388888888889,
+    "rss_kib": 1518668,
+    "gib": 1.4483146667480469
+  },
+  "results/competitor_logs/ultra__Col-CEN_v1.2_run.log": {
+    "seconds": 4802.0,
+    "hours": 1.333888888888889,
+    "rss_kib": 1756440,
+    "gib": 1.6750717163085938
+  },
+  "results/competitor_logs/ultra__GCA_000001405.15_GRCh38_genomic_run.log": {
+    "seconds": 107209.0,
+    "hours": 29.780277777777776,
+    "rss_kib": 1758540,
+    "gib": 1.6770744323730469
+  },
+  "results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3A_microsatellite_run.log": {
+    "seconds": 827.86,
+    "hours": 0.22996111111111112,
+    "rss_kib": 2333236,
+    "gib": 2.225147247314453
+  },
+  "results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3B_satellite_run.log": {
+    "seconds": 125036.0,
+    "hours": 34.73222222222222,
+    "rss_kib": 10146928,
+    "gib": 9.676864624023438
+  },
+  "results/competitor_logs/ultra__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ultra_exp3C_centc_run.log": {
+    "seconds": 46284.0,
+    "hours": 12.856666666666667,
+    "rss_kib": 3544928,
+    "gib": 3.380706787109375
+  },
+  "results/competitor_logs/ultra__GCF_000001405.26_GRCh38_genomic_run.log": {
+    "seconds": 98659.0,
+    "hours": 27.405277777777776,
+    "rss_kib": 1758976,
+    "gib": 1.677490234375
+  },
+  "sacct:5981977.batch": {
+    "seconds": 36431,
+    "hours": 10.119722222222222,
+    "rss_kib": 4405640,
+    "gib": 4.201545715332031
+  },
+  "sacct:5981987.batch": {
+    "seconds": 417,
+    "hours": 0.11583333333333333,
+    "rss_kib": 178212,
+    "gib": 0.16995620727539062
+  },
+  "sacct:5983739.batch": {
+    "seconds": 6123,
+    "hours": 1.7008333333333334,
+    "rss_kib": 2276544,
+    "gib": 2.17108154296875
+  },
+  "sacct:5983772.batch": {
+    "seconds": 26559,
+    "hours": 7.3775,
+    "rss_kib": 37003216,
+    "gib": 35.28901672363281
+  },
+  "sacct:5985651.batch": {
+    "seconds": 186,
+    "hours": 0.051666666666666666,
+    "rss_kib": 4018172,
+    "gib": 3.8320274353027344
+  },
+  "sacct:5994683.batch": {
+    "seconds": 122395,
+    "hours": 33.99861111111111,
+    "rss_kib": 39465544,
+    "gib": 37.63727569580078
+  },
+  "sacct:6076847.batch": {
+    "seconds": 568669,
+    "hours": 157.9636111111111,
+    "rss_kib": 1566224,
+    "gib": 1.4936676025390625
+  },
+  "sacct:6076848.batch": {
+    "seconds": 23805,
+    "hours": 6.6125,
+    "rss_kib": 38531252,
+    "gib": 36.74626541137695
+  },
+  "sacct:6076849.batch": {
+    "seconds": 30995,
+    "hours": 8.609722222222222,
+    "rss_kib": 43845032,
+    "gib": 41.813880920410156
+  },
+  "sacct:6076850.batch": {
+    "seconds": 23685,
+    "hours": 6.579166666666667,
+    "rss_kib": 38068908,
+    "gib": 36.30533981323242
+  },
+  "sacct:6076851.batch": {
+    "seconds": 30872,
+    "hours": 8.575555555555555,
+    "rss_kib": 43000460,
+    "gib": 41.0084342956543
+  },
+  "sacct:6076852.batch": {
+    "seconds": 19796,
+    "hours": 5.498888888888889,
+    "rss_kib": 39962784,
+    "gib": 38.111480712890625
+  },
+  "sacct:6076853.batch": {
+    "seconds": 27884,
+    "hours": 7.745555555555556,
+    "rss_kib": 38323992,
+    "gib": 36.548606872558594
+  },
+  "sacct:6085141.batch": {
+    "seconds": 721,
+    "hours": 0.20027777777777778,
+    "rss_kib": 100656,
+    "gib": 0.0959930419921875
+  },
+  "sacct:6085142.batch": {
+    "seconds": 11820,
+    "hours": 3.283333333333333,
+    "rss_kib": 507280,
+    "gib": 0.4837799072265625
+  },
+  "sacct:6085143.batch": {
+    "seconds": 4970,
+    "hours": 1.3805555555555555,
+    "rss_kib": 391056,
+    "gib": 0.3729400634765625
+  },
+  "sacct:6085144.batch": {
+    "seconds": 69210,
+    "hours": 19.225,
+    "rss_kib": 958500,
+    "gib": 0.9140968322753906
+  },
+  "sacct:6085147.batch": {
+    "seconds": 58436,
+    "hours": 16.232222222222223,
+    "rss_kib": 26046596,
+    "gib": 24.839969635009766
+  },
+  "sacct:6085148.batch": {
+    "seconds": 19414,
+    "hours": 5.392777777777778,
+    "rss_kib": 32134748,
+    "gib": 30.64608383178711
+  },
+  "sacct:6085149.batch": {
+    "seconds": 23520,
+    "hours": 6.533333333333333,
+    "rss_kib": 40420404,
+    "gib": 38.54790115356445
+  },
+  "sacct:6085150.batch": {
+    "seconds": 23513,
+    "hours": 6.5313888888888885,
+    "rss_kib": 43136928,
+    "gib": 41.138580322265625
+  },
+  "sacct:6085151.batch": {
+    "seconds": 22828,
+    "hours": 6.341111111111111,
+    "rss_kib": 38416976,
+    "gib": 36.63728332519531
+  },
+  "sacct:6086503.batch": {
+    "seconds": 21934,
+    "hours": 6.092777777777778,
+    "rss_kib": 18641444,
+    "gib": 17.77786636352539
+  },
+  "sacct:6086510.batch": {
+    "seconds": 2628,
+    "hours": 0.73,
+    "rss_kib": 6513500,
+    "gib": 6.211757659912109
+  },
+  "sacct:6110900.batch": {
+    "seconds": 2411,
+    "hours": 0.6697222222222222,
+    "rss_kib": 2268896,
+    "gib": 2.163787841796875
+  },
+  "sacct:6110901.batch": {
+    "seconds": 45522,
+    "hours": 12.645,
+    "rss_kib": 29447952,
+    "gib": 28.083755493164062
+  },
+  "sacct:6124640.batch": {
+    "seconds": 57063,
+    "hours": 15.850833333333334,
+    "rss_kib": 29831980,
+    "gib": 28.449993133544922
+  },
+  "sacct:6129408_0.batch": {
+    "seconds": 0,
+    "hours": 0.0,
+    "rss_kib": 1544,
+    "gib": 0.00147247314453125
+  },
+  "sacct:6129408_1.batch": {
+    "seconds": 0,
+    "hours": 0.0,
+    "rss_kib": 1544,
+    "gib": 0.00147247314453125
+  },
+  "sacct:6129408_2.batch": {
+    "seconds": 1,
+    "hours": 0.0002777777777777778,
+    "rss_kib": 1544,
+    "gib": 0.00147247314453125
+  },
+  "sacct:6129408_3.batch": {
+    "seconds": 1,
+    "hours": 0.0002777777777777778,
+    "rss_kib": 1544,
+    "gib": 0.00147247314453125
+  },
+  "sacct:6145581.batch": {
+    "seconds": 166509,
+    "hours": 46.2525,
+    "rss_kib": 17972740,
+    "gib": 17.140140533447266
+  },
+  "sacct:6146419.batch": {
+    "seconds": 24752,
+    "hours": 6.875555555555556,
+    "rss_kib": 605400,
+    "gib": 0.5773544311523438
+  },
+  "sacct:6146422.batch": {
+    "seconds": 8357,
+    "hours": 2.321388888888889,
+    "rss_kib": 697616,
+    "gib": 0.6652984619140625
+  },
+  "sacct:6146483.batch": {
+    "seconds": 443,
+    "hours": 0.12305555555555556,
+    "rss_kib": 653084,
+    "gib": 0.6228294372558594
+  },
+  "sacct:6146484.batch": {
+    "seconds": 5670,
+    "hours": 1.575,
+    "rss_kib": 717976,
+    "gib": 0.6847152709960938
+  },
+  "sacct:6147698.batch": {
+    "seconds": 40769,
+    "hours": 11.324722222222222,
+    "rss_kib": 43087996,
+    "gib": 41.091915130615234
+  },
+  "sacct:6147699.batch": {
+    "seconds": 41002,
+    "hours": 11.389444444444445,
+    "rss_kib": 44744592,
+    "gib": 42.67176818847656
+  },
+  "sacct:6147700.batch": {
+    "seconds": 40151,
+    "hours": 11.153055555555556,
+    "rss_kib": 46782796,
+    "gib": 44.61555099487305
+  },
+  "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/anianns_colcen.time": {
+    "seconds": 438.41,
+    "hours": 0.12178055555555556,
+    "rss_kib": 503968,
+    "gib": 0.480621337890625
+  },
+  "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/anianns_human.time": {
+    "seconds": 8353.0,
+    "hours": 2.3202777777777777,
+    "rss_kib": 550700,
+    "gib": 0.5251884460449219
+  },
+  "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/anianns_maize.time": {
+    "seconds": 5666.0,
+    "hours": 1.573888888888889,
+    "rss_kib": 572588,
+    "gib": 0.5460624694824219
+  },
+  "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_colcen_default.time": {
+    "seconds": 115.56,
+    "hours": 0.032100000000000004,
+    "rss_kib": 66020,
+    "gib": 0.06296157836914062
+  },
+  "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_colcen_k8w20000.time": {
+    "seconds": 623.15,
+    "hours": 0.1730972222222222,
+    "rss_kib": 66340,
+    "gib": 0.06326675415039062
+  },
+  "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_human_default.time": {
+    "seconds": 1675.51,
+    "hours": 0.46541944444444444,
+    "rss_kib": 491600,
+    "gib": 0.4688262939453125
+  },
+  "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_human_k8w20000.time": {
+    "seconds": 7236.0,
+    "hours": 2.01,
+    "rss_kib": 491344,
+    "gib": 0.4685821533203125
+  },
+  "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_maize_default.time": {
+    "seconds": 1080.15,
+    "hours": 0.3000416666666667,
+    "rss_kib": 603296,
+    "gib": 0.575347900390625
+  },
+  "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/runs/longdust_maize_k8w20000.time": {
+    "seconds": 14020.0,
+    "hours": 3.8944444444444444,
+    "rss_kib": 603416,
+    "gib": 0.5754623413085938
+  }
+}

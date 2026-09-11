@@ -1,0 +1,261 @@
+[
+  {
+    "file": "manuscript.md",
+    "old": "Its contribution is wide-range structured output with non-leading shared-range accuracy — shared-output-band region recall was 78.87% against ULTRA's 81.62%, and a stratified single-reader audit supported only 4 of 400 calls absent from both the catalog and four original comparators — not a demonstrated causal speed advantage of the index.",
+    "new": "Its contribution is wide-range structured output with non-leading shared-range accuracy: shared-output-band region recall was 78.87% against ULTRA's 81.62%, and a stratified single-reader audit supported only 4 of 400 calls absent from both the catalog and four original comparators; a causal speed advantage of the index was not demonstrated.",
+    "reason": "Remove conversational paired dashes while preserving all Summary facts, the negative index-attribution claim and exactly two Summary sentences. Parent replaces proposed long parenthetical with colon/semicolon to obey explicit author style.",
+    "pass": 1
+  },
+  {
+    "file": "manuscript.md",
+    "old": "Human evaluation uses the GRCh38 primary chromosomes (GenBank assembly GCA_000001405.15; Genome Reference Consortium, 2013) and release v1.2.1 of the adotto variable-repeat catalog (English et al., 2024; dataset English, 2024a); plant evaluation uses Col-CEN v1.2 (Naish et al., 2021; dataset Schatzlab, n.d.) and maize Mo17 (GenBank assembly GCA_022117705.1; Chen et al., 2023; dataset China Agriculture University, n.d.).",
+    "new": "Human evaluation uses the primary chromosomes of GRCh38, GenBank assembly GCA_000001405.15 (Genome Reference Consortium, 2013), and release v1.2.1 of the adotto variable-repeat catalog (English et al., 2024; dataset English, 2024a). Plant evaluation uses Col-CEN v1.2 (Naish et al., 2021; dataset Schatzlab, n.d.) and maize Mo17, GenBank assembly GCA_022117705.1 (Chen et al., 2023; dataset China Agriculture University, n.d.).",
+    "reason": "Separate accession information from bibliographic parentheses and split the human/plant sentence without changing sources or assembly identifiers.",
+    "pass": 1
+  },
+  {
+    "file": "supplementary.md",
+    "old": "STRs require identification of near-perfect microsatellite runs, whereas satellites tolerate substantial inter-copy divergence: Naish et al. (2021) report 94.3–97.3% identity between Arabidopsis CEN180 higher-order repeats, and monomer-to-consensus distances that leave a large minority of monomers well outside any narrow identity band.",
+    "new": "STRs require identification of near-perfect microsatellite runs, whereas satellites tolerate substantial inter-copy divergence: Arabidopsis CEN180 higher-order repeats have 94.3–97.3% identity, and monomer-to-consensus distances leave a large minority of monomers well outside any narrow identity band (Naish et al., 2021).",
+    "reason": "Make the scientific finding prominent and move its existing citation to sentence end.",
+    "pass": 1
+  },
+  {
+    "file": "supplementary.md",
+    "old": "The telomere to telomere Arabidopsis thaliana Col-CEN v1.2 assembly (132 Mb, Naish et al., 2021) provided a compact genome with well characterized centromeric satellite arrays;",
+    "new": "The 132 Mb telomere to telomere Arabidopsis thaliana Col-CEN v1.2 assembly provided a compact genome with well characterized centromeric satellite arrays (Naish et al., 2021);",
+    "reason": "Separate assembly size from the citation without changing the following accession and source information.",
+    "pass": 1
+  },
+  {
+    "file": "supplementary.md",
+    "old": "The Zea mays Mo17 T2T assembly (2.18 Gb, Chen et al., 2023, GenBank accession GCA_022117705.1) served as a large, repeat rich crop genome with multiple annotated satellite families.",
+    "new": "The 2.18 Gb Zea mays Mo17 T2T assembly, GenBank accession GCA_022117705.1, provided a large, repeat rich crop genome with multiple annotated satellite families (Chen et al., 2023).",
+    "reason": "Unstack size, accession and bibliographic reference while preserving each item.",
+    "pass": 1
+  },
+  {
+    "file": "supplementary.md",
+    "old": "The human paired range-cost ratio is therefore measured for BWTandem alone. Supplementary Figure 2 shows the paired measurements and the separate cross-tool cost observations.",
+    "new": "The human paired range-cost ratio is therefore measured for BWTandem alone; cross-tool cost observations are separate from these paired measurements (Supplementary Figure 2).",
+    "reason": "Replace a figure-as-subject signpost with the existing comparability finding; retain the display reference at sentence end.",
+    "pass": 1
+  },
+  {
+    "file": "supplementary.md",
+    "old": "Supplementary Figure S1 shows the chromosome-subset sensitivity analysis for the post-filtered full-range output.",
+    "new": "For the post-filtered full-range output, ULTRA, BWTandem and tantan retain their region-recall ordering across the chromosome subsets (Supplementary Figure S1).",
+    "reason": "State the finding explicitly documented in the adjacent caption rather than announce what the figure shows.",
+    "pass": 1
+  },
+  {
+    "file": "supplementary.md",
+    "old": "These calls should therefore be read as predominantly over-calls under the stated criterion, not as undiscovered repeats (Section 4.4). Supplementary Figure 3 shows the identity sweep and the audit counts.",
+    "new": "These calls should therefore be read as predominantly over-calls under the stated criterion, not as undiscovered repeats (Section 4.4); the identity sweep and audit counts document the operating-point trade-off and its limited support among unmatched calls (Supplementary Figure 3).",
+    "reason": "Replace display-led signposting while preserving both the identity-sweep content and the adverse audit interpretation.",
+    "pass": 1
+  },
+  {
+    "file": "supplementary.md",
+    "old": "Supplementary Figure 4 places the unfiltered plant measurements beside the maize band losses.",
+    "new": "Unfiltered plant coverage and recall must be distinguished from maize coverage losses under period filtering (Supplementary Figure 4).",
+    "reason": "Make the existing detection-versus-period-assignment distinction the subject, with the display reference at sentence end.",
+    "pass": 1
+  },
+  {
+    "file": "supplementary.md",
+    "old": "A user who needs contiguity should therefore stop well before that point. Supplementary Figure S2 plots this coordinate-only sweep.",
+    "new": "A user who needs contiguity should therefore stop well before that point in the coordinate-only sweep (Supplementary Figure S2).",
+    "reason": "Keep the practical conclusion and sweep reference without a second figure-as-subject sentence.",
+    "pass": 1
+  },
+  {
+    "file": "supplementary.md",
+    "old": "Supplementary Table 3A-b applies the band to every tool and counts a TAG array as a call of period 3 whose leading trinucleotide is a rotation of TAG. Supplementary Table 3A-b is the rule we would ask a reader to use.",
+    "new": "The recommended scoring rule applies the band to every tool and counts a TAG array as a call of period 3 whose leading trinucleotide is a rotation of TAG (Supplementary Table 3A-b).",
+    "reason": "Express the recommended rule directly rather than describe a table as performing scoring; retain the TAG definition.",
+    "pass": 2
+  },
+  {
+    "file": "supplementary.md",
+    "old": "Supplementary Tables 3B/3C use raw calls; their banded counterparts additionally restrict reported periods before selecting overlaps, whereas the coordinate-only post-merge diagnostic first merges chromosome-wide and then selects overlaps.",
+    "new": "The unfiltered satellite-array scoring uses raw calls (Supplementary Tables 3B/3C). Banded scoring additionally restricts reported periods before selecting overlaps, whereas the coordinate-only post-merge diagnostic first merges chromosome-wide and then selects overlaps.",
+    "reason": "Put the scoring procedures first and distinguish raw, banded and merged analyses without changing their order of operations.",
+    "pass": 2
+  },
+  {
+    "file": "supplementary.md",
+    "old": "Supplementary Table 3B instead uses the outer endpoints of raw calls that directly intersect each array.",
+    "new": "The raw-call baseline instead uses the outer endpoints of calls that directly intersect each array (Supplementary Table 3B).",
+    "reason": "Replace table-as-subject wording with the analysis itself and retain the essential raw-call distinction.",
+    "pass": 2
+  },
+  {
+    "file": "supplementary.md",
+    "old": "We adopted the rotation rule, and report it alongside the original rather than in place of it: Supplementary Table 3A retains the substring rule and Supplementary Table 3A-b restates the comparison under the rotation rule, so a reader can see both.",
+    "new": "We retain the original substring-rule comparison alongside the adopted rotation-rule comparison so readers can compare both definitions (Supplementary Tables 3A and 3A-b).",
+    "reason": "State the retained methodological comparison first, preserving the mapping of each old table label to its rule. Parent removes descriptive words inside the callout; rule names remain in narrative order.",
+    "pass": 2
+  },
+  {
+    "file": "supplementary.md",
+    "old": "Selected intervals from the deposited calls illustrate internal self-similarity (Supplementary Figure 5); these examples do not measure period-assignment accuracy or establish species-wide higher-order structure.",
+    "new": "Selected intervals from the deposited calls illustrate internal self-similarity; these examples do not measure period-assignment accuracy or establish species-wide higher-order structure (Supplementary Figure 5).",
+    "reason": "Move the display reference to sentence end without dropping either non-validation caveat.",
+    "pass": 2
+  },
+  {
+    "file": "supplementary.md",
+    "old": "What neither longdust nor AniAnn's emits — and what BWTandem's output is organised around — is the per-array structured record: motif sequence, primitive period, copy count and purity, at call boundaries measured in base pairs.",
+    "new": "BWTandem's output is organised around per-array structured records with motif sequence, primitive period, copy count and purity at call boundaries measured in base pairs; neither longdust nor AniAnn's emits these records.",
+    "reason": "Remove staged paired-dash framing while preserving the substantive negative claim about comparator output.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "We benchmarked three genomes against seven tools — TRF, ULTRA, mreps, tantan, TRASH, NCRF and TideHunter — of which all but TideHunter produced reported results;",
+    "new": "We benchmarked three genomes against seven tools (TRF, ULTRA, mreps, tantan, TRASH, NCRF and TideHunter), of which all but TideHunter produced reported results;",
+    "reason": "Replace paired-dash list punctuation while retaining every comparator and the exclusion.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "Two further tools published in 2026 — longdust 1.4 and AniAnn's 0.7.1 — were added later under a separate preregistered protocol (Section 2.2.4) and are reported in Supplementary Tables 1a, 2, 3B and 3C.",
+    "new": "Two further tools published in 2026, longdust 1.4 and AniAnn's 0.7.1, were added later under a separate preregistered protocol (Section 2.2.4; Supplementary Tables 1a, 2, 3B and 3C).",
+    "reason": "Remove paired dashes and place display references parenthetically at sentence end, retaining versions and preregistration.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "One-to-one sensitivity is matched pairs over truth records and one-to-one precision is matched pairs over predictions — record-count fractions, distinct from the ≥1 bp region-overlap fractions of Supplementary Tables 1a–1e.",
+    "new": "One-to-one sensitivity is matched pairs over truth records and one-to-one precision is matched pairs over predictions; these record-count fractions are distinct from the ≥1 bp region-overlap fractions (Supplementary Tables 1a–1e).",
+    "reason": "Make the denominator distinction explicit without an em-dash aside; move the display reference to sentence end.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "an explicit competitor-referenced objective — reaching ULTRA's recall at approximately ULTRA's precision.",
+    "new": "an explicit competitor-referenced objective: reaching ULTRA's recall at approximately ULTRA's precision.",
+    "reason": "Use a colon for the objective specification, retaining the tuning disclosure.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "longdust's converted BED stays 3-column — its paper states it \"is unable to report the repeat units in case of tandem repeats\" — so every period-conditional metric is structurally empty for it rather than fabricated from lengths;",
+    "new": "longdust's converted BED stays 3-column because its paper states it \"is unable to report the repeat units in case of tandem repeats\", so every period-conditional metric is structurally empty for it rather than fabricated from lengths;",
+    "reason": "Replace paired dashes with the explicit reason while preserving the quotation and undefined-period caveat.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "tantan was the fastest of the 2024 tools — longdust, added later, ran in 0.47 h — at 23.54% base pair recall",
+    "new": "tantan was the fastest of the 2024 tools (longdust, added later, ran in 0.47 h), at 23.54% base pair recall",
+    "reason": "Remove the conversational dash aside while retaining the later comparator's timing and the existing recall comparison.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "The 2026 additions sharpen rather than soften this reading: AniAnn's posts the table's highest centromere coverage (86.97%) from 60 array-level intervals, and longdust the highest monomer recall (99.86%) with no repeat units at all — on this genome, coverage and monomer recall are commodities, and what distinguishes the tools is the structure and boundary quality of what they report.",
+    "new": "Among the 2026 additions, AniAnn's has the highest centromere coverage (86.97%) from 60 array-level intervals, and longdust the highest monomer recall (99.86%) without reporting repeat units. On this genome, high coverage and monomer recall are shared by several tools; their reported structure and boundary quality distinguish them.",
+    "reason": "Remove rhetorical staging and the commodities metaphor while preserving all values, rankings, absence of repeat units and the output-quality distinction.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "AniAnn's also covers most by a wide margin, 81.42%, at a 14.92 kb mean offset — the array-coverage-versus-boundary trade-off of Section 2.2.4 in one row.",
+    "new": "AniAnn's also has the highest coverage by a wide margin, 81.42%, at a 14.92 kb mean offset, illustrating the array-coverage-versus-boundary trade-off described in Section 2.2.4.",
+    "reason": "Replace the em-dash closer with a direct description of the existing coverage/boundary contrast.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "The 591-region file is the deduplicated union of three runs — the CEN159 and CEN178 templates and the de novo output — so the de novo row was a subset of the row it was being compared against, and the shared cost cells reproduced the CEN159 run alone.",
+    "new": "The 591-region file is the deduplicated union of three runs (the CEN159 and CEN178 templates and the de novo output), so the de novo row was a subset of the row it was being compared against, and the shared cost cells reproduced the CEN159 run alone.",
+    "reason": "Change punctuation only; preserve the complete explanation of invalidated historical rows and cost cells.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "longdust matches the leaders' monomer recall without reporting any repeat unit — its zero CEN180 Count is the structural consequence of interval-only output, not a detection failure.",
+    "new": "longdust matches the leaders' monomer recall without reporting any repeat unit; its zero CEN180 Count is the structural consequence of interval-only output, not a detection failure.",
+    "reason": "Replace the dash connector without losing the substantive negative interpretation.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "Under the band the re-run loses 0.91 points — losses are computed from the unrounded coverages, so they do not always equal the difference of the two-decimal cells shown — second only to TRF's 0.87, and finishes 14.88 points above BWTandem.",
+    "new": "Under the band the re-run loses 0.91 points, second only to TRF's 0.87, and finishes 14.88 points above BWTandem. Losses are computed from the unrounded coverages, so they do not always equal the difference of the two-decimal cells shown.",
+    "reason": "Separate the numerical finding from the rounding caveat, retaining all values and the caveat.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "At the benchmarked commit (`0363d8b`) the import package was named `src`, hence the literal reproduction command above — reproducing from that pinned commit requires it verbatim.",
+    "new": "At the benchmarked commit (`0363d8b`) the import package was named `src`, hence the literal reproduction command above; reproducing from that pinned commit requires it verbatim.",
+    "reason": "Replace only the prose dash; preserve code spans and historical reproduction requirements verbatim.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "That choice was made by scoring both settings against the CEN180 truth set that Supplementary Table 2 reports — base pair precision 65.54% with the pass off against 60.72% with it on, at 99.67% and 99.68% monomer recall — so it too is an in-sample selection, made on the evaluation truth rather than on a held-out satellite set, of which none exists for this assembly.",
+    "new": "That choice was made by scoring both settings against the CEN180 evaluation truth set: base pair precision was 65.54% with the pass off against 60.72% with it on, at 99.67% and 99.68% monomer recall. It too is an in-sample selection, made on the evaluation truth rather than on a held-out satellite set, of which none exists for this assembly (Supplementary Table 2).",
+    "reason": "Unpack the dash-heavy selection disclosure and remove the table-as-reporting-subject construction without losing any number or the missing-held-out-set caveat.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": " — ULTRA 1.2.1, the same GRCh38 sequence content under different accession headers, two threads (Supplementary Table S1) — used",
+    "new": ", using ULTRA 1.2.1 with the same GRCh38 sequence content under different accession headers and two threads (Supplementary Table S1), used",
+    "reason": "Parent applies blader dash guidance with grammatical punctuation; facts retained.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": " — not its maximal supported range — and",
+    "new": ", not its maximal supported range, and",
+    "reason": "Parent applies blader dash guidance with grammatical punctuation; facts retained.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "rescaled by the reduction factor — a disclosed simplification",
+    "new": "rescaled by the reduction factor. This is a disclosed simplification",
+    "reason": "Parent applies blader dash guidance with grammatical punctuation; facts retained.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "copy-number relative error — the latter reported for BWTandem only",
+    "new": "copy-number relative error; the latter is reported for BWTandem only",
+    "reason": "Parent applies blader dash guidance with grammatical punctuation; facts retained.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "0.47 GiB — it reports no repeat units, and BWTandem takes 27.17 times as long — while AniAnn's",
+    "new": "0.47 GiB. It reports no repeat units, and BWTandem takes 27.17 times as long. AniAnn's",
+    "reason": "Parent applies blader dash guidance with grammatical punctuation; facts retained.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "the column the assignment adds is precision —",
+    "new": "the column the assignment adds is precision:",
+    "reason": "Parent applies blader dash guidance with grammatical punctuation; facts retained.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "**truth-side primitive period band** — a different quantity",
+    "new": "**truth-side primitive period band**, a different quantity",
+    "reason": "Parent applies blader dash guidance with grammatical punctuation; facts retained.",
+    "pass": 3
+  },
+  {
+    "file": "supplementary.md",
+    "old": "did not complete in 6.58 days, Section 2.2) — and",
+    "new": "did not complete in 6.58 days, Section 2.2), and",
+    "reason": "Parent applies blader dash guidance with grammatical punctuation; facts retained.",
+    "pass": 3
+  }
+]

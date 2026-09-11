@@ -1,0 +1,386 @@
+[
+  {
+    "line": 21,
+    "old": "3.4",
+    "new": "3.43",
+    "source": "pass3-human.json BWTandem 101-2000 truth_hits / 1784804 *100; source BED identified in JSON; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 21,
+    "old": "2.0",
+    "new": "2.02",
+    "source": "pass3-human.json TRF 101-2000 truth_hits / 1784804 *100; source BED identified in JSON; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 21,
+    "old": "99.7",
+    "new": "99.72",
+    "source": "pass3-colcen.json BWTandem.recall; underlying BED identified in JSON; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 21,
+    "old": "99.2",
+    "new": "99.24",
+    "source": "pass3-colcen.json tantan (500bp re-run).recall; underlying BED identified in JSON; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 38,
+    "old": "6.6",
+    "new": "6.58",
+    "source": "results/sacct_provenance.txt JobID=6076847 Elapsed=6-13:57:48 /86400; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 78,
+    "old": "6.6",
+    "new": "6.58",
+    "source": "results/sacct_provenance.txt JobID=6076847 Elapsed=6-13:57:48 /86400; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 107,
+    "old": "6.6",
+    "new": "6.58",
+    "source": "results/sacct_provenance.txt JobID=6076847 Elapsed=6-13:57:48 /86400; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 543,
+    "old": "6.6",
+    "new": "6.58",
+    "source": "results/sacct_provenance.txt JobID=6076847 Elapsed=6-13:57:48 /86400; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 510,
+    "old": "6.6",
+    "new": "6.58",
+    "source": "results/sacct_provenance.txt JobID=6076847 Elapsed=6-13:57:48 /86400; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 78,
+    "old": "124.8",
+    "new": "124.79",
+    "source": "results/range_cost_attempts/README.md last COMPLETE emitted End=124785432; not processing progress; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 84,
+    "old": "3.1 Gb",
+    "new": "3.09 Gb",
+    "source": "quarantine.md §6.5 exact primary FASTA length 3088269832 / 1e9; 3.09 is rounded"
+  },
+  {
+    "line": 103,
+    "old": "3.1 Gb",
+    "new": "3.09 Gb",
+    "source": "quarantine.md §6.5 exact primary FASTA length 3088269832 / 1e9; 3.09 is rounded"
+  },
+  {
+    "line": 86,
+    "old": "2.6",
+    "new": "2.56",
+    "source": "pass3-human.json BWTandem counts 102926/4014108*100; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 90,
+    "old": "94.6",
+    "new": "94.59",
+    "source": "results/ground_truth/colcen_cen180.bed count length 175..179: 63077/66683*100; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 201,
+    "old": "94.6",
+    "new": "94.59",
+    "source": "results/ground_truth/colcen_cen180.bed count length 175..179: 63077/66683*100; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 94,
+    "old": "2.7",
+    "new": "2.71",
+    "source": "results/regen/heldout_select_chr21_22.txt GT regions 48344 / full truth 1784804 *100; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 119,
+    "old": "1.0",
+    "new": "1.00",
+    "source": "results/audit11/verdicts_reviewer2.tsv: 4 supported /400; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 119,
+    "old": "1.1",
+    "new": "1.14",
+    "source": "results/audit11/verdicts_reviewer2.tsv: 4 supported /350 definitive; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 119,
+    "old": "0.4",
+    "new": "0.45",
+    "source": "Wilson score interval, 4/350, z=1.959963984540054; verdicts_reviewer2.tsv; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 119,
+    "old": "2.9",
+    "new": "2.90",
+    "source": "Wilson score interval, 4/350, z=1.959963984540054; verdicts_reviewer2.tsv; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 121,
+    "old": "1.0",
+    "new": "1.00",
+    "source": "results/audit11/verdicts_reviewer2.tsv: 4 supported /400; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 121,
+    "old": "1.1",
+    "new": "1.14",
+    "source": "results/audit11/verdicts_reviewer2.tsv: 4 supported /350 definitive; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 121,
+    "old": "0.4",
+    "new": "0.45",
+    "source": "Wilson score interval, 4/350, z=1.959963984540054; verdicts_reviewer2.tsv; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 121,
+    "old": "2.9",
+    "new": "2.90",
+    "source": "Wilson score interval, 4/350, z=1.959963984540054; verdicts_reviewer2.tsv; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 350,
+    "old": "1.0",
+    "new": "1.00",
+    "source": "results/audit11/verdicts_reviewer2.tsv: 4 supported /400; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 350,
+    "old": "0.4",
+    "new": "0.45",
+    "source": "Wilson score interval, 4/350, z=1.959963984540054; verdicts_reviewer2.tsv; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 350,
+    "old": "2.9",
+    "new": "2.90",
+    "source": "Wilson score interval, 4/350, z=1.959963984540054; verdicts_reviewer2.tsv; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 150,
+    "old": "19.2",
+    "new": "19.23",
+    "source": "results/sacct_provenance.txt 6085144.batch Elapsed=19:13:30; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 188,
+    "old": "10.1",
+    "new": "10.12",
+    "source": "results/sacct_provenance.txt 5981977.batch Elapsed=10:07:11; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 248,
+    "old": "22.6",
+    "new": "22.58",
+    "source": "pass3-maize.json 3B/AniAnn's (2026)/knob180.unfiltered.offset /1000 (bp to kb); decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 248,
+    "old": "83.7",
+    "new": "83.74",
+    "source": "pass3-maize.json 3B/AniAnn's (2026)/TR-1.unfiltered.offset /1000 (bp to kb); decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 248,
+    "old": "10.6",
+    "new": "10.56",
+    "source": "pass3-maize.json 3B/TRASH-de-novo/TR-1.unfiltered.offset /1000 (bp to kb); decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 250,
+    "old": "2.3",
+    "new": "2.33",
+    "source": "results/regen/maize_extra_evidence.json postmerge/knob180/BWTandem/500/mean_offset_bp /1000; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 250,
+    "old": "6.2",
+    "new": "6.22",
+    "source": "results/regen/maize_extra_evidence.json postmerge/knob180/BWTandem/2000/mean_offset_bp /1000; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 250,
+    "old": "130.4",
+    "new": "130.41",
+    "source": "results/regen/maize_extra_evidence.json postmerge/knob180/BWTandem/5000/mean_offset_bp /1000; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 250,
+    "old": "3.4",
+    "new": "3.36",
+    "source": "results/regen/maize_extra_evidence.json postmerge/CentC/BWTandem/2000/mean_offset_bp /1000; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 250,
+    "old": "19.8",
+    "new": "19.78",
+    "source": "results/regen/maize_extra_evidence.json postmerge/TR-1/BWTandem/2000/mean_offset_bp /1000; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 250,
+    "old": "and 4.3 to",
+    "new": "and 4.28 to",
+    "source": "maize_extra_evidence.json TR-1 gap0 mean_offset_bp=4282 /1000"
+  },
+  {
+    "line": 250,
+    "old": "4.1",
+    "new": "4.06",
+    "source": "maize_extra_evidence.json postmerge/CentC/BWTandem/10000/mean_offset_bp /1e6; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 250,
+    "old": "17.0",
+    "new": "17.03",
+    "source": "maize_extra_evidence.json postmerge/TR-1/BWTandem/10000/mean_offset_bp /1e6; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 294,
+    "old": "14.9",
+    "new": "14.92",
+    "source": "pass3-maize.json 3C/AniAnn's (2026)/CentC.unfiltered.offset /1000; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 294,
+    "old": "5.3",
+    "new": "5.32",
+    "source": "pass3-maize.json 3C/TRASH-template/CentC.unfiltered.offset /1000; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 346,
+    "old": "5.3",
+    "new": "5.32",
+    "source": "pass3-maize.json 3C/TRASH-template/CentC.unfiltered.offset /1000; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 300,
+    "old": "47.3",
+    "new": "47.28",
+    "source": "results/regen/maize_extra_evidence.json period_100_200_merged_bp/BWTandem /1e6; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 300,
+    "old": "46.5",
+    "new": "46.52",
+    "source": "results/regen/maize_extra_evidence.json period_100_200_merged_bp/ULTRA /1e6; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 300,
+    "old": "41.2",
+    "new": "41.21",
+    "source": "results/regen/maize_extra_evidence.json period_100_200_merged_bp/TRF /1e6; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 300,
+    "old": "34.2",
+    "new": "34.17",
+    "source": "results/regen/maize_extra_evidence.json period_100_200_merged_bp/tantan-w200 /1e6; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 300,
+    "old": "12.6",
+    "new": "12.56",
+    "source": "results/ground_truth/mo17_centc_arrays.bed sum(end-start)=12562249 /1e6; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 300,
+    "old": "29.7",
+    "new": "29.66",
+    "source": "results/ground_truth/mo17_knob180_arrays.bed sum(end-start)=29655996 /1e6; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 335,
+    "old": "5.2",
+    "new": "5.22",
+    "source": "results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3A_microsatellite_run.log elapsed seconds /3600 (pass3-costs.json cross-check); decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 335,
+    "old": "5.5",
+    "new": "5.51",
+    "source": "results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite_run.log elapsed seconds /3600 (pass3-costs.json cross-check); decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 344,
+    "old": "131.9",
+    "new": "131.95",
+    "source": "results/competitor_logs/trf__Col-CEN_v1.2_run.log elapsed seconds /3600 (pass3-costs.json cross-check); decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 344,
+    "old": "5.5",
+    "new": "5.48",
+    "source": "results/competitor_logs/trf__GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc_run.log elapsed seconds /3600 (pass3-costs.json cross-check); decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 341,
+    "old": "58.5",
+    "new": "58.49",
+    "source": "results/regen/score_table1_regen_v2.txt supported/outGT = 1162197/1987130*100; published then all-other-tools block; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 341,
+    "old": "53.5",
+    "new": "53.48",
+    "source": "results/regen/score_table1_regen_v2.txt supported/outGT = 797270/1490784*100; published then all-other-tools block; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 341,
+    "old": "59.7",
+    "new": "59.69",
+    "source": "results/regen/score_table1_regen_v2.txt supported/outGT = 839049/1405572*100; published then all-other-tools block; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 341,
+    "old": "59.2",
+    "new": "59.24",
+    "source": "results/regen/score_table1_regen_v2.txt supported/outGT = 1177244/1987130*100; published then all-other-tools block; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 341,
+    "old": "71.5",
+    "new": "71.47",
+    "source": "results/regen/score_table1_regen_v2.txt supported/outGT = 1065430/1490784*100; published then all-other-tools block; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 341,
+    "old": "71.6",
+    "new": "71.61",
+    "source": "results/regen/score_table1_regen_v2.txt supported/outGT = 1006546/1405572*100; published then all-other-tools block; decimal ROUND_HALF_UP to .01"
+  },
+  {
+    "line": 520,
+    "old": "The outside-catalog fractions of the two configurations both round to 91.3%: this also holds for the P run's unique calls.",
+    "new": "The outside-catalog fractions of unique calls are 91.29% for F and 91.34% for P.",
+    "source": "results/regen/s2_F_p100.txt: (875084-76251)/875084*100; s2_P_p100.txt: (517791-44827)/517791*100"
+  },
+  {
+    "line": 294,
+    "old": "span approximately 0.18 points",
+    "new": "span 0.18 points",
+    "source": "P3-16 E26 author-approved; pass3-maize.json 58.68451580604715 -58.504213696130364 ->0.18"
+  },
+  {
+    "line": 86,
+    "old": "For the human genome (Experiment 1),",
+    "new": "Measured quantities and derived comparisons are reported to two decimal places using decimal half-up rounding, calculated from deposited values before rounding; counts remain integers and parameters, thresholds and version strings retain their native notation. Where the surviving source provides only coarser precision or an unlogged engineering observation, that precision is retained and the limitation is stated. For the human genome (Experiment 1),",
+    "source": "Author instruction; CLAUDE.md Numeric presentation; no new scientific claim"
+  },
+  {
+    "line": 250,
+    "old": "A user who needs contiguity should therefore stop well before that point.",
+    "new": "Calls-per-array means retain one decimal because the deposited summary stores only that precision; offsets converted from its integer-bp summaries do not recover sub-base precision. A user who needs contiguity should therefore stop well before that point.",
+    "source": "results/regen/maize_extra_evidence.json; score_maize_regen_evidence.py rounds calls_per_array to one decimal"
+  },
+  {
+    "line": 520,
+    "old": "This table describes what the unique calls look like,",
+    "new": "The six entropy-threshold and period-composition cells retain the one-decimal precision of the deposited summary. This table describes what the unique calls look like,",
+    "source": "results/regen/s2_F_p100.txt; prior L-09 reversion must not be undone"
+  }
+]

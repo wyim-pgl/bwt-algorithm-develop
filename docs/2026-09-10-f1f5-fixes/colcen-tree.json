@@ -1,0 +1,142 @@
+{
+  "sha": "abb9b614d91c8a0bbd05a199c694fb5eafb5fe30",
+  "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/trees/abb9b614d91c8a0bbd05a199c694fb5eafb5fe30",
+  "tree": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f37e1a83f21af5e38f54fc40df386b55cc3f9dc1",
+      "size": 64,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/f37e1a83f21af5e38f54fc40df386b55cc3f9dc1"
+    },
+    {
+      "path": "v1.2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "31b7bd488b6adc764b4c670a57f2aa0144bd7726",
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/trees/31b7bd488b6adc764b4c670a57f2aa0144bd7726"
+    },
+    {
+      "path": "v1.2/Col-CEN_v1.2.fasta.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2d151001daf61dad227ed762c0a1e0aa5bd2dec",
+      "size": 38265592,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/a2d151001daf61dad227ed762c0a1e0aa5bd2dec"
+    },
+    {
+      "path": "v1.2/Col-CEN_v1.2_genes.araport11.gff3.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09261b3fb932a33e391c9bfb662bb691f2ad2b08",
+      "size": 9487017,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/09261b3fb932a33e391c9bfb662bb691f2ad2b08"
+    },
+    {
+      "path": "v1.2/Col-CEN_v1.2_genes.tair10.gff3.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7d293a2f36b8d229a87f06826cba400d5b9edf9",
+      "size": 4585891,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/e7d293a2f36b8d229a87f06826cba400d5b9edf9"
+    },
+    {
+      "path": "v1.2/ColCEN_ATHILA.gff3.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e323666c38705d424495cb632f06b130bd02ebf",
+      "size": 3518,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/8e323666c38705d424495cb632f06b130bd02ebf"
+    },
+    {
+      "path": "v1.2/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18d9d23307a35249113a197c2d08f4e45cf1d3c0",
+      "size": 1616,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/18d9d23307a35249113a197c2d08f4e45cf1d3c0"
+    },
+    {
+      "path": "v1.2/issues.bed",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca9628d09d51fb7d59286da297ac2406092331ea",
+      "size": 44,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/ca9628d09d51fb7d59286da297ac2406092331ea"
+    },
+    {
+      "path": "v1.2/self.large.hifi.vcf.gz",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "1fc0ec96fa58220d0e0325d4cadb6491d9567a78",
+      "size": 21412,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/1fc0ec96fa58220d0e0325d4cadb6491d9567a78"
+    },
+    {
+      "path": "v1.2/self.large.hifi.vcf.gz.tbi",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfbab22e69d7f489a83cffe50783bd1cf019bc64",
+      "size": 650,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/bfbab22e69d7f489a83cffe50783bd1cf019bc64"
+    },
+    {
+      "path": "v1.2/self.large.ont.vcf.gz",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a068f488710b68655429b4bfdd5264edb5f2e28e",
+      "size": 151213,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/a068f488710b68655429b4bfdd5264edb5f2e28e"
+    },
+    {
+      "path": "v1.2/self.large.ont.vcf.gz.tbi",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfeb117833839d0963212c53fca2e31cfd7a158d",
+      "size": 698,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/bfeb117833839d0963212c53fca2e31cfd7a158d"
+    },
+    {
+      "path": "v1.2/self.small.hifi.vcf.gz",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b4ef644826f1d6c18e7c24c701d03207e30af1f2",
+      "size": 1206953,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/b4ef644826f1d6c18e7c24c701d03207e30af1f2"
+    },
+    {
+      "path": "v1.2/self.small.hifi.vcf.gz.tbi",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "402be62ec12ac3d603eb8915cd081f5ca5a4d928",
+      "size": 65515,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/402be62ec12ac3d603eb8915cd081f5ca5a4d928"
+    },
+    {
+      "path": "v1.2/t2t-col.20201227.fasta.mod.EDTA.TEanno.gff3.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1537a36875fc091cf4706e7c4c75f2b32d7f89c",
+      "size": 949338,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/c1537a36875fc091cf4706e7c4c75f2b32d7f89c"
+    },
+    {
+      "path": "v1.2/t2t-col.20201227.fasta.mod.EDTA.intact.gff3.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d95ac6011504fa86ba7497b44a013d2c80b3f084",
+      "size": 50341,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/d95ac6011504fa86ba7497b44a013d2c80b3f084"
+    },
+    {
+      "path": "v1.2/unmapped_and_extra_copy_genes.xlsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e476a582e266b24266fddb08b5132e1d83a16c4",
+      "size": 28487,
+      "url": "https://api.github.com/repos/schatzlab/Col-CEN/git/blobs/5e476a582e266b24266fddb08b5132e1d83a16c4"
+    }
+  ],
+  "truncated": false
+}

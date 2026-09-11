@@ -1,38 +1,43 @@
+# Benchmarking environment for BWTandem and its comparator tools.
+#
+# Core pins describe only the later panel/sweep environment (Python 3.11.15,
+# numpy 2.4.6), not the earlier whole-genome environment (reported as
+# Python 3.11.14, numpy 2.3.1) or the historical competitor container.
+# See environment.core.lock.yml; complete inherited environments and native
+# binary identities were not preserved (manuscript Supplementary Methods S2).
 name: bwt
 channels:
   - conda-forge
   - defaults
   - bioconda
 dependencies:
-  - python=3.13
-  - numpy
-  - numba
-  - cython
+  - python=3.11.15
+  - numpy=2.4.6
+  - cython=3.2.5
+  - pytest=9.1.1
   - pip
+  - gcc=14.3.0
+  # --- comparator tools and TRASH dependencies (benchmarking only) ---
   - trf
   - tidehunter
   - tantan
   - ncrf
-  - r-base 
-  - r-stringr 
-  - r-stringi 
-  - r-stringdist 
-  - r-optparse 
-  - r-circlize 
-  - r-seqinr 
-  - r-doparallel 
+  - r-base
+  - r-stringr
+  - r-stringi
+  - r-stringdist
+  - r-optparse
+  - r-circlize
+  - r-seqinr
+  - r-doparallel
   - r-remotes
   - mafft
   - zlib
-  - gcc
   - libcurl
   - cmake
-  - bioconductor-biostrings 
+  - bioconductor-biostrings
   - bioconductor-pwalign
   - setuptools
   - mreps
-  - pytest
   - pip:
-      - pydivsufsort
-variables:
-  CONDA_SUBDIR: osx-64
+      - pydivsufsort==0.0.20

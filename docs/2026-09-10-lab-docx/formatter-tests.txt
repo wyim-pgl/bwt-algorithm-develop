@@ -1,0 +1,22 @@
+test_caption_bolds_only_source_title_span (test_lab_docx.Formatting.test_caption_bolds_only_source_title_span) ... ok
+test_caption_normalized_idempotence_and_boundaries (test_lab_docx.Formatting.test_caption_normalized_idempotence_and_boundaries) ... ok
+test_cross_run_and_payload_preservation (test_lab_docx.Formatting.test_cross_run_and_payload_preservation) ... ok
+test_fail_closed (test_lab_docx.Formatting.test_fail_closed) ... <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+<frozen importlib._bootstrap>:241: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+ok
+test_idempotence (test_lab_docx.Formatting.test_idempotence) ... ok
+test_image_and_caption_stay_together (test_lab_docx.Formatting.test_image_and_caption_stay_together) ... ok
+test_institutional_citation_affiliation_and_notes (test_lab_docx.Formatting.test_institutional_citation_affiliation_and_notes) ... ok
+test_paragraph_state_and_styles (test_lab_docx.Formatting.test_paragraph_state_and_styles) ... ok
+test_species_and_photosynthesis_are_opt_in_exact_and_prose_only (test_lab_docx.Formatting.test_species_and_photosynthesis_are_opt_in_exact_and_prose_only) ... ok
+test_table_geometry_borders_emphasis_and_widths (test_lab_docx.Formatting.test_table_geometry_borders_emphasis_and_widths) ... ok
+test_table_species_emphasis_and_inherited_shading (test_lab_docx.Formatting.test_table_species_emphasis_and_inherited_shading) ... ok
+test_unknown_wrapper_rejected_and_simple_field_preserved (test_lab_docx.Formatting.test_unknown_wrapper_rejected_and_simple_field_preserved) ... ok
+test_width_diagnostic_and_duplicate_package_rejection (test_lab_docx.Formatting.test_width_diagnostic_and_duplicate_package_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.859s
+
+OK
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

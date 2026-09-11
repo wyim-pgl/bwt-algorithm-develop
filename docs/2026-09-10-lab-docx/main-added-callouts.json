@@ -1,0 +1,11 @@
+{
+  "edits": [
+    {
+      "old": "Department of Biochemistry and Molecular Biology, University of Nevada, Reno, NV 89557, USA",
+      "new": "::: {custom-style=\"Affiliation\"}\nDepartment of Biochemistry and Molecular Biology  \nUniversity of Nevada, Reno  \nReno, NV 89557, USA\n:::",
+      "reason": "author-requested affiliation line breaks"
+    }
+  ],
+  "added_prose": "Parameter limits, execution configurations and competitor versions are specified for reproducing the benchmark settings (Supplementary Tables S13-S15).\n\nFull-range human results, the shared ≤100 bp comparison and the 101-2,000 bp stratum describe different output ranges (Supplementary Tables S1-S3). Native-period-100 operating points show the recall-precision trade-off, while cross-caller support rates depend on the corroboration rule (Supplementary Tables S4 and S5). The ULTRA, BWTandem and tantan recall ordering persists across chromosome-subset checks of post-filtered full-range output (Supplementary Fig. S2). Unmatched and shared calls differ in length and motif entropy; these properties do not validate unmatched calls (Supplementary Table S16). Strict one-to-one scores depend on whether matching uses padded regions or annotation coordinates (Supplementary Tables S17 and S18).\n\nThe single-reader audit supported few calls absent from both the catalog and the original comparators (Supplementary Fig. S3). Maize microsatellite counts depend on whether the same period rule is applied to every tool (Supplementary Tables S7 and S8). Satellite coverage, boundary offsets and filtering losses differ across knob180, TR-1 and CentC (Supplementary Tables S9-S12; Supplementary Fig. S5). Coordinate-only merging provides a separate boundary and fragmentation diagnostic (Supplementary Fig. S6). Selected k-mer self-similarity and dot-plot examples illustrate repeat structure without independently validating the reported motifs (Supplementary Fig. S7).\n\nIn the full-range identity sweep, region recall/precision were 62.59%/54.72% with the catch-all pass disabled, 71.36%/53.42% at identity 0.80, 71.53%/53.35% at 0.76, 80.53%/50.50% at 0.72 and 81.46%/48.92% at 0.68. These in-sample results informed the operating-point selection (Supplementary Section S2).\n\n",
+  "basis": "Preserved supplementary captions and identity-sweep data; no new analyses."
+}

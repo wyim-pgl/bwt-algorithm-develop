@@ -1,0 +1,116 @@
+[
+  {
+    "path": "manuscript.candidate.md",
+    "old": "`results/sacct_provenance.txt` holds verbatim `sacct` output for every SLURM job named in the manifest,",
+    "new": "`results/sacct_provenance.txt` holds verbatim `sacct` output for a subset of the SLURM jobs named in the manifest, including all three regenerated whole-genome runs; original accounting rows are not deposited for the nine native-panel/sweep tasks `6141841_0`, `6143150_1–3` and `6143151_0–4`, so their manifest elapsed-time and cgroup-memory transcriptions cannot be independently checked against deposited raw accounting,",
+    "source": "P1-08/P3-14; results/sacct_provenance.txt header and absent job rows; no value changed"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "all nine runs completed with clean provenance at four threads,",
+    "new": "all nine runs have deposited wrapper provenance recording clean execution commits and four threads, but those records do not replace the missing raw scheduler accounting,",
+    "source": "P1-08; results/regen/*p100*provenance.json and *idsweep*provenance.json"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "BWTandem runtimes are SLURM elapsed at four threads (Section 2.2.1), so they are not comparable to the two-thread full-range run of Table 1a.",
+    "new": "BWTandem runtimes are transcribed SLURM elapsed times at four threads (Section 2.2.1), not comparable to the two-thread full-range run of Table 1a; the original accounting rows for these four cells are not deposited, and the values are retained as manifest transcriptions rather than independently verified raw measurements.",
+    "source": "P3-14; Table 1d four cells; P1-08"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "The complete append-only ledger and the selection record are deposited with the scoring artefacts.",
+    "new": "The surviving append-only ledger and selection record are deposited with the scoring artefacts, but they do not reconstruct a complete final selection rule: of 44 evaluations (22 configuration and 22 code entries), 17 decisions remain pending, including `f_cp3`; `best.json` retains an earlier final configuration and later frontier notes, and code entries do not carry per-row revisions. We have not assigned retrospective accept/reject decisions to the pending entries.",
+    "source": "P1-13; results/tuning_ledger/ledger.tsv and best.json; README categories"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "the dot-plot renderings regenerate deterministically from the deposited sampler and sheet.",
+    "new": "the original 400 dot-plot images, renderer and settings are not deposited, so the exact visual presentation cannot be reproduced. The sampler writes a sheet and key, not plots; new plots from the sequence-bearing sheet would not establish what the reader saw. The source population BED and a separate reader attestation are also not deposited, so population provenance and reader identity cannot be independently reconstructed from this deposit alone. These are provenance limitations, not evidence that any recorded verdict is erroneous.",
+    "source": "P1-18/P1-19; results/audit11 file inventory and scripts/scoring/sample_specificity_audit.py"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "The sampler, the blinded sheet, the verdicts and the aggregation are deposited (Data and Code Availability).",
+    "new": "The sampler, the blinded sheet, the verdicts and the aggregation are deposited; the original images, renderer/settings, source population BED and separate reader attestation are not, limiting exact visual and provenance reconstruction (Data and Code Availability).",
+    "source": "P1-19; align Methods with actual deposit; no new attestation"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "The regenerated whole-genome runs used Python 3.11.14 with numpy 2.3.1; the Cython and C accelerator extensions were compiled and active.",
+    "new": "The regenerated whole-genome runs are reported as using Python 3.11.14 with numpy 2.3.1 and compiled Cython/C accelerators; the complete inherited environments and native-binary identities were not preserved, so this is not an independently reconstructible binary/environment snapshot.",
+    "source": "P2-22; existing version adjudication retained; no speculative version substitutions"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "This release Dockerfile is distinct from the original competitor sandbox.",
+    "new": "The provenance wrapper probes `python3` on PATH rather than hashing the detector interpreter; later panel launchers bind that PATH to the detector environment, while the earlier whole-genome launcher does not itself enforce that binding. Surviving tuning-prefix logs are not complete environment captures, including OpenMP/BLAS settings. This release Dockerfile is distinct from the original competitor sandbox.",
+    "source": "P2-22; scripts/benchmark/run_with_provenance.sh and regen_345.sbatch; P2 external launcher evidence"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "| Thread-scaling pair | Sections 2.2.1, 4.4 | 2000 | 1 and 2 | as the human main run; the two differ only in --threads (side measurements, not in the manifest) |",
+    "new": "| Historical thread-scaling settings (unverified) | Not used for a reported comparison | 2000 | 1 and 2 | recorded as matching the human settings except --threads; no linked input/build/job artefact establishes that match, and no regenerated scaling result is inferred |",
+    "source": "P2-23; preserve as unverified historical note, not current reported configuration"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "The whole-genome launcher is scripts/benchmark/regen_345.sbatch and the paired-range launcher is results/range_cost_0363d8b/run_rangerep0363.sbatch.",
+    "new": "The whole-genome launcher is scripts/benchmark/regen_345.sbatch and the paired-range launcher is results/range_cost_0363d8b/run_rangerep0363.sbatch. The native-p100, identity-sweep and historical seeding-ablation launchers remain external to this deposit; their detection settings and surviving records are described here, but the repository is not a self-contained reproduction package for those executions.",
+    "source": "P2-12 and approved alternative to external launcher deposit; no claim that external launchers are absent"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "The container was built as a writable sandbox directory rather than a single image file, so no one-file checksum exists; the sandbox is preserved on the benchmarking cluster.",
+    "new": "The original container is described by the authors as a writable sandbox retained on the benchmarking cluster, but its contemporaneous immutable snapshot, package inventory and binary identities are not deposited. The inherited logs record `singularity exec ./bwtbench.sif` and command flags; that path alone establishes neither the container format at execution nor the tool versions. Original-suite version strings are therefore author-reported rather than independently reconstructible from these logs; the later release environment files do not recreate that container.",
+    "source": "P2-24; competitor logs command lines vs current release build files"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "with the corrected TRF annotation-period arm from scorer commit `903245c`,",
+    "new": "with the corrected TRF annotation-period arm from scorer commit `903245c` (not attributed to the original `43543da` scoring execution),",
+    "source": "P1-11; current manifest corrected TRF row and one_to_one README"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "The scorer now reads that column, and TRF's period-exact rate is the 63.53% shown; no other cell of this table changed.",
+    "new": "The scorer now reads that column, and TRF's period-exact rate is the 63.53% shown; no other cell of this table changed. The corrected unsplit JSON replaces five numerical period fields and adds `strata_spec` metadata; split-band matching and stratum counts remain valid, but its pre-correction TRF period statistics are superseded.",
+    "source": "P1-11; results/one_to_one/README.md and corrected JSON"
+  },
+  {
+    "path": "manuscript.candidate.md",
+    "old": "Its wall clock, 19.23 h against BWTandem's 12.65 h at the same range, came from a shared node and is an upper bound.",
+    "new": "Its wall clock, 19.23 h against BWTandem's 12.65 h at the same range, came from a shared node; this observed runtime does not establish a bound on an isolated-node run.",
+    "source": "P1-15 scope discipline; shared scheduling is not a measured isolated-node upper bound"
+  },
+  {
+    "path": "results/audit11/README.md",
+    "old": "on those artifacts.",
+    "new": "on those artifacts. The source population BED and a separate reader attestation\nare also not deposited here; the sheet/key/verdict files do not independently\nestablish the original sampling-population provenance or reader identity. This\nabsence does not by itself invalidate any recorded judgment.",
+    "source": "P1-19; file inventory"
+  },
+  {
+    "path": "results/competitor_logs/README.md",
+    "old": "## Two things they also show",
+    "new": "## Reconstruction limits\n\nThe command lines record `singularity exec ./bwtbench.sif`, not a contemporaneous\npackage inventory, tool-binary hashes or an immutable container snapshot. They\ndo not independently establish the original tool-version strings or whether\nthat path was an image or writable sandbox at execution. The manuscript retains\nthe original versions as author-reported; current release environment/lock files\nand Dockerfile do not reconstruct this historical competitor container.\n\n## Two things they also show",
+    "source": "P2-24; deposited commands vs absence of contemporaneous inventory"
+  },
+  {
+    "path": "environment.yml",
+    "old": "# The manuscript's measured environment is Python 3.11.15 (conda env\n# \"bwtandem\"); this file used to request python=3.13 and force\n# CONDA_SUBDIR: osx-64, both of which contradicted every recorded run.\n# Core versions are pinned to what the published numbers were measured on --\n# see environment.core.lock.yml for the exact core freeze.",
+    "new": "# Core pins describe only the later panel/sweep environment (Python 3.11.15,\n# numpy 2.4.6), not the earlier whole-genome environment (reported as\n# Python 3.11.14, numpy 2.3.1) or the historical competitor container.\n# See environment.core.lock.yml; complete inherited environments and native\n# binary identities were not preserved (manuscript Supplementary Methods S2).",
+    "source": "P2-13/P2-22; comment-only scope correction"
+  },
+  {
+    "path": "environment.core.lock.yml",
+    "old": "# Exact core freeze of the environment the published numbers were measured on:\n# conda env \"bwtandem\" at /data/gpfs/assoc/pgl/bin/conda/conda_envs/bwtandem,\n# recorded 2026-08-27. This is the detector's runtime; comparator tools live in\n# environment.yml. numba is NOT installed in the measured environment -- the\n# numba-accelerated paths were not part of any recorded run.",
+    "new": "# Core package pins recorded for the later detector environment, not a freeze\n# of every published execution. The earlier whole-genome runs report Python\n# 3.11.14/numpy 2.3.1; the later panel/sweep records report 3.11.15/2.4.6.\n# This is not a complete inherited-environment or native-binary snapshot and\n# does not reconstruct the historical competitor container. numba is absent\n# from these pins; that fact alone does not establish its status in every run.",
+    "source": "P2-13/P2-22; no package changes or new historical claims"
+  },
+  {
+    "path": "Dockerfile",
+    "old": "# The exact pinned core the published numbers were measured on",
+    "new": "# Core pins for the later detector environment only; not the earlier\n# whole-genome environment or historical competitor container",
+    "source": "P2-13; comment only, release version reconciliation remains out of scope"
+  }
+]

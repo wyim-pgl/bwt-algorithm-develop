@@ -1,0 +1,120 @@
+# intend.md — 다음 세션의 의도와 순서
+
+> 📌 **정본**: "다음에 무엇을, 왜, 어떤 순서로" 는 이 파일. 살아 있는 상태는 `resume.md`,
+> 할 일 전수는 `todo.md`, 폐기값은 `quarantine.md`, 운영 규칙은 `CLAUDE.md`.
+> 최종 갱신 **2026-09-10**. 세션은 `resume.md` 상단 → 이 파일 → `todo.md` §0 순으로 읽고 시작한다.
+
+## 변하지 않는 목적
+
+BWTandem 을 Bioinformatics **Application Note** 로 제출한다. 증거 저장소(`results/`)가 공개되므로
+원고의 셀 하나도 예치물 없이 존재할 수 없다. **Honest science only** — 벤치마크 게이밍·GT 과적합·
+불리한 결과 은폐 금지. BWTandem 에 불리한 정정은 그대로 둔다.
+
+## 지금의 의도
+
+> **현행 (2026-09-10, 장부 정리)**: 원고·출력은 `d7c2cbe`, 일반 도구는 wiki `b2dbac6` pin, wiki 완료 기록은 `f2ed586`. 설치·humanizer 검토·표 재편·Word 생성은 끝났다. 이제 결과물을 저자가 확인하고 남은 제출 게이트를 해소한다. 이번 장부 갱신은 원고 재작성, 재채점, Word 재생성 또는 새 외부 게시를 뜻하지 않는다.
+
+### 현행 실행 순서
+
+1. **Word와 최종 문구 확인**: `submission/manuscript.docx` / `supplementary.docx`를 Microsoft Word에서 열어 글꼴 대체, no-wrap 열 폭, 이어지는 표의 반복 헤더, 범례·주석, 소속 줄바꿈을 확인한다. LibreOffice 5/52쪽과 XeLaTeX 3/45쪽은 서로 다른 레이아웃이다. 저자 확인 전 제출 승인으로 표시하지 않는다 (`todo.md` D의 최종 제출 확인).
+2. **남은 공개자료·정책 판단**: 미예치 comparator BED/audit 원본의 공개 접근 경로 및 기존 AI 축약·재구성의 정책 적용을 저자/필요시 편집부와 확인한다. 공개문만으로 허용을 인증하거나 누락 증거를 만들어 채우지 않는다.
+3. **마지막 저자 단계**: Funding, COI, CRediT, ORCID, 유지관리 확인, AI 사용 공개와 cover letter를 저자 정보로 확정한다. 미확인 항목을 없음으로 기입하지 않는다.
+4. **마지막 아카이브·릴리스 단계**: 별도 승인과 권한 확인 후 Zenodo/DOI 작업, 실제 URL 해결 확인, 초록·CITATION 갱신 및 새 제출 스냅샷을 만든다. 공개 `v0.9.0`은 움직이지 않고, 이전 태그의 release에 새 원고 자산을 섞지 않는다.
+5. **변경이 생길 때만 재빌드**: 원고·표 재편은 map/replay까지 함께 갱신하고 `check_conversion.py`, `check_outputs.py`, migration tests를 실행한다. 일반 도구를 고칠 경우 wiki에 먼저 저장·검증하고 해당 버전을 vendor한 뒤 Word를 만든다. 확인된 프루프 채택 후 SHA256SUMS를 마지막으로 갱신한다.
+
+**완료 기준**: 남은 항목의 근거 또는 구체적인 차단 사유가 `todo.md`에 있고, 저자 승인·최종 산출물 버전·해시가 기록돼야 한다. 선택적인 제출 후 11건과 네이티브 flake/정밀도 차단은 별개로 유지한다.
+
+> 🧊 **ARCHIVED BELOW (2026-09-10)**: 아래 Phase 0-P4-Abstract 전환 계획과 당시의 '현행/다음' 문구는 실행 이력이다. 새 세션은 위 현행 순서를 따른다.
+
+> ✏️ **이전 갱신 (2026-09-10, F1–F5 실행)**: 저자 지시로 최종점검 F1–F5 보완을 적용했다 — 초록 4항목/Summary 2문장, 본문 Alt text 2개, 데이터셋 참조 4건, 보충자료 렌더링(literal `##`·중복 번호·분리 범례) 수정, 두 본문 그림의 프레젠테이션 재렌더. 근거와 검증은 `docs/2026-09-10-f1f5-fixes/README.md`. `results/`·`manuscript_full.md`·공개 `v0.9.0`·draft release는 불변. **다음**: Summary 확정 문구·재빌드 프루프의 저자 최종 확인 → 마지막 단계(Zenodo·DOI·초록 URL·저자 선언·LLM 정책 판단·cover letter·새 태그의 최종 스냅샷). draft release 자산은 이전 프루프이므로 갱신 없이 새 태그로 해소한다.
+
+> ✏️ **이전 갱신 (2026-09-10, 현행 규정·최종점검)**: P4·C8·App Note 기계적 전환 후 `ef98c03`에 공개 `v0.9.0` 태그와 GitHub draft(ID 386640503)를 만들었다. 긴 원문·19개 표 보존 및 검증 이력은 `docs/2026-09-10-appnote/`. 공식 지침은 Chrome으로 확인하여 403 차단을 해소했지만, **초록 형식·Alt text·데이터 인용·보충자료 렌더링·그림 판독성 F1–F5**가 남았다 (`docs/2026-09-10-final-check/`). 이번에는 원고/증거/출력/태그/draft를 바꾸지 않고 보고서·장부만 갱신했다. 다음 승인 시 이 보완과 공개 근거 접근 경로를 정리하고, **요청대로 Zenodo·DOI·초록 아카이브 URL과 저자 선언/최종 승인은 마지막 단계**로 둔다. 기존 AI 축약·초록 재구성의 OUP/ISCB 정책 적용은 저자/편집부 판단이 필요하며 단순 교정이나 공개문으로 자동 해소됐다고 주장하지 않는다. 공개 `v0.9.0` 태그는 이동하지 않는다. 아래 Phase 문장은 앞선 순서의 이력이다.
+
+> ✏️ **앞선 순서 이력 (2026-09-10, 저자 지시의 1–3번 수행)**: Phase 1b 수치 정리와 §6.12 정의 정리, Phase 2의 2등급 공개 문장 11건을 먼저 처리했다. 근거는 `docs/2026-09-10-presubmit/`. 수치 후보 118개 전수 분류; 10토큰은 원천 정밀도 한계로 유지하고 기록했다. 다음은 이번 diff·검증 로그 검토 및 커밋으로 트리를 정리한 뒤 **P4 → Abstract → App Note → 릴리스**. **P4는 아직 실행하지 않았다.** 아래는 앞선 계획의 이력이다.
+
+끊긴 ASTRA 리뷰(2026-09-05)를 **수습해 트리를 깨끗하게 만든 뒤**, 리뷰가 넘긴 항목을 장부에 통합하고,
+그다음에야 저자 결정 항목(Abstract·App Note 전환·릴리스)으로 넘어간다. 순서를 바꾸지 않는다 —
+더티 트리 위에서 원고를 더 고치면 어느 편집이 누구 것인지 다시 잃는다.
+
+## 순서
+
+> 미착수 항목의 등급(1 제출 전 / 2 공개 문장 / 3 제출 후)은 `todo.md` 머리 표. 아래 Phase 는 1·2등급만 다룬다; 3등급은 제출 뒤.
+
+### Phase 0 — 트리 정리 (한 세션 안에 끝낸다) — ✅ 완료 2026-09-10 (`744ef3a`, `7556727`, 푸시됨)
+
+1. `git diff manuscript.md` 를 **순서대로** 대조한다 — P2 보고서(`pass2-methods-vs-code.md`, §2·보충 Methods) →
+   `pass3-edits.json`(46건 순차 치환; 21→22 는 연쇄) → P3 의 JSON 밖 후속 수정(`pass3.log:8123`, 현재 `manuscript.md:496`) →
+   `precision-edits.json`(88건, `reverted` 6건 제외). **JSON 에 없는 잔여를 자동으로 P2 에 귀속하지 않는다.**
+   출처를 복구하지 못한 편집은 `APPLIED-RATIONALE-NOT-RECOVERED` 로 기록해 채택 판단을 저자에게 남긴다. 각 hunk 를 P2 보고서의 해당 finding 또는 P3 의 json 근거와 연결한다.
+   근거가 없는 hunk 는 **되돌린다**(폐기가 아니라 미채택 — `todo.md` 에 남긴다).
+2. `results/` 15개 파일 diff 를 P1 보고서 REHASH REQUIRED 목록·각 finding 과 대조한다.
+3. `quarantine.md` §8.2 순서: 편집 완료 → 포그라운드 재해시 → 체크섬 2개 포함 `git add` →
+   `git diff --cached` 확인 + 미스테이징 `results/` 없음 → 가드 테스트 → 커밋.
+4. 커밋은 둘로: (a) 채택한 원고·`results/` 편집 + 체크섬 2개, (b) 추적 장부 `intend.md`·`todo.md`·`quarantine.md` + `CLAUDE.md` +
+   `docs/2026-09-05-astra-review/` + `docs/2026-09-10-precision/` + `docs/2026-09-10-ledger-review/`.
+   `resume.md` 는 `.gitignore:24` 로 **비추적**이다 — 갱신은 하되 커밋 목록에 넣지 않는다.
+   커밋 메시지에 P1/P2 verdict 수와 "P3 중단·보고서 없음" 을 적는다.
+
+**완료 기준**: `git status --short` 에 추적 파일 변경·untracked 산출물이 없음(`resume.md` 는 ignored 라 원래 안 보인다),
+`$PY -m pytest tests/test_deposit_hashes.py tests/test_env_var_docs.py tests/test_one_to_one_scoring.py -q` 녹색, 푸시.
+
+### Phase 1 — P3·P4 마무리
+
+- ✅ **결정됨 (2026-09-10, 저자)**: P3 는 **(a) 산출물로 보고서 재구성**. 재실행하지 않는다. 산출물은
+  `pass3-results-tables.md` (재구성 표시 배너, 근거 못 찾은 편집은 `APPLIED-RATIONALE-NOT-RECOVERED`).
+  > ❌ SUPERSEDED (2026-09-10): 옛 선택지 (b) 재실행은 채택되지 않았다. 재실행이 다시 필요해지면 `quarantine.md` §8.8.
+- ✅ P3 보고서 재구성 완료 (2026-09-10). P3-16 편집 5건은 저자 채택(2026-09-10). 잔여: P3-14 차단 셀 4개 (`todo.md` §0-1).
+- **Phase 1 내부 순서**: ~~P3 보고서 재구성~~ → Phase 1b(소수점 잔여) → 변경 검토·필요 시 재해시·커밋(트리 정리) → P4 → 같은 정리 절차.
+  리뷰 패스 자체는 커밋·재해시·SLURM 제출을 하지 않으므로(BRIEF), 패스 전후에 사람이 정리한다.
+- P4 는 P3 보고서가 있어야 의미가 있다. P3 없이 P4 를 돌리면 P3 편집을 P4 가 다시 의심한다.
+- 두 패스 모두 BRIEF.md 계약 그대로: 커밋 금지, sbatch 금지, 재해시 금지, 부재→오류 승격 금지.
+
+**완료 기준**: `pass3-*.md`·`pass4-*.md` 존재, 각각 Summary/Findings/REHASH REQUIRED/Not fixed 4절.
+
+### Phase 1b — 소수점 두 자리 잔여분 (`todo.md` §0-4)
+
+본문 1자리 **후보 토큰 118개를 먼저 분류**한다(절 번호·버전·파라미터·정의 상수는 제외) — 남는 측정값과 파생값(points·×·factor)만 예치 근거에서 재계산.
+S2 여섯 셀은 원천 요약이 1자리라 되돌렸다; `analyze_unique_regions.py` 를 `:.2f` 로 재생성한 뒤에만 다시 넓힌다. 규칙은 `CLAUDE.md` "Numeric presentation"
+(**decimal half-up**, 저자 결정 2026-09-10).
+예치물이 없는 값은 건드리지 않고 목록에 남긴다. P4 전에 끝내면 P4 가 반올림 불일치를 다시 잡지 않아도 된다.
+
+### Phase 2 — 리뷰가 넘긴 항목 통합
+
+**완료 기준**: `todo.md` §0-2·§0-3 의 각 항목에 완료 근거(커밋·파일 경로) 또는 구체적 차단 사유가 적혀 있다.
+
+`todo.md` §0-2(P1) · §0-3(P2). 대부분 `todo.md`·`quarantine.md`·CLAUDE.md 프로즈 편집이다.
+`results/` 를 건드리는 항목(P1-08 원시 sacct 9건, P1-13 튜닝 원장)은 **한 번에 모아** 재해시 1회로 끝낸다.
+
+### Phase 3 — 저자 결정 항목
+
+C-8 Abstract → App Note 전환(표는 보충자료로 이동, 삭제 아님) → Fig 5 채택·최종 위치 확인(P3 가 이미 `manuscript.md:327–331` 에 삽입) → 릴리스(태그·Zenodo DOI·
+제출본 스냅샷). 릴리스는 원고 확정 뒤. Bioinformatics 는 초록에 안정 아카이브 URL 을 요구한다.
+
+**완료 기준**: 각 저자 결정이 `todo.md` 에 날짜와 함께 기록되고, 제출본 경로·태그·DOI 가 `resume.md` 상태표에 있다.
+
+## 하지 말 것
+
+- 더티 트리 위에서 새 리뷰 패스를 돌리지 않는다.
+- `results/` 를 부분 편집 후 재해시하지 않는다 (§8.2).
+- 4 GB 세션에서 전장 BED intersect·conda solve·pytest 루프를 돌리지 않는다 (§8.3·§8.8).
+- 리뷰가 "BLOCKED-ON-MISSING-ARTIFACT" 로 둔 것을 오류로 승격하지 않는다 (지난 라운드 철회 4건의 실패 모드).
+- `quarantine.md` §8.7 의 env 레버를 다시 시도하지 않는다.
+
+## 세션 시작 절차
+
+```bash
+cd ~/scratch/devel/bwt-algorithm
+grep -n '📌 \*\*정본' resume.md intend.md todo.md quarantine.md
+git status --short | head; git log -1 --oneline
+grep -n '^- \[ \]\|^- \[!\]\|^- \[?\]\|^- \[~\]' todo.md
+SQ=/cm/shared/apps/slurm/current/bin/squeue; $SQ -u "$USER" || echo 'squeue FAILED — 0 으로 오독 금지'   # bwt 잡은 없어야 정상
+PY=/data/gpfs/assoc/pgl/bin/conda/conda_envs/bwtandem/bin/python; $PY --version
+```
+
+python 은 로그인 셸 PATH 에 없다 — `/data/gpfs/assoc/pgl/bin/conda/conda_envs/bwtandem/bin/python`.
+SLURM 명령은 `/cm/shared/apps/slurm/current/bin/`.
+
+## 이 파일의 갱신 규칙
+
+Phase 가 끝나거나 결정 지점이 해소될 때만 고친다. 상태 수치는 여기 적지 않는다(`resume.md`).
+옛 의도를 지우지 말고 ❌/✏️ 마커로 표시한다.

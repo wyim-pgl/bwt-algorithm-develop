@@ -1,0 +1,102 @@
+[
+  {
+    "old": "its de novo run did not complete on experiment 3C, so Supplementary Table S11 carries the template row only.",
+    "new": "its de novo run did not complete on experiment 3C, so only the template result is reported for that experiment (Supplementary Table S11).",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "Supplementary Tables S6, S10 and S12 report the re-runs, Supplementary Tables S1, S2, S3, S4 and S5 reports the original run with the re-run alongside it, and every original figure is retained in the corresponding caption.",
+    "new": "The widened plant re-runs are reported alongside the original settings and their results (Supplementary Tables S6, S10 and S12). The human comparison retains the original run and the re-run, with all original values retained in the corresponding captions (Supplementary Tables S1-S5).",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "and Supplementary Table S6 reports the re-runs.",
+    "new": "with the resulting measurements retained for comparison (Supplementary Table S6).",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "and Supplementary Tables S2 and S4, Supplementary Fig. S4, and Supplementary Section S2 report their scored values.",
+    "new": "and their scored values are retained for comparison (Supplementary Tables S2 and S4; Supplementary Fig. S4; Supplementary Section S2).",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "The three CEN180 columns of Supplementary Table S6 use different call sets, applied identically to every row:",
+    "new": "The three CEN180 metrics use different call sets, with each rule applied identically to every tool:",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "Supplementary Table S7 retains it so the two are comparable.",
+    "new": "this original scoring rule is retained for comparison (Supplementary Table S7).",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "Supplementary Table S8 restates both under one rule.",
+    "new": "Both measurements are also compared under a shared scoring rule (Supplementary Table S8).",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "Supplementary Table S6 uses the subsequent re-run)",
+    "new": "the reported result comes from the subsequent re-run, Supplementary Table S6)",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "the satellite panels and Supplementary Table S3 contain predictions above 500 bp, but neither is a truth-period stratum validating period assignment above that ceiling.",
+    "new": "Predictions above 500 bp occur in the satellite analyses and the human above-100 bp stratum, but neither validates period assignment in a truth-period stratum above that ceiling (Supplementary Table S3).",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "tantan was the fastest of the 2024 tools (longdust, added later, ran in 0.47 h), at 23.54% base pair recall against BWTandem's 43.34% (full-range figures at unequal search ranges; the matched-range comparison in Supplementary Table S2 gives 30.00% against tantan's 23.54%), though at region level the two are separated by 2.54 points over the full range (80.53 against 78.00) and separated by 0.88 points at the matched range (78.87 against 78.00, Supplementary Table S2).",
+    "new": "tantan was the fastest of the 2024 tools; longdust, added later, ran in 0.47 h. At unequal full search ranges, tantan had 23.54% base pair recall against BWTandem's 43.34%, with a 2.54-point region-recall difference, 80.53 against 78.00 (Supplementary Table S1). In the matched range, BWTandem's base pair recall was 30.00% against tantan's 23.54%, and the region-recall difference was 0.88 points, 78.87 against 78.00 (Supplementary Table S2).",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "rather than the regenerated one Supplementary Table S6 reports.",
+    "new": "rather than the regenerated output (Supplementary Table S6).",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "Every row of Supplementary Table S6 is scored against that one coordinate set, so no comparison in this paper depends on the lost command; a reader regenerating the coordinates from scratch would, however, have to choose their own parameters and should expect a slightly different set.",
+    "new": "All tools are scored against that one coordinate set, so no comparison in this paper depends on the lost command (Supplementary Table S6). A reader regenerating the coordinates from scratch would, however, have to choose their own parameters and should expect a slightly different set.",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "The rightmost column gives the values in force across the nuclear chromosomes of the three genomes benchmarked here;",
+    "new": "The keyed descriptions following the parameter table give the values in force across the nuclear chromosomes of the three genomes benchmarked here;",
+    "reason": "Update positional wording after relocating the long values column."
+  },
+  {
+    "old": "the tantan run tabulated elsewhere in Supplementary Tables S1, S2, S3, S4 and S5 used the default 100 bp window",
+    "new": "the original tantan run used the default 100 bp window (Supplementary Table S1)",
+    "reason": "Disambiguate historical aggregate Table 1 to its original full-range row, not the widened rerun."
+  },
+  {
+    "old": "**Supplementary Table S9. Satellite array detection (knob180 and TR-1) in the Zea mays Mo17 genome, scored without a period filter for every tool; Supplementary Table S10 gives both rules.**",
+    "new": "**Supplementary Table S9. Satellite array detection (knob180 and TR-1) in the Zea mays Mo17 genome, scored without a period filter for every tool.**\nBoth unfiltered and banded scoring rules are retained for comparison (Supplementary Table S10).",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "**Supplementary Table S12. CentC coverage and boundary offset under both scoring rules, the counterpart of Supplementary Table S10 for this class.**",
+    "new": "**Supplementary Table S12. CentC coverage and boundary offset under both scoring rules.**\nThe same comparison of scoring rules is retained for knob180 and TR-1 (Supplementary Table S10).",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "**Supplementary Table S5. Catalog-or-cross-tool support rate under two corroboration rules, computed on the full-range outputs of Supplementary Table S1.**",
+    "new": "**Supplementary Table S5. Catalog-or-cross-tool support rate under two corroboration rules.**\nBoth rules are applied to the full-range outputs (Supplementary Table S1).",
+    "reason": "Finding-first wording; callout moved to sentence end."
+  },
+  {
+    "old": "The identity threshold was chosen from this sweep, scored against the same adotto catalog the table reports,",
+    "new": "The identity threshold was chosen from this sweep, scored against the same adotto catalog used here,",
+    "reason": "Remove a positional reference to the identity-sweep table converted to prose."
+  },
+  {
+    "old": "so its row equals the Supplementary Table S1 BWTandem row by construction.",
+    "new": "so its results equal the Supplementary Table S1 BWTandem row by construction.",
+    "reason": "Refer to the sweep result rather than a removed physical row."
+  },
+  {
+    "old": "including the regenerated Supplementary Section S2 arms",
+    "new": "including the regenerated sweep arms described in Supplementary Section S2",
+    "reason": "Keep the relocated sweep reference grammatical."
+  }
+]

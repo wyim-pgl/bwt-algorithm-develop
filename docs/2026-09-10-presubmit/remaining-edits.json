@@ -1,0 +1,20 @@
+[
+  {
+    "line": 105,
+    "old": "Against those published replicates, the narrow arm fell from about 6.6 h to 4.0 h while the wide arm fell from 8.6 h to 7.3 h.",
+    "new": "Across each build's three replicates, mean narrow-arm elapsed time was 6.23 h at `07ad6fa` versus 4.05 h at `0363d8b`, and mean wide-arm time was 8.31 h versus 7.24 h. These are between-build summaries of the recorded runs, not an additional matched experiment.",
+    "source": "remaining-sources.json runtime_series; sum(seconds)/(3*3600), decimal half-up; old sacct batch vs new per-arm GNU-time, not same-run comparison"
+  },
+  {
+    "line": 78,
+    "old": "since 33.4% of BWTandem's called bases and 65.7% of TRF's lie above period 100, on the merged-interval basis of Tables 1a and 1c, while ULTRA and the tabulated tantan run report nothing there.",
+    "new": "because the output-period bands differ. Exact above-100 shares of merged called bases cannot be recomputed from the deposited rounded summaries without reprocessing the BEDs, so earlier percentage estimates are not used for the regenerated comparison; ULTRA and the tabulated tantan run report nothing above period 100.",
+    "source": "remaining-sources.json L78: missing exact merged-bp operands; do not fabricate current shares or derive them from rounded bpRecall/bpPrec"
+  },
+  {
+    "line": 139,
+    "old": "1.01 points of recall above the filtered arm.",
+    "new": "compared with the filtered arm's 78.87% recall (rounded summary values; the exact native-F truth-hit numerator is not deposited, so an unrounded recall difference is not established here).",
+    "source": "remaining-sources.json L139; 2021483 is prediction-hit count, not truth-hit numerator"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "source": "results/figures/paper_figs/rendered/fig3_sweep_audit.pdf",
+    "source_sha256": "e2a30a131214759ddfd91239e18da17c960a319c3f8ff7636104bcf2b503d4da",
+    "crop_box_points": [
+      0.0,
+      0.0,
+      856.8036499023438,
+      391.5299072265625
+    ],
+    "pdf": "submission/figures/fig3_sweep_audit.pdf",
+    "png": "submission/figures/fig3_sweep_audit.png",
+    "pdf_sha256": "fece7fa9734981c458f7433ccc2d2d1401f8e2f82ca106908391bd74027e2f69",
+    "png_sha256": "cbecdbfae19b5025a67621960c329ea645e9c666e2d457bc54a168f9c3c49f65"
+  },
+  {
+    "source": "results/figures/paper_figs/rendered/fig4_plant_satellites.pdf",
+    "source_sha256": "13ee61d4e42101f3c0eca0a74904daec3733e2e8efee4abd587f84f542ee2f5f",
+    "crop_box_points": [
+      0.0,
+      0.0,
+      1295.50048828125,
+      382.0048828125
+    ],
+    "pdf": "submission/figures/fig4_plant_satellites.pdf",
+    "png": "submission/figures/fig4_plant_satellites.png",
+    "pdf_sha256": "bdbcb07229259ff2c264017a58d846cc2cae4b7d513378089135a28515531dad",
+    "png_sha256": "944b4b53a037a67617a4ea3945eb10096cdf0a5270a23072d153e2aa7780b941"
+  },
+  {
+    "source": "results/figures/paper_figs/rendered/fig5_array_structure.pdf",
+    "source_sha256": "12002f7edc39ae187bf1652c4c966fbd69e02c86426533ce61b3bad5ce3a5c8f",
+    "crop_box_points": [
+      0.0,
+      0.0,
+      1081.3062744140625,
+      886.829345703125
+    ],
+    "pdf": "submission/figures/fig5_array_structure.pdf",
+    "png": "submission/figures/fig5_array_structure.png",
+    "pdf_sha256": "6c33afe18de9a4c740f3fe3ec1607863e73d39446eafe7a5a14411bdf675f8fc",
+    "png_sha256": "bb37f725d30273b782465066cc95b8833bca5cd5c9c041d5c7e31f0e38a17cf5"
+  },
+  {
+    "source": "results/figures/paper_figs/rendered/figS1_subset.pdf",
+    "source_sha256": "e37e9b3dc6d22937dbed4d8ff77d5e1fd15806bb97c93c47c790362172293f70",
+    "crop_box_points": [
+      0.0,
+      0.0,
+      853.1171875,
+      400.0048828125
+    ],
+    "pdf": "submission/figures/figS1_subset.pdf",
+    "png": "submission/figures/figS1_subset.png",
+    "pdf_sha256": "ca80c70a4d2f48ca61631e3df7ee9132f2ebb0e8c84b08cf933d369187c6c214",
+    "png_sha256": "4fcacfd4a40a92004d1dfefa740ab2c96b2e8ae67ead6c5add2defc234081a3b"
+  },
+  {
+    "source": "results/figures/paper_figs/rendered/figS2_postmerge.pdf",
+    "source_sha256": "4b1da27d11f04ae4455e1c773e952bf8af8844a2a1c0bb0b103f251989cff98d",
+    "crop_box_points": [
+      0.0,
+      0.0,
+      1070.508056640625,
+      603.8615112304688
+    ],
+    "pdf": "submission/figures/figS2_postmerge.pdf",
+    "png": "submission/figures/figS2_postmerge.png",
+    "pdf_sha256": "18d178f0847350ce4c13300a6baa7e5b13d7e79f3327cb99b00078e5a6498c15",
+    "png_sha256": "cf5d8248062133461a5d7466b754b449af86e2e7e3bf4f322f24948dc2cb0eca"
+  }
+]

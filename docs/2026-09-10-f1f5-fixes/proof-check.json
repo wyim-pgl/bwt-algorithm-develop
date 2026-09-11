@@ -1,0 +1,37 @@
+{
+  "main_pages": 3,
+  "supplement_pages": 46,
+  "literal_headings": 0,
+  "automatic_figure_numbers": 0,
+  "complete_legends_with_images": [
+    {
+      "figure": "2",
+      "page": 14
+    },
+    {
+      "figure": "S1",
+      "page": 16
+    },
+    {
+      "figure": "3",
+      "page": 17
+    },
+    {
+      "figure": "1",
+      "page": 20
+    },
+    {
+      "figure": "4",
+      "page": 23
+    },
+    {
+      "figure": "S2",
+      "page": 27
+    },
+    {
+      "figure": "5",
+      "page": 32
+    }
+  ],
+  "docx_zip_and_tables": "pass"
+}

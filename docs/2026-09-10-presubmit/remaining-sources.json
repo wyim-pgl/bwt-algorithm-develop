@@ -1,0 +1,219 @@
+{
+  "scope": "Read-only narrow follow-up; no remote writes, intersections, genome scans, benchmarks or jobs.",
+  "baseline_line_numbers": "manuscript.md at 139e361",
+  "claims": [
+    {
+      "line": 105,
+      "old_substring": "the narrow arm fell from about 6.6 h to 4.0 h",
+      "verdict": "replace_if_describing_arithmetic_means",
+      "replacement": "the narrow arm fell from 6.23 h to 4.05 h on average",
+      "old_mean_source": "runtime_series.old_p100",
+      "new_mean_source": "runtime_series.new_p100",
+      "note": "Current old/new rounded pair is representative of replicate 1, not the arithmetic means of all three. First-replicate exact hours: 6.6125 -> 4.018055555555555555555555556. If retaining replicate-1 interpretation, explicitly name replicate 1 rather than calling these means."
+    },
+    {
+      "line": 105,
+      "old_substring": "the wide arm fell from 8.6 h to 7.3 h",
+      "verdict": "replace_if_describing_arithmetic_means",
+      "replacement": "the wide arm fell from 8.31 h to 7.24 h on average",
+      "old_mean_source": "runtime_series.old_p2000",
+      "new_mean_source": "runtime_series.new_p2000",
+      "note": "Current old/new rounded pair is representative of replicate 1, not the arithmetic means of all three. First-replicate exact hours: 8.609722222222222222222222222 -> 7.305833333333333333333333333. If retaining replicate-1 interpretation, explicitly name replicate 1 rather than calling these means."
+    },
+    {
+      "line": 78,
+      "tool": "BWTandem",
+      "old_substring": "33.4%",
+      "verdict": "blocked_missing_exact_merged_bp",
+      "replacement": null,
+      "required_operands": [
+        "Exact merged length of primary-chromosome calls with reported period >100 (101-2000 score stratum)",
+        "Exact merged length of all primary-chromosome calls"
+      ],
+      "formula": "100*merged_bp_above100/merged_bp_full",
+      "sources_examined": [
+        "results/regen/score_table1_regen_v2.txt",
+        "results/regen/score_table1_p100.txt",
+        "results/regen/heldout_all24.txt",
+        "docs/2026-09-05-astra-review/pass3-human.json",
+        "docs/review/2026-08-17-integrity-report.md:310-315"
+      ],
+      "limitation": "Score deposits contain only rounded bpRecall/bpPrec percentages; pass3-human.json has exact region counts/region rates but no merged bp totals. No exact numerator/denominator found in small deposited text/JSON/CSV/TSV/log artifacts. The August 17 integrity report identifies these exact prose percentages as unpinned derived statistics, predating regenerated BWTandem results. No replacement computed from rounded bp percentages."
+    },
+    {
+      "line": 78,
+      "tool": "TRF",
+      "old_substring": "65.7%",
+      "verdict": "blocked_missing_exact_merged_bp",
+      "replacement": null,
+      "required_operands": [
+        "Exact merged length of primary-chromosome calls with reported period >100 (101-2000 score stratum)",
+        "Exact merged length of all primary-chromosome calls"
+      ],
+      "formula": "100*merged_bp_above100/merged_bp_full",
+      "sources_examined": [
+        "results/regen/score_table1_regen_v2.txt",
+        "results/regen/score_table1_p100.txt",
+        "results/regen/heldout_all24.txt",
+        "docs/2026-09-05-astra-review/pass3-human.json",
+        "docs/review/2026-08-17-integrity-report.md:310-315"
+      ],
+      "limitation": "Score deposits contain only rounded bpRecall/bpPrec percentages; pass3-human.json has exact region counts/region rates but no merged bp totals. No exact numerator/denominator found in small deposited text/JSON/CSV/TSV/log artifacts. The August 17 integrity report identifies these exact prose percentages as unpinned derived statistics, predating regenerated BWTandem results. No replacement computed from rounded bp percentages."
+    },
+    {
+      "line": 139,
+      "old_substring": "1.01 points",
+      "verdict": "blocked_missing_native_F_truth_hits",
+      "replacement": null,
+      "known_operands": [
+        {
+          "path": "docs/2026-09-05-astra-review/pass3-human.json",
+          "key": "BWTandem/scores/le100/truth_hits",
+          "value": 1407753
+        },
+        {
+          "path": "results/regen/score_table1_p100.txt",
+          "key": "GT regions",
+          "value": 1784804
+        }
+      ],
+      "missing_operand": "Native period-100 BWT-F truth regions overlapped (not prediction hits)",
+      "formula": "100*(native_F_truth_hits-1407753)/1784804",
+      "sources_examined": [
+        "results/regen/score_table1_p100.txt",
+        "results/regen/s2_F_p100.txt",
+        "results/regen/bwt_human_F_p100_0363.provenance.json",
+        "results/figures/figure_curve_data.csv",
+        "docs/2026-09-05-astra-review/pass3-human.json"
+      ],
+      "limitation": "Native F 79.88 region recall is rounded. The deposited 2021483 inGT is prediction-hit count and cannot serve as recall numerator. F provenance records no scoring counts; pass3-human has native H, not F. No exact native F truth-hit numerator found cheaply."
+    }
+  ],
+  "runtime_series": {
+    "old_p100": {
+      "seconds": [
+        23805,
+        23685,
+        19796
+      ],
+      "jobs": [
+        6076848,
+        6076850,
+        6076852
+      ],
+      "sources": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "6076848.batch/Elapsed"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "6076850.batch/Elapsed"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "6076852.batch/Elapsed"
+        }
+      ],
+      "formula": "sum(seconds)/(3*3600)",
+      "sum_seconds": 67286,
+      "arithmetic_mean_seconds": "22428.66666666666666666666667",
+      "arithmetic_mean_hours": "6.230185185185185185185185186",
+      "half_up_mean_hours": "6.23"
+    },
+    "old_p2000": {
+      "seconds": [
+        30995,
+        30872,
+        27884
+      ],
+      "jobs": [
+        6076849,
+        6076851,
+        6076853
+      ],
+      "sources": [
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "6076849.batch/Elapsed"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "6076851.batch/Elapsed"
+        },
+        {
+          "path": "results/sacct_provenance.txt",
+          "key": "6076853.batch/Elapsed"
+        }
+      ],
+      "formula": "sum(seconds)/(3*3600)",
+      "sum_seconds": 89751,
+      "arithmetic_mean_seconds": "29917",
+      "arithmetic_mean_hours": "8.310277777777777777777777778",
+      "half_up_mean_hours": "8.31"
+    },
+    "new_p100": {
+      "seconds": [
+        14465,
+        14798,
+        14482
+      ],
+      "jobs": [
+        6147698,
+        6147699,
+        6147700
+      ],
+      "sources": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p100 arm / Elapsed (wall clock)"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p100 arm / Elapsed (wall clock)"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p100 arm / Elapsed (wall clock)"
+        }
+      ],
+      "formula": "sum(seconds)/(3*3600)",
+      "sum_seconds": 43745,
+      "arithmetic_mean_seconds": "14581.66666666666666666666667",
+      "arithmetic_mean_hours": "4.050462962962962962962962964",
+      "half_up_mean_hours": "4.05"
+    },
+    "new_p2000": {
+      "seconds": [
+        26301,
+        26201,
+        25665
+      ],
+      "jobs": [
+        6147698,
+        6147699,
+        6147700
+      ],
+      "sources": [
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+          "key": "p2000 arm / Elapsed (wall clock)"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+          "key": "p2000 arm / Elapsed (wall clock)"
+        },
+        {
+          "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+          "key": "p2000 arm / Elapsed (wall clock)"
+        }
+      ],
+      "formula": "sum(seconds)/(3*3600)",
+      "sum_seconds": 78167,
+      "arithmetic_mean_seconds": "26055.66666666666666666666667",
+      "arithmetic_mean_hours": "7.237685185185185185185185186",
+      "half_up_mean_hours": "7.24"
+    }
+  },
+  "pronoun_followup": "Acknowledged: earlier D088 is a subject/pronoun ambiguity. Main agent intends explicit BWTandem subject, not a numerical assertion that AniAnn has sub-kilobase boundaries. No new TR-1 boundary audit performed."
+}

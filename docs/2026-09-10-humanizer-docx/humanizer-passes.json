@@ -1,0 +1,47 @@
+{
+  "skill": "humanizer_eng",
+  "scope": "main manuscript, light copyediting only; source-locked supplement unchanged",
+  "execution": "three sequential inline Pi reviews using the same model, not three independent agents",
+  "passes": [
+    {
+      "pass": 1,
+      "focus": "surface wording and grammar",
+      "edits": [
+        [
+          "Reported performance belongs to this complete pipeline;",
+          "Reported performance reflects this complete pipeline;"
+        ],
+        [
+          "Runtime ratios were 1.77\u20131.82, with mean 1.79",
+          "Runtime ratios were 1.77\u20131.82, with a mean of 1.79"
+        ]
+      ],
+      "input_sha256": "bd9e77001ed3ecc93b7fdeeb7e0e2448b08127860f5857693a5c8e6f73e45845",
+      "output_sha256": "d4cdba328c90ecc6545afdc57e3ae2010d230d41c1c4ed194ffb67fe2cc901ad"
+    },
+    {
+      "pass": 2,
+      "focus": "terminology and reader navigation",
+      "edits": [
+        [
+          "Reciprocal-overlap and one-to-one sensitivity analyses are supplementary.",
+          "Reciprocal-overlap and one-to-one sensitivity analyses are provided in the supplement."
+        ],
+        [
+          "Source, scorers, regenerated BWTandem BEDs",
+          "Source code, scorers, regenerated BWTandem BEDs"
+        ]
+      ],
+      "input_sha256": "d4cdba328c90ecc6545afdc57e3ae2010d230d41c1c4ed194ffb67fe2cc901ad",
+      "output_sha256": "073e4717c51dec4554cd7125a2eae59464cc1d6ad5bc1ceaeb182a014571f5ac"
+    },
+    {
+      "pass": 3,
+      "focus": "over-correction and semantic-preservation review",
+      "edits": [],
+      "input_sha256": "073e4717c51dec4554cd7125a2eae59464cc1d6ad5bc1ceaeb182a014571f5ac",
+      "output_sha256": "073e4717c51dec4554cd7125a2eae59464cc1d6ad5bc1ceaeb182a014571f5ac"
+    }
+  ],
+  "numbers_urls_abstract_references_legends_preserved": true
+}

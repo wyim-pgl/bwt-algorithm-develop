@@ -1,0 +1,218 @@
+[
+  {
+    "line": 21,
+    "old": "22.9 points",
+    "new": "22.87 points",
+    "source": "D002"
+  },
+  {
+    "line": 78,
+    "old": "1.1 percentage points",
+    "new": "1.66 percentage points",
+    "source": "D025"
+  },
+  {
+    "line": 78,
+    "old": "precision by at most 1.7",
+    "new": "precision by at most 1.73",
+    "source": "D026"
+  },
+  {
+    "line": 78,
+    "old": "4.7 times",
+    "new": "4.68 times",
+    "source": "D027"
+  },
+  {
+    "line": 96,
+    "old": "0.20 percentage points",
+    "new": "0.15 percentage points",
+    "source": "D032"
+  },
+  {
+    "line": 96,
+    "old": "0.02 percentage points",
+    "new": "0.03 percentage points",
+    "source": "D033"
+  },
+  {
+    "line": 107,
+    "old": "83-fold",
+    "new": "83.33-fold",
+    "source": "D045"
+  },
+  {
+    "line": 107,
+    "old": "151-fold",
+    "new": "151.04-fold",
+    "source": "D046"
+  },
+  {
+    "line": 111,
+    "old": "5.5%",
+    "new": "5.56%",
+    "source": "D049"
+  },
+  {
+    "line": 123,
+    "old": "within 2.6 points",
+    "new": "separated by 2.54 points",
+    "source": "D053"
+  },
+  {
+    "line": 123,
+    "old": "within 0.9",
+    "new": "separated by 0.88 points",
+    "source": "D054"
+  },
+  {
+    "line": 123,
+    "old": "19 times",
+    "new": "19.39 times",
+    "source": "D055"
+  },
+  {
+    "line": 123,
+    "old": "104 times",
+    "new": "104.68 times",
+    "source": "D056"
+  },
+  {
+    "line": 188,
+    "old": "197 times",
+    "new": "197.02 times",
+    "source": "D059"
+  },
+  {
+    "line": 188,
+    "old": "15 times",
+    "new": "15.11 times",
+    "source": "D060"
+  },
+  {
+    "line": 188,
+    "old": "1.2 times",
+    "new": "1.19 times",
+    "source": "D061"
+  },
+  {
+    "line": 188,
+    "old": "98.5 times",
+    "new": "98.51 times",
+    "source": "D062"
+  },
+  {
+    "line": 190,
+    "old": "roughly three and a third times",
+    "new": "3.34 times",
+    "source": "D066"
+  },
+  {
+    "line": 190,
+    "old": "twenty-three times",
+    "new": "22.54 times",
+    "source": "D067"
+  },
+  {
+    "line": 194,
+    "old": "5.0 points",
+    "new": "5.03 points",
+    "source": "D072"
+  },
+  {
+    "line": 222,
+    "old": "a factor of 15.4",
+    "new": "a factor of 15.42",
+    "source": "D077"
+  },
+  {
+    "line": 222,
+    "old": "TRF moves by 3.8",
+    "new": "TRF moves by 3.82",
+    "source": "D078"
+  },
+  {
+    "line": 222,
+    "old": "a factor of 13.9",
+    "new": "a factor of 13.89",
+    "source": "D079"
+  },
+  {
+    "line": 294,
+    "old": "2.2 points",
+    "new": "2.18 points",
+    "source": "D086"
+  },
+  {
+    "line": 300,
+    "old": "2.7 times",
+    "new": "2.72 times",
+    "source": "D100"
+  },
+  {
+    "line": 339,
+    "old": "5.5%",
+    "new": "5.56%",
+    "source": "D110"
+  },
+  {
+    "line": 346,
+    "old": "1.44",
+    "new": "1.43",
+    "source": "D118"
+  },
+  {
+    "line": 346,
+    "old": "2.83 points",
+    "new": "2.84 points",
+    "source": "D119"
+  },
+  {
+    "line": 346,
+    "old": "0.13 points",
+    "new": "0.14 points",
+    "source": "D120"
+  },
+  {
+    "line": 103,
+    "old": "half of BWTandem's recall at roughly a twenty-seventh of its wall clock",
+    "new": "with BWTandem taking 27.17 times as long",
+    "source": "D036/D037: comparison of elapsed times; omit unsupported precise recall ratio"
+  },
+  {
+    "line": 34,
+    "old": "half the catalog regions BWTandem does",
+    "new": "fewer catalog regions than BWTandem",
+    "source": "D009: retains explicit recall operands, not a two-decimal ratio from rounded values"
+  },
+  {
+    "line": 188,
+    "old": "at roughly three-tenths of BWTandem's wall clock and about one twenty-third of its memory",
+    "new": "at 0.30 times BWTandem's wall clock, while BWTandem used 22.54 times its recorded memory",
+    "source": "D063/D064: from accounting operands, not reciprocals of rounded cells"
+  },
+  {
+    "line": 123,
+    "old": "mreps' partial run covered 7 of 24 chromosomes in a comparable wall clock, so per base it was several times slower, and it did not complete; no recall figure exists for it.",
+    "new": "mreps' partial run covered 7 of 24 chromosomes in 0.91 h and did not complete; the completed-base denominator needed for a per-base cost comparison is not deposited, and no recall figure exists for it.",
+    "source": "D057: deposited GNU-time 3281.08 s /3600; no invented per-base denominator"
+  },
+  {
+    "line": 256,
+    "old": "dropping the empty windows moves its coverage by at most 0.20 points.",
+    "new": "an earlier summary reported a coverage change of at most 0.20 points after dropping empty windows, but the unrounded before/after scores are not supplied with this table, whose scores retain those windows.",
+    "source": "D080: explicitly source-limited, not a newly verified difference"
+  },
+  {
+    "line": 294,
+    "old": "by a factor of about two and a half.",
+    "new": "(170.12 bp versus TRF's 69.62 bp).",
+    "source": "D087: retain deposited offsets instead of presenting a precise ratio from rounded offset summaries"
+  },
+  {
+    "line": 294,
+    "old": "AniAnn's has higher coverage in every class, and does so at a boundary offset under 1 kb throughout,",
+    "new": "AniAnn's has higher coverage in every class; BWTandem places boundaries at a mean offset under 1 kb throughout,",
+    "source": "D088: name correct subject; pass3-maize.json BWTandem vs AniAnn offsets"
+  }
+]

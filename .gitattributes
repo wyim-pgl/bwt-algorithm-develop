@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Immutable long-manuscript snapshot: preserve historical bytes, including
+# five pre-existing trailing-whitespace lines. Other files keep normal checks.
+manuscript_full.md -text whitespace=-blank-at-eol

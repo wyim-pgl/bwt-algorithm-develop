@@ -1,0 +1,12 @@
+test_changed_cell (__main__.Guards.test_changed_cell) ... ok
+test_changed_command (__main__.Guards.test_changed_command) ... ok
+test_changed_minus_sign (__main__.Guards.test_changed_minus_sign) ... ok
+test_deleted_caveat (__main__.Guards.test_deleted_caveat) ... ok
+test_duplicate_caption (__main__.Guards.test_duplicate_caption) ... ok
+test_duplicate_row (__main__.Guards.test_duplicate_row) ... ok
+test_valid (__main__.Guards.test_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.961s
+
+OK

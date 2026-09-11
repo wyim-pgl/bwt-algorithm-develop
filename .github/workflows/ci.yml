@@ -1,0 +1,79 @@
+name: CI
+on:
+  push:
+    branches: [main, "perf/**"]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: |
+          pip install numpy==2.4.6 Cython==3.2.5 pytest==9.1.1 pydivsufsort==0.0.20
+      - name: Build native extensions
+        run: |
+          python -c "
+          from setuptools import setup, Extension
+          from Cython.Build import cythonize
+          import numpy as np
+          ext=[Extension('bwtandem._accelerators',['bwtandem/_accelerators.pyx'],include_dirs=[np.get_include()])]
+          setup(script_args=['build_ext','--inplace'], ext_modules=cythonize(ext, compiler_directives={'language_level':'3'}))
+          "
+          python bwtandem/c_extensions/build.py
+      - name: Deposited-evidence hashes verify
+        # a results/ file edited after hashing shipped once (e178707):
+        # every clone must be able to verify the deposit as advertised
+        run: sha256sum -c results/manifest.sha256 --quiet
+      - name: Test (native)
+        run: python -m pytest tests/ -q
+      - name: Test (pure-Python fallback parity)
+        run: BWT_DISABLE_NATIVE=1 python -m pytest tests/test_accel_parity.py tests/test_ambiguous_native_paths.py -q
+      - name: CLI smoke
+        run: |
+          python -m bwtandem.main arabadopsis_chrs/test_seq1.fa --tiers tier1 --format bed -o /tmp/smoke -v
+          test -s /tmp/smoke.bed
+
+  install:
+    # The in-place build above cannot detect a wheel that ships without the
+    # native extension (that exact defect shipped as a py3-none-any wheel).
+    # This job installs the wheel into a clean environment, runs the declared
+    # entry point from outside the checkout, and asserts the accelerator
+    # actually loaded from the installed package as a compiled extension.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build and install wheel
+        run: |
+          pip install build
+          python -m build --wheel
+          pip install dist/*.whl numpy==2.4.6 pydivsufsort==0.0.20
+      - name: Entry point + native import from outside the checkout
+        run: |
+          FIXTURE=$PWD/arabadopsis_chrs/test_seq1.fa
+          cd /tmp
+          bwtandem --help
+          python -c "
+          import bwtandem._accelerators as a
+          assert a.__file__.endswith(('.so', '.pyd')), a.__file__
+          assert 'site-packages' in a.__file__, a.__file__
+          # the ctypes C sources must ship in the wheel: build.py compiles
+          # them at first import, and without them the fast C paths silently
+          # fall back to Python (that exact defect shipped once)
+          import glob, os
+          import bwtandem.c_extensions.build as b
+          cs = glob.glob(os.path.join(os.path.dirname(b.__file__), '*.c'))
+          assert len(cs) == 4, cs
+          "
+          bwtandem "$FIXTURE" --tiers tier1 --format bed -o /tmp/inst_smoke
+          test -s /tmp/inst_smoke.bed

@@ -1,0 +1,12 @@
+{
+  "table_blocks_preserved": 19,
+  "all_supplemental_prose_replayed": true,
+  "main_words_whitespace": 1136,
+  "abstract_words_whitespace": 141,
+  "main_figures": 2,
+  "supplement_figures": 7
+}
+.s..........................................                             [100%]
+43 passed, 1 skipped in 4.64s
+ef98c03c8710dfb529d2cab0cbe7231080ab07f6
+ef98c03c8710dfb529d2cab0cbe7231080ab07f6

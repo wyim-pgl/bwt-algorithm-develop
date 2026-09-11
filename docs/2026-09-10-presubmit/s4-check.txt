@@ -1,0 +1,462 @@
+Loading default-environment
+  Loading requirement: dot slurm/pronghorn/20.11.7 unr-rc singularity/3.6.1
+    utilities
+{
+  "one_to_one_bwtandem_annot_r50.json": {
+    "matched": 1050831,
+    "sensitivity": 58.87654890957214,
+    "precision": 26.17844362931939,
+    "period": {
+      "scored_pairs": 1050831,
+      "exact_pct": 58.66,
+      "integer_multiple_pct": 16.04,
+      "within_20pct_pct": 4.78,
+      "outside_pct": 20.52
+    },
+    "strata": {
+      "1-6": {
+        "truth": 1048225,
+        "matched": 620649,
+        "sensitivity_pct": 59.21
+      },
+      "101-2000": {
+        "truth": 45161,
+        "matched": 20952,
+        "sensitivity_pct": 46.39
+      },
+      "21-100": {
+        "truth": 157835,
+        "matched": 98454,
+        "sensitivity_pct": 62.38
+      },
+      "7-20": {
+        "truth": 533583,
+        "matched": 310776,
+        "sensitivity_pct": 58.24
+      }
+    }
+  },
+  "one_to_one_bwtandem_annot_r50_bands.json": {
+    "matched": 1050831,
+    "sensitivity": 58.87654890957214,
+    "precision": 26.17844362931939,
+    "period": {
+      "scored_pairs": 1050831,
+      "exact_pct": 58.66,
+      "integer_multiple_pct": 16.04,
+      "within_20pct_pct": 4.78,
+      "outside_pct": 20.52
+    },
+    "strata": {
+      "1-6": {
+        "truth": 1048225,
+        "matched": 620649,
+        "sensitivity_pct": 59.21
+      },
+      "101-500": {
+        "truth": 45161,
+        "matched": 20952,
+        "sensitivity_pct": 46.39
+      },
+      "21-100": {
+        "truth": 157835,
+        "matched": 98454,
+        "sensitivity_pct": 62.38
+      },
+      "7-20": {
+        "truth": 533583,
+        "matched": 310776,
+        "sensitivity_pct": 58.24
+      }
+    }
+  },
+  "one_to_one_bwtandem_r50.json": {
+    "matched": 348464,
+    "sensitivity": 19.523936521881396,
+    "precision": 8.680982175865722,
+    "period": {
+      "scored_pairs": 0,
+      "exact_pct": 0.0,
+      "integer_multiple_pct": 0.0,
+      "within_20pct_pct": 0.0,
+      "outside_pct": 0.0
+    },
+    "strata": {
+      "other": {
+        "truth": 1784804,
+        "matched": 348464,
+        "sensitivity_pct": 19.52
+      }
+    }
+  },
+  "one_to_one_tantan_annot_r50.json": {
+    "matched": 961163,
+    "sensitivity": 53.8525798911253,
+    "precision": 28.95485285084634,
+    "period": {
+      "scored_pairs": 961163,
+      "exact_pct": 73.54,
+      "integer_multiple_pct": 10.28,
+      "within_20pct_pct": 3.91,
+      "outside_pct": 12.27
+    },
+    "strata": {
+      "1-6": {
+        "truth": 1048225,
+        "matched": 632150,
+        "sensitivity_pct": 60.31
+      },
+      "101-2000": {
+        "truth": 45161,
+        "matched": 754,
+        "sensitivity_pct": 1.67
+      },
+      "21-100": {
+        "truth": 157835,
+        "matched": 65358,
+        "sensitivity_pct": 41.41
+      },
+      "7-20": {
+        "truth": 533583,
+        "matched": 262901,
+        "sensitivity_pct": 49.27
+      }
+    }
+  },
+  "one_to_one_tantan_annot_r50_bands.json": {
+    "matched": 961163,
+    "sensitivity": 53.8525798911253,
+    "precision": 28.95485285084634,
+    "period": {
+      "scored_pairs": 961163,
+      "exact_pct": 73.54,
+      "integer_multiple_pct": 10.28,
+      "within_20pct_pct": 3.91,
+      "outside_pct": 12.27
+    },
+    "strata": {
+      "1-6": {
+        "truth": 1048225,
+        "matched": 632150,
+        "sensitivity_pct": 60.31
+      },
+      "101-500": {
+        "truth": 45161,
+        "matched": 754,
+        "sensitivity_pct": 1.67
+      },
+      "21-100": {
+        "truth": 157835,
+        "matched": 65358,
+        "sensitivity_pct": 41.41
+      },
+      "7-20": {
+        "truth": 533583,
+        "matched": 262901,
+        "sensitivity_pct": 49.27
+      }
+    }
+  },
+  "one_to_one_tantan_r50.json": {
+    "matched": 113649,
+    "sensitivity": 6.367589942649165,
+    "precision": 3.4236545431376735,
+    "period": {
+      "scored_pairs": 0,
+      "exact_pct": 0.0,
+      "integer_multiple_pct": 0.0,
+      "within_20pct_pct": 0.0,
+      "outside_pct": 0.0
+    },
+    "strata": {
+      "other": {
+        "truth": 1784804,
+        "matched": 113649,
+        "sensitivity_pct": 6.37
+      }
+    }
+  },
+  "one_to_one_trash_annot_r50.json": {
+    "matched": 892,
+    "sensitivity": 0.049977476518430035,
+    "precision": 17.374366965329177,
+    "period": {
+      "scored_pairs": 892,
+      "exact_pct": 33.41,
+      "integer_multiple_pct": 9.98,
+      "within_20pct_pct": 22.09,
+      "outside_pct": 34.53
+    },
+    "strata": {
+      "1-6": {
+        "truth": 1048225,
+        "matched": 59,
+        "sensitivity_pct": 0.01
+      },
+      "101-2000": {
+        "truth": 45161,
+        "matched": 387,
+        "sensitivity_pct": 0.86
+      },
+      "21-100": {
+        "truth": 157835,
+        "matched": 326,
+        "sensitivity_pct": 0.21
+      },
+      "7-20": {
+        "truth": 533583,
+        "matched": 120,
+        "sensitivity_pct": 0.02
+      }
+    }
+  },
+  "one_to_one_trash_annot_r50_bands.json": {
+    "matched": 892,
+    "sensitivity": 0.049977476518430035,
+    "precision": 17.374366965329177,
+    "period": {
+      "scored_pairs": 892,
+      "exact_pct": 33.41,
+      "integer_multiple_pct": 9.98,
+      "within_20pct_pct": 22.09,
+      "outside_pct": 34.53
+    },
+    "strata": {
+      "1-6": {
+        "truth": 1048225,
+        "matched": 59,
+        "sensitivity_pct": 0.01
+      },
+      "101-500": {
+        "truth": 45161,
+        "matched": 387,
+        "sensitivity_pct": 0.86
+      },
+      "21-100": {
+        "truth": 157835,
+        "matched": 326,
+        "sensitivity_pct": 0.21
+      },
+      "7-20": {
+        "truth": 533583,
+        "matched": 120,
+        "sensitivity_pct": 0.02
+      }
+    }
+  },
+  "one_to_one_trash_r50.json": {
+    "matched": 1241,
+    "sensitivity": 0.06953144434907138,
+    "precision": 24.172185430463575,
+    "period": {
+      "scored_pairs": 0,
+      "exact_pct": 0.0,
+      "integer_multiple_pct": 0.0,
+      "within_20pct_pct": 0.0,
+      "outside_pct": 0.0
+    },
+    "strata": {
+      "other": {
+        "truth": 1784804,
+        "matched": 1241,
+        "sensitivity_pct": 0.07
+      }
+    }
+  },
+  "one_to_one_trf_annot_r50.json": {
+    "matched": 518719,
+    "sensitivity": 29.06307919525057,
+    "precision": 53.874020213182504,
+    "period": {
+      "scored_pairs": 518719,
+      "exact_pct": 63.53,
+      "integer_multiple_pct": 6.97,
+      "within_20pct_pct": 15.31,
+      "outside_pct": 14.19
+    },
+    "strata": {
+      "1-6": {
+        "truth": 1048225,
+        "matched": 187266,
+        "sensitivity_pct": 17.87
+      },
+      "101-2000": {
+        "truth": 45161,
+        "matched": 28181,
+        "sensitivity_pct": 62.4
+      },
+      "21-100": {
+        "truth": 157835,
+        "matched": 122473,
+        "sensitivity_pct": 77.6
+      },
+      "7-20": {
+        "truth": 533583,
+        "matched": 180799,
+        "sensitivity_pct": 33.88
+      }
+    }
+  },
+  "one_to_one_trf_annot_r50_bands.json": {
+    "matched": 518719,
+    "sensitivity": 29.06307919525057,
+    "precision": 53.874020213182504,
+    "period": {
+      "scored_pairs": 0,
+      "exact_pct": 0.0,
+      "integer_multiple_pct": 0.0,
+      "within_20pct_pct": 0.0,
+      "outside_pct": 0.0
+    },
+    "strata": {
+      "1-6": {
+        "truth": 1048225,
+        "matched": 187266,
+        "sensitivity_pct": 17.87
+      },
+      "101-500": {
+        "truth": 45161,
+        "matched": 28181,
+        "sensitivity_pct": 62.4
+      },
+      "21-100": {
+        "truth": 157835,
+        "matched": 122473,
+        "sensitivity_pct": 77.6
+      },
+      "7-20": {
+        "truth": 533583,
+        "matched": 180799,
+        "sensitivity_pct": 33.88
+      }
+    }
+  },
+  "one_to_one_trf_r50.json": {
+    "matched": 197087,
+    "sensitivity": 11.042501025322668,
+    "precision": 20.469404478639685,
+    "period": {
+      "scored_pairs": 0,
+      "exact_pct": 0.0,
+      "integer_multiple_pct": 0.0,
+      "within_20pct_pct": 0.0,
+      "outside_pct": 0.0
+    },
+    "strata": {
+      "other": {
+        "truth": 1784804,
+        "matched": 197087,
+        "sensitivity_pct": 11.04
+      }
+    }
+  },
+  "one_to_one_ultra_annot_r50.json": {
+    "matched": 1122910,
+    "sensitivity": 62.915031566491336,
+    "precision": 34.908648899030375,
+    "period": {
+      "scored_pairs": 1122910,
+      "exact_pct": 59.61,
+      "integer_multiple_pct": 18.38,
+      "within_20pct_pct": 4.62,
+      "outside_pct": 17.38
+    },
+    "strata": {
+      "1-6": {
+        "truth": 1048225,
+        "matched": 605567,
+        "sensitivity_pct": 57.77
+      },
+      "101-2000": {
+        "truth": 45161,
+        "matched": 3777,
+        "sensitivity_pct": 8.36
+      },
+      "21-100": {
+        "truth": 157835,
+        "matched": 127693,
+        "sensitivity_pct": 80.9
+      },
+      "7-20": {
+        "truth": 533583,
+        "matched": 385873,
+        "sensitivity_pct": 72.32
+      }
+    }
+  },
+  "one_to_one_ultra_annot_r50_bands.json": {
+    "matched": 1122910,
+    "sensitivity": 62.915031566491336,
+    "precision": 34.908648899030375,
+    "period": {
+      "scored_pairs": 1122910,
+      "exact_pct": 59.61,
+      "integer_multiple_pct": 18.38,
+      "within_20pct_pct": 4.62,
+      "outside_pct": 17.38
+    },
+    "strata": {
+      "1-6": {
+        "truth": 1048225,
+        "matched": 605567,
+        "sensitivity_pct": 57.77
+      },
+      "101-500": {
+        "truth": 45161,
+        "matched": 3777,
+        "sensitivity_pct": 8.36
+      },
+      "21-100": {
+        "truth": 157835,
+        "matched": 127693,
+        "sensitivity_pct": 80.9
+      },
+      "7-20": {
+        "truth": 533583,
+        "matched": 385873,
+        "sensitivity_pct": 72.32
+      }
+    }
+  },
+  "one_to_one_ultra_r50.json": {
+    "matched": 554179,
+    "sensitivity": 31.04985197254152,
+    "precision": 17.228130605494435,
+    "period": {
+      "scored_pairs": 0,
+      "exact_pct": 0.0,
+      "integer_multiple_pct": 0.0,
+      "within_20pct_pct": 0.0,
+      "outside_pct": 0.0
+    },
+    "strata": {
+      "other": {
+        "truth": 1784804,
+        "matched": 554179,
+        "sensitivity_pct": 31.05
+      }
+    }
+  },
+  "TRF_changes_since_903245c": {
+    "period": {
+      "before": {
+        "scored_pairs": 0,
+        "exact_pct": 0.0,
+        "integer_multiple_pct": 0.0,
+        "within_20pct_pct": 0.0,
+        "outside_pct": 0.0
+      },
+      "after": {
+        "scored_pairs": 518719,
+        "exact_pct": 63.53,
+        "integer_multiple_pct": 6.97,
+        "within_20pct_pct": 15.31,
+        "outside_pct": 14.19
+      }
+    },
+    "strata_spec": {
+      "before": null,
+      "after": "1-6,7-20,21-100,101-2000"
+    }
+  }
+}

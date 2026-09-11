@@ -1,0 +1,2236 @@
+[
+  {
+    "line": 2,
+    "table": "1a",
+    "row": "BWTandem",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 3,
+    "table": "1a",
+    "row": "TRF",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "scorer_present": true,
+    "recorded_sha": "14177a7320373f82",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 4,
+    "table": "1a",
+    "row": "ULTRA",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "scorer_present": true,
+    "recorded_sha": "14177a7320373f82",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 5,
+    "table": "1a",
+    "row": "tantan",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "scorer_present": true,
+    "recorded_sha": "14177a7320373f82",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 6,
+    "table": "1a",
+    "row": "TRASH",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "scorer_present": true,
+    "recorded_sha": "14177a7320373f82",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 7,
+    "table": "1a",
+    "row": "mreps",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 8,
+    "table": "1b-superseded",
+    "row": "BWTandem",
+    "source_present": false,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 9,
+    "table": "1b",
+    "row": "TRF",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "scorer_present": true,
+    "recorded_sha": "14177a7320373f82",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 10,
+    "table": "1b",
+    "row": "ULTRA",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "scorer_present": true,
+    "recorded_sha": "14177a7320373f82",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 11,
+    "table": "1b",
+    "row": "tantan",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "scorer_present": true,
+    "recorded_sha": "14177a7320373f82",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 12,
+    "table": "1b",
+    "row": "TRASH",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "scorer_present": true,
+    "recorded_sha": "14177a7320373f82",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 13,
+    "table": "1c",
+    "row": "BWTandem",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 14,
+    "table": "1c",
+    "row": "TRF",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "scorer_present": true,
+    "recorded_sha": "14177a7320373f82",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 15,
+    "table": "1c",
+    "row": "TRASH",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "scorer_present": true,
+    "recorded_sha": "14177a7320373f82",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 16,
+    "table": "1d-superseded",
+    "row": "BWTandem-P",
+    "source_present": false,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 17,
+    "table": "1d-superseded",
+    "row": "BWTandem-B",
+    "source_present": false,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 18,
+    "table": "1d-superseded",
+    "row": "BWTandem-F",
+    "source_present": false,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 19,
+    "table": "1d-superseded",
+    "row": "BWTandem-H",
+    "source_present": false,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 20,
+    "table": "sweep-superseded",
+    "row": "id-off",
+    "source_present": true,
+    "commit": "0e17d1a+outputfixes",
+    "commit_resolves": false,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "scorer_present": true,
+    "recorded_sha": "0ec76dd5a9ddffb6",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 21,
+    "table": "sweep-superseded",
+    "row": "id-0.80",
+    "source_present": true,
+    "commit": "0e17d1a+outputfixes",
+    "commit_resolves": false,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "scorer_present": true,
+    "recorded_sha": "0ec76dd5a9ddffb6",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 22,
+    "table": "sweep-superseded",
+    "row": "id-0.76",
+    "source_present": true,
+    "commit": "0e17d1a+outputfixes",
+    "commit_resolves": false,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "scorer_present": true,
+    "recorded_sha": "0ec76dd5a9ddffb6",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 23,
+    "table": "sweep-superseded",
+    "row": "id-0.72",
+    "source_present": true,
+    "commit": "0e17d1a+outputfixes",
+    "commit_resolves": false,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "scorer_present": true,
+    "recorded_sha": "0ec76dd5a9ddffb6",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 24,
+    "table": "sweep-superseded",
+    "row": "id-0.68",
+    "source_present": true,
+    "commit": "0e17d1a+outputfixes",
+    "commit_resolves": false,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "scorer_present": true,
+    "recorded_sha": "0ec76dd5a9ddffb6",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 25,
+    "table": "2",
+    "row": "BWTandem",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "585d55558609d6e5",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": true,
+    "history_matches": [
+      "1cb7f485566498d84de304d25b7d35c1c771da87"
+    ]
+  },
+  {
+    "line": 26,
+    "table": "2",
+    "row": "TRF",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "60d20caf95230bf6",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 27,
+    "table": "2",
+    "row": "ULTRA",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "60d20caf95230bf6",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 28,
+    "table": "2",
+    "row": "mreps",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "60d20caf95230bf6",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 29,
+    "table": "2",
+    "row": "tantan",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "60d20caf95230bf6",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 30,
+    "table": "3A",
+    "row": "BWTandem",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "scorer_present": true,
+    "recorded_sha": "bcc4992b51986109",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 31,
+    "table": "3A",
+    "row": "TRF",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "scorer_present": true,
+    "recorded_sha": "bcc4992b51986109",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 32,
+    "table": "3A",
+    "row": "ULTRA",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "scorer_present": true,
+    "recorded_sha": "bcc4992b51986109",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 33,
+    "table": "3A",
+    "row": "tantan",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "scorer_present": true,
+    "recorded_sha": "bcc4992b51986109",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 34,
+    "table": "3A",
+    "row": "NCRF",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "scorer_present": true,
+    "recorded_sha": "bcc4992b51986109",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 35,
+    "table": "3A",
+    "row": "TRASH-dn",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "scorer_present": true,
+    "recorded_sha": "bcc4992b51986109",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 36,
+    "table": "3B",
+    "row": "BWTandem",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/rescore_tables_3bc.py",
+    "scorer_present": true,
+    "recorded_sha": "39d30894d5a5c295",
+    "current_sha": "e5202778dcf4a149da5c3e5e21c2efa60eaf826146c62c3db36ce04a84bd85bc",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 37,
+    "table": "3B",
+    "row": "TRF",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "scorer_present": true,
+    "recorded_sha": "33c8c79529a3f409",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 38,
+    "table": "3B",
+    "row": "ULTRA",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "scorer_present": true,
+    "recorded_sha": "33c8c79529a3f409",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 39,
+    "table": "3B",
+    "row": "tantan",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "scorer_present": true,
+    "recorded_sha": "33c8c79529a3f409",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 40,
+    "table": "3B",
+    "row": "TRASH",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_trash_maize.py",
+    "scorer_present": true,
+    "recorded_sha": "626f7751fe9a1d31",
+    "current_sha": "626f7751fe9a1d3151c89617ca2f44a581996ae7c15b0ef19b242608856391ff",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 41,
+    "table": "3C",
+    "row": "BWTandem",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/rescore_tables_3bc.py",
+    "scorer_present": true,
+    "recorded_sha": "39d30894d5a5c295",
+    "current_sha": "e5202778dcf4a149da5c3e5e21c2efa60eaf826146c62c3db36ce04a84bd85bc",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 42,
+    "table": "3C",
+    "row": "TRF",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "scorer_present": true,
+    "recorded_sha": "33c8c79529a3f409",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 43,
+    "table": "3C",
+    "row": "ULTRA",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "scorer_present": true,
+    "recorded_sha": "33c8c79529a3f409",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 44,
+    "table": "3C",
+    "row": "TRASH",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_trash_maize.py",
+    "scorer_present": true,
+    "recorded_sha": "626f7751fe9a1d31",
+    "current_sha": "626f7751fe9a1d3151c89617ca2f44a581996ae7c15b0ef19b242608856391ff",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 45,
+    "table": "range-cost-superseded",
+    "row": "BWTandem p1-2000 t4",
+    "source_present": true,
+    "commit": "07ad6fa",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 46,
+    "table": "1e",
+    "row": "all rows",
+    "source_present": false,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 47,
+    "table": "ablation",
+    "row": "gapfill base",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "60d20caf95230bf6",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 48,
+    "table": "ablation",
+    "row": "gapfill off",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "60d20caf95230bf6",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 49,
+    "table": "ablation",
+    "row": "gapfill away",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "60d20caf95230bf6",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 50,
+    "table": "3B-b/3C-b",
+    "row": "all rows",
+    "source_present": false,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "scorer_present": true,
+    "recorded_sha": "33c8c79529a3f409",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 51,
+    "table": "2",
+    "row": "NCRF",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "60d20caf95230bf6",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 52,
+    "table": "2",
+    "row": "TRASH-dn",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "60d20caf95230bf6",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 53,
+    "table": "2",
+    "row": "TRASH-tpl",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "585d55558609d6e5",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": true,
+    "history_matches": [
+      "1cb7f485566498d84de304d25b7d35c1c771da87"
+    ]
+  },
+  {
+    "line": 54,
+    "table": "3A",
+    "row": "TRASH-tpl",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "scorer_present": true,
+    "recorded_sha": "bcc4992b51986109",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 55,
+    "table": "3B",
+    "row": "TRASH-tpl",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "scorer_present": true,
+    "recorded_sha": "33c8c79529a3f409",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 56,
+    "table": "3C",
+    "row": "tantan",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "scorer_present": true,
+    "recorded_sha": "33c8c79529a3f409",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 57,
+    "table": "3B-b/3C-b",
+    "row": "BWTandem-rescore",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/rescore_tables_3bc.py",
+    "scorer_present": true,
+    "recorded_sha": "39d30894d5a5c295",
+    "current_sha": "e5202778dcf4a149da5c3e5e21c2efa60eaf826146c62c3db36ce04a84bd85bc",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 58,
+    "table": "flanks-superseded",
+    "row": "flank-periodicity",
+    "source_present": false,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "scorer": "scripts/scoring/analyze_maize_flanks.py",
+    "scorer_present": true,
+    "recorded_sha": "\u2014",
+    "current_sha": "ae0b7f2ee292c21b1e296999ffa989023a5c9e5192f82946aeb6987297f152e0",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 59,
+    "table": "S2-superseded",
+    "row": "unique-calls",
+    "source_present": true,
+    "commit": "0e17d1a",
+    "commit_resolves": true,
+    "source_prefix_ok": null,
+    "bytes_ok": null,
+    "scorer": "scripts/scoring/analyze_unique_regions.py",
+    "scorer_present": true,
+    "recorded_sha": "\u2014",
+    "current_sha": "0d552ac23df0fc715cf989911572afc674684e587aef2b327a2cb92793444c6e",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 60,
+    "table": "range-rep-superseded",
+    "row": "p100-r1",
+    "source_present": true,
+    "commit": "07ad6fa",
+    "commit_resolves": true,
+    "source_prefix_ok": null,
+    "bytes_ok": null
+  },
+  {
+    "line": 61,
+    "table": "range-rep-superseded",
+    "row": "p2000-r1",
+    "source_present": true,
+    "commit": "07ad6fa",
+    "commit_resolves": true,
+    "source_prefix_ok": null,
+    "bytes_ok": null
+  },
+  {
+    "line": 62,
+    "table": "range-rep-superseded",
+    "row": "p100-r2",
+    "source_present": true,
+    "commit": "07ad6fa",
+    "commit_resolves": true,
+    "source_prefix_ok": null,
+    "bytes_ok": null
+  },
+  {
+    "line": 63,
+    "table": "range-rep-superseded",
+    "row": "p2000-r2",
+    "source_present": true,
+    "commit": "07ad6fa",
+    "commit_resolves": true,
+    "source_prefix_ok": null,
+    "bytes_ok": null
+  },
+  {
+    "line": 64,
+    "table": "range-rep-superseded",
+    "row": "p100-r3",
+    "source_present": true,
+    "commit": "07ad6fa",
+    "commit_resolves": true,
+    "source_prefix_ok": null,
+    "bytes_ok": null
+  },
+  {
+    "line": 65,
+    "table": "range-rep-superseded",
+    "row": "p2000-r3",
+    "source_present": true,
+    "commit": "07ad6fa",
+    "commit_resolves": true,
+    "source_prefix_ok": null,
+    "bytes_ok": null
+  },
+  {
+    "line": 66,
+    "table": "range-cost",
+    "row": "TRF-p2000-attempt",
+    "source_present": true,
+    "commit": "\u2014",
+    "commit_resolves": false,
+    "source_prefix_ok": null,
+    "bytes_ok": null
+  },
+  {
+    "line": 67,
+    "table": "range-cost",
+    "row": "ULTRA-p2000-attempt",
+    "source_present": true,
+    "commit": "\u2014",
+    "commit_resolves": false,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 68,
+    "table": "2",
+    "row": "tantan (500bp re-run)",
+    "source_present": true,
+    "commit": "294f8ac",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "60d20caf95230bf6",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 69,
+    "table": "3B",
+    "row": "tantan (500bp re-run)",
+    "source_present": true,
+    "commit": "294f8ac",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "scorer_present": true,
+    "recorded_sha": "c6a03d6bf342d564",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": true,
+    "history_matches": [
+      "410cb357e1d59168db63a343122d57b875e34300"
+    ]
+  },
+  {
+    "line": 70,
+    "table": "3C",
+    "row": "tantan (200bp re-run)",
+    "source_present": true,
+    "commit": "294f8ac",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "scorer_present": true,
+    "recorded_sha": "c6a03d6bf342d564",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": true,
+    "history_matches": [
+      "410cb357e1d59168db63a343122d57b875e34300"
+    ]
+  },
+  {
+    "line": 71,
+    "table": "1c",
+    "row": "tantan (2000bp re-run)",
+    "source_present": true,
+    "commit": "294f8ac",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "scorer_present": true,
+    "recorded_sha": "0ec76dd5a9ddffb6",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 72,
+    "table": "1a",
+    "row": "BWTandem (released)",
+    "source_present": true,
+    "commit": "294f8ac",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "scorer_present": true,
+    "recorded_sha": "0ec76dd5a9ddffb6",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 73,
+    "table": "1d",
+    "row": "BWTandem-P (released)",
+    "source_present": true,
+    "commit": "294f8ac",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 74,
+    "table": "1d",
+    "row": "BWTandem-B (released)",
+    "source_present": true,
+    "commit": "294f8ac",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 75,
+    "table": "1d",
+    "row": "BWTandem-F (released)",
+    "source_present": true,
+    "commit": "294f8ac",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 76,
+    "table": "1d",
+    "row": "BWTandem-H (released)",
+    "source_present": true,
+    "commit": "294f8ac",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 77,
+    "table": "1a-superseded",
+    "row": "BWTandem (built-in defaults)",
+    "source_present": true,
+    "commit": "294f8ac",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "scorer_present": true,
+    "recorded_sha": "0ec76dd5a9ddffb6",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 78,
+    "table": "ablation",
+    "row": "seeding index arm",
+    "source_present": true,
+    "commit": "294f8ac",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 79,
+    "table": "ablation",
+    "row": "seeding k-tuple arm",
+    "source_present": true,
+    "commit": "294f8ac",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 80,
+    "table": "evidence",
+    "row": "Col-CEN provenance",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": null
+  },
+  {
+    "line": 81,
+    "table": "evidence",
+    "row": "human provenance",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": null
+  },
+  {
+    "line": 82,
+    "table": "evidence",
+    "row": "maize provenance",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": null
+  },
+  {
+    "line": 83,
+    "table": "evidence",
+    "row": "human score",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 84,
+    "table": "evidence",
+    "row": "maize score",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_postmerge_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "-",
+    "current_sha": "5b4a5064c2d42fd83748eb40d99ea047b9846692f01eea17e2a1ead1be006851",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 85,
+    "table": "evidence",
+    "row": "Table 3BC report",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/rescore_tables_3bc.py",
+    "scorer_present": true,
+    "recorded_sha": "39d30894d5a5c295",
+    "current_sha": "e5202778dcf4a149da5c3e5e21c2efa60eaf826146c62c3db36ce04a84bd85bc",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 86,
+    "table": "evidence",
+    "row": "Table 3BC provenance",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": null,
+    "scorer": "scripts/scoring/rescore_tables_3bc.py",
+    "scorer_present": true,
+    "recorded_sha": "39d30894d5a5c295",
+    "current_sha": "e5202778dcf4a149da5c3e5e21c2efa60eaf826146c62c3db36ce04a84bd85bc",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 87,
+    "table": "evidence",
+    "row": "maize extra scorer",
+    "source_present": true,
+    "commit": "33f3ab6",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_regen_evidence.py",
+    "scorer_present": true,
+    "recorded_sha": "84077c2b5f53d53f",
+    "current_sha": "84077c2b5f53d53f22f7e650a53a3fb3183fe0d66edf318f6a2f01c01c7cbbb3",
+    "current_match": true,
+    "history_matches": [
+      "33f3ab6e66405a53b6b720e42d1d7b6e74aa0d08"
+    ]
+  },
+  {
+    "line": 88,
+    "table": "evidence",
+    "row": "maize extra output",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_maize_regen_evidence.py",
+    "scorer_present": true,
+    "recorded_sha": "84077c2b5f53d53f",
+    "current_sha": "84077c2b5f53d53f22f7e650a53a3fb3183fe0d66edf318f6a2f01c01c7cbbb3",
+    "current_match": true,
+    "history_matches": [
+      "33f3ab6e66405a53b6b720e42d1d7b6e74aa0d08"
+    ]
+  },
+  {
+    "line": 89,
+    "table": "1b",
+    "row": "BWTandem",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 90,
+    "table": "1d",
+    "row": "BWTandem-P",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 91,
+    "table": "1d",
+    "row": "BWTandem-B",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 92,
+    "table": "1d",
+    "row": "BWTandem-F",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 93,
+    "table": "1d",
+    "row": "BWTandem-H",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 94,
+    "table": "S3",
+    "row": "pass disabled",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 95,
+    "table": "S3",
+    "row": "0.80",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 96,
+    "table": "S3",
+    "row": "0.76",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 97,
+    "table": "S3",
+    "row": "0.72",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 98,
+    "table": "S3",
+    "row": "0.68",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "scorer_present": true,
+    "recorded_sha": "b85820bebdd1f139",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 99,
+    "table": "S4-superseded",
+    "row": "BWTandem",
+    "source_present": true,
+    "commit": "4a1d368",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "3e84c9764cc15b1a",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 100,
+    "table": "S4-superseded",
+    "row": "ULTRA",
+    "source_present": true,
+    "commit": "4a1d368",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "3e84c9764cc15b1a",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 101,
+    "table": "S4-superseded",
+    "row": "tantan",
+    "source_present": true,
+    "commit": "4a1d368",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "3e84c9764cc15b1a",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 102,
+    "table": "S4-superseded",
+    "row": "TRF",
+    "source_present": true,
+    "commit": "4a1d368",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "3e84c9764cc15b1a",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 103,
+    "table": "S4-superseded",
+    "row": "BWTandem (annotated truth)",
+    "source_present": true,
+    "commit": "4a1d368",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "3e84c9764cc15b1a",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 104,
+    "table": "S4-superseded",
+    "row": "ULTRA (annotated truth)",
+    "source_present": true,
+    "commit": "4a1d368",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "3e84c9764cc15b1a",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 105,
+    "table": "S4-superseded",
+    "row": "tantan (annotated truth)",
+    "source_present": true,
+    "commit": "4a1d368",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "3e84c9764cc15b1a",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 106,
+    "table": "S4",
+    "row": "BWTandem",
+    "source_present": true,
+    "commit": "43543da",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "06fa03a1edad3b90",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 107,
+    "table": "S4",
+    "row": "ULTRA",
+    "source_present": true,
+    "commit": "43543da",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "06fa03a1edad3b90",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 108,
+    "table": "S4",
+    "row": "tantan",
+    "source_present": true,
+    "commit": "43543da",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "06fa03a1edad3b90",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 109,
+    "table": "S4",
+    "row": "TRF",
+    "source_present": true,
+    "commit": "43543da",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "06fa03a1edad3b90",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 110,
+    "table": "S4",
+    "row": "TRASH",
+    "source_present": true,
+    "commit": "43543da",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "06fa03a1edad3b90",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 111,
+    "table": "S4",
+    "row": "BWTandem (annotation truth)",
+    "source_present": true,
+    "commit": "43543da",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "06fa03a1edad3b90",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 112,
+    "table": "S4",
+    "row": "ULTRA (annotation truth)",
+    "source_present": true,
+    "commit": "43543da",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "06fa03a1edad3b90",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 113,
+    "table": "S4",
+    "row": "tantan (annotation truth)",
+    "source_present": true,
+    "commit": "43543da",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "06fa03a1edad3b90",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 114,
+    "table": "S4",
+    "row": "TRF (annotation truth)",
+    "source_present": true,
+    "commit": "43543da",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "06fa03a1edad3b90",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 115,
+    "table": "S4",
+    "row": "TRASH (annotation truth)",
+    "source_present": true,
+    "commit": "903245c",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "1972ef4727de1613",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": true,
+    "history_matches": [
+      "903245ce98b905c85388df1d5af2e88e76dad728"
+    ]
+  },
+  {
+    "line": 116,
+    "table": "S4",
+    "row": "BWTandem (annot, split bands)",
+    "source_present": true,
+    "commit": "fd21e38",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "91338484599efbeb",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "5e68f7843bbcabb5e42d478ce49895ca7f89bf36"
+    ]
+  },
+  {
+    "line": 117,
+    "table": "S4",
+    "row": "ULTRA (annot, split bands)",
+    "source_present": true,
+    "commit": "fd21e38",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "91338484599efbeb",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "5e68f7843bbcabb5e42d478ce49895ca7f89bf36"
+    ]
+  },
+  {
+    "line": 118,
+    "table": "S4",
+    "row": "tantan (annot, split bands)",
+    "source_present": true,
+    "commit": "fd21e38",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "91338484599efbeb",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "5e68f7843bbcabb5e42d478ce49895ca7f89bf36"
+    ]
+  },
+  {
+    "line": 119,
+    "table": "S4",
+    "row": "TRF (annot, split bands)",
+    "source_present": true,
+    "commit": "fd21e38",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "91338484599efbeb",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "5e68f7843bbcabb5e42d478ce49895ca7f89bf36"
+    ]
+  },
+  {
+    "line": 120,
+    "table": "S4",
+    "row": "TRASH (annot, split bands)",
+    "source_present": true,
+    "commit": "fd21e38",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "scorer_present": true,
+    "recorded_sha": "91338484599efbeb",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "5e68f7843bbcabb5e42d478ce49895ca7f89bf36"
+    ]
+  },
+  {
+    "line": 121,
+    "table": "1a",
+    "row": "longdust (2026)",
+    "source_present": true,
+    "commit": "7b2113d",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "scorer_present": true,
+    "recorded_sha": "179e77b6a6951ff8",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 122,
+    "table": "1a",
+    "row": "longdust -k8 -w20000 (2026)",
+    "source_present": true,
+    "commit": "7b2113d",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "scorer_present": true,
+    "recorded_sha": "179e77b6a6951ff8",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 123,
+    "table": "1a",
+    "row": "AniAnn's (2026)",
+    "source_present": true,
+    "commit": "7b2113d",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "scorer_present": true,
+    "recorded_sha": "179e77b6a6951ff8",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 124,
+    "table": "2",
+    "row": "longdust (2026)",
+    "source_present": true,
+    "commit": "7b2113d",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "585d55558609d6e5",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": true,
+    "history_matches": [
+      "1cb7f485566498d84de304d25b7d35c1c771da87"
+    ]
+  },
+  {
+    "line": 125,
+    "table": "2",
+    "row": "longdust -k8 -w20000 (2026)",
+    "source_present": true,
+    "commit": "7b2113d",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "585d55558609d6e5",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": true,
+    "history_matches": [
+      "1cb7f485566498d84de304d25b7d35c1c771da87"
+    ]
+  },
+  {
+    "line": 126,
+    "table": "2",
+    "row": "AniAnn's (2026)",
+    "source_present": true,
+    "commit": "7b2113d",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "scorer_present": true,
+    "recorded_sha": "585d55558609d6e5",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": true,
+    "history_matches": [
+      "1cb7f485566498d84de304d25b7d35c1c771da87"
+    ]
+  },
+  {
+    "line": 127,
+    "table": "3B",
+    "row": "longdust (2026)",
+    "source_present": true,
+    "commit": "7b2113d",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "scorer_present": true,
+    "recorded_sha": "179e77b6a6951ff8",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 128,
+    "table": "3B",
+    "row": "longdust -k8 -w20000 (2026)",
+    "source_present": true,
+    "commit": "7b2113d",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "scorer_present": true,
+    "recorded_sha": "179e77b6a6951ff8",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 129,
+    "table": "3B",
+    "row": "AniAnn's (2026)",
+    "source_present": true,
+    "commit": "7b2113d",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "scorer_present": true,
+    "recorded_sha": "179e77b6a6951ff8",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 130,
+    "table": "3C",
+    "row": "longdust (2026)",
+    "source_present": true,
+    "commit": "7b2113d",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "scorer_present": true,
+    "recorded_sha": "179e77b6a6951ff8",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 131,
+    "table": "3C",
+    "row": "longdust -k8 -w20000 (2026)",
+    "source_present": true,
+    "commit": "7b2113d",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "scorer_present": true,
+    "recorded_sha": "179e77b6a6951ff8",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 132,
+    "table": "3C",
+    "row": "AniAnn's (2026)",
+    "source_present": true,
+    "commit": "7b2113d",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "scorer_present": true,
+    "recorded_sha": "179e77b6a6951ff8",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 133,
+    "table": "range-rep",
+    "row": "p100-r1",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 134,
+    "table": "range-rep",
+    "row": "p2000-r1",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 135,
+    "table": "range-rep",
+    "row": "p100-r2",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 136,
+    "table": "range-rep",
+    "row": "p2000-r2",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 137,
+    "table": "range-rep",
+    "row": "p100-r3",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  },
+  {
+    "line": 138,
+    "table": "range-rep",
+    "row": "p2000-r3",
+    "source_present": true,
+    "commit": "0363d8b",
+    "commit_resolves": true,
+    "source_prefix_ok": true,
+    "bytes_ok": true
+  }
+]

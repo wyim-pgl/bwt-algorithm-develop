@@ -1,0 +1,1671 @@
+[
+  {
+    "source_block": 1,
+    "destination": "S1",
+    "old_block_sha256": "d49a296c47a22c40dd629c36ef9e5cafc07c453e1f03a2a82022dae7c283f9d6",
+    "original_rows": [
+      [
+        "Tool",
+        "Regions",
+        "Region Recall (%)",
+        "Region Prec. (%)",
+        "Support rate (%)",
+        "BP Recall (%)",
+        "BP Prec. (%)",
+        "Unique Regions",
+        "Runtime (h)",
+        "Memory (GiB)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "TRF",
+        "962,837",
+        "31.88",
+        "94.86",
+        "99.94",
+        "30.26",
+        "52.40",
+        "18,904",
+        "33.73",
+        "1.45"
+      ],
+      [
+        "mreps ‡",
+        "did not complete",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "0.91",
+        "6.38"
+      ],
+      [
+        "ULTRA",
+        "3,216,710",
+        "81.62",
+        "53.66",
+        "78.44",
+        "38.14",
+        "61.33",
+        "518,440",
+        "29.78",
+        "1.68"
+      ],
+      [
+        "BWTandem",
+        "4,014,108",
+        "80.53",
+        "50.50",
+        "79.45",
+        "43.34",
+        "42.74",
+        "893,480",
+        "12.65",
+        "28.08"
+      ],
+      [
+        "tantan",
+        "3,319,523",
+        "78.00",
+        "57.66",
+        "82.93",
+        "23.54",
+        "70.22",
+        "518,488",
+        "0.86",
+        "0.27"
+      ],
+      [
+        "TRASH †",
+        "5,134",
+        "1.16",
+        "95.25",
+        "99.86",
+        "10.24",
+        "24.96",
+        "0",
+        "107.63",
+        "14.59"
+      ],
+      [
+        "longdust (2026)",
+        "1,428,327",
+        "41.16",
+        "57.16",
+        "—",
+        "22.71",
+        "42.48",
+        "—",
+        "0.47",
+        "0.47"
+      ],
+      [
+        "longdust `-k8 -w20000` (2026)",
+        "1,154,976",
+        "35.42",
+        "60.08",
+        "—",
+        "20.74",
+        "40.06",
+        "—",
+        "2.01",
+        "0.47"
+      ],
+      [
+        "AniAnn's (2026)",
+        "364",
+        "0.10",
+        "83.79",
+        "—",
+        "3.85",
+        "12.46",
+        "—",
+        "2.32",
+        "0.53"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 2,
+    "destination": "S2",
+    "old_block_sha256": "f114c78b692f7d4bcae710d8c4ee101bfa39cd9f28289e3de8cfc4a9221a9277",
+    "original_rows": [
+      [
+        "Tool",
+        "Regions",
+        "Region Recall (%)",
+        "Region Prec. (%)",
+        "BP Recall (%)",
+        "BP Prec. (%)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "ULTRA",
+        "3,216,710",
+        "81.62",
+        "53.66",
+        "38.14",
+        "61.33"
+      ],
+      [
+        "BWTandem",
+        "3,911,182",
+        "78.87",
+        "50.13",
+        "30.00",
+        "53.89"
+      ],
+      [
+        "tantan",
+        "3,319,523",
+        "78.00",
+        "57.66",
+        "23.54",
+        "70.22"
+      ],
+      [
+        "TRF",
+        "912,084",
+        "30.80",
+        "94.73",
+        "20.81",
+        "93.16"
+      ],
+      [
+        "TRASH",
+        "3,707",
+        "0.91",
+        "96.98",
+        "5.01",
+        "54.49"
+      ],
+      [
+        "AniAnn's (2026)",
+        "114",
+        "0.01",
+        "85.09",
+        "0.92",
+        "54.50"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 3,
+    "destination": "S3",
+    "old_block_sha256": "b78349041cf411ae245db7988bf90f0e7db48512e215642919af8cc307428433",
+    "original_rows": [
+      [
+        "Tool",
+        "Regions",
+        "Region Recall (%)",
+        "Region Prec. (%)",
+        "BP Recall (%)",
+        "BP Prec. (%)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "BWTandem",
+        "102,926",
+        "3.43",
+        "64.60",
+        "13.39",
+        "29.25"
+      ],
+      [
+        "TRF",
+        "50,753",
+        "2.02",
+        "97.18",
+        "11.83",
+        "31.19"
+      ],
+      [
+        "tantan (2,000 bp re-run) §",
+        "37,700",
+        "0.61",
+        "47.29",
+        "4.82",
+        "18.65"
+      ],
+      [
+        "AniAnn's (2026)",
+        "205",
+        "0.03",
+        "81.46",
+        "2.69",
+        "10.03"
+      ],
+      [
+        "TRASH",
+        "1,427",
+        "0.25",
+        "90.75",
+        "5.23",
+        "16.42"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 4,
+    "destination": "S4",
+    "old_block_sha256": "48f8a21b6573d8b7f0ec85144dafa4aee4293e653566901bfc1b03d06682f418",
+    "original_rows": [
+      [
+        "Configuration",
+        "Calls",
+        "Region Recall (%)",
+        "Region Prec. (%)",
+        "BP Recall (%)",
+        "BP Prec. (%)",
+        "Support rate (%)",
+        "Runtime (h)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "BWTandem-P (catch-all off)",
+        "2,085,734",
+        "54.69",
+        "62.16",
+        "26.65",
+        "63.77",
+        "77.12",
+        "3.21"
+      ],
+      [
+        "BWTandem-B (id 0.76)",
+        "3,410,417",
+        "71.89",
+        "53.28",
+        "31.02",
+        "58.10",
+        "78.28",
+        "4.52"
+      ],
+      [
+        "BWTandem-F (id 0.72, ≥3 copies)",
+        "3,993,151",
+        "79.88",
+        "50.62",
+        "32.55",
+        "55.51",
+        "79.85",
+        "5.37"
+      ],
+      [
+        "BWTandem-H (id 0.72)",
+        "4,355,741",
+        "81.60",
+        "48.44",
+        "33.40",
+        "53.86",
+        "78.08",
+        "4.08"
+      ],
+      [
+        "ULTRA",
+        "3,216,710",
+        "81.62",
+        "53.66",
+        "38.14",
+        "61.33",
+        "78.44",
+        "29.78"
+      ],
+      [
+        "tantan",
+        "3,319,523",
+        "78.00",
+        "57.66",
+        "23.54",
+        "70.22",
+        "82.93",
+        "0.86"
+      ],
+      [
+        "TRF",
+        "912,084",
+        "30.80",
+        "94.73",
+        "20.81",
+        "93.16",
+        "99.99",
+        "33.73"
+      ],
+      [
+        "TRASH",
+        "3,707",
+        "0.91",
+        "96.98",
+        "5.01",
+        "54.49",
+        "100.00",
+        "107.63"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 5,
+    "destination": "S5",
+    "old_block_sha256": "40839bc4dff8a79954db5869741bf83155109478901e243f27f3f68e5d2eb85f",
+    "original_rows": [
+      [
+        "Tool",
+        "Support rate, published rule (%)",
+        "Support rate, leave-one-out (%)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:"
+      ],
+      [
+        "TRASH",
+        "99.86",
+        "100.00"
+      ],
+      [
+        "TRF",
+        "99.94",
+        "99.99"
+      ],
+      [
+        "tantan",
+        "82.93",
+        "87.98"
+      ],
+      [
+        "BWTandem",
+        "79.45",
+        "79.82"
+      ],
+      [
+        "ULTRA",
+        "78.44",
+        "86.78"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 6,
+    "destination": "S6",
+    "old_block_sha256": "fd70f9e958ac48c0968bd0b634b77084118cb4f900f9b83abebf754a2f67480d",
+    "original_rows": [
+      [
+        "Tool",
+        "Regions",
+        "Cen. Coverage (%)",
+        "CEN180 Count",
+        "CEN180 BP Prec. (%)",
+        "CEN180 Monomer Recall (%)",
+        "Runtime (h)",
+        "Memory (GiB)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "TRF",
+        "27,538",
+        "84.39",
+        "191",
+        "82.79",
+        "97.55",
+        "131.95",
+        "1.26"
+      ],
+      [
+        "mreps §",
+        "27,762",
+        "58.48",
+        "25,021",
+        "98.33",
+        "78.45",
+        "0.12",
+        "0.17"
+      ],
+      [
+        "ULTRA §",
+        "150,122",
+        "84.44",
+        "766",
+        "58.08",
+        "99.80",
+        "10.12",
+        "4.20"
+      ],
+      [
+        "BWTandem",
+        "160,883",
+        "84.54",
+        "1,533",
+        "57.08",
+        "99.72",
+        "0.67",
+        "2.16"
+      ],
+      [
+        "tantan §",
+        "147,654",
+        "81.50",
+        "5,749",
+        "76.88",
+        "99.24",
+        "0.20",
+        "0.10"
+      ],
+      [
+        "NCRF",
+        "74",
+        "85.17",
+        "0",
+        "95.82",
+        "99.63",
+        "0.80",
+        "80.96"
+      ],
+      [
+        "TRASH (de novo)",
+        "234",
+        "85.03",
+        "74",
+        "86.40",
+        "99.69",
+        "5.79",
+        "1.29"
+      ],
+      [
+        "TRASH (template)",
+        "397",
+        "85.03",
+        "115",
+        "86.40",
+        "99.69",
+        "31.69",
+        "2.63"
+      ],
+      [
+        "longdust (2026)",
+        "46,975",
+        "84.76",
+        "0",
+        "81.79",
+        "99.86",
+        "0.03",
+        "0.06"
+      ],
+      [
+        "longdust `-k8 -w20000` (2026)",
+        "30,602",
+        "85.02",
+        "0",
+        "81.31",
+        "99.85",
+        "0.17",
+        "0.06"
+      ],
+      [
+        "AniAnn's (2026)",
+        "60",
+        "86.97",
+        "19",
+        "83.41",
+        "99.24",
+        "0.12",
+        "0.48"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 7,
+    "destination": "S7",
+    "old_block_sha256": "2b7b8be3fe1e36a64434b88812d229a525e2374386fe310b8ae1a3d655042ab8",
+    "original_rows": [
+      [
+        "Tool",
+        "Total SSR (bp)",
+        "Regions",
+        "TAG Arrays",
+        "Longest TAG (kb)",
+        "Runtime (h)",
+        "Memory (GiB)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "TRF",
+        "4,793,515",
+        "29,559",
+        "5,263",
+        "562.79",
+        "5.22",
+        "1.20"
+      ],
+      [
+        "ULTRA ¶",
+        "46,963,400",
+        "1,114,556",
+        "4,554",
+        "29.12",
+        "0.23",
+        "2.23"
+      ],
+      [
+        "BWTandem",
+        "41,313,352",
+        "1,508,788",
+        "38,999",
+        "175.60",
+        "15.85",
+        "28.45"
+      ],
+      [
+        "tantan",
+        "54,933,424",
+        "1,303,967",
+        "181,205",
+        "210.09",
+        "0.55",
+        "0.50"
+      ],
+      [
+        "NCRF",
+        "2,604,968",
+        "214",
+        "214",
+        "235.40",
+        "0.13",
+        "17.47"
+      ],
+      [
+        "TRASH (de novo)",
+        "47,519,576",
+        "3,034",
+        "1,893",
+        "490.00",
+        "59.85",
+        "12.78"
+      ],
+      [
+        "TRASH (template)",
+        "47,525,434",
+        "3,016",
+        "1,884",
+        "490.00",
+        "65.50",
+        "12.78"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 8,
+    "destination": "S8",
+    "old_block_sha256": "2d251fafd2976cbd3816172d561fa71e3b3077888a38bf15385fef5968d8a518",
+    "original_rows": [
+      [
+        "Tool",
+        "Total SSR (bp)",
+        "Regions",
+        "TAG arrays",
+        "Longest TAG (kb)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "ULTRA",
+        "46,963,400",
+        "1,114,556",
+        "7,031",
+        "235.40"
+      ],
+      [
+        "BWTandem",
+        "41,313,352",
+        "1,508,788",
+        "34,247",
+        "235.43"
+      ],
+      [
+        "tantan",
+        "13,701,969",
+        "751,581",
+        "11,752",
+        "235.40"
+      ],
+      [
+        "TRF",
+        "4,793,515",
+        "29,559",
+        "1,379",
+        "562.79"
+      ],
+      [
+        "NCRF",
+        "n/a",
+        "n/a",
+        "n/a",
+        "n/a"
+      ],
+      [
+        "TRASH",
+        "n/a",
+        "n/a",
+        "n/a",
+        "n/a"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 9,
+    "destination": "S9",
+    "old_block_sha256": "8053a1f528fd4abb2d61cefaff021586d278ab7c1b19f9b8a5f60d7703ffd34e",
+    "original_rows": [
+      [
+        "Tool",
+        "knob180 (of 25)",
+        "TR-1 (of 17)",
+        "knob180 Frag. Score",
+        "knob180 Offset (bp)",
+        "TR-1 Offset (bp)",
+        "Runtime (h)",
+        "Memory (GiB)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "TRF",
+        "25",
+        "17",
+        "0.00",
+        "651.96",
+        "884.85",
+        "5.51",
+        "1.20"
+      ],
+      [
+        "ULTRA ¶",
+        "25",
+        "17",
+        "0.00",
+        "203.38",
+        "475.88",
+        "34.73",
+        "9.68"
+      ],
+      [
+        "BWTandem",
+        "25",
+        "17",
+        "0.00",
+        "251.78",
+        "770.65",
+        "15.85",
+        "28.45"
+      ],
+      [
+        "tantan §",
+        "25",
+        "17",
+        "0.00",
+        "156.00",
+        "658.32",
+        "3.28",
+        "0.48"
+      ],
+      [
+        "TRASH (de novo)",
+        "25",
+        "17",
+        "0.05",
+        "9,845",
+        "10,561",
+        "58.85",
+        "12.78"
+      ],
+      [
+        "TRASH (template)",
+        "25",
+        "17",
+        "0.05",
+        "10,086",
+        "8,973",
+        "101.75",
+        "120.64"
+      ],
+      [
+        "longdust (2026)",
+        "0",
+        "0",
+        "—",
+        "—",
+        "—",
+        "0.30",
+        "0.58"
+      ],
+      [
+        "longdust `-k8 -w20000` (2026)",
+        "0",
+        "0",
+        "—",
+        "—",
+        "—",
+        "3.89",
+        "0.58"
+      ],
+      [
+        "AniAnn's (2026)",
+        "22",
+        "14",
+        "0.18",
+        "22,581",
+        "83,740",
+        "1.57",
+        "0.55"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 10,
+    "destination": "S10",
+    "old_block_sha256": "a0ee12ad1b6b72d710b1d7856a0b8c52cac53f4040d20669827622e2a058a11f",
+    "original_rows": [
+      [
+        "Class",
+        "Tool",
+        "Rule",
+        "Detected",
+        "Coverage (%)",
+        "Offset (bp)"
+      ],
+      [
+        "---",
+        "---",
+        "---",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "knob180",
+        "TRASH (de novo)",
+        "unfiltered",
+        "25/25",
+        "81.23",
+        "9,845"
+      ],
+      [
+        "",
+        "BWTandem",
+        "unfiltered",
+        "25/25",
+        "79.79",
+        "251.78"
+      ],
+      [
+        "",
+        "TRF",
+        "unfiltered",
+        "25/25",
+        "80.01",
+        "651.96"
+      ],
+      [
+        "",
+        "ULTRA",
+        "unfiltered",
+        "25/25",
+        "78.71",
+        "203.38"
+      ],
+      [
+        "",
+        "tantan §",
+        "unfiltered",
+        "25/25",
+        "71.92",
+        "156.00"
+      ],
+      [
+        "",
+        "BWTandem",
+        "banded",
+        "25/25",
+        "64.20",
+        "4,265.30"
+      ],
+      [
+        "",
+        "TRF",
+        "banded",
+        "25/25",
+        "79.38",
+        "610.64"
+      ],
+      [
+        "",
+        "ULTRA",
+        "banded",
+        "25/25",
+        "77.51",
+        "660.82"
+      ],
+      [
+        "",
+        "tantan §",
+        "banded",
+        "25/25",
+        "71.42",
+        "687.34"
+      ],
+      [
+        "TR-1",
+        "TRASH (de novo)",
+        "unfiltered",
+        "17/17",
+        "53.17",
+        "10,561"
+      ],
+      [
+        "",
+        "BWTandem",
+        "unfiltered",
+        "17/17",
+        "50.34",
+        "770.65"
+      ],
+      [
+        "",
+        "TRF",
+        "unfiltered",
+        "17/17",
+        "45.77",
+        "884.85"
+      ],
+      [
+        "",
+        "ULTRA",
+        "unfiltered",
+        "17/17",
+        "36.36",
+        "475.88"
+      ],
+      [
+        "",
+        "tantan §",
+        "unfiltered",
+        "17/17",
+        "22.74",
+        "658.32"
+      ],
+      [
+        "",
+        "BWTandem",
+        "banded",
+        "17/17",
+        "17.33",
+        "7,973.15"
+      ],
+      [
+        "",
+        "TRF",
+        "banded",
+        "17/17",
+        "44.23",
+        "1,462"
+      ],
+      [
+        "",
+        "ULTRA",
+        "banded",
+        "17/17",
+        "33.55",
+        "1,856"
+      ],
+      [
+        "",
+        "tantan §",
+        "banded",
+        "17/17",
+        "21.36",
+        "3,693"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 11,
+    "destination": "S11",
+    "old_block_sha256": "e816fe432c08502cdd3a3dda7a183d746a57e3c26cc916f889d5f7bc8c49f452",
+    "original_rows": [
+      [
+        "Tool",
+        "CentC (of 17)",
+        "Cen. Coverage (%)",
+        "Frag. Score",
+        "Mean Offset (bp)",
+        "Runtime (h)",
+        "Memory (GiB)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "TRASH (template) ‖",
+        "17",
+        "58.68",
+        "0.05",
+        "5,319",
+        "97.75",
+        "42.83"
+      ],
+      [
+        "BWTandem",
+        "17",
+        "58.55",
+        "0.00",
+        "170.12",
+        "15.85",
+        "28.45"
+      ],
+      [
+        "TRF",
+        "17",
+        "58.50",
+        "0.01",
+        "69.62",
+        "5.48",
+        "1.20"
+      ],
+      [
+        "ULTRA ¶",
+        "17",
+        "57.73",
+        "0.00",
+        "58.09",
+        "12.86",
+        "3.38"
+      ],
+      [
+        "tantan §",
+        "17",
+        "56.51",
+        "0.00",
+        "59.53",
+        "1.38",
+        "0.37"
+      ],
+      [
+        "longdust (2026)",
+        "0",
+        "0.00",
+        "—",
+        "—",
+        "0.30",
+        "0.58"
+      ],
+      [
+        "AniAnn's (2026)",
+        "17",
+        "81.42",
+        "0.21",
+        "14,917",
+        "1.57",
+        "0.55"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 12,
+    "destination": "S12",
+    "old_block_sha256": "dc862eb90f20d89669c16f5597319a689c83f4063a3b8243c3c14d9c5f88fd5d",
+    "original_rows": [
+      [
+        "Tool",
+        "Rule",
+        "Detected",
+        "Coverage (%)",
+        "Offset (bp)",
+        "Loss under band (pp)"
+      ],
+      [
+        "---",
+        "---",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "BWTandem",
+        "unfiltered",
+        "17/17",
+        "58.55",
+        "170.12",
+        ""
+      ],
+      [
+        "TRF",
+        "unfiltered",
+        "17/17",
+        "58.50",
+        "69.62",
+        ""
+      ],
+      [
+        "ULTRA",
+        "unfiltered",
+        "17/17",
+        "57.73",
+        "58.09",
+        ""
+      ],
+      [
+        "tantan §",
+        "unfiltered",
+        "17/17",
+        "56.51",
+        "59.53",
+        ""
+      ],
+      [
+        "BWTandem",
+        "banded",
+        "17/17",
+        "40.71",
+        "3,036",
+        "−17.84"
+      ],
+      [
+        "TRF",
+        "banded",
+        "17/17",
+        "57.63",
+        "1,779",
+        "−0.87"
+      ],
+      [
+        "ULTRA",
+        "banded",
+        "17/17",
+        "55.84",
+        "1,795",
+        "−1.89"
+      ],
+      [
+        "tantan §",
+        "banded",
+        "17/17",
+        "55.59",
+        "1,770",
+        "−0.91"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 13,
+    "destination": "S13",
+    "old_block_sha256": "5cdc34678187a8381a64e9a853d82ea8e2633e4cfa6b90bd9965717d21b36f89",
+    "original_rows": [
+      [
+        "Parameter",
+        "Minimum",
+        "Maximum",
+        "Values in force here"
+      ],
+      [
+        "---",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "K-mer size",
+        "12",
+        "28",
+        "24–28 (24–25 Arabidopsis, 26–28 human, 28 maize)"
+      ],
+      [
+        "Sampling stride",
+        "20",
+        "300",
+        "300 (lower only on an Arabidopsis chromosome whose prior-tier coverage exceeds ~90%)"
+      ],
+      [
+        "Max k-mer occurrences",
+        "200",
+        "1,500",
+        "500 above 100 Mb; ~730–1,500 below"
+      ],
+      [
+        "Mismatch rate",
+        "15%",
+        "20%",
+        "15.3–16.4%"
+      ],
+      [
+        "Period jitter tolerance",
+        "0.02",
+        "0.04",
+        "0.02002 at MAXP 100; 0.0204 at MAXP 2,000"
+      ],
+      [
+        "Anchor scan, backward units",
+        "20",
+        "80",
+        "20–80"
+      ],
+      [
+        "Anchor scan, forward units",
+        "200",
+        "800",
+        "200–800"
+      ]
+    ],
+    "details": [
+      "P1: K-mer size. Values in force: 24–28 (24–25 Arabidopsis, 26–28 human, 28 maize).",
+      "P2: Sampling stride. Values in force: 300 (lower only on an Arabidopsis chromosome whose prior-tier coverage exceeds ~90%).",
+      "P3: Max k-mer occurrences. Values in force: 500 above 100 Mb; ~730–1,500 below.",
+      "P4: Mismatch rate. Values in force: 15.3–16.4%.",
+      "P5: Period jitter tolerance. Values in force: 0.02002 at MAXP 100; 0.0204 at MAXP 2,000.",
+      "P6: Anchor scan, backward units. Values in force: 20–80.",
+      "P7: Anchor scan, forward units. Values in force: 200–800."
+    ]
+  },
+  {
+    "source_block": 14,
+    "destination": "S14",
+    "old_block_sha256": "e1c8a55f73d13f8710e74604a99181e97dab0195815bbc5ebb7c0a818c33dab5",
+    "original_rows": [
+      [
+        "Configuration",
+        "Tables",
+        "MAXP",
+        "T",
+        "Additional environment"
+      ],
+      [
+        "---",
+        "---",
+        "--:",
+        "--:",
+        "---"
+      ],
+      [
+        "Main runs, human and maize",
+        "1a, 1c, 3A, 3B, 3C",
+        "2000",
+        "2",
+        "`CATCHALL_SCAN=1 CATCHALL_MIN_IDENTITY=0.72 CATCHALL_MIN_COPIES=3`"
+      ],
+      [
+        "Main run, Arabidopsis",
+        "2",
+        "2000",
+        "2",
+        "none (catch-all off)"
+      ],
+      [
+        "BWTandem-F",
+        "1b sensitivity analysis, 1d",
+        "100",
+        "4",
+        "`CATCHALL_SCAN=1 CATCHALL_MIN_IDENTITY=0.72 CATCHALL_MIN_COPIES=3`"
+      ],
+      [
+        "BWTandem-P",
+        "1d",
+        "100",
+        "4",
+        "none; also omits the short-period gate above"
+      ],
+      [
+        "BWTandem-B",
+        "1d",
+        "100",
+        "4",
+        "`CATCHALL_SCAN=1 CATCHALL_MIN_IDENTITY=0.76 CATCHALL_MAX_P=50`"
+      ],
+      [
+        "BWTandem-H",
+        "1d",
+        "100",
+        "4",
+        "`CATCHALL_SCAN=1 CATCHALL_MIN_IDENTITY=0.72` (no copy gate)"
+      ],
+      [
+        "Identity sweep",
+        "Section 3.1, Supplementary Table S3",
+        "2000",
+        "4",
+        "`CATCHALL_MIN_COPIES=3` with `CATCHALL_SCAN` off, then `CATCHALL_SCAN=1` at `CATCHALL_MIN_IDENTITY` of 0.80, 0.76, 0.72 and 0.68"
+      ],
+      [
+        "Range-cost pairs",
+        "Section 3.1",
+        "100 and 2000",
+        "4",
+        "as BWTandem-F; the two arms differ only in MAXP and ran sequentially within each of three jobs (6147698/99/700) at `0363d8b`, sharing a node within each pair"
+      ],
+      [
+        "Historical thread-scaling settings (unverified)",
+        "Not used for a reported comparison",
+        "2000",
+        "1 and 2",
+        "recorded as matching the human settings except --threads; no linked input/build/job artefact establishes that match, and no regenerated scaling result is inferred"
+      ]
+    ],
+    "details": [
+      "C1: Main runs, human and maize. Reported uses: Supplementary Tables 1a, 1c, 3A, 3B, 3C. Additional environment: `CATCHALL_SCAN=1 CATCHALL_MIN_IDENTITY=0.72 CATCHALL_MIN_COPIES=3`.",
+      "C2: Main run, Arabidopsis. Reported uses: Supplementary Tables 2. Additional environment: none (catch-all off).",
+      "C3: BWTandem-F. Reported uses: Supplementary Table 1b sensitivity analysis and Supplementary Table 1d. Additional environment: `CATCHALL_SCAN=1 CATCHALL_MIN_IDENTITY=0.72 CATCHALL_MIN_COPIES=3`.",
+      "C4: BWTandem-P. Reported uses: Supplementary Tables 1d. Additional environment: none; also omits the short-period gate above.",
+      "C5: BWTandem-B. Reported uses: Supplementary Tables 1d. Additional environment: `CATCHALL_SCAN=1 CATCHALL_MIN_IDENTITY=0.76 CATCHALL_MAX_P=50`.",
+      "C6: BWTandem-H. Reported uses: Supplementary Tables 1d. Additional environment: `CATCHALL_SCAN=1 CATCHALL_MIN_IDENTITY=0.72` (no copy gate).",
+      "C7: Identity sweep. Reported uses: Section 3.1, Supplementary Table S3. Additional environment: `CATCHALL_MIN_COPIES=3` with `CATCHALL_SCAN` off, then `CATCHALL_SCAN=1` at `CATCHALL_MIN_IDENTITY` of 0.80, 0.76, 0.72 and 0.68.",
+      "C8: Range-cost pairs. Reported uses: Section 3.1. Additional environment: as BWTandem-F; the two arms differ only in MAXP and ran sequentially within each of three jobs (6147698/99/700) at `0363d8b`, sharing a node within each pair.",
+      "C9: Historical thread-scaling settings (unverified). Reported uses: Not used for a reported comparison. Additional environment: recorded as matching the human settings except --threads; no linked input/build/job artefact establishes that match, and no regenerated scaling result is inferred."
+    ]
+  },
+  {
+    "source_block": 15,
+    "destination": "S15",
+    "old_block_sha256": "fd8a8a2ce98e57fc08f87d672c97c71ea183da54411bc003793517da4cd3f717",
+    "original_rows": [
+      [
+        "Tool",
+        "Version",
+        "Command"
+      ],
+      [
+        "---",
+        "---",
+        "---"
+      ],
+      [
+        "TRF",
+        "4.10.0rc2",
+        "`trf FASTA 2 7 7 80 10 50 MAXP -ngs -h`, MAXP 500 human, 200 Arabidopsis, 6/500/200 for maize 3A/3B/3C; a human MAXP 2000 attempt (job 6076847) that we stopped after 6.58 days (manifest row `TRF-p2000-attempt`)"
+      ],
+      [
+        "tantan",
+        "51",
+        "original `tantan -f4 FASTA`; widened re-runs `tantan -f4 -w MAXP FASTA`, MAXP 500 Arabidopsis, 500/200 maize 3B/3C, 2000 human"
+      ],
+      [
+        "longdust (2026)",
+        "1.4 (g9491215)",
+        "`longdust FASTA` and `longdust -k8 -w20000 FASTA`; built on an el7 node with the conda gcc, `-I/usr/include -L/usr/lib64 -lz -lm` (Section 2.2.4; not run in the container)"
+      ],
+      [
+        "AniAnn's (2026)",
+        "0.7.1 (0d79851)",
+        "`anianns annotate -f FASTA -d OUTDIR -j 2 -q`; conda env with bioconda pysam 0.24.0, no `--classify` database (Section 2.2.4)"
+      ],
+      [
+        "ULTRA",
+        "1.2.1",
+        "human and Arabidopsis `ultra -t 2 -o OUT.tsv FASTA` (default maximum period 100); Arabidopsis re-run and maize `ultra --read_all -p MAXP -t 2 -i 3 -d 3 --bed -o OUT FASTA`, MAXP 500 Arabidopsis, 6/500/200 for maize 3A/3B/3C; a human `ultra -t 2 -p 2000 -o OUT.tsv FASTA` attempt (job 6145581) that we stopped after 1 d 22 h (manifest row `ULTRA-p2000-attempt`); like the 2026 additions, it was executed outside the Singularity sandbox, from a separate local binary that is a different file self-reporting the same 1.2.1"
+      ],
+      [
+        "mreps",
+        "2.6.01",
+        "human `mreps -fasta -res 5 -allowsmall RECORD.fa`, unbounded, one sequence at a time; the deposited original Arabidopsis 150–400 bp attempt used `mreps -fasta -minperiod 150 -maxperiod 400 -res 10 RECORD.fa` (its log records missing input files; Table 2 uses the subsequent re-run)"
+      ],
+      [
+        "NCRF",
+        "1.01.02",
+        "`NCRF NAME:MOTIF … < FASTA`, given the exact consensus for each target family; deposited maize commands additionally set `--minlength=200` for 3A and `--minlength=500` for 3B/3C"
+      ],
+      [
+        "TRASH",
+        "v1",
+        "de novo `TRASH_run.sh FASTA --o OUT --par 2`; template mode adds `--seqt TEMPLATE.csv --horclass CLASS`; maize commands additionally set `--def`"
+      ],
+      [
+        "TideHunter",
+        "1.5.6",
+        "no completed run; excluded"
+      ]
+    ],
+    "details": [
+      "K1: TRF. `trf FASTA 2 7 7 80 10 50 MAXP -ngs -h`, MAXP 500 human, 200 Arabidopsis, 6/500/200 for maize 3A/3B/3C; a human MAXP 2000 attempt (job 6076847) that we stopped after 6.58 days (manifest row `TRF-p2000-attempt`).",
+      "K2: tantan. original `tantan -f4 FASTA`; widened re-runs `tantan -f4 -w MAXP FASTA`, MAXP 500 Arabidopsis, 500/200 maize 3B/3C, 2000 human.",
+      "K3: longdust (2026). `longdust FASTA` and `longdust -k8 -w20000 FASTA`; built on an el7 node with the conda gcc, `-I/usr/include -L/usr/lib64 -lz -lm` (Section 2.2.4; not run in the container).",
+      "K4: AniAnn's (2026). `anianns annotate -f FASTA -d OUTDIR -j 2 -q`; conda env with bioconda pysam 0.24.0, no `--classify` database (Section 2.2.4).",
+      "K5: ULTRA. human and Arabidopsis `ultra -t 2 -o OUT.tsv FASTA` (default maximum period 100); Arabidopsis re-run and maize `ultra --read_all -p MAXP -t 2 -i 3 -d 3 --bed -o OUT FASTA`, MAXP 500 Arabidopsis, 6/500/200 for maize 3A/3B/3C; a human `ultra -t 2 -p 2000 -o OUT.tsv FASTA` attempt (job 6145581) that we stopped after 1 d 22 h (manifest row `ULTRA-p2000-attempt`); like the 2026 additions, it was executed outside the Singularity sandbox, from a separate local binary that is a different file self-reporting the same 1.2.1.",
+      "K6: mreps. human `mreps -fasta -res 5 -allowsmall RECORD.fa`, unbounded, one sequence at a time; the deposited original Arabidopsis 150–400 bp attempt used `mreps -fasta -minperiod 150 -maxperiod 400 -res 10 RECORD.fa` (its log records missing input files; Table 2 uses the subsequent re-run).",
+      "K7: NCRF. `NCRF NAME:MOTIF … < FASTA`, given the exact consensus for each target family; deposited maize commands additionally set `--minlength=200` for 3A and `--minlength=500` for 3B/3C.",
+      "K8: TRASH. de novo `TRASH_run.sh FASTA --o OUT --par 2`; template mode adds `--seqt TEMPLATE.csv --horclass CLASS`; maize commands additionally set `--def`.",
+      "K9: TideHunter. no completed run; excluded."
+    ]
+  },
+  {
+    "source_block": 16,
+    "destination": "S16",
+    "old_block_sha256": "14743df29f6da8bbb6528ac302b5d538b7b9b151d55ac052446f56398393855d",
+    "original_rows": [
+      [
+        "Property",
+        "Unique to BWTandem",
+        "Shared"
+      ],
+      [
+        "---",
+        "--:",
+        "--:"
+      ],
+      [
+        "Calls",
+        "875,084",
+        "3,118,067"
+      ],
+      [
+        "Share of BWTandem output (%)",
+        "21.91",
+        "78.09"
+      ],
+      [
+        "Median call length (bp)",
+        "25",
+        "24"
+      ],
+      [
+        "Mean motif entropy (bits)",
+        "1.24",
+        "1.03"
+      ],
+      [
+        "Motif entropy below 1 bit (%)",
+        "38.9",
+        "46.4"
+      ],
+      [
+        "Period 1–2 bp (%)",
+        "13.2",
+        "24.8"
+      ],
+      [
+        "Period 21–100 bp (%)",
+        "21.9",
+        "6.1"
+      ],
+      [
+        "Outside the adotto catalog (%)",
+        "91.29",
+        "37.61"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 17,
+    "destination": "prose:identity-sweep",
+    "old_block_sha256": "99c4a849d82da55f52d693abda0d05b92a9347d7ac92d14512cdb509bb57d745",
+    "original_rows": [
+      [
+        "Catch-all identity",
+        "Region recall (%)",
+        "Region precision (%)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:"
+      ],
+      [
+        "pass disabled",
+        "62.59",
+        "54.72"
+      ],
+      [
+        "0.80",
+        "71.36",
+        "53.42"
+      ],
+      [
+        "0.76",
+        "71.53",
+        "53.35"
+      ],
+      [
+        "0.72",
+        "80.53",
+        "50.50"
+      ],
+      [
+        "0.68",
+        "81.46",
+        "48.92"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 18,
+    "destination": "S17",
+    "old_block_sha256": "ca39225414eb40b3945402eb154f9d86676b3a5366dfc2303b9c53fb0497dc5a",
+    "original_rows": [
+      [
+        "Tool",
+        "Matched",
+        "1:1 sens. (%)",
+        "1:1 prec. (%)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "ULTRA",
+        "554,179",
+        "31.05",
+        "17.23"
+      ],
+      [
+        "BWTandem",
+        "348,464",
+        "19.52",
+        "8.68"
+      ],
+      [
+        "TRF",
+        "197,087",
+        "11.04",
+        "20.47"
+      ],
+      [
+        "tantan",
+        "113,649",
+        "6.37",
+        "3.42"
+      ],
+      [
+        "TRASH",
+        "1,241",
+        "0.07",
+        "24.17"
+      ]
+    ],
+    "details": []
+  },
+  {
+    "source_block": 19,
+    "destination": "S18",
+    "old_block_sha256": "63326c0b44da129b50539eff3c8c146d35dae3c20f6a752c6777153717cfbce8",
+    "original_rows": [
+      [
+        "Tool",
+        "Matched",
+        "1:1 sens. (%)",
+        "1:1 prec. (%)",
+        "Δstart med. (bp)",
+        "Period exact (%)",
+        "Copy med. rel. err. (%)",
+        "Sens. 1–6 (%)",
+        "7–20 (%)",
+        "21–100 (%)",
+        "101–500 (%)"
+      ],
+      [
+        "---",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "ULTRA",
+        "1,122,910",
+        "62.92",
+        "34.91",
+        "1",
+        "59.61",
+        "—",
+        "57.77",
+        "72.32",
+        "80.90",
+        "8.36"
+      ],
+      [
+        "BWTandem",
+        "1,050,831",
+        "58.88",
+        "26.18",
+        "2",
+        "58.66",
+        "34.15",
+        "59.21",
+        "58.24",
+        "62.38",
+        "46.39"
+      ],
+      [
+        "tantan",
+        "961,163",
+        "53.85",
+        "28.95",
+        "0",
+        "73.54",
+        "—",
+        "60.31",
+        "49.27",
+        "41.41",
+        "1.67"
+      ],
+      [
+        "TRF",
+        "518,719",
+        "29.06",
+        "53.87",
+        "0",
+        "63.53",
+        "—",
+        "17.87",
+        "33.88",
+        "77.60",
+        "62.40"
+      ],
+      [
+        "TRASH",
+        "892",
+        "0.05",
+        "17.37",
+        "494",
+        "33.41",
+        "—",
+        "0.01",
+        "0.02",
+        "0.21",
+        "0.86"
+      ]
+    ],
+    "details": []
+  }
+]

@@ -1,0 +1,20 @@
+PASS: 10 final hashes; 9 tracked files replay byte-identically from baseline; ignored resume checked by final hash
+{
+  "JSON operands": 144,
+  "formula results": 102,
+  "other cited operands (not source-replayed here)": 106,
+  "cost-cache operands": 58,
+  "runtime means from raw elapsed records": 4
+}
+PASS: registered arithmetic; other cited operands require their recorded source checks
+64 targeted numerical/representation edits written
+PASS: numeric calculation ledger reproduced
+PASS: diff whitespace check
+197 in-repo hashes -> results/manifest.sha256 (verified)
+80 external evidence hashes -> results/external_evidence.sha256 (0 unreachable)
+PASS: only two README payload hashes changed; remaining 195 in-repo entries and all 80 external hashes unchanged
+PASS: environment/lock/Dockerfile changes are comments only
+PASS: exact 118-candidate inventory =81 recomputed/rewritten +10 source-limited +27 exempt
+PASS: tracked change allow-list; no detector/scorer/results-data changes
+.s..........................................                             [100%]
+43 passed, 1 skipped in 6.49s

@@ -1,0 +1,32 @@
+[
+  {
+    "line": 103,
+    "old": "Seven runs were attempted on the 3.09 Gb human GRCh38 genome against the GIAB adotto benchmark;",
+    "new": "Seven runs were attempted on human GRCh38 against the GIAB adotto benchmark (BWTandem's primary-chromosome input: 3.09 Gb; competitor FASTA scopes differ as in Section 2.2.2);",
+    "source": "Clarify size applies to primary BWTandem input, not every comparator"
+  },
+  {
+    "line": 103,
+    "old": "— with BWTandem taking 27.17 times as long, with no repeat units reported —",
+    "new": "— it reports no repeat units, and BWTandem takes 27.17 times as long —",
+    "source": "D036/D037; make longdust subject of no-repeat-units explicit"
+  },
+  {
+    "line": 188,
+    "old": "Its runtime was measured on a shared node under a different period ceiling,",
+    "new": "The tantan runtime was measured on a shared node under a different period ceiling,",
+    "source": "Avoid antecedent drift after numerical ratio rewrite"
+  },
+  {
+    "line": 96,
+    "old": "Every figure in this paper is a single-run point estimate, and we report no confidence intervals or significance tests.",
+    "new": "Accuracy comparisons are point estimates from fixed benchmark outputs, without confidence intervals or significance tests for differences between tools; the single-reader audit separately carries descriptive Wilson intervals.",
+    "source": "Qualify numerical uncertainty statement to avoid contradicting the explicitly recomputed audit Wilson intervals and paired runtime replicates"
+  },
+  {
+    "line": 96,
+    "old": "(81.60 versus 81.62).",
+    "new": "(81.60 versus 81.62 after rounding).",
+    "source": "D033 rounding discrepancy must be named"
+  }
+]

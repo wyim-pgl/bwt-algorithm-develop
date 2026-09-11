@@ -1,0 +1,1 @@
+PASS: trailing-space hard breaks replaced with backslash hard breaks; both Pandoc ASTs exactly unchanged for both source files.

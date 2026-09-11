@@ -1,0 +1,96 @@
+# Matched-ceiling competitor attempts (range-cost, human GRCh38)
+
+BWTandem searches 1–2,000 bp on every genome. Two post-hoc attempts were made
+to run the competitors at that same ceiling on human, so that the range-cost
+comparison of Results 3.1 would have a competitor arm. Neither completed. Both
+are recorded in `results/manifest.tsv` under `table = range-cost`, in Methods
+2.2 and Results 3.1 of the manuscript, and in Supplementary Table S1.
+
+| Attempt | Job | Threads | Elapsed at termination | Progress at termination | Manifest row |
+|---|---|---|---|---|---|
+| TRF 4.10.0rc2, `MAXP 2000` | 6076847 | 1 | 6 d 13 h 57 m (6.6 d; 4.7×† its 33.7 h 500 bp run) | partial `-ngs` output, 379,077 lines | `TRF-p2000-attempt` |
+| ULTRA 1.2.1, `-t 2 -p 2000` | 6145581 | 2 | 1 d 22 h 15 m (1.55×† its 29.8 h 100 bp run) | 138,425 calls, all on chr1 (NC_000001.11) up to 124,785,432 bp in complete records, plus one truncated fragment ending at 124,786,615; output did not grow during the final 5 h | `ULTRA-p2000-attempt` |
+
+**† Neither ratio is a speed ratio.** Both divide a **terminated partial** run by a
+**completed** one — neither output establishes the fraction of input processed — so they bound the cost from below and
+nothing more. Both denominators are inherited GNU-time figures. Their SLURM
+accounting no longer exists (manuscript Section 2.2.1), but the GNU-time logs that
+produced them do survive and are quoted below and in
+`results/comparator_baselines.md`.
+
+The row values not drawn from the manifest come from: the TRF 500 bp wall clock,
+its surviving GNU-time log (`…/benchmarking_results/trf/logs/GCA_000001405.15_GRCh38_genomic_run.log`,
+33:43:46); the 14-day ceiling, the `cpu-s1-pgl-0` partition's `TIME_LIMIT` as
+reported by `squeue`.
+
+## `ultra_p2000/`
+
+- `run_ultra_human_p2000.sbatch`: the submitted script. It matches the published
+  human ULTRA invocation (`ultra -t 2 -o OUT.tsv FASTA`, ULTRA 1.2.1, the same
+  assembly sequence content) except for `-p 2000`; its FASTA uses
+  different accession headers from the published GCA file. **The execution also differs beyond the
+  period:** this run used a local installation of
+  the binary, whereas the published run ran inside the Singularity sandbox. The
+  two match in self-reported version and sequence content, not in binary
+  identity, FASTA bytes or execution environment.
+
+  The published run's GNU-time log survives at
+  `/data/gpfs/assoc/pgl/filip/bwtandem_results/benchmarking_results/ultra/logs/GCA_000001405.15_GRCh38_genomic_run.log`
+  and records `singularity exec ./bwtbench.sif ultra -t 2 -o …
+  GCA_000001405.15_GRCh38_genomic.fna` with an elapsed time of **29:46:49**,
+  which is the 29.8 h the manuscript quotes. (A second human ULTRA log, for the
+  RefSeq-flavoured `GCF_000001405.26`, records 27:24:19; the manifest and the
+  tables use the GCA run.) `bwtbench.sif` is a writable sandbox **directory**,
+  not an image file, so its binary can be compared directly:
+
+  | | path | size | SHA-256 of first MB |
+  |---|---|--:|---|
+  | published | `…/filip/bwt/bwtbench.sif/opt/ULTRA/ultra` | 638,912 | `f11b614f2858f9f0…` |
+  | this attempt | `~/micromamba/bin/ultra` | 573,672 | `a475843c1879aeb5…` |
+
+  Different files, both **self-reporting** version 1.2.1 — which is a matched
+  version string, not proof of matched code, since two builds can report the same
+  string. Read the pair as invocation- and input-matched, with the version taken
+  on the binaries' own word. An earlier draft of this README and of Methods 2.2
+  called them "the same binary"; that was wrong and was corrected in `24cd12a`,
+  and the table above is the evidence.
+- `ultra_h_p2000_6145581.log`: provenance header plus an hourly
+  `PROGRESS ... out_bytes=` marker (output-file size; ULTRA writes through a
+  4 KB stdio buffer, so the size is a coarse progress proxy). Growth was steady
+  at roughly 100–470 KB per hour for the first 41 h, then zero from 10:05 until
+  the cancellation at 15:20 on 2026-09-02. The last emitted calls
+  (124.74–124.79 Mb, periods 169–340 bp) lie in the chromosome 1
+  centromeric alpha-satellite region. This does not locate the stall itself.
+- `ultra_human_p2000.tsv.settings`: ULTRA's own parameter dump for the run
+  (`max_period: 2000`, `threads: 2`, everything else default).
+
+The partial output itself (`ultra_human_p2000.tsv`, 9,781,248 bytes, 138,426
+newline characters including the header, first-megabyte SHA-256 `c30692f4351e9a0d…`) stays
+on the cluster at
+`/data/gpfs/assoc/pgl/devel/exp1_human/regen/ultra_p2000/ultra_human_p2000.tsv`,
+the path the manifest records, and is hashed in
+`results/external_evidence.sha256`; it is not scored. Note that the manifest's
+`lines` field for this row is the raw line count, 138,426, one more than the
+138,425 complete calls. A final six-field fragment has no terminating newline
+and is excluded from that count; its End field is not the endpoint of the last
+complete call. This row points at ULTRA's own TSV rather than a converted BED.
+
+SLURM accounting (`sacct -j 6145581`): CANCELLED by the user at
+2026-09-02T15:20:13, Elapsed 1-22:15:07, batch-step MaxRSS 17,972,740 K.
+The manifest's convention divides that by 1024², giving 17.14 — strictly GiB,
+since sacct's K is KiB, and the same holds for every memory figure in the
+manifest and the manuscript tables. The published 100 bp run's 1.68 comes from
+GNU time's own KiB field (1,758,540 kB) under the same conversion, so the two
+share a unit but **not** a method, a build, or an environment: cgroup peak
+versus GNU-time peak, local binary versus sandbox binary. The gap between them
+is not a measured memory regression and should not be read as one.
+
+The cancellation was a decision, not a failure: the run had produced no new output for five hours.
+An extrapolation from the last emitted coordinate to the 3,209,286,105-base
+assembly motivated cancellation, but emitted coordinates do not measure
+processed sequence or establish a completion time.
+
+The TRF attempt has a raw cancellation record in `../sacct_provenance.txt`
+and a partial `-ngs` file at
+`/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/trf_hg38_p2000.ngs.dat`,
+the path the manifest records.

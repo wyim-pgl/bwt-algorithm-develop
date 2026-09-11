@@ -1,0 +1,344 @@
+{
+  "3B/BWTandem/knob180": {
+    "source": "results/beds/bwtandem_maize.bed.gz",
+    "unfiltered": {
+      "detected": 25,
+      "total": 25,
+      "coverage": 79.79471335240267,
+      "frag": 0.0,
+      "offset": 251.78
+    },
+    "banded": {
+      "detected": 25,
+      "total": 25,
+      "coverage": 64.20234882686118,
+      "frag": 0.0,
+      "offset": 4265.3
+    },
+    "loss": -15.592364525541484
+  },
+  "3B/BWTandem/TR-1": {
+    "source": "results/beds/bwtandem_maize.bed.gz",
+    "unfiltered": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 50.335993757089206,
+      "frag": 0.0,
+      "offset": 770.65
+    },
+    "banded": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 17.326009710139918,
+      "frag": 0.02,
+      "offset": 7973.15
+    },
+    "loss": -33.009984046949285
+  },
+  "3B/TRF/knob180": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed",
+    "unfiltered": {
+      "detected": 25,
+      "total": 25,
+      "coverage": 80.0096715686096,
+      "frag": 0.0,
+      "offset": 651.96
+    },
+    "banded": {
+      "detected": 25,
+      "total": 25,
+      "coverage": 79.37667310179027,
+      "frag": 0.0,
+      "offset": 610.64
+    },
+    "loss": -0.6329984668193305
+  },
+  "3B/TRF/TR-1": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed",
+    "unfiltered": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 45.77091609020762,
+      "frag": 0.0,
+      "offset": 884.85
+    },
+    "banded": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 44.230222929137405,
+      "frag": 0.0,
+      "offset": 1461.59
+    },
+    "loss": -1.540693161070216
+  },
+  "3B/ULTRA/knob180": {
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed",
+    "unfiltered": {
+      "detected": 25,
+      "total": 25,
+      "coverage": 78.70912512936675,
+      "frag": 0.0,
+      "offset": 203.38
+    },
+    "banded": {
+      "detected": 25,
+      "total": 25,
+      "coverage": 77.51106049515248,
+      "frag": 0.0,
+      "offset": 660.82
+    },
+    "loss": -1.1980646342142762
+  },
+  "3B/ULTRA/TR-1": {
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed",
+    "unfiltered": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 36.361650167835855,
+      "frag": 0.0,
+      "offset": 475.88
+    },
+    "banded": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 33.54630622128298,
+      "frag": 0.01,
+      "offset": 1855.68
+    },
+    "loss": -2.815343946552872
+  },
+  "3B/tantan/knob180": {
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed",
+    "unfiltered": {
+      "detected": 25,
+      "total": 25,
+      "coverage": 71.92355636951125,
+      "frag": 0.0,
+      "offset": 156.0
+    },
+    "banded": {
+      "detected": 25,
+      "total": 25,
+      "coverage": 71.41703148327913,
+      "frag": 0.0,
+      "offset": 687.34
+    },
+    "loss": -0.5065248862321141
+  },
+  "3B/tantan/TR-1": {
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed",
+    "unfiltered": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 22.739453392752175,
+      "frag": 0.01,
+      "offset": 658.32
+    },
+    "banded": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 21.36200272144265,
+      "frag": 0.01,
+      "offset": 3692.59
+    },
+    "loss": -1.377450671309525
+  },
+  "3B/TRASH-template/knob180": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_knob180_exp3B_satellite.bed",
+    "unfiltered": {
+      "detected": 25,
+      "total": 25,
+      "coverage": 81.22573930749114,
+      "frag": 0.05,
+      "offset": 10086.16
+    },
+    "banded": {
+      "detected": 25,
+      "total": 25,
+      "coverage": 80.91045062185738,
+      "frag": 0.05,
+      "offset": 10381.48
+    },
+    "loss": -0.3152886856337602
+  },
+  "3B/TRASH-template/TR-1": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_knob180_exp3B_satellite.bed",
+    "unfiltered": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 53.151337703642085,
+      "frag": 0.07,
+      "offset": 8973.15
+    },
+    "banded": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 34.73608989574583,
+      "frag": 0.09,
+      "offset": 9629.38
+    },
+    "loss": -18.415247807896257
+  },
+  "3B/AniAnn's (2026)/knob180": {
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed",
+    "unfiltered": {
+      "detected": 22,
+      "total": 25,
+      "coverage": 87.60523504251888,
+      "frag": 0.18,
+      "offset": 22580.77
+    },
+    "banded": null,
+    "loss": null
+  },
+  "3B/AniAnn's (2026)/TR-1": {
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed",
+    "unfiltered": {
+      "detected": 14,
+      "total": 17,
+      "coverage": 67.98081023598718,
+      "frag": 0.22,
+      "offset": 83740.04
+    },
+    "banded": null,
+    "loss": null
+  },
+  "3B/TRASH-de-novo/knob180": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed",
+    "unfiltered": {
+      "detected": 25,
+      "total": 25,
+      "coverage": 81.2250210716241,
+      "frag": 0.05,
+      "offset": 9845.2
+    },
+    "banded": {
+      "detected": 25,
+      "total": 25,
+      "coverage": 80.88386240677939,
+      "frag": 0.05,
+      "offset": 10705.52
+    },
+    "loss": -0.3411586648447127
+  },
+  "3B/TRASH-de-novo/TR-1": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed",
+    "unfiltered": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 53.17191463050009,
+      "frag": 0.06,
+      "offset": 10561.32
+    },
+    "banded": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 34.60681459002422,
+      "frag": 0.09,
+      "offset": 11217.56
+    },
+    "loss": -18.56510004047587
+  },
+  "3C/BWTandem/CentC": {
+    "source": "results/beds/bwtandem_maize.bed.gz",
+    "unfiltered": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 58.548616573354025,
+      "frag": 0.0,
+      "offset": 170.12
+    },
+    "banded": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 40.70963726320024,
+      "frag": 0.01,
+      "offset": 3035.97
+    },
+    "loss": -17.838979310153782
+  },
+  "3C/TRF/CentC": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed",
+    "unfiltered": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 58.504213696130364,
+      "frag": 0.01,
+      "offset": 69.62
+    },
+    "banded": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 57.632530608173745,
+      "frag": 0.02,
+      "offset": 1779.35
+    },
+    "loss": -0.8716830879566189
+  },
+  "3C/ULTRA/CentC": {
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed",
+    "unfiltered": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 57.72782405443484,
+      "frag": 0.0,
+      "offset": 58.09
+    },
+    "banded": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 55.83508972000157,
+      "frag": 0.01,
+      "offset": 1794.71
+    },
+    "loss": -1.8927343344332712
+  },
+  "3C/tantan/CentC": {
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed",
+    "unfiltered": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 56.50881462387826,
+      "frag": 0.0,
+      "offset": 59.53
+    },
+    "banded": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 55.59416152314765,
+      "frag": 0.01,
+      "offset": 1770.44
+    },
+    "loss": -0.9146531007306109
+  },
+  "3C/TRASH-template/CentC": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_CentC_exp3C_centc.bed",
+    "unfiltered": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 58.68451580604715,
+      "frag": 0.05,
+      "offset": 5318.71
+    },
+    "banded": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 58.65268233419032,
+      "frag": 0.05,
+      "offset": 5318.71
+    },
+    "loss": -0.03183347185683516
+  },
+  "3C/AniAnn's (2026)/CentC": {
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed",
+    "unfiltered": {
+      "detected": 17,
+      "total": 17,
+      "coverage": 81.41614610568537,
+      "frag": 0.21,
+      "offset": 14916.76
+    },
+    "banded": null,
+    "loss": null
+  }
+}

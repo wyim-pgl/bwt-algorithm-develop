@@ -1,0 +1,25 @@
+{
+  "operation": "Re-render both main figures from the deposited scripts and CSVs with font_scale 2.0 (dense point labels 0.72 of that), removal of the embedded legacy caption text, vertical separation of the three range-ratio labels (fig2 panel A), legend/note de-collision, and alpha 0.55 plus dark marker edges for the TRF/TRASH series and legend (fig1 panel C). No data value or measured label text changed.",
+  "font_scale": 2.0,
+  "supersedes": [
+    "accuracy-export-receipt.json",
+    "crop-receipt.json entry for fig2_range_cost"
+  ],
+  "renderer_sha256": "a5fd1cd071c7681c833d4328c6b15219e90e5dfb1b05dba752101af7ee10aa9f",
+  "inputs": {
+    "results/figures/paper_figs/plot_fig1_accuracy_tradeoff.py": "813e1976412ec3b02ab60427467bbbe6761b09f8603988caf38375586d5afe0f",
+    "results/figures/paper_figs/plot_fig2_range_cost.py": "d9d5de7c38bd4a6f4c451048c09123bab18ee5d31b6c46235f8461680f671427",
+    "results/figures/paper_figs/figstyle.py": "d0fb262df9a7fbd7f6505ebeededbb185da82eae828201d2c0a0461f630e3e7b",
+    "results/figures/paper_figs/data/fig1ab_pr_points.csv": "70fbe17db97e71a437a2d021099dc56074af64b8a6f51bd9678940f68f09df00",
+    "results/figures/paper_figs/data/fig1c_overlap_rules.csv": "4ffb95a930f649bebaa1e2e93adab6c66b4be53d5f3ff369e270ea4ee9e4499d",
+    "results/figures/paper_figs/data/fig2a_paired_runs.csv": "111187fba54282b9e991b2722a1f95639735ecbd788f31bfc28a7158531a7e11",
+    "results/figures/paper_figs/data/fig2b_maize_scaling.csv": "d622b704695b5a6897648a0206c224b5eba5f8184756c6ac8b3cadba0ef1ae4b",
+    "results/figures/paper_figs/data/fig2c_human_cost.csv": "4565eed94d4a19ed046472f6f72d9568a8ef9591a172b5cf3b5cba1a7481a7ed"
+  },
+  "outputs": {
+    "fig1_accuracy_tradeoff.pdf": "2b497044c584095b0c02d6a0e2e9cfa9d8868b242a3042f5ea96e8867a260515",
+    "fig1_accuracy_tradeoff.png": "e1c834676af52323cdbd12aea44908655dc48589ee9e08b5e99b8e12563e61e8",
+    "fig2_range_cost.pdf": "b931d3447f5b097774094df00f2569dccfb6fba70b405a95b414cfe0493c8cb6",
+    "fig2_range_cost.png": "5661d308ccdc3e48027544f68521ec0802f37dbb8e7045eec9b5641e119688be"
+  }
+}

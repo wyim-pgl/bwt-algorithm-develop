@@ -1,0 +1,827 @@
+import os    # Standard library for environment-variable overrides
+import time  # Standard library for measuring execution time
+import numpy as np  # NumPy for numerical operations and array processing
+from typing import List, Tuple, Set, Optional  # typing module for type hints
+from .bwt_core import BWTCore, effective_length  # BWT/FM-index core data structure
+from .coverage import mask_from_repeats  # shared interval -> boolean mask
+from .models import TandemRepeat, TIER_SATELLITE, TIER_CATCHALL  # Tandem repeat data class + post-tier pass ids
+from .tier1 import Tier1STRFinder  # Tier 1: Short perfect repeat finder
+from .tier2 import Tier2LCPFinder  # Tier 2: Medium-length imperfect repeat finder
+from .tier3 import Tier3LongReadFinder  # Tier 3: Long repeat sequence finder
+from .motif_utils import MotifUtils  # Motif canonicalization and statistics utilities
+from .autocorr import (  # shared periodicity primitives
+    DEFAULT_MIN_VALID_FRAC,
+    autocorr_identity,
+    contiguous_true_runs,
+    valid_base_mask,
+    windowed_match_counts,
+    windowed_valid_counts,
+)
+
+
+class TandemRepeatFinder:
+    """Main coordinator for multi-tier tandem repeat finding."""
+
+    VALID_TIERS = {"tier1", "tier2", "tier3"}  # Set of valid detection tier names
+
+    def __init__(self, sequence: str, chromosome: str = "chr1",
+                 min_period: int = 1, max_period: int = 2000,
+                 show_progress: bool = False,
+                 enabled_tiers: Optional[Set[str]] = None,
+                 min_array_bp: Optional[int] = None,
+                 max_array_bp: Optional[int] = None,
+                 tier3_mode: str = "balanced"):
+        self.sequence = sequence  # DNA sequence string to analyze
+        self.chromosome = chromosome  # Chromosome name (used in output records)
+        self.min_period = min_period  # Minimum motif length (bp) to search for
+        self.max_period = max_period  # Maximum motif length (bp) to search for
+        self.show_progress = show_progress  # Flag for whether to print progress info
+        self.enabled_tiers = self._normalize_tiers(enabled_tiers)  # Normalize the set of tiers to enable
+
+        # Ensure array length lower/upper bounds are non-negative
+        self.min_array_bp = max(0, min_array_bp) if min_array_bp else None
+        self.max_array_bp = max(0, max_array_bp) if max_array_bp else None
+        if self.min_array_bp and self.max_array_bp and self.min_array_bp > self.max_array_bp:
+            # If lower bound exceeds upper bound, swap them to keep bounds consistent
+            self.min_array_bp, self.max_array_bp = self.max_array_bp, self.min_array_bp
+
+        # Initialize BWT Core
+        if show_progress:
+            # Notify user that BWT index construction is starting
+            print(f"  [{chromosome}] Building BWT and FM-index...", flush=True)
+        t0 = time.time()  # Record BWT construction start time
+        # Ensure sentinel
+        if not sequence.endswith('$'):
+            sequence += '$'  # Append sentinel character '$' to end of sequence for BWT construction
+
+        # Reuse a cached index when one exists for this exact sequence. The index
+        # depends only on the sequence, never on detection settings, so a
+        # parameter sweep would otherwise rebuild the identical structure once
+        # per configuration. BWT_INDEX_CACHE names a directory; unset disables.
+        cache_dir = os.environ.get("BWT_INDEX_CACHE", "").strip()
+        self.bwt = None
+        cache_path = None
+        if cache_dir:
+            cache_path = os.path.join(
+                cache_dir, f"idx_{BWTCore.cache_key(sequence)}.npz")
+            self.bwt = BWTCore.load_index(cache_path, sequence, sa_sample_rate=1)
+            if self.bwt is not None and show_progress:
+                print(f"  [{chromosome}] FM-index loaded from cache in "
+                      f"{time.time() - t0:.2f}s", flush=True)
+
+        if self.bwt is None:
+            self.bwt = BWTCore(sequence, sa_sample_rate=1)  # suffix array, BWT, occurrence arrays
+            if show_progress:
+                print(f"  [{chromosome}] BWT built in {time.time() - t0:.2f}s", flush=True)
+            if cache_path:
+                try:
+                    ts = time.time()
+                    self.bwt.save_index(cache_path)
+                    if show_progress:
+                        print(f"  [{chromosome}] FM-index cached in "
+                              f"{time.time() - ts:.2f}s", flush=True)
+                except OSError as e:
+                    # A cache that cannot be written must never fail the run
+                    print(f"  [{chromosome}] index cache write skipped: {e}",
+                          flush=True)
+
+        # Initialize Tiers
+        self.tier1 = None  # Initialize Tier 1 finder (default None)
+        tier1_min = max(1, min_period)  # Minimum motif length for Tier 1 (at least 1 bp)
+        tier1_max = min(9, max_period)  # Maximum motif length for Tier 1 (at most 9 bp)
+        if "tier1" in self.enabled_tiers and tier1_min <= tier1_max:
+            # Only create instance when Tier 1 is enabled and has a valid range
+            self.tier1 = Tier1STRFinder(
+                self.bwt.text_arr,          # Sequence converted to byte array
+                self.bwt,                   # FM-index object
+                max_motif_length=tier1_max, # Maximum motif length
+                min_motif_length=tier1_min, # Minimum motif length
+                allowed_mismatch_rate=0.2,  # Allowed mismatch rate 20%
+                allowed_indel_rate=0.1,     # Allowed indel rate 10%
+                show_progress=show_progress # Pass progress display flag
+            )
+
+        self.tier2 = None  # Initialize Tier 2 finder (default None)
+        if "tier2" in self.enabled_tiers:
+            # Only create instance when Tier 2 is enabled
+            self.tier2 = Tier2LCPFinder(
+                self.bwt,                   # FM-index object
+                min_period=min_period,      # Minimum motif length
+                max_period=max_period,      # Maximum motif length
+                allowed_mismatch_rate=0.2,  # Allowed mismatch rate 20%
+                allowed_indel_rate=0.1,     # Allowed indel rate 10%
+                show_progress=show_progress # Pass progress display flag
+            )
+
+        # Only create Tier 3 instance if enabled, otherwise None
+        # Tier 3 owns periods >=100 bp, but must still honor the user-requested
+        # period interval. It previously always searched 100..100,000 bp and
+        # relied on final filtering, wasting work and making preset diagnostics
+        # inconsistent with the CLI arguments.
+        #
+        # This is NOT output-neutral, despite the final bounds filter. The
+        # limits also feed compute_adaptive_params(), where
+        # `tolerance_ratio = 0.02 + 0.02 * (max_period / 100000)`: at the
+        # default --max-period 2000 the tolerance drops from 0.0400 to 0.0204,
+        # so an in-range period can now be grouped differently. min_period
+        # likewise affects the seed k-mer size. One full Arabidopsis Chr4 run
+        # at default arguments happened to produce byte-identical BED, which
+        # does not generalize to other arguments, presets, or genomes.
+        tier3_min = max(100, self.min_period)
+        tier3_max = min(100_000, self.max_period)
+        self.tier3 = None
+        if "tier3" in self.enabled_tiers and tier3_min <= tier3_max:
+            self.tier3 = Tier3LongReadFinder(
+                self.bwt,
+                min_length=tier3_min,
+                max_length=tier3_max,
+                mode=tier3_mode,
+            )
+
+        # Satellite gap-fill tuning (env-overridable). Defaults are the improved
+        # operating point that recovers divergent-alpha-sat interior gaps which
+        # the 3-tier pipeline leaves uncovered between large-HOR-motif calls.
+        # SAT_FILL_MIN_IDENTITY: min autocorrelation identity to accept a gap as
+        #   satellite (0.45 captures ~46%-identity divergent alpha-sat; ~2.5x
+        #   above the ~0.18 autocorrelation floor of non-repetitive DNA).
+        # SAT_ANCHOR_MIN_MOTIF / SAT_ANCHOR_MAX_MOTIF: motif-length window for a
+        #   repeat to count as a satellite anchor whose neighbourhood is scanned
+        #   for uncovered gaps. MAX=0 means no upper bound, so large HOR-unit
+        #   calls (motif >> 300bp) also anchor gap scanning.
+        self.sat_fill_min_identity = float(os.environ.get("SAT_FILL_MIN_IDENTITY", "0.45"))
+        self.sat_anchor_min_motif = int(os.environ.get("SAT_ANCHOR_MIN_MOTIF", "100"))
+        self.sat_anchor_max_motif = int(os.environ.get("SAT_ANCHOR_MAX_MOTIF", "0"))
+        # Period window for the gap autocorrelation scan. Default 100-360 covers
+        # the alpha-satellite monomer (171bp) and the dimeric HOR period
+        # (2x171=342) where highly divergent arrays (e.g. chr3, ~46% monomer
+        # identity) carry their strongest periodic signal. The 0.45 identity
+        # floor stays ~2.5x above the ~0.18 autocorrelation of non-repetitive DNA.
+        self.sat_fill_min_period = int(os.environ.get("SAT_FILL_MIN_PERIOD", "100"))
+        self.sat_fill_max_period = int(os.environ.get("SAT_FILL_MAX_PERIOD", "360"))
+
+    def find_all(self) -> List[TandemRepeat]:
+        """Execute the full 3-tier finding pipeline."""
+        all_repeats = []  # List to collect repeats found across all tiers
+        tier1_seen: Set[Tuple[int, int]] = set()  # Set of (start, end) coordinates found by Tier 1 (for deduplication)
+        tier2_seen: Set[Tuple[int, int]] = set()  # Set of (start, end) coordinates found by Tier 2 (for deduplication)
+
+        # --- Tier 1: Short Perfect Repeats ---
+        if self.tier1:
+            if self.show_progress:
+                # Print Tier 1 start notification
+                print(f"  [{self.chromosome}] Running Tier 1 (Short Perfect)...", flush=True)
+            t0 = time.time()  # Record Tier 1 start time
+            tier1_repeats = self.tier1.find_strs(self.chromosome)  # Run Tier 1: find short perfect repeats
+
+            accepted = 0  # Counter for repeats that pass the filter
+            for r in tier1_repeats:
+                # Register each repeat in the global list (with array length range filter)
+                if self._register_repeat(r, all_repeats, tier1_seen):
+                    accepted += 1  # Increment counter on successful registration
+
+            if self.show_progress:
+                # Print Tier 1 completion and results summary
+                print(f"  [{self.chromosome}] Tier 1 found {accepted} repeats in {time.time() - t0:.2f}s", flush=True)
+        elif self.show_progress:
+            # Notify if Tier 1 is disabled or out of requested range
+            print(f"  [{self.chromosome}] Skipping Tier 1 (disabled or out of requested range)", flush=True)
+
+        # --- Tier 2: Imperfect & Medium Repeats (>=10bp by design) ---
+        if self.tier2:
+            if self.show_progress:
+                # Print Tier 2 start notification
+                print(f"  [{self.chromosome}] Running Tier 2 (Imperfect & Medium)...", flush=True)
+            t0 = time.time()  # Record Tier 2 start time
+            # 2a. Long unit repeats (strict adjacency, >=20bp units)
+            long_unit_repeats = []  # List for long unit repeat results
+            long_kept = 0  # Count of registered long unit repeats
+            min_unit = max(20, self.min_period)  # Minimum motif length for Tier 2 long unit repeats (at least 20 bp)
+            if self.max_period >= min_unit:
+                # Only run long unit repeat search when max period is at least min_unit
+                long_unit_repeats = self.tier2.find_long_unit_repeats_strict(
+                    self.chromosome,          # Chromosome name
+                    min_unit_len=min_unit,    # Minimum unit length
+                    max_unit_len=self.max_period,  # Maximum unit length
+                    min_copies=2              # Minimum copy count of 2
+                )
+
+                for r in long_unit_repeats:
+                    is_new = True  # Initialize flag for whether this is a new repeat
+                    for start, end in tier1_seen:
+                        # Check if it overlaps with positions already found by Tier 1
+                        if not (r.end <= start or r.start >= end):
+                            is_new = False  # Not new if overlapping
+                            break
+                    if is_new and self._register_repeat(r, all_repeats, tier2_seen):
+                        long_kept += 1  # Increment counter if new and successfully registered
+
+            # 2b. General scanning for medium/long repeats up to requested max
+            medium_repeats = []  # List for medium-length repeat results
+            medium_kept = 0  # Count of registered medium-length repeats
+            # Force Tier2 to ignore classic microsatellites: start from period 10bp
+            scan_lower = max(10, self.min_period)   # Scan lower bound: at least 10 bp to exclude microsatellites
+            scan_upper = min(50, self.max_period)   # Scan upper bound: up to 50 bp (BWT seed method range)
+            if scan_upper >= scan_lower:
+                # Only run when there is a valid scan range
+                combined_seen = tier1_seen.union(tier2_seen)  # Union of positions already found by Tier 1 and Tier 2
+                medium_repeats = self.tier2.find_long_repeats(
+                    self.chromosome,          # Chromosome name
+                    combined_seen,            # Already-found position set for deduplication
+                    max_scan_period=scan_upper  # Maximum scan period
+                )
+
+                for r in medium_repeats:
+                    # Register medium-length repeats
+                    if self._register_repeat(r, all_repeats, tier2_seen):
+                        medium_kept += 1  # Increment counter on successful registration
+            if self.show_progress:
+                total_kept = long_kept + medium_kept  # Total of long unit and medium-length repeats
+                # Print Tier 2 completion and results summary
+                print(f"  [{self.chromosome}] Tier 2 processed {total_kept} repeats (>=10bp motifs) in {time.time() - t0:.2f}s", flush=True)
+        elif self.show_progress:
+            # Notify if Tier 2 is disabled
+            print(f"  [{self.chromosome}] Skipping Tier 2 (disabled)", flush=True)
+
+        # --- Tier 3: Long Reads (Optional/Advanced) ---
+        if self.tier3:
+            if self.show_progress:
+                # Print Tier 3 start notification
+                print(f"  [{self.chromosome}] Running Tier 3 (Long Reads)...", flush=True)
+            t0 = time.time()  # Record Tier 3 start time
+
+            combined_seen = tier1_seen.union(tier2_seen)  # Union of Tier 1 + Tier 2 found positions (for Tier 3 deduplication)
+            tier3_repeats = self.tier3.find_long_repeats(
+                self.chromosome,  # Chromosome name
+                tier1_seen,       # Tier 1 found position set
+                tier2_seen        # Tier 2 found position set
+            )
+
+            accepted = 0  # Counter for repeats registered from Tier 3
+            for r in tier3_repeats:
+                # Register Tier 3 results in the global list
+                if self._register_repeat(r, all_repeats, combined_seen):
+                    accepted += 1  # Increment counter on successful registration
+
+            if self.show_progress:
+                # Print Tier 3 completion and results summary
+                print(f"  [{self.chromosome}] Tier 3 found {accepted} repeats in {time.time() - t0:.2f}s", flush=True)
+        elif self.show_progress:
+            # Notify if Tier 3 is disabled
+            print(f"  [{self.chromosome}] Skipping Tier 3 (disabled)", flush=True)
+
+        # --- Post-processing ---
+        all_repeats.sort(key=lambda x: x.start)
+
+        if self.show_progress:
+            t0 = time.time()
+        all_repeats = self._merge_adjacent_repeats(all_repeats)
+        if self.show_progress:
+            print(f"  [{self.chromosome}] Merge: {time.time() - t0:.2f}s, {len(all_repeats)} repeats", flush=True)
+            t0 = time.time()
+        final_repeats = self._filter_overlaps(all_repeats)
+        if self.show_progress:
+            print(f"  [{self.chromosome}] Filter: {time.time() - t0:.2f}s, {len(final_repeats)} repeats", flush=True)
+
+        # Satellite DNA scanner (multiple passes)
+        for pass_num in range(2):
+            if self.show_progress:
+                t0 = time.time()
+            prev_count = len(final_repeats)
+            final_repeats = self._fill_satellite_gaps(final_repeats)
+            final_repeats = self._merge_adjacent_repeats(final_repeats)
+            if self.show_progress:
+                print(f"  [{self.chromosome}] Satellite pass {pass_num+1}: {time.time() - t0:.2f}s, {len(final_repeats)} repeats (+{len(final_repeats) - prev_count})", flush=True)
+            if len(final_repeats) == prev_count:
+                break
+
+        # Catch-all periodicity scan (opt-in CATCHALL_SCAN, default off): a
+        # low-stringency autocorrelation sweep over short periods in the regions
+        # NO tier/satellite pass covered, to recover entirely-missed diverged STRs
+        # (the dominant region-recall gap). Trades precision for recall; the
+        # identity/length knobs set the operating point.
+        if int(os.environ.get("CATCHALL_SCAN") or "0"):
+            t0 = time.time()
+            prev_count = len(final_repeats)
+            final_repeats = self._catchall_periodicity_fill(final_repeats)
+            final_repeats = self._merge_adjacent_repeats(final_repeats)
+            if self.show_progress:
+                print(f"  [{self.chromosome}] Catch-all scan: {time.time() - t0:.2f}s, "
+                      f"{len(final_repeats)} repeats (+{len(final_repeats) - prev_count})", flush=True)
+
+        final_repeats = [r for r in final_repeats if self._repeat_within_bounds(r)]  # Filter to only results within user-specified bounds
+
+        return final_repeats  # Return the final list of repeats
+
+    def _filter_overlaps(self, repeats: List[TandemRepeat]) -> List[TandemRepeat]:
+        """Filter overlapping repeats, keeping the one with higher score/length."""
+        if not repeats:
+            return []  # Return empty list if input is empty
+
+        # Sort by start position
+        repeats.sort(key=lambda x: x.start)  # Sort by start position
+
+        filtered = [repeats[0]]  # Add the first repeat to the result list
+
+        for current in repeats[1:]:
+            prev = filtered[-1]  # Last retained repeat so far
+
+            # Check overlap
+            if current.start < prev.end:
+                # Two repeats overlap; calculate the overlap amount
+                overlap = min(prev.end, current.end) - max(prev.start, current.start)  # Actual overlapping bp count
+                overlap_ratio = overlap / min(prev.length, current.length)  # Overlap ratio relative to the shorter one
+
+                if overlap_ratio > 0.5:  # Significant overlap
+                    # Keep the higher-scoring repeat. Score = length * (1 - mismatch_rate)
+                    prev_score = prev.length * (1.0 - prev.mismatch_rate)   # Calculate score for previous repeat
+                    curr_score = current.length * (1.0 - current.mismatch_rate)  # Calculate score for current repeat
+
+                    if curr_score > prev_score:
+                        filtered[-1] = current  # If current is better, replace previous with current
+                else:
+                    # Small overlap; keep both repeats (may be a compound repeat)
+                    filtered.append(current)
+            else:
+                filtered.append(current)  # No overlap; add as-is
+
+        return filtered  # Return filtered list of repeats
+
+    def _merge_adjacent_repeats(self, repeats: List[TandemRepeat]) -> List[TandemRepeat]:
+        """Merge adjacent repeats with the same motif."""
+        if not repeats:
+            return []  # Return empty list if input is empty
+
+        # Sort by start position
+        repeats.sort(key=lambda x: x.start)  # Sort by start position
+
+        merged = [repeats[0]]  # Start merge result list with the first repeat
+
+        for current in repeats[1:]:
+            prev = merged[-1]  # Last merged item so far
+
+            # Check if they are adjacent or overlapping
+            # Allow a small gap (e.g., up to period length or 10bp)
+            gap = max(0, current.start - prev.end)  # Gap between two repeats (clamped to non-negative)
+
+            # Check if motifs are compatible (same canonical motif)
+            motif1 = prev.consensus_motif or prev.motif    # Consensus motif or original motif of the previous item
+            motif2 = current.consensus_motif or current.motif  # Consensus motif or original motif of the current item
+
+            canon1, _ = MotifUtils.get_canonical_motif_stranded(motif1)  # Canonical form of previous motif (strand unused here)
+            canon2, _ = MotifUtils.get_canonical_motif_stranded(motif2)  # Canonical form of current motif (strand unused here)
+
+            # Allow merge if canonical motifs match and gap is small
+            # For long-period repeats (satellite DNA), allow larger gaps
+            # since individual repeat units can be ~178bp with imperfect boundaries
+            period_len = len(canon1)
+            if period_len >= 100:
+                max_gap = period_len * 100  # e.g. 17.8kb for CEN180
+            elif period_len >= 20:
+                max_gap = period_len * 10
+            else:
+                max_gap = max(10, period_len)
+            # For long-period repeats, use fuzzy canonical motif matching
+            # (satellite DNA consensus can drift between adjacent regions)
+            motifs_match = (canon1 == canon2)
+            if not motifs_match and len(canon1) == len(canon2) and len(canon1) >= 50:
+                hamming = sum(1 for a, b in zip(canon1, canon2) if a != b)
+                motifs_match = (hamming / len(canon1)) <= 0.10  # 10% tolerance
+            if motifs_match and gap <= max_gap:
+                # Trial merge: check if combined region quality is acceptable
+                new_start = min(prev.start, current.start)
+                new_end = max(prev.end, current.end)
+                avg_mm = (prev.mismatch_rate + current.mismatch_rate) / 2
+
+                # Quality check for merge
+                text_arr = self.bwt.text_arr
+                actual_motif = motif1
+                mlen = len(actual_motif)
+                merge_ok = False
+
+                if mlen >= 100 and gap > mlen:
+                    # Satellite DNA: check periodicity of gap region via autocorrelation
+                    gap_start_pos = prev.end
+                    gap_end_pos = current.start
+                    gap_seq = text_arr[gap_start_pos:gap_end_pos]
+                    if len(gap_seq) >= mlen * 2:
+                        merge_ok = autocorr_identity(gap_seq, mlen) >= 0.55
+                else:
+                    # Short repeats: use direct motif comparison
+                    motif_arr = np.frombuffer(actual_motif.encode('ascii'), dtype=np.uint8)
+                    trial_mismatches = 0
+                    trial_total = 0
+                    for pos in range(new_start, min(new_end, len(text_arr) - mlen), mlen):
+                        window = text_arr[pos:pos + mlen]
+                        if len(window) == mlen:
+                            trial_mismatches += np.sum(window != motif_arr)
+                            trial_total += mlen
+                    trial_mm = trial_mismatches / trial_total if trial_total > 0 else 0
+                    max_acceptable_mm = max(avg_mm * 2, 0.15)
+                    merge_ok = trial_mm <= max_acceptable_mm
+
+                if merge_ok:
+                    prev.start = new_start
+                    prev.end = new_end
+                    prev.length = new_end - new_start
+                    prev.copies = prev.length / len(canon1)
+                    # Skip expensive stats recomputation for very large regions
+                    if prev.length <= 50000:
+                        self._recompute_stats(prev)
+                else:
+                    # Mismatch too high after merge — keep as separate repeats
+                    merged.append(current)
+
+            else:
+                merged.append(current)  # Merge conditions not met; add as a separate item
+
+        return merged  # Return the merged list of repeats
+
+    def _recompute_stats(self, repeat: TandemRepeat):
+        """Recompute statistics for a repeat (e.g. after merging)."""
+        text_arr = self.bwt.text_arr  # Reference the byte array sequence from the FM-index
+        motif = repeat.consensus_motif or repeat.motif  # Use consensus motif or original motif
+        motif_len = len(motif)  # Calculate motif length
+
+        if motif_len == 0:
+            return  # Cannot compute statistics with zero-length motif; return immediately
+
+        # Re-derive consensus and mismatch rate from the entire merged region
+        consensus_arr, mm_rate, max_mm = MotifUtils.build_consensus_motif_array(
+            text_arr, repeat.start, motif_len, int(repeat.copies)
+        )
+
+        if consensus_arr.size > 0:
+            # Decode consensus array to ASCII string
+            consensus_str = consensus_arr.tobytes().decode('ascii', errors='replace')
+            repeat.consensus_motif = consensus_str  # Update consensus motif
+            repeat.motif = consensus_str # Update motif to new consensus
+            repeat.mismatch_rate = mm_rate  # Update mismatch rate
+            repeat.max_mismatches_per_copy = max_mm  # Update maximum mismatches per copy
+
+            # Recalculate TRF-compatible statistics
+            (percent_matches, percent_indels, score, composition,
+             entropy, actual_sequence) = MotifUtils.calculate_trf_statistics(
+                text_arr, repeat.start, repeat.end, consensus_str, int(repeat.copies), mm_rate
+            )
+
+            repeat.percent_matches = percent_matches  # Update match percentage
+            repeat.percent_indels = percent_indels    # Update indel percentage
+            repeat.score = score                      # Update TRF score
+            repeat.composition = composition          # Update base composition
+            repeat.entropy = entropy                  # Update Shannon entropy
+            repeat.actual_sequence = actual_sequence  # Update actual sequence string
+
+            # Update per-copy variation summary
+            variations = MotifUtils.summarize_variations_array(
+                text_arr, repeat.start, repeat.end, motif_len, consensus_arr
+            )
+            repeat.variations = variations  # Update variation information
+
+    def _fill_satellite_gaps(self, repeats: List[TandemRepeat]) -> List[TandemRepeat]:
+        """Scan for satellite DNA regions not covered by existing detections.
+
+        Uses autocorrelation on uncovered regions to find periodic satellite DNA
+        (e.g., CEN180) that may have been missed by the 3-tier pipeline due to
+        high inter-copy divergence.
+        """
+        text_arr = self.bwt.text_arr
+        # `text_arr` carries the BWT sentinel, so len() is one past the last real
+        # base. Scanning to it let a terminal gap be reported with end == seqlen+1
+        # — a BED interval past the end of its chromosome, which is malformed for
+        # bedtools — and let `$` into the motif. `_catchall_periodicity_fill`
+        # already uses effective_length for the same reason.
+        n = effective_length(text_arr)
+
+        if n < 1000:
+            return repeats
+
+        covered = mask_from_repeats(repeats, n)
+
+        # Find uncovered blocks >= 300bp
+        gap_starts, gap_ends = contiguous_true_runs(~covered)
+        uncovered_blocks = [(int(s), int(e)) for s, e in zip(gap_starts, gap_ends) if e - s >= 300]
+
+        if not uncovered_blocks:
+            return repeats
+
+        # Collect satellite motifs and positions from existing long-period repeats
+        satellite_positions = []
+        for r in repeats:
+            m = r.consensus_motif or r.motif
+            if not m or len(m) < self.sat_anchor_min_motif:
+                continue
+            if self.sat_anchor_max_motif and len(m) > self.sat_anchor_max_motif:
+                continue
+            satellite_positions.append((r.start, r.end))
+
+        # Build a proximity mask: only scan blocks near satellite regions
+        # This avoids scanning the entire non-centromeric sequence
+        near_satellite = np.zeros(n, dtype=bool)
+        proximity = 50000  # 50kb proximity window
+        for sat_start, sat_end in satellite_positions:
+            near_satellite[max(0, sat_start - proximity):min(n, sat_end + proximity)] = True
+
+        new_repeats = []
+        block_valid = valid_base_mask(text_arr[:n])
+        for block_start, block_end in uncovered_blocks:
+            block_size = block_end - block_start
+            if block_size > 100000 or block_size < 300:
+                continue
+
+            # Skip blocks not near existing satellite detections
+            if not np.any(near_satellite[block_start:block_end]):
+                continue
+
+            # Periodicity is judged from at most three 5 kb windows but the
+            # whole block gets claimed, so a block that is mostly assembly gap
+            # or masked sequence must not be labelled satellite on the strength
+            # of one real-sequence window at its edge.
+            valid_frac = float(np.count_nonzero(
+                block_valid[block_start:block_end])) / block_size
+            if valid_frac < DEFAULT_MIN_VALID_FRAC:
+                continue
+
+            # Autocorrelation-based satellite detection
+            # Scan multiple windows: start, middle, end of block
+            windows = [(block_start, min(block_start + 5000, block_end))]
+            if block_size > 5000:
+                mid = block_start + block_size // 2 - 2500
+                windows.append((mid, min(mid + 5000, block_end)))
+                windows.append((max(block_start, block_end - 5000), block_end))
+
+            best_period = 0
+            best_identity = 0.0
+            best_w_start = block_start
+
+            for w_start, w_end in windows:
+                w_region = text_arr[w_start:w_end]
+                w_size = len(w_region)
+                if w_size < 300:
+                    continue
+
+                for p in range(self.sat_fill_min_period, min(self.sat_fill_max_period + 1, w_size // 2)):
+                    identity = autocorr_identity(w_region, p)
+                    if identity > best_identity:
+                        best_identity = identity
+                        best_period = p
+                        best_w_start = w_start
+                        if identity > 0.80:
+                            break
+                if best_identity > 0.80:
+                    break
+
+            if best_identity < self.sat_fill_min_identity or best_period < 50:
+                continue
+
+            use_motif = text_arr[best_w_start:best_w_start + best_period].tobytes().decode('ascii', errors='replace')
+            # The motif is a raw window off the text, so an assembly gap or the
+            # sentinel would otherwise be reported as the repeat unit. An N-run is
+            # trivially "periodic" (N == N), which is how motifs of solid Ns got
+            # emitted at telomeres. Same guard the catch-all pass applies.
+            if not use_motif or any(c not in 'ACGT' for c in use_motif):
+                continue
+
+            # The sampled windows only *nominate* a period. Claiming
+            # [block_start, block_end) on their strength alone let one periodic
+            # 5 kb edge window label up to 100 kb of unexamined sequence as
+            # satellite. Verify the periodicity across the whole block instead
+            # and emit only the contiguous stretches that actually support it.
+            new_repeats.extend(self._segment_periodic_block(
+                text_arr, block_start, block_end, best_period))
+
+        if new_repeats:
+            filled = list(repeats) + new_repeats
+            filled.sort(key=lambda x: x.start)
+            return filled
+
+        return repeats
+
+    def _segment_periodic_block(self, text_arr: np.ndarray, block_start: int,
+                                block_end: int, period: int) -> List[TandemRepeat]:
+        """Emit the stretches of [block_start, block_end) that are periodic.
+
+        The block-level scan nominated ``period`` from at most three sampled
+        windows. This walks the whole block with the same O(n) cumsum the
+        catch-all uses and keeps only contiguous runs where a sliding window
+        clears the identity gate on real sequence, so an uncovered block is
+        claimed exactly as far as the evidence reaches -- not wholesale.
+        """
+        block = text_arr[block_start:block_end]
+        n = block.size
+        window = min(2 * period, max(1, n - period))
+        min_len = max(300, 2 * period)
+
+        winsum = windowed_match_counts(block, period, window)
+        validsum = windowed_valid_counts(block, period, window)
+        if winsum is None or validsum is None:
+            return []
+
+        # Same gates the block-level scan applied, now enforced everywhere:
+        # enough support for the period, on enough real bases.
+        hit = ((winsum >= self.sat_fill_min_identity * window)
+               & (validsum >= DEFAULT_MIN_VALID_FRAC * window))
+        if not hit.any():
+            return []
+
+        out: List[TandemRepeat] = []
+        run_s, run_e = contiguous_true_runs(hit)
+        for a, b in zip(run_s.tolist(), run_e.tolist()):
+            # A window at offset i vouches for block[i : i + window + period].
+            seg_start = int(a)
+            seg_end = min(int(b) - 1 + window + period, n)
+            seg_len = seg_end - seg_start
+            if seg_len < min_len or seg_len / period < 2.0:
+                continue
+
+            motif = block[seg_start:seg_start + period].tobytes().decode(
+                'ascii', errors='replace')
+            if not motif or any(c not in 'ACGT' for c in motif):
+                # The run is periodic but starts on ambiguous sequence; step
+                # forward one window and retry once rather than dropping a
+                # genuine array for a bad first period.
+                alt = seg_start + window
+                if alt + period <= seg_end:
+                    motif = block[alt:alt + period].tobytes().decode(
+                        'ascii', errors='replace')
+                if not motif or any(c not in 'ACGT' for c in motif):
+                    continue
+
+            local = winsum[a:b]
+            identity = float(local.mean()) / window if local.size else 0.0
+            out.append(TandemRepeat(
+                chrom=self.chromosome,
+                start=block_start + seg_start,
+                end=block_start + seg_end,
+                motif=motif, copies=seg_len / period,
+                length=seg_len, consensus_motif=motif,
+                mismatch_rate=max(0.0, 1.0 - identity),
+                tier=TIER_SATELLITE,
+            ))
+        return out
+
+    def _catchall_periodicity_fill(self, repeats: List[TandemRepeat]) -> List[TandemRepeat]:
+        """Low-stringency autocorrelation sweep over short periods (default 1-20)
+        in regions NO tier/satellite pass covered.
+
+        The 3-tier pipeline only emits where it can form a seed; diverged short
+        STRs (a substitution in most copies) form none and are missed entirely —
+        the dominant region-recall gap vs ULTRA/tantan. This pass detects local
+        periodicity directly (vectorized identity between offset-p windows) and
+        emits a call wherever an uncovered region is periodic above
+        ``CATCHALL_MIN_IDENTITY``. It deliberately trades precision for recall;
+        the identity/length knobs set the operating point. Opt-in (CATCHALL_SCAN).
+        """
+        text_arr = self.bwt.text_arr
+        n = effective_length(text_arr)
+        if n < 8:
+            return repeats
+
+        min_p = max(1, int(os.environ.get("CATCHALL_MIN_P") or "1"))
+        max_p = int(os.environ.get("CATCHALL_MAX_P") or "20")
+        min_id = float(os.environ.get("CATCHALL_MIN_IDENTITY") or "0.72")
+        min_len = int(os.environ.get("CATCHALL_MIN_LEN") or "20")
+        # Precision-recovery gates (drop the unsupported low-complexity calls that
+        # over-extend bp precision; defaults are permissive so the recall frontier
+        # is unchanged unless these are raised).
+        min_copies = float(os.environ.get("CATCHALL_MIN_COPIES") or "2")
+        min_entropy = float(os.environ.get("CATCHALL_MIN_ENTROPY") or "0")
+
+        covered = mask_from_repeats(repeats, n)
+
+        s = text_arr[:n]
+        new_repeats: List[TandemRepeat] = []
+        # Longest period first so a genuine k-mer STR claims its region before a
+        # shorter sub-period grabs a fragment of it.
+        for period in range(min(max_p, n // 2), min_p - 1, -1):
+            window = max(2 * period, 12)
+            if n <= period + window:
+                continue
+            winsum = windowed_match_counts(s, period, window)
+            if winsum is None:
+                continue
+            m = winsum.size
+            # Ambiguous comparisons no longer count as matches, but a window
+            # that is mostly N can still clear the match gate on its ACGT
+            # remainder and then claim the gap along with it. Require the
+            # window to be real sequence before its score is trusted.
+            #
+            # Note the denominator: `winsum >= min_id * window` scores matches
+            # against the FULL window, so CATCHALL_MIN_IDENTITY is a
+            # whole-window support threshold, not identity among callable
+            # bases -- 80% valid comparisons at 90% identity scores 0.72 here
+            # and 0.90 from autocorr_identity(). That is deliberate (ambiguous
+            # positions count as non-support) but it means a threshold above
+            # DEFAULT_MIN_VALID_FRAC is unreachable at minimum coverage, and
+            # the stored mismatch_rate uses the same full-window denominator.
+            validsum = windowed_valid_counts(s, period, window)
+            if validsum is None:
+                continue
+            enough = validsum[:m] >= (DEFAULT_MIN_VALID_FRAC * window)
+            hit = (winsum >= (min_id * window)) & enough & (~covered[:m])
+            if not hit.any():
+                continue
+            run_s, run_e = contiguous_true_runs(hit)
+            for a, b in zip(run_s.tolist(), run_e.tolist()):
+                start = a
+                end = min(b + window, n)
+                if end - start < min_len:
+                    continue
+                if (end - start) / period < min_copies:
+                    continue
+                seg = covered[start:end]
+                if seg.size and seg.mean() > 0.3:
+                    continue
+                if min_entropy > 0.0 and MotifUtils.calculate_entropy_array(text_arr[start:end]) < min_entropy:
+                    continue
+                # identity (for mismatch_rate); seed motif from the run start
+                local = winsum[a:b]
+                ident = float(local.max()) / window if local.size else min_id
+                motif_raw = text_arr[start:start + period].tobytes().decode('ascii', errors='replace')
+                if not motif_raw or any(c not in 'ACGT' for c in motif_raw):
+                    continue
+                canon, strand = MotifUtils.get_canonical_motif_stranded(motif_raw)
+                new_repeats.append(TandemRepeat(
+                    chrom=self.chromosome, start=start, end=end,
+                    motif=canon, copies=(end - start) / period,
+                    length=end - start, tier=TIER_CATCHALL,
+                    consensus_motif=canon, mismatch_rate=max(0.0, 1.0 - ident),
+                    strand=strand,
+                ))
+                covered[start:end] = True
+
+        if not new_repeats:
+            return repeats
+        out = list(repeats) + new_repeats
+        out.sort(key=lambda x: x.start)
+        return out
+
+    def cleanup(self):
+        """Release resources."""
+        self.bwt.clear()  # Release memory used by the BWT/FM-index
+
+    def _normalize_tiers(self, tiers: Optional[Set[str]]) -> Set[str]:
+        if not tiers:
+            return set(self.VALID_TIERS)  # If no tiers specified, enable all valid tiers
+
+        normalized: Set[str] = set()  # Set of normalized tier names
+        unknown: List[str] = []       # Tokens that name no tier
+        saw_all = False
+        for tier in tiers:
+            if not tier or not tier.strip():
+                continue  # Skip empty/whitespace-only tokens from a trailing comma
+            name = tier.strip().lower()  # Normalize by stripping whitespace and converting to lowercase
+            if name == "all":
+                # Returning here would skip validation of the remaining tokens,
+                # and because `tiers` is a set the outcome would depend on
+                # iteration order: {"all", "typo"} enabled everything silently.
+                saw_all = True
+                continue
+            if name in self.VALID_TIERS:
+                normalized.add(name)  # Add to set if it is a valid tier name
+            else:
+                unknown.append(name)
+
+        # A typo used to be dropped silently. When it was the only token the
+        # empty result then fell through to "enable everything", so `--tiers
+        # tier1,typo` quietly ran one tier and `--tiers typo` quietly ran three.
+        # Neither is what the caller asked for, so both are refused.
+        if unknown:
+            raise ValueError(
+                f"Unknown tier(s): {', '.join(sorted(unknown))}. "
+                "Choose from tier1, tier2, tier3, or all."
+            )
+        if saw_all:
+            return set(self.VALID_TIERS)
+        if not normalized:
+            raise ValueError(
+                "No valid tiers selected; choose from tier1, tier2, tier3, or all"
+            )
+        return normalized
+
+    def _register_repeat(self, repeat: TandemRepeat, store: List[TandemRepeat],
+                         seen: Optional[Set[Tuple[int, int]]] = None) -> bool:
+        if not self._repeat_within_bounds(repeat):
+            return False  # Reject repeats outside user-specified bounds
+
+        store.append(repeat)  # Add repeat to the global list
+        if seen is not None:
+            seen.add((repeat.start, repeat.end))  # Register (start, end) coordinates in deduplication set
+        return True  # Return registration success
+
+    def _repeat_within_bounds(self, repeat: TandemRepeat) -> bool:
+        motif = repeat.motif or repeat.consensus_motif  # Use motif or consensus motif
+        motif_len = len(motif) if motif else 0  # Calculate motif length (0 if absent)
+        if motif_len <= 0:
+            motif_len = max(1, repeat.length)  # If motif length is 0, use array length instead
+
+        if motif_len < self.min_period or motif_len > self.max_period:
+            return False  # False if motif length is outside allowed range
+
+        length = repeat.length if repeat.length else repeat.end - repeat.start  # Calculate total array length
+
+        if self.min_array_bp and length < self.min_array_bp:
+            return False  # False if array length is below minimum bp
+        if self.max_array_bp and length > self.max_array_bp:
+            return False  # False if array length exceeds maximum bp
+
+        return True  # True if all conditions are met

@@ -1,0 +1,35 @@
+{
+  "NCRF": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/ncrf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ncrf_TAG_exp3A_microsatellite.bed",
+    "metrics": {
+      "bp": 2604968,
+      "regions": 214,
+      "tag_substring": 214,
+      "longest_substring_bp": 235404,
+      "tag_rotation": 0,
+      "longest_rotation_bp": 0
+    }
+  },
+  "TRASH-dn": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3A_microsatellite.bed",
+    "metrics": {
+      "bp": 47519576,
+      "regions": 3034,
+      "tag_substring": 1893,
+      "longest_substring_bp": 489999,
+      "tag_rotation": 0,
+      "longest_rotation_bp": 0
+    }
+  },
+  "TRASH-tpl": {
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_TAG_exp3A_microsatellite.bed",
+    "metrics": {
+      "bp": 47525434,
+      "regions": 3016,
+      "tag_substring": 1884,
+      "longest_substring_bp": 489999,
+      "tag_rotation": 0,
+      "longest_rotation_bp": 0
+    }
+  }
+}

@@ -1,0 +1,10 @@
+PASS: 19 source blocks accounted for; 18 unique tables, 7 supplement figures; every display called out in main narrative.
+{
+  "original_table_blocks_accounted_for": 19,
+  "current_supplement_tables": 18,
+  "all_supplemental_prose_replayed": true,
+  "main_words_whitespace": 1603,
+  "abstract_words_whitespace": 119,
+  "main_figures": 2,
+  "supplement_figures": 7
+}

@@ -1,0 +1,18 @@
+# Core package pins recorded for the later detector environment, not a freeze
+# of every published execution. The earlier whole-genome runs report Python
+# 3.11.14/numpy 2.3.1; the later panel/sweep records report 3.11.15/2.4.6.
+# This is not a complete inherited-environment or native-binary snapshot and
+# does not reconstruct the historical competitor container. numba is absent
+# from these pins; that fact alone does not establish its status in every run.
+name: bwtandem
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.15
+  - numpy=2.4.6
+  - cython=3.2.5
+  - pytest=9.1.1
+  - gcc=14.3.0
+  - pip
+  - pip:
+      - pydivsufsort==0.0.20

@@ -1,0 +1,1896 @@
+[
+  {
+    "line": 2,
+    "table": "1a",
+    "row": "BWTandem",
+    "source": "results/beds/bwtandem_human.bed.gz",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820c724137549",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 3,
+    "table": "1a",
+    "row": "TRF",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "recorded_scorer_sha": "14177a7320373f82",
+    "repo_commit": "0e17d1a",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 4,
+    "table": "1a",
+    "row": "ULTRA",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_human_GCA.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "recorded_scorer_sha": "14177a7320373f82",
+    "repo_commit": "0e17d1a",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 5,
+    "table": "1a",
+    "row": "tantan",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/tantan/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "recorded_scorer_sha": "14177a7320373f82",
+    "repo_commit": "0e17d1a",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 6,
+    "table": "1a",
+    "row": "TRASH",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_000001405.15_GRCh38_genomic_trash.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "recorded_scorer_sha": "14177a7320373f82",
+    "repo_commit": "0e17d1a",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 7,
+    "table": "1a",
+    "row": "mreps",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/mreps/GCA_000001405.15_GRCh38_genomic.bed",
+    "source_present": true,
+    "scorer": "-",
+    "recorded_scorer_sha": "-",
+    "repo_commit": "0e17d1a"
+  },
+  {
+    "line": 8,
+    "table": "1b-superseded",
+    "row": "BWTandem",
+    "source": "(PENDING job 6129408)",
+    "source_present": false,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820c724137549",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 9,
+    "table": "1b",
+    "row": "TRF",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "recorded_scorer_sha": "14177a7320373f82",
+    "repo_commit": "0e17d1a",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 10,
+    "table": "1b",
+    "row": "ULTRA",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_human_GCA.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "recorded_scorer_sha": "14177a7320373f82",
+    "repo_commit": "0e17d1a",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 11,
+    "table": "1b",
+    "row": "tantan",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/tantan/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "recorded_scorer_sha": "14177a7320373f82",
+    "repo_commit": "0e17d1a",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 12,
+    "table": "1b",
+    "row": "TRASH",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_000001405.15_GRCh38_genomic_trash.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "recorded_scorer_sha": "14177a7320373f82",
+    "repo_commit": "0e17d1a",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 13,
+    "table": "1c",
+    "row": "BWTandem",
+    "source": "results/beds/bwtandem_human.bed.gz",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820c724137549",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 14,
+    "table": "1c",
+    "row": "TRF",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "recorded_scorer_sha": "14177a7320373f82",
+    "repo_commit": "0e17d1a",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 15,
+    "table": "1c",
+    "row": "TRASH",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_000001405.15_GRCh38_genomic_trash.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1.py",
+    "recorded_scorer_sha": "14177a7320373f82",
+    "repo_commit": "0e17d1a",
+    "current_sha": "14177a7320373f82473149c5f7b99347bcd06f75f75c9d96eed5ce7ec2baa00b",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 16,
+    "table": "1d-superseded",
+    "row": "BWTandem-P",
+    "source": "(PENDING job 6129408)",
+    "source_present": false,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820c724137549",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 17,
+    "table": "1d-superseded",
+    "row": "BWTandem-B",
+    "source": "(PENDING job 6129408)",
+    "source_present": false,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820c724137549",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 18,
+    "table": "1d-superseded",
+    "row": "BWTandem-F",
+    "source": "(PENDING job 6129408)",
+    "source_present": false,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820c724137549",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 19,
+    "table": "1d-superseded",
+    "row": "BWTandem-H",
+    "source": "(PENDING job 6129408)",
+    "source_present": false,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820c724137549",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 20,
+    "table": "sweep-superseded",
+    "row": "id-off",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/out/idsweep_off.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "recorded_scorer_sha": "0ec76dd5a9ddffb6",
+    "repo_commit": "0e17d1a+outputfixes",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 21,
+    "table": "sweep-superseded",
+    "row": "id-0.80",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/out/idsweep_0.80.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "recorded_scorer_sha": "0ec76dd5a9ddffb6",
+    "repo_commit": "0e17d1a+outputfixes",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 22,
+    "table": "sweep-superseded",
+    "row": "id-0.76",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/out/idsweep_0.76.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "recorded_scorer_sha": "0ec76dd5a9ddffb6",
+    "repo_commit": "0e17d1a+outputfixes",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 23,
+    "table": "sweep-superseded",
+    "row": "id-0.72",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/out/idsweep_0.72.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "recorded_scorer_sha": "0ec76dd5a9ddffb6",
+    "repo_commit": "0e17d1a+outputfixes",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 24,
+    "table": "sweep-superseded",
+    "row": "id-0.68",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/out/idsweep_0.68.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "recorded_scorer_sha": "0ec76dd5a9ddffb6",
+    "repo_commit": "0e17d1a+outputfixes",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 25,
+    "table": "2",
+    "row": "BWTandem",
+    "source": "results/beds/bwtandem_colcen.bed.gz",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "585d55ba96cb380a",
+    "repo_commit": "0363d8b",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 26,
+    "table": "2",
+    "row": "TRF",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/Col-CEN_v1.2_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "0e17d1a",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 27,
+    "table": "2",
+    "row": "ULTRA",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_colcen_p500.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "0e17d1a",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 28,
+    "table": "2",
+    "row": "mreps",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/mreps_colcen_150_400.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "0e17d1a",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 29,
+    "table": "2",
+    "row": "tantan",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/tantan/Col-CEN_v1.2_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "0e17d1a",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 30,
+    "table": "3A",
+    "row": "BWTandem",
+    "source": "results/beds/bwtandem_maize.bed.gz",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "recorded_scorer_sha": "bcc4992b51986109",
+    "repo_commit": "0363d8b",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 31,
+    "table": "3A",
+    "row": "TRF",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3A_microsatellite.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "recorded_scorer_sha": "bcc4992b51986109",
+    "repo_commit": "0e17d1a",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 32,
+    "table": "3A",
+    "row": "ULTRA",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3A.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "recorded_scorer_sha": "bcc4992b51986109",
+    "repo_commit": "0e17d1a",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 33,
+    "table": "3A",
+    "row": "tantan",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/tantan/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_tantan_exp3A_microsatellite.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "recorded_scorer_sha": "bcc4992b51986109",
+    "repo_commit": "0e17d1a",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 34,
+    "table": "3A",
+    "row": "NCRF",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/ncrf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_ncrf_TAG_exp3A_microsatellite.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "recorded_scorer_sha": "bcc4992b51986109",
+    "repo_commit": "0e17d1a",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 35,
+    "table": "3A",
+    "row": "TRASH-dn",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3A_microsatellite.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "recorded_scorer_sha": "bcc4992b51986109",
+    "repo_commit": "0e17d1a",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 36,
+    "table": "3B",
+    "row": "BWTandem",
+    "source": "results/beds/bwtandem_maize.bed.gz",
+    "source_present": true,
+    "scorer": "scripts/scoring/rescore_tables_3bc.py",
+    "recorded_scorer_sha": "39d308a0799f7e1f",
+    "repo_commit": "0363d8b",
+    "current_sha": "e5202778dcf4a149da5c3e5e21c2efa60eaf826146c62c3db36ce04a84bd85bc",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 37,
+    "table": "3B",
+    "row": "TRF",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3B_satellite.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "recorded_scorer_sha": "33c8c79529a3f409",
+    "repo_commit": "0e17d1a",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 38,
+    "table": "3B",
+    "row": "ULTRA",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3B.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "recorded_scorer_sha": "33c8c79529a3f409",
+    "repo_commit": "0e17d1a",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 39,
+    "table": "3B",
+    "row": "tantan",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/tantan/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_tantan_exp3B_satellite.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "recorded_scorer_sha": "33c8c79529a3f409",
+    "repo_commit": "0e17d1a",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 40,
+    "table": "3B",
+    "row": "TRASH",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_denovo_exp3B_satellite.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_trash_maize.py",
+    "recorded_scorer_sha": "626f7751fe9a1d31",
+    "repo_commit": "0e17d1a",
+    "current_sha": "626f7751fe9a1d3151c89617ca2f44a581996ae7c15b0ef19b242608856391ff",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 41,
+    "table": "3C",
+    "row": "BWTandem",
+    "source": "results/beds/bwtandem_maize.bed.gz",
+    "source_present": true,
+    "scorer": "scripts/scoring/rescore_tables_3bc.py",
+    "recorded_scorer_sha": "39d308a0799f7e1f",
+    "repo_commit": "0363d8b",
+    "current_sha": "e5202778dcf4a149da5c3e5e21c2efa60eaf826146c62c3db36ce04a84bd85bc",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 42,
+    "table": "3C",
+    "row": "TRF",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trf_exp3C_centc.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "recorded_scorer_sha": "33c8c79529a3f409",
+    "repo_commit": "0e17d1a",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 43,
+    "table": "3C",
+    "row": "ULTRA",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_maize_exp3C.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "recorded_scorer_sha": "33c8c79529a3f409",
+    "repo_commit": "0e17d1a",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 44,
+    "table": "3C",
+    "row": "TRASH",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_CentC_exp3C_centc.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_trash_maize.py",
+    "recorded_scorer_sha": "626f7751fe9a1d31",
+    "repo_commit": "0e17d1a",
+    "current_sha": "626f7751fe9a1d3151c89617ca2f44a581996ae7c15b0ef19b242608856391ff",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 45,
+    "table": "range-cost-superseded",
+    "row": "BWTandem p1-2000 t4",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/out/bwt_hg38_catchF_t4p2000.bed",
+    "source_present": true,
+    "scorer": "-",
+    "recorded_scorer_sha": "-",
+    "repo_commit": "07ad6fa"
+  },
+  {
+    "line": 46,
+    "table": "1e",
+    "row": "all rows",
+    "source": "(same source BEDs as table 1a)",
+    "source_present": false,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820c724137549",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 47,
+    "table": "ablation",
+    "row": "gapfill base",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/out/colcen_abl_base.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "0e17d1a",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 48,
+    "table": "ablation",
+    "row": "gapfill off",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/out/colcen_abl_off.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "0e17d1a",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 49,
+    "table": "ablation",
+    "row": "gapfill away",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/out/colcen_abl_away.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "0e17d1a",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 50,
+    "table": "3B-b/3C-b",
+    "row": "all rows",
+    "source": "(same source BEDs as tables 3B and 3C)",
+    "source_present": false,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "recorded_scorer_sha": "33c8c79529a3f409",
+    "repo_commit": "0e17d1a",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 51,
+    "table": "2",
+    "row": "NCRF",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/ncrf/Col-CEN_v1.2_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "0e17d1a",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 52,
+    "table": "2",
+    "row": "TRASH-dn",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/Col-CEN_v1.2_trash_denovo.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "0e17d1a",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 53,
+    "table": "2",
+    "row": "TRASH-tpl",
+    "source": "results/regen/colcen_trash_template_union.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "0e17d1a",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 54,
+    "table": "3A",
+    "row": "TRASH-tpl",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_TAG_exp3A_microsatellite.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_3a.py",
+    "recorded_scorer_sha": "bcc4992b51986109",
+    "repo_commit": "0e17d1a",
+    "current_sha": "bcc4992b51986109467209792ddd7c1dbba33e8e0b1a97d2eb207aec2c9c0fcc",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 55,
+    "table": "3B",
+    "row": "TRASH-tpl",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_trash_templates_knob180_exp3B_satellite.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "recorded_scorer_sha": "33c8c79529a3f409",
+    "repo_commit": "0e17d1a",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 56,
+    "table": "3C",
+    "row": "tantan",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/tantan/GCA_022117705.1_Zm-Mo17-REFERENCE-CAU-T2T-assembly_genomic_tantan_exp3C_centc.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "recorded_scorer_sha": "33c8c79529a3f409",
+    "repo_commit": "0e17d1a",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 57,
+    "table": "3B-b/3C-b",
+    "row": "BWTandem-rescore",
+    "source": "results/beds/bwtandem_maize.bed.gz",
+    "source_present": true,
+    "scorer": "scripts/scoring/rescore_tables_3bc.py",
+    "recorded_scorer_sha": "39d308a0799f7e1f",
+    "repo_commit": "0363d8b",
+    "current_sha": "e5202778dcf4a149da5c3e5e21c2efa60eaf826146c62c3db36ce04a84bd85bc",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 58,
+    "table": "flanks-superseded",
+    "row": "flank-periodicity",
+    "source": "(old BED; not reported)",
+    "source_present": false,
+    "scorer": "scripts/scoring/analyze_maize_flanks.py",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "0e17d1a",
+    "current_sha": "ae0b7f2ee292c21b1e296999ffa989023a5c9e5192f82946aeb6987297f152e0",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 59,
+    "table": "S2",
+    "row": "unique-calls",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/out/bwt_hg38_catchF_p100.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/analyze_unique_regions.py",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "0e17d1a",
+    "current_sha": "0d552ac23df0fc715cf989911572afc674684e587aef2b327a2cb92793444c6e",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 60,
+    "table": "range-rep-superseded",
+    "row": "p100-r1",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/rep1_p100.bed",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "07ad6fa"
+  },
+  {
+    "line": 61,
+    "table": "range-rep-superseded",
+    "row": "p2000-r1",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/rep1_p2000.bed",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "07ad6fa"
+  },
+  {
+    "line": 62,
+    "table": "range-rep-superseded",
+    "row": "p100-r2",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/rep2_p100.bed",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "07ad6fa"
+  },
+  {
+    "line": 63,
+    "table": "range-rep-superseded",
+    "row": "p2000-r2",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/rep2_p2000.bed",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "07ad6fa"
+  },
+  {
+    "line": 64,
+    "table": "range-rep-superseded",
+    "row": "p100-r3",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/rep3_p100.bed",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "07ad6fa"
+  },
+  {
+    "line": 65,
+    "table": "range-rep-superseded",
+    "row": "p2000-r3",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/rep3_p2000.bed",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "07ad6fa"
+  },
+  {
+    "line": 66,
+    "table": "range-cost",
+    "row": "TRF-p2000-attempt",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/trf_hg38_p2000.ngs.dat",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "\u2014"
+  },
+  {
+    "line": 67,
+    "table": "range-cost",
+    "row": "ULTRA-p2000-attempt",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/regen/ultra_p2000/ultra_human_p2000.tsv",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "\u2014"
+  },
+  {
+    "line": 68,
+    "table": "2",
+    "row": "tantan (500bp re-run)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_colcen_w500.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "294f8ac",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": false,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 69,
+    "table": "3B",
+    "row": "tantan (500bp re-run)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w500.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "recorded_scorer_sha": "c6a03d6bf342d564",
+    "repo_commit": "294f8ac",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": true,
+    "history_matches": [
+      "410cb357e1d59168db63a343122d57b875e34300"
+    ]
+  },
+  {
+    "line": 70,
+    "table": "3C",
+    "row": "tantan (200bp re-run)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_maize_w200.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_consistent.py",
+    "recorded_scorer_sha": "c6a03d6bf342d564",
+    "repo_commit": "294f8ac",
+    "current_sha": "c6a03d6bf342d5644c0607b9ea2048a320a172ce118b53a9c49e34a5e350172c",
+    "current_match": true,
+    "history_matches": [
+      "410cb357e1d59168db63a343122d57b875e34300"
+    ]
+  },
+  {
+    "line": 71,
+    "table": "1c",
+    "row": "tantan (2000bp re-run)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/tantan/tantan_human_w2000.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "recorded_scorer_sha": "0ec76dd5a9ddffb6",
+    "repo_commit": "294f8ac",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 72,
+    "table": "1a",
+    "row": "BWTandem (released)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/released/rel_main.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "recorded_scorer_sha": "0ec76dd5a9ddffb6",
+    "repo_commit": "294f8ac",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 73,
+    "table": "1d",
+    "row": "BWTandem-P (released)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/released/rel_P.bed",
+    "source_present": true,
+    "scorer": "(count only)",
+    "recorded_scorer_sha": "0ec76dd5a9ddffb6",
+    "repo_commit": "294f8ac"
+  },
+  {
+    "line": 74,
+    "table": "1d",
+    "row": "BWTandem-B (released)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/released/rel_B.bed",
+    "source_present": true,
+    "scorer": "(count only)",
+    "recorded_scorer_sha": "0ec76dd5a9ddffb6",
+    "repo_commit": "294f8ac"
+  },
+  {
+    "line": 75,
+    "table": "1d",
+    "row": "BWTandem-F (released)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/released/rel_F.bed",
+    "source_present": true,
+    "scorer": "(count only)",
+    "recorded_scorer_sha": "0ec76dd5a9ddffb6",
+    "repo_commit": "294f8ac"
+  },
+  {
+    "line": 76,
+    "table": "1d",
+    "row": "BWTandem-H (released)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/released/rel_H.bed",
+    "source_present": true,
+    "scorer": "(count only)",
+    "recorded_scorer_sha": "0ec76dd5a9ddffb6",
+    "repo_commit": "294f8ac"
+  },
+  {
+    "line": 77,
+    "table": "1a-superseded",
+    "row": "BWTandem (built-in defaults)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/defaults/def_main.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_remeas.py",
+    "recorded_scorer_sha": "0ec76dd5a9ddffb6",
+    "repo_commit": "294f8ac",
+    "current_sha": "0ec76dd5a9ddffb601124dd63821c5119c3da15a1736597ecf0f09a5b4ddd401",
+    "current_match": true,
+    "history_matches": [
+      "bf20dcef4f8b82beff063ba35583b3309a2194a4"
+    ]
+  },
+  {
+    "line": 78,
+    "table": "ablation",
+    "row": "seeding index arm",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/seedabl/abl_index.bed",
+    "source_present": true,
+    "scorer": "(byte comparison)",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "294f8ac"
+  },
+  {
+    "line": 79,
+    "table": "ablation",
+    "row": "seeding k-tuple arm",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/fixcampaign/seedabl/abl_ktuple.bed",
+    "source_present": true,
+    "scorer": "(byte comparison)",
+    "recorded_scorer_sha": "60d20caf95230bf6",
+    "repo_commit": "294f8ac"
+  },
+  {
+    "line": 80,
+    "table": "evidence",
+    "row": "Col-CEN provenance",
+    "source": "results/regen/regen_colcen.provenance.json",
+    "source_present": true,
+    "scorer": "-",
+    "recorded_scorer_sha": "-",
+    "repo_commit": "0363d8b"
+  },
+  {
+    "line": 81,
+    "table": "evidence",
+    "row": "human provenance",
+    "source": "results/regen/regen_human.provenance.json",
+    "source_present": true,
+    "scorer": "-",
+    "recorded_scorer_sha": "-",
+    "repo_commit": "0363d8b"
+  },
+  {
+    "line": 82,
+    "table": "evidence",
+    "row": "maize provenance",
+    "source": "results/regen/regen_maize.provenance.json",
+    "source_present": true,
+    "scorer": "-",
+    "recorded_scorer_sha": "-",
+    "repo_commit": "0363d8b"
+  },
+  {
+    "line": 83,
+    "table": "evidence",
+    "row": "human score",
+    "source": "results/regen/score_table1_regen_v2.txt",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820c724137549",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 84,
+    "table": "evidence",
+    "row": "maize score",
+    "source": "results/regen/score_maize_regen.txt",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_postmerge_regen.py",
+    "recorded_scorer_sha": "-",
+    "repo_commit": "0363d8b",
+    "current_sha": "5b4a5064c2d42fd83748eb40d99ea047b9846692f01eea17e2a1ead1be006851",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 85,
+    "table": "evidence",
+    "row": "Table 3BC report",
+    "source": "results/regen/table3bc_replacement.md",
+    "source_present": true,
+    "scorer": "scripts/scoring/rescore_tables_3bc.py",
+    "recorded_scorer_sha": "39d308a0799f7e1f",
+    "repo_commit": "0363d8b",
+    "current_sha": "e5202778dcf4a149da5c3e5e21c2efa60eaf826146c62c3db36ce04a84bd85bc",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 86,
+    "table": "evidence",
+    "row": "Table 3BC provenance",
+    "source": "results/regen/table3bc_provenance.json",
+    "source_present": true,
+    "scorer": "scripts/scoring/rescore_tables_3bc.py",
+    "recorded_scorer_sha": "39d308a0799f7e1f",
+    "repo_commit": "0363d8b",
+    "current_sha": "e5202778dcf4a149da5c3e5e21c2efa60eaf826146c62c3db36ce04a84bd85bc",
+    "current_match": false,
+    "history_matches": []
+  },
+  {
+    "line": 87,
+    "table": "evidence",
+    "row": "maize extra scorer",
+    "source": "scripts/scoring/score_maize_regen_evidence.py",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_regen_evidence.py",
+    "recorded_scorer_sha": "84077c2b5f53d53f",
+    "repo_commit": "this evidence commit",
+    "current_sha": "84077c2b5f53d53f22f7e650a53a3fb3183fe0d66edf318f6a2f01c01c7cbbb3",
+    "current_match": true,
+    "history_matches": [
+      "33f3ab6e66405a53b6b720e42d1d7b6e74aa0d08"
+    ]
+  },
+  {
+    "line": 88,
+    "table": "evidence",
+    "row": "maize extra output",
+    "source": "results/regen/maize_extra_evidence.json",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_maize_regen_evidence.py",
+    "recorded_scorer_sha": "84077c2b5f53d53f",
+    "repo_commit": "0363d8b",
+    "current_sha": "84077c2b5f53d53f22f7e650a53a3fb3183fe0d66edf318f6a2f01c01c7cbbb3",
+    "current_match": true,
+    "history_matches": [
+      "33f3ab6e66405a53b6b720e42d1d7b6e74aa0d08"
+    ]
+  },
+  {
+    "line": 89,
+    "table": "1b",
+    "row": "BWTandem",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/out/bwt_human_F_p100_0363.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820bebdd1f139",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 90,
+    "table": "1d",
+    "row": "BWTandem-P",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/out/bwt_human_P_p100_0363.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820bebdd1f139",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 91,
+    "table": "1d",
+    "row": "BWTandem-B",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/out/bwt_human_B_p100_0363.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820bebdd1f139",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 92,
+    "table": "1d",
+    "row": "BWTandem-F",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/out/bwt_human_F_p100_0363.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820bebdd1f139",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 93,
+    "table": "1d",
+    "row": "BWTandem-H",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/out/bwt_human_H_p100_0363.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820bebdd1f139",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 94,
+    "table": "S3",
+    "row": "pass disabled",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/out/bwt_human_idsweep_off_p2000_0363.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820bebdd1f139",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 95,
+    "table": "S3",
+    "row": "0.80",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/out/bwt_human_idsweep_0.80_p2000_0363.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820bebdd1f139",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 96,
+    "table": "S3",
+    "row": "0.76",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/out/bwt_human_idsweep_0.76_p2000_0363.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820bebdd1f139",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 97,
+    "table": "S3",
+    "row": "0.72",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/out/bwt_human_idsweep_0.72_p2000_0363.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820bebdd1f139",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 98,
+    "table": "S3",
+    "row": "0.68",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/out/bwt_human_idsweep_0.68_p2000_0363.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_table1_regen.py",
+    "recorded_scorer_sha": "b85820bebdd1f139",
+    "repo_commit": "0363d8b",
+    "current_sha": "b85820bebdd1f1398dc8e1506f7e624e537d00ef9b72e8891b21a98ac7708c94",
+    "current_match": true,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 99,
+    "table": "S4-superseded",
+    "row": "BWTandem",
+    "source": "results/beds/bwtandem_human.bed.gz",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "3e84c9764cc15b1a",
+    "repo_commit": "4a1d368",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 100,
+    "table": "S4-superseded",
+    "row": "ULTRA",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_human_GCA.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "3e84c9764cc15b1a",
+    "repo_commit": "4a1d368",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 101,
+    "table": "S4-superseded",
+    "row": "tantan",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/tantan/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "3e84c9764cc15b1a",
+    "repo_commit": "4a1d368",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 102,
+    "table": "S4-superseded",
+    "row": "TRF",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "3e84c9764cc15b1a",
+    "repo_commit": "4a1d368",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 103,
+    "table": "S4-superseded",
+    "row": "BWTandem (annotated truth)",
+    "source": "results/beds/bwtandem_human.bed.gz",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "3e84c9764cc15b1a",
+    "repo_commit": "4a1d368",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 104,
+    "table": "S4-superseded",
+    "row": "ULTRA (annotated truth)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_human_GCA.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "3e84c9764cc15b1a",
+    "repo_commit": "4a1d368",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 105,
+    "table": "S4-superseded",
+    "row": "tantan (annotated truth)",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/tantan/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "3e84c9764cc15b1a",
+    "repo_commit": "4a1d368",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "0c3c9823c440b23ec2219b625afe34857e97dce2"
+    ]
+  },
+  {
+    "line": 106,
+    "table": "S4",
+    "row": "BWTandem",
+    "source": "results/beds/bwtandem_human.bed.gz",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "06fa03a1edad3b90",
+    "repo_commit": "43543da",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 107,
+    "table": "S4",
+    "row": "ULTRA",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_human_GCA.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "06fa03a1edad3b90",
+    "repo_commit": "43543da",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 108,
+    "table": "S4",
+    "row": "tantan",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/tantan/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "06fa03a1edad3b90",
+    "repo_commit": "43543da",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 109,
+    "table": "S4",
+    "row": "TRF",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "06fa03a1edad3b90",
+    "repo_commit": "43543da",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 110,
+    "table": "S4",
+    "row": "TRASH",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_000001405.15_GRCh38_genomic_trash.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "06fa03a1edad3b90",
+    "repo_commit": "43543da",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 111,
+    "table": "S4",
+    "row": "BWTandem (annotation truth)",
+    "source": "results/beds/bwtandem_human.bed.gz",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "06fa03a1edad3b90",
+    "repo_commit": "43543da",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 112,
+    "table": "S4",
+    "row": "ULTRA (annotation truth)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_human_GCA.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "06fa03a1edad3b90",
+    "repo_commit": "43543da",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 113,
+    "table": "S4",
+    "row": "tantan (annotation truth)",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/tantan/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "06fa03a1edad3b90",
+    "repo_commit": "43543da",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 114,
+    "table": "S4",
+    "row": "TRF (annotation truth)",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "06fa03a1edad3b90",
+    "repo_commit": "43543da",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 115,
+    "table": "S4",
+    "row": "TRASH (annotation truth)",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_000001405.15_GRCh38_genomic_trash.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "06fa03a1edad3b90",
+    "repo_commit": "43543da",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "43543da464112b857d322cd4c0b34fceb93a797f"
+    ]
+  },
+  {
+    "line": 116,
+    "table": "S4",
+    "row": "BWTandem (annot, split bands)",
+    "source": "results/beds/bwtandem_human.bed.gz",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "91338484599efbeb",
+    "repo_commit": "fd21e38",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "5e68f7843bbcabb5e42d478ce49895ca7f89bf36"
+    ]
+  },
+  {
+    "line": 117,
+    "table": "S4",
+    "row": "ULTRA (annot, split bands)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/beds/ultra_human_GCA.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "91338484599efbeb",
+    "repo_commit": "fd21e38",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "5e68f7843bbcabb5e42d478ce49895ca7f89bf36"
+    ]
+  },
+  {
+    "line": 118,
+    "table": "S4",
+    "row": "tantan (annot, split bands)",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/tantan/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "91338484599efbeb",
+    "repo_commit": "fd21e38",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "5e68f7843bbcabb5e42d478ce49895ca7f89bf36"
+    ]
+  },
+  {
+    "line": 119,
+    "table": "S4",
+    "row": "TRF (annot, split bands)",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "91338484599efbeb",
+    "repo_commit": "fd21e38",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "5e68f7843bbcabb5e42d478ce49895ca7f89bf36"
+    ]
+  },
+  {
+    "line": 120,
+    "table": "S4",
+    "row": "TRASH (annot, split bands)",
+    "source": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trash/GCA_000001405.15_GRCh38_genomic_trash.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_one_to_one.py",
+    "recorded_scorer_sha": "91338484599efbeb",
+    "repo_commit": "fd21e38",
+    "current_sha": "1972ef4727de16139258a0b9ef19329dd8680f15d97d2117fec859a05f2cb454",
+    "current_match": false,
+    "history_matches": [
+      "5e68f7843bbcabb5e42d478ce49895ca7f89bf36"
+    ]
+  },
+  {
+    "line": 121,
+    "table": "1a",
+    "row": "longdust (2026)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_human_default.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "recorded_scorer_sha": "179e77b6a6951ff8",
+    "repo_commit": "7b2113d",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 122,
+    "table": "1a",
+    "row": "longdust -k8 -w20000 (2026)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_human_k8w20000.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "recorded_scorer_sha": "179e77b6a6951ff8",
+    "repo_commit": "7b2113d",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 123,
+    "table": "1a",
+    "row": "AniAnn's (2026)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_human.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "recorded_scorer_sha": "179e77b6a6951ff8",
+    "repo_commit": "7b2113d",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 124,
+    "table": "2",
+    "row": "longdust (2026)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_colcen_default.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "585d55558609d6e5",
+    "repo_commit": "7b2113d",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": true,
+    "history_matches": [
+      "1cb7f485566498d84de304d25b7d35c1c771da87"
+    ]
+  },
+  {
+    "line": 125,
+    "table": "2",
+    "row": "longdust -k8 -w20000 (2026)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_colcen_k8w20000.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "585d55558609d6e5",
+    "repo_commit": "7b2113d",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": true,
+    "history_matches": [
+      "1cb7f485566498d84de304d25b7d35c1c771da87"
+    ]
+  },
+  {
+    "line": 126,
+    "table": "2",
+    "row": "AniAnn's (2026)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_colcen.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_colcen.py",
+    "recorded_scorer_sha": "585d55558609d6e5",
+    "repo_commit": "7b2113d",
+    "current_sha": "585d55558609d6e5f6660ea4a625008400a528542d10284e3a01d2e7126289fd",
+    "current_match": true,
+    "history_matches": [
+      "1cb7f485566498d84de304d25b7d35c1c771da87"
+    ]
+  },
+  {
+    "line": 127,
+    "table": "3B",
+    "row": "longdust (2026)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_maize_default.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "recorded_scorer_sha": "179e77b6a6951ff8",
+    "repo_commit": "7b2113d",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 128,
+    "table": "3B",
+    "row": "longdust -k8 -w20000 (2026)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_maize_k8w20000.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "recorded_scorer_sha": "179e77b6a6951ff8",
+    "repo_commit": "7b2113d",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 129,
+    "table": "3B",
+    "row": "AniAnn's (2026)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "recorded_scorer_sha": "179e77b6a6951ff8",
+    "repo_commit": "7b2113d",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 130,
+    "table": "3C",
+    "row": "longdust (2026)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_maize_default.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "recorded_scorer_sha": "179e77b6a6951ff8",
+    "repo_commit": "7b2113d",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 131,
+    "table": "3C",
+    "row": "longdust -k8 -w20000 (2026)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/longdust_maize_k8w20000.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "recorded_scorer_sha": "179e77b6a6951ff8",
+    "repo_commit": "7b2113d",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 132,
+    "table": "3C",
+    "row": "AniAnn's (2026)",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/tools2026/beds/anianns_maize.bed",
+    "source_present": true,
+    "scorer": "scripts/scoring/score_2026_tools.py",
+    "recorded_scorer_sha": "179e77b6a6951ff8",
+    "repo_commit": "7b2113d",
+    "current_sha": "9e494ecceb747d65d419c7809a72416d32fec2771ad9a22251d44c483ae30c20",
+    "current_match": false,
+    "history_matches": [
+      "7b2113d6fe27baeb3b54041070dbd2c2d2bcc60b"
+    ]
+  },
+  {
+    "line": 133,
+    "table": "range-rep",
+    "row": "p100-r1",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/rangerep0363/rep1_p100.bed",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "0363d8b"
+  },
+  {
+    "line": 134,
+    "table": "range-rep",
+    "row": "p2000-r1",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/rangerep0363/rep1_p2000.bed",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "0363d8b"
+  },
+  {
+    "line": 135,
+    "table": "range-rep",
+    "row": "p100-r2",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/rangerep0363/rep2_p100.bed",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "0363d8b"
+  },
+  {
+    "line": 136,
+    "table": "range-rep",
+    "row": "p2000-r2",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/rangerep0363/rep2_p2000.bed",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "0363d8b"
+  },
+  {
+    "line": 137,
+    "table": "range-rep",
+    "row": "p100-r3",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/rangerep0363/rep3_p100.bed",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "0363d8b"
+  },
+  {
+    "line": 138,
+    "table": "range-rep",
+    "row": "p2000-r3",
+    "source": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/rangerep0363/rep3_p2000.bed",
+    "source_present": true,
+    "scorer": "\u2014",
+    "recorded_scorer_sha": "\u2014",
+    "repo_commit": "0363d8b"
+  }
+]

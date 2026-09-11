@@ -1,0 +1,142 @@
+[
+  {
+    "path": "results/manifest.tsv",
+    "bytes": 45377,
+    "recorded": "9a0488594de0e619238b65997cedbe6ad73a2f6da9a5851ac015e42b9b16e85d",
+    "actual": "9a0488594de0e619238b65997cedbe6ad73a2f6da9a5851ac015e42b9b16e85d",
+    "match": true
+  },
+  {
+    "path": "results/README.md",
+    "bytes": 9374,
+    "recorded": "0ce3ece63a9d0211a209cf944e400fa1ae5777f2e42cf67e3d5ab122552a6cae",
+    "actual": "0ce3ece63a9d0211a209cf944e400fa1ae5777f2e42cf67e3d5ab122552a6cae",
+    "match": true
+  },
+  {
+    "path": "results/sacct_provenance.txt",
+    "bytes": 8869,
+    "recorded": "24eaad31e3a3f875f1eee8b320a9c9e95cca2d29528ec0e598025e2ed98e87e7",
+    "actual": "24eaad31e3a3f875f1eee8b320a9c9e95cca2d29528ec0e598025e2ed98e87e7",
+    "match": true
+  },
+  {
+    "path": "results/beds/bwtandem_human.bed.gz",
+    "bytes": 59840593,
+    "recorded": "d63e74483e32c448c72cd889e30d8c4528f672af423852e5b5c58afcbcc7da17",
+    "actual": "d63e74483e32c448c72cd889e30d8c4528f672af423852e5b5c58afcbcc7da17",
+    "match": true
+  },
+  {
+    "path": "results/beds/bwtandem_maize.bed.gz",
+    "bytes": 44253821,
+    "recorded": "2a5ee49047ecd4bc4a32b8b9acfcffdb8c80634ba3b8fd62e582cf0b09c1e03a",
+    "actual": "2a5ee49047ecd4bc4a32b8b9acfcffdb8c80634ba3b8fd62e582cf0b09c1e03a",
+    "match": true
+  },
+  {
+    "path": "results/ground_truth/colcen_cen180.bed",
+    "bytes": 2536360,
+    "recorded": "879e7abd651ba0fe8d72fadc21a93283de7ef1f7cd377650e683c5e9644745a9",
+    "actual": "879e7abd651ba0fe8d72fadc21a93283de7ef1f7cd377650e683c5e9644745a9",
+    "match": true
+  },
+  {
+    "path": "results/ground_truth/colcen_cen180_raw_blast_hits.bed",
+    "bytes": 2283598,
+    "recorded": "ba42ddcd4cc9789f053fc8ce876470be70cfba460e58b28c8e1c73e51e7760d4",
+    "actual": "ba42ddcd4cc9789f053fc8ce876470be70cfba460e58b28c8e1c73e51e7760d4",
+    "match": true
+  },
+  {
+    "path": "results/one_to_one/one_to_one_trf_annot_r50.json",
+    "bytes": 1123,
+    "recorded": "0b9402b2eeb1e3ada9d3cf87362c7cd02639380956c3b2c31e69ba1c9496f792",
+    "actual": "0b9402b2eeb1e3ada9d3cf87362c7cd02639380956c3b2c31e69ba1c9496f792",
+    "match": true
+  },
+  {
+    "path": "results/one_to_one/README.md",
+    "bytes": 9596,
+    "recorded": "5cacb1fa482f74da7625d674c08e9df1cf8f06347fe840b08c7a340fefba023a",
+    "actual": "5cacb1fa482f74da7625d674c08e9df1cf8f06347fe840b08c7a340fefba023a",
+    "match": true
+  },
+  {
+    "path": "results/tuning_ledger/ledger.tsv",
+    "bytes": 19018,
+    "recorded": "2a17ee11b1f49b94f113422c375450aa72840ac922ae4db46a41dfb7196b61e7",
+    "actual": "2a17ee11b1f49b94f113422c375450aa72840ac922ae4db46a41dfb7196b61e7",
+    "match": true
+  },
+  {
+    "path": "results/tuning_ledger/best.json",
+    "bytes": 3640,
+    "recorded": "1c1a6c6c8ca7cc52ea78c9e304eab293ccd2e49582f51745e23065216b2e036b",
+    "actual": "1c1a6c6c8ca7cc52ea78c9e304eab293ccd2e49582f51745e23065216b2e036b",
+    "match": true
+  },
+  {
+    "path": "results/range_cost_0363d8b/rangerep0363_6147698.log",
+    "bytes": 621,
+    "recorded": "f7e9b325f4c72b8c49985d112f8061c290129c388888701185b9e4d1e3c62d52",
+    "actual": "f7e9b325f4c72b8c49985d112f8061c290129c388888701185b9e4d1e3c62d52",
+    "match": true
+  },
+  {
+    "path": "results/range_cost_0363d8b/rangerep0363_6147699.log",
+    "bytes": 621,
+    "recorded": "8249216fffa058adfb5ed2dc1368da2edb26df5d159b0626a6df7f04f28e1150",
+    "actual": "8249216fffa058adfb5ed2dc1368da2edb26df5d159b0626a6df7f04f28e1150",
+    "match": true
+  },
+  {
+    "path": "results/range_cost_0363d8b/rangerep0363_6147700.log",
+    "bytes": 621,
+    "recorded": "c10ef664b5ed3098ebe2fed7fcb3df097839b055b39977da2187bac23108c88a",
+    "actual": "c10ef664b5ed3098ebe2fed7fcb3df097839b055b39977da2187bac23108c88a",
+    "match": true
+  },
+  {
+    "path": "results/figures/paper_figs/rendered/fig2_range_cost.pdf",
+    "bytes": 81248,
+    "recorded": "0ca67a775ade45fb5500e86eff611c4d5b295d0ed38c591a79a5bbc0ae1cfe1d",
+    "actual": "0ca67a775ade45fb5500e86eff611c4d5b295d0ed38c591a79a5bbc0ae1cfe1d",
+    "match": true
+  },
+  {
+    "path": "results/figures/paper_figs/rendered/fig2_range_cost.png",
+    "bytes": 645428,
+    "recorded": "a69fc4d1f46df7bb80fc7d4a0463b97374d2e0d11ca0a493acd60c4e5ed33683",
+    "actual": "a69fc4d1f46df7bb80fc7d4a0463b97374d2e0d11ca0a493acd60c4e5ed33683",
+    "match": true
+  },
+  {
+    "path": "results/competitor_logs/trash__GCA_000001405.15_GRCh38_genomic_run.log",
+    "bytes": 176556,
+    "recorded": "043610c21f138d925c8508490788c702bf29e33ce9db77a65a30bcb69fd90e2c",
+    "actual": "043610c21f138d925c8508490788c702bf29e33ce9db77a65a30bcb69fd90e2c",
+    "match": true
+  },
+  {
+    "path": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/mreps/GCA_000001405.15_GRCh38_genomic.bed",
+    "bytes": 679004376,
+    "recorded": "e9df20edbcdda405da35aa1b744ea1b18c3279b85ae1f206ad06ef20c2adce98",
+    "actual": "e9df20edbcdda405da35aa1b744ea1b18c3279b85ae1f206ad06ef20c2adce98",
+    "match": true
+  },
+  {
+    "path": "/data/gpfs/assoc/pgl/filip/bwtandem_results/beds/trf/GCA_000001405.15_GRCh38_genomic_output.bed",
+    "bytes": 328045521,
+    "recorded": "95a5fac2da6ebc65ceac60c769342c7901f56329022e81f8699863e20ecf8a25",
+    "actual": "95a5fac2da6ebc65ceac60c769342c7901f56329022e81f8699863e20ecf8a25",
+    "match": true
+  },
+  {
+    "path": "/data/gpfs/assoc/pgl/devel/exp1_human/wp0/rangerep0363/rep2_p2000.bed",
+    "bytes": 211949715,
+    "recorded": "ece8cd1cedad55585b00785499569852ee3842e7eb5d8faf2eedbfe38849e47b",
+    "actual": "ece8cd1cedad55585b00785499569852ee3842e7eb5d8faf2eedbfe38849e47b",
+    "match": true
+  }
+]
