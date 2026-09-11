@@ -1,0 +1,63 @@
+#!/bin/bash
+#SBATCH --job-name=regen_p100
+#SBATCH --array=0-3
+#SBATCH --account=cpu-s1-pgl-0
+#SBATCH --partition=cpu-s1-pgl-0
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=64G
+#SBATCH --time=12:00:00
+#SBATCH --output=/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/logs/%x_%A_%a.out
+#SBATCH --error=/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/logs/%x_%A_%a.err
+
+set -euo pipefail
+
+# Compute-node /usr/bin/git is 1.8.3.1 and cannot read the worktree layout
+# (commondir); pin a modern git ahead of it. Shim dir holds only `git` so
+# nothing else (python etc.) is shadowed. Covers run_with_provenance.sh too.
+export PATH="/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/gitshim:$PATH"
+
+WORKTREE=/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/worktree
+OUTDIR=/data/gpfs/assoc/pgl/devel/exp1_human/regen/maize_rescore/native_p100_0363/out
+PY=/data/gpfs/assoc/pgl/bin/conda/conda_envs/bwtandem/bin/python
+FASTA=/data/gpfs/assoc/pgl/devel/exp1_human/data/hg38_primary.fa
+EXPECTED=0363d8bdc83cb8fb8e62c19d665479ce878e9f70
+variants=(P B F H)
+variant=${variants[$SLURM_ARRAY_TASK_ID]}
+prefix=$OUTDIR/bwt_human_${variant}_p100_0363
+
+mkdir -p "$OUTDIR"
+cd "$WORKTREE"
+test "$(git rev-parse HEAD)" = "$EXPECTED"
+test -z "$(git status --porcelain --untracked-files=no)"
+
+# Common benchmark configuration.
+export TIER1_FMSCAN=1 TIER1_FMSCAN_MIN_DENSITY=0.45 TIER1_FMSCAN_MIN_LLR=6.0
+export TIER1_MIN_ARRAY_LEN=20 TIER1_MIN_SCORE=20 TIER1_MIN_COPIES=2
+export TIER1_COPYBASE=6 TIER1_COPYADD=2 TIER1_EXT_COPIES=2
+export TIER2_MISMATCH=0.30 TIER2_SHORT_REQ_COPIES=2
+
+case "$variant" in
+  P)
+    ;;
+  B)
+    export TIER1_SHORT_PERIOD_MAX=9 TIER1_SHORT_MIN_ARRAY_LEN=17 TIER1_SHORT_MIN_SCORE=17
+    export CATCHALL_SCAN=1 CATCHALL_MIN_IDENTITY=0.76 CATCHALL_MAX_P=50
+    ;;
+  F)
+    export TIER1_SHORT_PERIOD_MAX=9 TIER1_SHORT_MIN_ARRAY_LEN=17 TIER1_SHORT_MIN_SCORE=17
+    export CATCHALL_SCAN=1 CATCHALL_MIN_IDENTITY=0.72 CATCHALL_MIN_COPIES=3
+    ;;
+  H)
+    export TIER1_SHORT_PERIOD_MAX=9 TIER1_SHORT_MIN_ARRAY_LEN=17 TIER1_SHORT_MIN_SCORE=17
+    export CATCHALL_SCAN=1 CATCHALL_MIN_IDENTITY=0.72
+    ;;
+esac
+
+# Put the benchmark interpreter first so the provenance wrapper records the
+# interpreter that actually launches src.main.
+export PATH="$(dirname "$PY"):$PATH"
+scripts/benchmark/run_with_provenance.sh \
+  --tag "human_${variant}_p100_0363_${SLURM_ARRAY_JOB_ID}_${SLURM_ARRAY_TASK_ID}" \
+  --out "$prefix" -- \
+  "$PY" -m src.main "$FASTA" --min-period 1 --max-period 100 \
+  --threads 4 --format bed -o "$prefix" -v

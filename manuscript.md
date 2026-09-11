@@ -14,7 +14,7 @@ Correspondence: wyim@unr.edu
 
 **Summary:** BWTandem combines FM-index seeding, candidate refinement and supplementary periodicity scans to report motifs, periods, copy counts and purity across 1-2,000 bp in assembled genomes; in three paired human runs, widening the maximum period from 100 to 2,000 bp increased runtime 1.77-1.82 times (mean 1.79). Its contribution is wide-range structured output with non-leading shared-range accuracy: shared-output-band region recall was 78.87% against ULTRA's 81.62%, and a stratified single-reader audit supported only 4 of 400 calls absent from both the catalog and four original comparators; a causal speed advantage of the index was not demonstrated.
 
-**Availability and Implementation:** MIT-licensed source and scoring scripts: https://github.com/wyim-pgl/bwt-algorithm. Benchmark configurations differ from defaults (Supplementary Methods S2).
+**Availability and Implementation:** MIT-licensed source and scoring scripts: https://github.com/wyim-pgl/bwt-algorithm-develop. Benchmark configurations differ from defaults (Supplementary Methods S2).
 
 **Contact:** wyim@unr.edu
 

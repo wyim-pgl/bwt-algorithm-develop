@@ -1,0 +1,32 @@
+=== provenance ===
+host       : cpu-51
+jobid      : 5981977
+binary     : /data/gpfs/home/wyim/micromamba/bin/ultra
+binary mtime: 2026-03-31 13:11:10.801844237 -0700
+version    :  Version 1.2.1
+fasta      : /data/gpfs/assoc/pgl/filip/old_bwt/bwtandem/Col-CEN_v1.2/Col-CEN_v1.2.fasta (134282475 bytes)
+output     : /data/gpfs/assoc/pgl/devel/exp1_human/wp0/out/ultra_colcen_p500.tsv
+started    : 2026-08-03T12:04:10-07:00
+command    : /data/gpfs/home/wyim/micromamba/bin/ultra -t 2 -p 500 -o /data/gpfs/assoc/pgl/devel/exp1_human/wp0/out/ultra_colcen_p500.tsv /data/gpfs/assoc/pgl/filip/old_bwt/bwtandem/Col-CEN_v1.2/Col-CEN_v1.2.fasta
+  (original published run was: ultra -t 2 -o <tsv> <fasta>, i.e. default -p 100)
+==================
+----------------------------
+Maximum repeat period: 500
+Number of model states: 10370
+Total sequence window size: 51000
+DP matrix cells: 528870000
+Threads: 2
+Sequence window queue length: 1024
+Total size: 3.99 GB (4283184000 bytes)
+----------------------------
+*Actual memory usage will be slightly greater due to output repeat queue and repeat split matrices
+============================
+----------------------------
+Annotation Coverage: 0.1556 (20549588 / 132081078)
+==================
+finished   : 2026-08-03T22:11:20-07:00
+exit       : 0
+wall clock : 36430s (10h 7m)
+output size: 9735490 bytes
+peak RSS   : query with  sacct -j 5981977 --format=JobID,MaxRSS,Elapsed
+EXIT=0

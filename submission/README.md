@@ -4,6 +4,17 @@
 final journal-submission record are distinct. Do not describe a draft GitHub
 release or the repository homepage as a minted DOI or permanent archive.
 
+## Repository rename and source/proof distinction
+
+The active repository is now
+https://github.com/wyim-pgl/bwt-algorithm-develop. Only the repository URL in
+the current manuscript and supplement sources was updated during the rename.
+The PDF/DOCX proofs, presentation figures, `SHA256SUMS`, frozen
+`manuscript_full.md`, historical evidence and `v0.9.0` tag were not regenerated
+or rewritten. The proof files therefore still contain the historical URL and
+are not byte-current renderings of the renamed sources. GitHub redirects are
+not a DOI or an archival guarantee. Rebuild only when adopting a new proof.
+
 ## Files
 
 - `../manuscript.md`: short Application Note source.
@@ -56,12 +67,13 @@ the fig2 crop entry.
 The repository is public and GitHub release-write permission was verified.
 No Zenodo token was configured locally or on Pronghorn, and no repository
 webhook was configured at the pre-release check. Therefore no DOI was reserved,
-minted, or added to the abstract. The planned release is a **draft** on the
-existing annotated `v0.9.0` tag, after branch CI passes on that exact commit.
+minted, or added to the abstract. The existing release was rechecked as **draft** during the repository rename;
+it uses the annotated `v0.9.0` tag at `ef98c03`. Its assets predate the current
+proofs and must not be presented as the current submission snapshot.
 No Docker image or PyPI package was built/published as part of this preparation.
 Changing the Docker label does not validate the image build.
 
-1. The owner enables `wyim-pgl/bwt-algorithm` in Zenodo's GitHub integration and
+1. The owner enables `wyim-pgl/bwt-algorithm-develop` in Zenodo's GitHub integration and
    verifies archive metadata (especially software creators and license).
 2. Publish the draft release once, then verify the actual Zenodo record and DOI;
    or reserve a DOI in an authorized Zenodo deposit before finalizing an archive.

@@ -16,6 +16,11 @@ dependencies = [
     "pydivsufsort==0.0.20",
 ]
 
+[project.urls]
+Repository = "https://github.com/wyim-pgl/bwt-algorithm-develop"
+Issues = "https://github.com/wyim-pgl/bwt-algorithm-develop/issues"
+Documentation = "https://github.com/wyim-pgl/bwt-algorithm-develop/blob/main/README.md"
+
 [project.optional-dependencies]
 dev = ["pytest>=9", "Cython>=3.0"]
 
