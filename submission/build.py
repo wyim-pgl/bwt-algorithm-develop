@@ -75,18 +75,19 @@ for _ in range(2):
                     '-output-directory=' + str(out), str(tex)], check=True)
 
 # The full supplement retains the long source's tables and declarations.
-# Disable automatic numbering. Inline images alone do not guarantee that a
-# following legend stays on-page: group the tall structural image explicitly.
+# Group all seven images with their full external legends; identifiers are
+# supplied by the approved display map, not Pandoc's automatic numbering.
 supp = Path('supplementary.md').read_text()
-pattern = r'!\[Supplementary Figure 5\]\(([^)]+)\)\s+((?:Supplementary Figure 5\.)[^\n]+)'
+pattern = r'!\[Supplementary Fig\. (S\d+)\]\(([^)]+)\)\s+(\*\*Supplementary Fig\. S\d+\.[^\n]+(?:\n(?!\n)[^\n]+)*)'
 def structural_figure(match):
-    image, caption = match.groups()
+    number, image, caption = match.groups()
+    height = '140mm' if number == 'S7' else '110mm'
     return ('\n```{=latex}\n' + r'\noindent\begin{minipage}{\linewidth}\centering' + '\n' +
-            r'\includegraphics[height=140mm,width=0.95\linewidth,keepaspectratio]{' + image + '}\n' +
+            r'\includegraphics[height=' + height + r',width=0.95\linewidth,keepaspectratio]{' + image + '}\n' +
             r'\par\medskip\raggedright ' + latex(caption).strip() + '\n' +
             r'\end{minipage}' + '\n```\n')
 supp, grouped = re.subn(pattern, structural_figure, supp)
-assert grouped == 1
+assert grouped == 7
 supp_input = out / 'supplementary-layout.md'
 supp_input.write_text(supp)
 subprocess.run(['pandoc', str(supp_input), '-f', 'markdown-implicit_figures',
@@ -96,10 +97,18 @@ subprocess.run(['pandoc', str(supp_input), '-f', 'markdown-implicit_figures',
                 '-V', 'monofont:DejaVu Sans Mono', '-V', 'colorlinks:true',
                 '--include-in-header=submission/supplement-header.tex'], check=True)
 for name in ('manuscript', 'supplementary'):
-    subprocess.run(['pandoc', name + '.md', '-f', 'markdown-implicit_figures',
+    word_source = Path(name + '.md')
+    if name == 'supplementary':
+        word_source = out / 'supplementary-word.md'
+        word_text = Path('supplementary.md').read_text()
+        word_text = word_text.replace('](submission/figures/fig5_array_structure.png)',
+                                      '](submission/figures/fig5_array_structure.png){height=140mm}')
+        word_source.write_text(word_text)
+    subprocess.run(['pandoc', str(word_source), '-f', 'markdown-implicit_figures-smart',
                     '-o', str(out / (name + '.docx'))], check=True)
     # Preserve the plain Pandoc export for independent content/style comparison.
     shutil.copyfile(out / (name + '.docx'), out / (name + '-pandoc.docx'))
-    subprocess.run([sys.executable, 'submission/format_docx_tables.py',
-                    str(out / (name + '.docx'))], check=True)
+    subprocess.run([sys.executable, 'submission/lab-docx/lab_docx.py',
+                    str(out / (name + '.docx')), '--species', 'Arabidopsis thaliana',
+                    '--species', 'Zea mays'], check=True)
 print('Built PDFs and DOCX in submission/build/. Inspect layout and warnings before release.')

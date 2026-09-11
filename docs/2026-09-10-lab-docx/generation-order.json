@@ -1,0 +1,13 @@
+{
+  "wiki_initial_before_word": "a7141d49157133fa73194eab44cfa152ad4f0285",
+  "wiki_final_toolkit": "b2dbac6036811bbc93bfe898695511630e34ddf1",
+  "upstream_humanizer": "9862685f575c65a8247f90369951df1b3416e3d6",
+  "adopted_at": "2026-09-10 18:10 (PDT)",
+  "word_docs": [
+    "submission/manuscript.docx",
+    "submission/supplementary.docx"
+  ],
+  "table_blocks": 18,
+  "supplement_figures": 7,
+  "no_results_or_public_tag_changes": true
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "start": 4,
+    "end": 5,
+    "old": "Department of Biochemistry and Molecular Biology, University of Nevada, Reno, NV 89557, USA\n",
+    "new": "::: {custom-style=\"Affiliation\"}\nDepartment of Biochemistry and Molecular Biology\\\nUniversity of Nevada, Reno\\\nReno, NV 89557, USA\n:::\n"
+  },
+  {
+    "start": 10,
+    "end": 11,
+    "old": "**Summary:** BWTandem combines FM-index seeding, candidate refinement and supplementary periodicity scans to report motifs, periods, copy counts and purity across 1–2,000 bp in assembled genomes; in three paired human runs, widening the maximum period from 100 to 2,000 bp increased runtime 1.77–1.82 times (mean 1.79). Its contribution is wide-range structured output with non-leading shared-range accuracy — shared-output-band region recall was 78.87% against ULTRA's 81.62%, and a stratified single-reader audit supported only 4 of 400 calls absent from both the catalog and four original comparators — not a demonstrated causal speed advantage of the index.\n",
+    "new": "**Summary:** BWTandem combines FM-index seeding, candidate refinement and supplementary periodicity scans to report motifs, periods, copy counts and purity across 1-2,000 bp in assembled genomes; in three paired human runs, widening the maximum period from 100 to 2,000 bp increased runtime 1.77-1.82 times (mean 1.79). Its contribution is wide-range structured output with non-leading shared-range accuracy: shared-output-band region recall was 78.87% against ULTRA's 81.62%, and a stratified single-reader audit supported only 4 of 400 calls absent from both the catalog and four original comparators; a causal speed advantage of the index was not demonstrated.\n"
+  },
+  {
+    "start": 24,
+    "end": 25,
+    "old": "A chromosome-level FM-index supports short-motif enumeration and sampled-k-mer occurrence queries. Three overlapping detection tiers combine short-repeat scanning, longest-common-prefix analysis and sparse seeding with candidate refinement. Satellite gap filling and an optional catch-all pass use autocorrelation, not index queries. Reported performance reflects this complete pipeline; human and maize benchmarks enable the catch-all pass, whereas Arabidopsis does not. Supplementary Sections 2.1–2.2 and Methods S1–S2 specify gates, configurations and scoring.\n",
+    "new": "A chromosome-level FM-index supports short-motif enumeration and sampled-k-mer occurrence queries. Three overlapping detection tiers combine short-repeat scanning, longest-common-prefix analysis and sparse seeding with candidate refinement. Satellite gap filling and an optional catch-all pass use autocorrelation, not index queries. Reported performance reflects this complete pipeline; human and maize benchmarks enable the catch-all pass, whereas Arabidopsis does not. Supplementary Sections 2.1-2.2 and Methods S1-S2 specify gates, configurations and scoring.\n"
+  },
+  {
+    "start": 26,
+    "end": 27,
+    "old": "Human evaluation uses the GRCh38 primary chromosomes (GenBank assembly GCA_000001405.15; Genome Reference Consortium, 2013) and release v1.2.1 of the adotto variable-repeat catalog (English et al., 2024; dataset English, 2024a); plant evaluation uses Col-CEN v1.2 (Naish et al., 2021; dataset Schatzlab, n.d.) and maize Mo17 (GenBank assembly GCA_022117705.1; Chen et al., 2023; dataset China Agriculture University, n.d.). Human region recovery requires one-base overlap. Reciprocal-overlap and one-to-one sensitivity analyses are provided in the supplement. Catalog precision is not precision against all genomic repeats. Output-period filtering matches the human comparison band, not execution ranges. Historical competitors processed additional sequences; memory measurements mix sampled cgroup peaks and GNU-time maxima. These observations do not establish matched cross-tool speedups. Human operating points and the Arabidopsis catch-all choice were selected using their evaluation truth sets; these are in-sample comparisons, and competitors did not receive an equivalent tuning search. All tables, original identifiers, detailed caveats and source links are retained in the supplement.\n",
+    "new": "Human evaluation uses the primary chromosomes of GRCh38, GenBank assembly GCA_000001405.15 (Genome Reference Consortium, 2013), and release v1.2.1 of the adotto variable-repeat catalog (English et al., 2024; dataset English, 2024a). Plant evaluation uses Col-CEN v1.2 (Naish et al., 2021; dataset Schatzlab, n.d.) and maize Mo17, GenBank assembly GCA_022117705.1 (Chen et al., 2023; dataset China Agriculture University, n.d.). Human region recovery requires one-base overlap. Reciprocal-overlap and one-to-one sensitivity analyses are provided in the supplement. Catalog precision is not precision against all genomic repeats. Output-period filtering matches the human comparison band, not execution ranges. Historical competitors processed additional sequences; memory measurements mix sampled cgroup peaks and GNU-time maxima. These observations do not establish matched cross-tool speedups. Human operating points and the Arabidopsis catch-all choice were selected using their evaluation truth sets; these are in-sample comparisons, and competitors did not receive an equivalent tuning search. All tables, original identifiers, detailed caveats and source links are retained in the supplement.\n\nParameter limits, execution configurations and competitor versions are specified for reproducing the benchmark settings (Supplementary Tables S13-S15).\n"
+  },
+  {
+    "start": 30,
+    "end": 31,
+    "old": "Three paired four-worker human runs at execution commit `0363d8b` changed only the maximum period, from 100 to 2,000 bp. Runtime ratios were 1.77–1.82, with a mean of 1.79 (Fig. 1). Two replicates shared a node. This is a sublinear response over two measured ceilings, not an asymptotic bound. The earlier 1.30–1.41 estimate is superseded: its narrow arm still searched and discarded long-period candidates. A historical Tier-2/3 lookup substitution changed Arabidopsis runtime by 5.56% without changing output, but retained the index; it was not an index-free pipeline ablation.\n",
+    "new": "Three paired four-worker human runs at execution commit `0363d8b` changed only the maximum period, from 100 to 2,000 bp. Runtime ratios were 1.77-1.82, with a mean of 1.79 (Fig. 1; Supplementary Fig. S1). Two replicates shared a node. This is a sublinear response over two measured ceilings, not an asymptotic bound. The earlier 1.30-1.41 estimate is superseded: its narrow arm still searched and discarded long-period candidates. A historical Tier-2/3 lookup substitution changed Arabidopsis runtime by 5.56% without changing output, but retained the index; it was not an index-free pipeline ablation.\n"
+  },
+  {
+    "start": 32,
+    "end": 33,
+    "old": "At the shared ≤100 bp output band, ULTRA had 81.62% region recall and BWTandem 78.87%; ULTRA remained ahead under both reciprocal-overlap rules (Fig. 2; Supplementary Table 1b). BWTandem's permissive native-period-100 setting reached 81.60% recall at 48.44% precision, versus ULTRA's 53.66% precision. BWTandem's full-range two-worker run required 12.65 h and 28.08 GiB, distinct from the four-worker paired measurements. No claim of superior shared-range accuracy follows.\n",
+    "new": "At the shared ≤100 bp output band, ULTRA had 81.62% region recall and BWTandem 78.87%; ULTRA remained ahead under both reciprocal-overlap rules (Fig. 2; Supplementary Fig. S4; Supplementary Table S2). BWTandem's permissive native-period-100 setting reached 81.60% recall at 48.44% precision, versus ULTRA's 53.66% precision. BWTandem's full-range two-worker run required 12.65 h and 28.08 GiB, distinct from the four-worker paired measurements. No claim of superior shared-range accuracy follows.\n"
+  },
+  {
+    "start": 36,
+    "end": 37,
+    "old": "On Col-CEN, BWTandem overlapped 99.72% of conserved CEN180 reference monomers by at least one base without a call-period filter, falling to 94.68% when calls were restricted to 150–400 bp (Supplementary Table 2 and Section 3.2). tantan's 500 bp-window rerun recovered 99.24% with higher base-pair precision and lower observed cost, although its shared-node timing and narrower search range were not matched to BWTandem. On maize CentC, AniAnn's covered 81.42%, versus BWTandem's 58.55%, with coarser boundaries. BWTandem's period-filtered coverage losses were 15.59, 33.01 and 17.84 percentage points for knob180, TR-1 and CentC. Detection and correct period assignment are different tasks.\n",
+    "new": "On Col-CEN, BWTandem overlapped 99.72% of conserved CEN180 reference monomers by at least one base without a call-period filter, falling to 94.68% when calls were restricted to 150-400 bp (Supplementary Table S6 and Section 3.2). tantan's 500 bp-window rerun recovered 99.24% with higher base-pair precision and lower observed cost, although its shared-node timing and narrower search range were not matched to BWTandem. On maize CentC, AniAnn's covered 81.42%, versus BWTandem's 58.55%, with coarser boundaries. BWTandem's period-filtered coverage losses were 15.59, 33.01 and 17.84 percentage points for knob180, TR-1 and CentC. Detection and correct period assignment are different tasks.\n"
+  },
+  {
+    "start": 39,
+    "end": 39,
+    "old": "",
+    "new": "\nFull-range human results, the shared ≤100 bp comparison and the 101-2,000 bp stratum describe different output ranges (Supplementary Tables S1-S3). Native-period-100 operating points show the recall-precision trade-off, while cross-caller support rates depend on the corroboration rule (Supplementary Tables S4 and S5). The ULTRA, BWTandem and tantan recall ordering persists across chromosome-subset checks of post-filtered full-range output (Supplementary Fig. S2). Unmatched and shared calls differ in length and motif entropy; these properties do not validate unmatched calls (Supplementary Table S16). Strict one-to-one scores depend on whether matching uses padded regions or annotation coordinates (Supplementary Tables S17 and S18).\n\nThe single-reader audit supported few calls absent from both the catalog and the original comparators (Supplementary Fig. S3). Maize microsatellite counts depend on whether the same period rule is applied to every tool (Supplementary Tables S7 and S8). Satellite coverage, boundary offsets and filtering losses differ across knob180, TR-1 and CentC (Supplementary Tables S9-S12; Supplementary Fig. S5). Coordinate-only merging provides a separate boundary and fragmentation diagnostic (Supplementary Fig. S6). Selected k-mer self-similarity and dot-plot examples illustrate repeat structure without independently validating the reported motifs (Supplementary Fig. S7).\n\nIn the full-range identity sweep, region recall/precision were 62.59%/54.72% with the catch-all pass disabled, 71.36%/53.42% at identity 0.80, 71.53%/53.35% at 0.76, 80.53%/50.50% at 0.72 and 81.46%/48.92% at 0.68. These in-sample results informed the operating-point selection (Supplementary Section S2).\n"
+  },
+  {
+    "start": 50,
+    "end": 51,
+    "old": "Benson G. (1999) Tandem repeats finder: a program to analyze DNA sequences. *Nucleic Acids Res.*, 27, 573–580.\n",
+    "new": "Benson G. (1999) Tandem repeats finder: a program to analyze DNA sequences. *Nucleic Acids Res.*, 27, 573-580.\n"
+  },
+  {
+    "start": 52,
+    "end": 53,
+    "old": "Chen J. et al. (2023) A complete telomere-to-telomere assembly of the maize genome. *Nat. Genet.*, 55, 1221–1231.\n",
+    "new": "Chen J. et al. (2023) A complete telomere-to-telomere assembly of the maize genome. *Nat. Genet.*, 55, 1221-1231.\n"
+  },
+  {
+    "start": 54,
+    "end": 55,
+    "old": "China Agriculture University (n.d.) Zm-Mo17-REFERENCE-CAU-T2T-assembly assembly for Zea mays (dataset). GenBank/ENA assembly accession GCA_022117705.1. https://www.ebi.ac.uk/ena/browser/view/GCA_022117705.1\n",
+    "new": "China Agriculture University (n.d.) Zm-Mo17-REFERENCE-CAU-T2T-assembly assembly for *Zea mays* (dataset). GenBank/ENA assembly accession GCA_022117705.1. https://www.ebi.ac.uk/ena/browser/view/GCA_022117705.1\n"
+  },
+  {
+    "start": 56,
+    "end": 57,
+    "old": "English A.C. et al. (2024) Analysis and benchmarking of small and large genomic variants across tandem repeats. *Nat. Biotechnol.*, published online 26 April 2024; 43, 431–442 (2025).\n",
+    "new": "English A.C. et al. (2024) Analysis and benchmarking of small and large genomic variants across tandem repeats. *Nat. Biotechnol.*, published online 26 April 2024; 43, 431-442 (2025).\n"
+  },
+  {
+    "start": 76,
+    "end": 77,
+    "old": "**Fig. 1.** Paired human range cost (A); separate maize runtime (B) and human core-hour/memory observations (C). Cross-tool ranges, FASTA scopes and memory accounting differ. Original Figure 2 and its complete caption are preserved as Supplementary Figure 2.\n",
+    "new": "**Fig. 1.** Paired human range cost (A); separate maize runtime (B) and human core-hour/memory observations (C). Cross-tool ranges, FASTA scopes and memory accounting differ. The full caption is retained (Supplementary Fig. S1).\n"
+  },
+  {
+    "start": 78,
+    "end": 79,
+    "old": "**Alt text:** Three-panel chart. Panel A is a slope chart of three paired human runs: runtime rises from about 4 hours at a 100 bp maximum period to 7.1–7.3 hours at 2,000 bp, with the per-replicate ratios 1.77–1.82 labelled beside the endpoints. Panel B shows observed ULTRA and TRF maize runtimes rising with the maximum period on log–log axes. Panel C shows dot plots of per-tool human core-hours and peak memory, each point labelled with its period cap; ranges and inputs are not matched across tools.\n",
+    "new": "**Alt text:** Three-panel chart. Panel A is a slope chart of three paired human runs: runtime rises from about 4 hours at a 100 bp maximum period to 7.1-7.3 hours at 2,000 bp, with the per-replicate ratios 1.77-1.82 labelled beside the endpoints. Panel B shows observed ULTRA and TRF maize runtimes rising with the maximum period on log-log axes. Panel C shows dot plots of per-tool human core-hours and peak memory, each point labelled with its period cap; ranges and inputs are not matched across tools.\n"
+  },
+  {
+    "start": 82,
+    "end": 83,
+    "old": "**Fig. 2.** Native-period-100 operating points (A–B) and reciprocal-overlap sensitivity of post-filtered full-range output (C). The 2026 points in A–B are full-range, not band-matched. Original Figure 1 and its complete caption are preserved as Supplementary Figure 1.\n",
+    "new": "**Fig. 2.** Native-period-100 operating points (A-B) and reciprocal-overlap sensitivity of post-filtered full-range output (C). The 2026 points in A-B are full-range, not band-matched. The full caption is retained (Supplementary Fig. S4).\n"
+  }
+]

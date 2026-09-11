@@ -7,6 +7,8 @@ certification of current journal policy, DOI publication, or author approval.
 import hashlib
 import json
 import re
+import subprocess
+import sys
 from pathlib import Path
 
 root = Path.cwd()
@@ -19,7 +21,13 @@ assert hashlib.sha256(full.encode()).hexdigest() == receipt['full_manuscript_sha
 # Compare ordered blocks and complete cell text, not sets of rounded numbers.
 def tables(text):
     return re.findall(r'(?:^\|[^\n]*\n)+', text, re.M)
-assert tables(full) == tables(supp), 'Table cells/order changed or a table was lost'
+migration = root / 'docs/2026-09-10-lab-docx'
+if migration.is_dir():
+    before = (migration / 'supplementary-before.md').read_text()
+    assert tables(full) == tables(before), 'Pre-migration baseline lost original table content'
+    subprocess.run([sys.executable, str(migration / 'check_migration.py')], check=True)
+else:
+    assert tables(full) == tables(supp), 'Table cells/order changed or a table was lost'
 assert not tables(main), 'All tables belong in the supplement'
 assert len(tables(full)) == receipt['table_blocks']
 
@@ -50,7 +58,20 @@ def supplement_body(text):
         out.append(line)
     return '\n'.join(out) + '\n'
 
-assert supp.split('<!-- preserved-body -->\n', 1)[1] == supplement_body(full), 'Unexplained loss or alteration of supplemental prose'
+expected = supplement_body(full)
+if migration.is_dir():
+    assert before.split('<!-- preserved-body -->\n', 1)[1] == expected
+    lines = expected.splitlines(keepends=True)
+    changes = json.loads((migration / 'supplement-replay.json').read_text())
+    previous_end = 0
+    for op in changes:
+        assert previous_end <= op['start'] <= op['end'] <= len(lines)
+        assert ''.join(lines[op['start']:op['end']]) == op['old']
+        previous_end = op['end']
+    for op in reversed(changes):
+        lines[op['start']:op['end']] = op['new'].splitlines(keepends=True)
+    expected = ''.join(lines)
+assert supp.split('<!-- preserved-body -->\n', 1)[1] == expected, 'Unexplained supplemental change outside approved replay'
 for text in (main, supp):
     for image in re.findall(r'!\[[^\]]*\]\(([^)]+)\)', text):
         assert (root / image).is_file(), image
@@ -85,13 +106,15 @@ summary = abstract.split('**Summary:**', 1)[1].split('**Availability', 1)[0].str
 assert len(re.findall(r'\.\s+[A-Z]', summary)) + 1 <= 2, 'Summary exceeds two sentences'
 # Both main legends carry the journal-requested accessibility description (F2).
 assert len(re.findall(r'\*\*Alt text:\*\* \S', main)) == 2
-# Conservative working budget: count even Markdown tokens/URLs plus 500 words
-# per display item. Author must still confirm the live journal instructions.
-assert len(main.split()) + 2 * 500 <= 2600
+# Editorial working ceiling only. The earlier 500-words-per-figure heuristic
+# was not a verified journal rule. The separate rendered-PDF gate enforces
+# the actual four-page limit after adding the author-requested full callouts.
+assert len(main.split()) <= 2000
 for needle in ('78.87%', '81.62%', '1.79', '28.08 GiB', '4 of 400',
                'non-leading shared-range accuracy', 'defaults', 'single-reader'):
     assert needle in main, needle
-print(json.dumps({'table_blocks_preserved': len(tables(full)),
+print(json.dumps({'original_table_blocks_accounted_for': len(tables(full)),
+                  'current_supplement_tables': len(tables(supp)),
                   'all_supplemental_prose_replayed': True,
                   'main_words_whitespace': len(main.split()),
                   'abstract_words_whitespace': len(abstract.split()),

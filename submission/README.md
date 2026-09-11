@@ -8,10 +8,9 @@ release or the repository homepage as a minted DOI or permanent archive.
 
 - `../manuscript.md`: short Application Note source.
 - `../manuscript_full.md`: immutable long source at `94df01e` (P4 + C-8).
-- `../supplementary.md`: all 19 tables and the full substantive long-source prose.
+- `../supplementary.md`: 18 uniquely numbered tables, with the former small identity-sweep table retained as numerical prose. Original payloads and the source migration are accounted for in `docs/2026-09-10-lab-docx/`.
 - `manuscript.pdf`, `supplementary.pdf`: compiled author-review proofs.
-- `manuscript.docx`, `supplementary.docx`: editable exports. The PDF proofs, not
-  a Word rendering, were inspected in this session; inspect DOCX in Word before use.
+- `manuscript.docx`, `supplementary.docx`: lab-style editable Word files, also rendered with LibreOffice for geometry, figure-caption and table-layout review. Microsoft Word itself was not run.
 - `figures/`: presentation copies; original evidence files remain under results/.
 - `SHA256SUMS`: exact PDF/DOCX and presentation-figure payload hashes.
 - `RELEASE_NOTES.md`: draft release scope and known limitations.
@@ -81,8 +80,7 @@ Changing the Docker label does not validate the image build.
 - AI-use disclosure: AI-assisted consistency checking, language editing and
   format conversion occurred. Confirm the venue's required disclosure and the
   authors' final review; do not claim that final author review has already occurred.
-- Current Bioinformatics requirements: OUP retrieval returned HTTP 403. Working
-  limits and actual counts are documented in `docs/2026-09-10-appnote/README.md`.
+- Current Bioinformatics requirements: official guideline retrieval was completed in `docs/2026-09-10-final-check/`; the earlier HTTP 403 obstacle is historical. Final policy/author gates remain separate from these formatting checks.
 - Final figures, PDF/DOCX presentation and scientific wording.
 
 These gates block a claim of final submission readiness, not preservation of
@@ -91,11 +89,18 @@ the draft or a clearly labelled software/source snapshot.
 
 ## Lab-style Word tables (2026-09-10)
 
-`build.py` now runs `submission/format_docx_tables.py` after Pandoc. This is
-an OOXML table-only adaptation of the lab wiki three-line table rules, not
-blind application of its body-paragraph run-rebuilding script. Tables use
-Arial 9 pt, repeating bold headers, wrapped cells and three horizontal rules;
-the supplement uses landscape A4 with 15 mm margins. Plain Pandoc exports
-remain in build/*-pandoc.docx for content and idempotence checks. Requires
-lxml (tested 5.3.2); Python-docx is not required by this formatter.
-Validation and review limits: docs/2026-09-10-humanizer-docx/README.md.
+`build.py` uses `submission/lab-docx/lab_docx.py`, vendored from the version
+recorded in `docs/2026-09-10-lab-docx/wiki-commit.txt` before Word generation.
+This supersedes the earlier table-only `format_docx_tables.py` workflow.
+Body text is Times New Roman; tables use Arial 9 pt, no-wrap columns, repeated
+bold headers and three horizontal rules. Headings and caption titles are bold
+black, display callouts red, and literature citations light blue. The
+supplement uses landscape A4 with 15 mm margins. Long cells have explicit keyed
+Methods destinations; no measurements were discarded. Plain Pandoc exports
+remain in build/*-pandoc.docx for preservation/idempotence checks. Dependencies:
+lxml 5.3.2 and PyMuPDF 1.24.14, with fontconfig metrics where available.
+
+Run `python docs/2026-09-10-lab-docx/check_outputs.py` after building and
+`python docs/2026-09-10-lab-docx/test_migration_guards.py` for negative tests.
+The general lab specification is `submission/lab-docx/LAB_DOCX_STYLE.md`.
+Evidence, limits and the display map are in `docs/2026-09-10-lab-docx/`.

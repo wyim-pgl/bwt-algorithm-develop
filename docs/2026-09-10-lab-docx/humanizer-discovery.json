@@ -1,0 +1,23 @@
+{
+  "skills": [
+    {
+      "name": "humanizer",
+      "path": "/home/wyim/.pi/agent/skills/humanizer/SKILL.md"
+    },
+    {
+      "name": "humanizer_eng",
+      "path": "/home/wyim/.pi/agent/skills/humanizer_eng/SKILL.md"
+    },
+    {
+      "name": "humanize-writing",
+      "path": "/home/wyim/.pi/agent/skills/humanizer_kor/SKILL.md"
+    }
+  ],
+  "diagnostics": [
+    {
+      "type": "warning",
+      "message": "name contains invalid characters (must be lowercase a-z, 0-9, hyphens only)",
+      "path": "/home/wyim/.pi/agent/skills/humanizer_eng/SKILL.md"
+    }
+  ]
+}

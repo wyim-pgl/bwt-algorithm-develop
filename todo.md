@@ -47,6 +47,8 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 
 - [x] **Humanizer + lab wiki DOCX tables** ✅ (2026-09-10, `docs/2026-09-10-humanizer-docx/`): Pi에서 기존 영어 스킬을 읽어 3회 순차 검토(4곳 가벼운 교정, 마지막 검토 변경 없음); Claude 양쪽 스킬 설치·해시 확인(기설치 유지). 보충 표 19개 삼선표·Arial 9pt·반복 헤더·가로 A4; 전체 셀/이미지/링크 보존 및 멱등성 검사 통과. Word 직접 검사는 미실시, LibreOffice 샘플 시각 검사.
 
+- [x] **General lab DOCX style / display migration** ✅ (2026-09-10, 저자 구조변경 승인; `docs/2026-09-10-lab-docx/`): 원래 19표의 모든 자료를 18개 고유 표와 identity-sweep 수치 본문으로 보존; 전체 18표/보충 7그림 본문 호출, 소속 줄바꿈, TNR/Arial·no-wrap·삼선표·red/blue·이탤릭 적용. blader 포함 Pi humanizer 3개 순차 검토. 일반 규칙/도구는 wiki에 먼저 저장 후 Word 생성. 원고/표/명령 보존·멱등성, 13 formatter tests + 7 migration guard tests; Microsoft Word 직접 검사는 미실시. 옛 장부의 표 번호는 새 display-map으로 해석한다.
+
 ## 0. ASTRA 리뷰 수습 — 2026-09-10 추가, **먼저 할 것**
 
 > 배경: 2026-09-05 ASTRA 4패스 중 P1·P2 완료, **P3 중단(보고서 없음), P4 미착수**, 호스트 세션 OOM.

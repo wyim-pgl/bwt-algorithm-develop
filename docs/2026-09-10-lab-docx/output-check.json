@@ -1,0 +1,50 @@
+{
+  "manuscript": {
+    "tables": 0,
+    "text_media_links_preserved": true,
+    "idempotent": true,
+    "red_runs": 20,
+    "blue_runs": 8
+  },
+  "supplementary": {
+    "tables": 18,
+    "text_media_links_preserved": true,
+    "idempotent": true,
+    "red_runs": 129,
+    "blue_runs": 43
+  },
+  "xelatex": {
+    "main_pages": 3,
+    "supplement_pages": 45,
+    "complete_legends_on_image_pages": [
+      {
+        "figure": "S1",
+        "page": 14
+      },
+      {
+        "figure": "S2",
+        "page": 16
+      },
+      {
+        "figure": "S3",
+        "page": 17
+      },
+      {
+        "figure": "S4",
+        "page": 20
+      },
+      {
+        "figure": "S5",
+        "page": 23
+      },
+      {
+        "figure": "S6",
+        "page": 27
+      },
+      {
+        "figure": "S7",
+        "page": 32
+      }
+    ]
+  }
+}
