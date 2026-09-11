@@ -5,6 +5,14 @@
 > 살아 있는 상태는 `resume.md`, 운영 규칙은 `CLAUDE.md`.
 > 최종 갱신 **2026-09-10**. 다음 세션의 순서·완료 기준은 [`intend.md`](intend.md).
 
+## 현행 체크포인트 (2026-09-10)
+
+- 원고/프루프 기준 `d7c2cbe`; 구조·서식 `079f40f`; 일반 formatter pin은 wiki `b2dbac6`, wiki 완료 기록 `f2ed586`이다. 설치·humanizer 3개 지침 적용·표 재편·Word 생성은 완료했으므로 다시 시작하지 않는다.
+- 현행은 **18개 고유 표 + identity-sweep 수치 본문**, 보충 그림 7개이다. 옛 번호는 `docs/2026-09-10-lab-docx/display-map.json`으로 해석한다. 특히 옛 S2 정밀도 항목은 **현행 Table S16**이며 소스 파일명 `s2_F_p100.txt`는 바꾸지 않는다.
+- 남은 즉시 게이트는 D의 **최종 제출 확인**, **DOI/아카이브 URL**, **릴리스/#14**다. 이 체크포인트는 그 항목의 요약이며 새 작업을 중복 계상하지 않는다.
+- 상태 합계: 미착수 11(모두 제출 후 선택 작업), 진행 3, 차단 3, 저자 확인 1. '미착수 제출 전 0'은 제출 준비 완료를 뜻하지 않는다. 근거: 아래 실제 체크박스 행.
+- 완료된 서식 검사와 저자 승인/정책 판단은 별개다. Microsoft Word 직접 확인은 아직 없으며, LibreOffice Word 미리보기 5/52쪽을 XeLaTeX PDF 3/45쪽과 혼동하지 않는다.
+
 ## 표기 규약
 
 | 마크 | 뜻 |
@@ -35,7 +43,7 @@ grep -n '^- \[?\]' todo.md    # 저자 결정 대기
 | **[2·공개 문장]** | 값은 안 바꾸고 "예치 근거 없음/한계" 를 한 문장씩 적는 정직성 공개. **한 번에 몰아 재해시 1회** | 11 | P3-14+P1-08 · P1-11 · P1-13 · P1-15 · P1-19 · P2-22/23/24(S2 한계 문장) · P2-13 후속 · 외부 런처 예치(또는 자기완결 주장 약화) |
 | **[3·제출 후]** | 내부 위생·선택. 제출과 무관 | 11 | bedtools 교차검증 · sacct 세대 마커 · CLAUDE.md 아키텍처 · 장부 위생 3건 · S2 재생성 · 그림 라벨 · 스코어러 출력 · 처분표 재대조 · Kimi 잔여 |
 
-실제로 해야 할 덩어리는 여덟 개다: **Phase 0 → 소수점 잔여 → §6.12 → 공개 문장 일괄(2등급 전부) → P4 → Abstract → App Note 전환 → 릴리스.**
+**초기 실행 순서 이력**: Phase 0 → 소수점 잔여 → §6.12 → 공개 문장 일괄 → P4 → Abstract → App Note 전환 → 릴리스. 현재는 앞선 전환·서식 작업을 재실행하지 않고 `intend.md`의 현행 순서와 D의 남은 게이트를 따른다.
 
 ```bash
 grep -n '^- \[ \] \*\*\[1' todo.md    # 제출 전
@@ -47,11 +55,11 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 
 - [x] **Humanizer + lab wiki DOCX tables** ✅ (2026-09-10, `docs/2026-09-10-humanizer-docx/`): Pi에서 기존 영어 스킬을 읽어 3회 순차 검토(4곳 가벼운 교정, 마지막 검토 변경 없음); Claude 양쪽 스킬 설치·해시 확인(기설치 유지). 보충 표 19개 삼선표·Arial 9pt·반복 헤더·가로 A4; 전체 셀/이미지/링크 보존 및 멱등성 검사 통과. Word 직접 검사는 미실시, LibreOffice 샘플 시각 검사.
 
-- [x] **General lab DOCX style / display migration** ✅ (2026-09-10, 저자 구조변경 승인; `docs/2026-09-10-lab-docx/`): 원래 19표의 모든 자료를 18개 고유 표와 identity-sweep 수치 본문으로 보존; 전체 18표/보충 7그림 본문 호출, 소속 줄바꿈, TNR/Arial·no-wrap·삼선표·red/blue·이탤릭 적용. blader 포함 Pi humanizer 3개 순차 검토. 일반 규칙/도구는 wiki에 먼저 저장 후 Word 생성. 원고/표/명령 보존·멱등성, 13 formatter tests + 7 migration guard tests; Microsoft Word 직접 검사는 미실시. 옛 장부의 표 번호는 새 display-map으로 해석한다.
+- [x] **General lab DOCX style / display migration** ✅ (2026-09-10, `079f40f`·`d7c2cbe`, 저자 구조변경 승인; `docs/2026-09-10-lab-docx/`): 원래 19표의 모든 자료를 18개 고유 표와 identity-sweep 수치 본문으로 보존; 전체 18표/보충 7그림 본문 호출, 소속 줄바꿈, TNR/Arial·no-wrap·삼선표·red/blue·이탤릭 적용. blader 포함 Pi humanizer 3개 순차 검토. 일반 규칙/도구는 wiki에 먼저 저장 후 Word 생성. 원고/표/명령 보존·멱등성, 13 formatter tests + 7 migration guard tests; Microsoft Word 직접 검사는 미실시. 옛 장부의 표 번호는 새 display-map으로 해석한다.
 
-## 0. ASTRA 리뷰 수습 — 2026-09-10 추가, **먼저 할 것**
+## 0. ASTRA 리뷰 수습 — 완료 이력과 잔여 후속
 
-> 배경: 2026-09-05 ASTRA 4패스 중 P1·P2 완료, **P3 중단(보고서 없음), P4 미착수**, 호스트 세션 OOM.
+> 당시 배경(이력): 2026-09-05 P3 중단·P4 미착수와 호스트 OOM. 이후 P3 보고서 복구와 P4는 완료했다. 아래 열린 후속만 남은 작업이며, 원래 리뷰 순서를 다시 실행하지 않는다.
 > 상세는 `resume.md` 상단, 순서·완료 기준은 `intend.md`, 사고 기록은 `quarantine.md` §1.4·§8.8.
 
 ### 0-1. 트리 정리 (Phase 0)
@@ -102,7 +110,7 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 > **파생 주장 출처 한계**: above-100 merged-bp의 33.4%/65.7%와 native-F 1.01 pp는 정확한 피연산자가 예치되지 않아 현행 수치 주장 대신 한계/표시 recall 값으로 교체했다. TRASH empty-window ≤0.20 pp는 과거 요약이며 미검증 한계를 명시했다. 이는 원자료 오류 판정이 아니다 (`remaining-sources.json`, `derived-claims.json`).
 
 - [x] 표 셀 1자리 → 2자리 **59건**(65 적용 − S2 6셀 되돌림) + 본문 인용 24곳 + 문맥 지정 5곳(TRF 5.22/5.51/5.48 h, core-hours 25.29/59.56/33.73) ✅ (2026-09-10, `docs/2026-09-10-precision/precision-edits.json` 88건 유효, `reverted` 6건 표시)
-- [ ] **[3·제출 후]** **S2 여섯 셀 재생성** — `results/regen/s2_F_p100.txt` 가 1자리(38.9/46.4, 13.2/24.8, 21.9/6.1)라 되돌렸다(L-09). `scripts/scoring/analyze_unique_regions.py` 의 `:.1f` 를 `:.2f` 로 바꿔 요약을 재생성·예치(재해시)한 뒤 다시 넓힌다
+- [ ] **[3·제출 후]** **옛 S2 / 현행 Table S16 여섯 셀 재생성** — `results/regen/s2_F_p100.txt` 가 1자리(38.9/46.4, 13.2/24.8, 21.9/6.1)라 되돌렸다(L-09). `scripts/scoring/analyze_unique_regions.py` 의 `:.1f` 를 `:.2f` 로 바꿔 요약을 재생성·예치(재해시)한 뒤 다시 넓힌다
 - [x] **[1·제출 전]** **본문 1자리 후보 토큰 118개 — 먼저 분류** — `docs/2026-09-10-precision/precision-report.md` "Remaining 1-dp tokens" 가 목록. 절 번호(2.1, 2.2, 3.x)·버전(longdust 1.4)·파라미터·정의 상수는 **제외**하고(L-11), 남는 측정값만 예치물에서 재계산(자릿수 덧붙이기 금지). 큰 묶음: %(L21·L78·L86·L94·L119·L121), kb 오프셋(L70·L248·L250·L294), calls-per-array(L250), range-cost "6.6 h→4.0 h / 8.6→7.3"(L105, `quarantine.md` §2 의 4.02/4.11/4.02 · 7.31/7.28/7.13 로), "6.6 days"(L38·L78·L107 — **TRF** p2000 취소 실행 잡 `6076847`, 6-13:57:48, `results/sacct_provenance.txt:40–42`; 취소 실행은 완료비용 **하한** 한정 유지, L-12), Wilson CI(L119·L121). 분류 후 실제 측정값 건수를 여기 기록 ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 118개 전수 분류: 측정 후보91(81 재계산/재서술,10 원천 정밀도 유지), 제외27; one-decimal-classification.tsv)
 - [x] **[1·제출 전]** **파생값 전수 재계산** — "points", "percentage points", "×"/"times", "factor of" 가 붙은 문장을 grep 해 예치 전정밀도 값에서 다시 계산(반올림 셀끼리 뺀 값 금지). §6.8 과 R2-9 가 이 계열 ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: 125개 등록 비교/정의 검토,102개 수치 식 재계산; source-limited는 명시/수치 주장 한정. derived-claims.json·remaining-sources.json)
 - [x] **[1·제출 전]** E26 후속 — L294 "span approximately 0.18 points" 의 **"approximately" 삭제** (예치값 차이 0.1803, 두 자리 0.18 정확; 저자 채택 2026-09-10) ✅ (2026-09-10, `docs/2026-09-10-presubmit/`: approximately 삭제; numeric-edits.json)
@@ -185,9 +193,9 @@ grep -n '^- \[ \] \*\*\[3' todo.md    # 제출 후
 - [x] **[1·제출 전]** **App Note 전환 실행** ✅ (2026-09-10, `docs/2026-09-10-appnote/`): `manuscript.md` 축약, `manuscript_full.md` 원문 동결, `supplementary.md`에 **19개 표 블록의 모든 셀·순서와 상세 본문 보존**, 본문 그림 2개·보충 그림 7개. PDF/DOCX는 `submission/`. 기계적 보존·전환의 완료이며, 현행 규정 대조에서 확인한 형식·출력 수정과 실제 제출 승인은 아래 별도 게이트.
 - [x] **[1·제출 전]** **현행 Bioinformatics 지침 확인·기술 최종점검** ✅ (2026-09-10, `docs/2026-09-10-final-check/`): Chrome으로 공식 현행 URL 확보, 기존 403 차단 해소. 3쪽/19표 보존·해시·43 passed/1 skipped 재확인. **제출 통과 판정은 아님**.
 - [x] **[1·제출 전]** **현행 규정·출력 보완 F1–F5** ✅ (2026-09-10, 저자 지시로 실행, `docs/2026-09-10-f1f5-fixes/README.md`) — F1 초록 4항목/Summary 2문장(120단어; 기존 C-8 문장 거의 그대로 재사용, 8개 needle 보존); F2 본문 그림 Alt text 2개(PDF에도 캡션 아래 인쇄); F3 데이터셋 참조 4건(GCA_000001405.15·Zenodo 13987414·Col-CEN/E-MTAB-10272/PRJEB46164·GCA_022117705.1, 식별자는 보충자료 기재값, 공식 Zenodo/ENA/GitHub 메타데이터로 서지 보정); F4 literal `##` 22→0·자동 그림번호 7→0·범례 7/7 이미지 동일 페이지(check_proofs.py, Fig 5 minipage 묶음), 검증기 supplement_body 미러링·19표 전셀 보존; F5 `submission/render_main_figures.py`(font_scale 2.0, 1.77× 라벨 분리, TRF/TRASH 대비 개선, 겹침 스팬 0건 측정, render-receipt.json). 검증: check_conversion 통과·43 passed/1 skipped·SHA256SUMS 18/18·results/ 불변·`v0.9.0`=`ef98c03` 불변. **잔여**: LaTeX 열 폭(W1)은 revision 단계, Summary 확정 문구·LLM 정책 판단은 저자 게이트로 존속.
-- [~] **[1·제출 전]** **릴리스** — 0.9.0 정합성·검증 가능한 제출 후보 PDF/DOCX·체크섬 준비 (`submission/`). 정확한 CI 통과 커밋에 `v0.9.0` 태그와 GitHub **draft** 릴리스를 만든 뒤 실제 상태는 `resume.md`에 기록한다. DOI·초록 아카이브 URL·최종 제출 승인 전에는 완료로 표시하지 않는다.
+- [~] **[1·제출 전]** **릴리스** — 공개 `v0.9.0`은 이미 `ef98c03`에 고정돼 있다. 기존 draft 생성은 완료 이력이며 다시 만들거나 태그를 이동하지 않는다. 새 원고/Word 기준은 `d7c2cbe`; 이전 release 자산과 다르다. 저자 승인·실제 아카이브/DOI를 해소한 뒤 별도 새 스냅샷/태그와 자산·해시를 일치시킨다. 외부 release 상태는 실행 직전 재조회한다. 근거: `docs/2026-09-10-final-check/release-state.json`, `docs/2026-09-10-lab-docx/README.md`.
 - [!] **[1·제출 전]** **DOI/아카이브 URL** ⛔ Zenodo 토큰·GitHub 연동 미확인(저장소 webhook 0). 소유자가 연동/예치 권한을 제공하고 실제 DOI 발급·해결을 확인해야 한다. GitHub draft나 저장소 URL을 DOI로 대체하지 않는다 (`submission/README.md`).
-- [?] **[1·제출 전]** **최종 제출 확인** — 현행 지침 조회는 완료했지만 제출 승인은 아님. 저자의 Funding·COI·CRediT·ORCID·AI 사용 공개·cover letter·원고 승인 및 유지관리 확인은 **요청대로 마지막 단계**. 기존 AI 축약/초록 재구성은 단순 맞춤법 수정으로 표현할 수 없으며, OUP/ISCB 작성 정책 적용을 저자/편집부와 해소해야 한다(공개문만으로 허용 보장 안 됨). 미예치 competitor BED·audit 원본 등도 공개 데이터 요건 충족 경로를 확인/협의해야 한다. 숫자 오류로 단정하거나 증거를 만들어 채우지 않는다 (`docs/2026-09-10-final-check/`). DOI 작업도 마지막에 진행한다.
+- [?] **[1·제출 전]** **최종 제출 확인** — `d7c2cbe`의 본문/보충 Word를 저자가 직접 확인한다(글꼴·줄바꿈 없는 열·반복 헤더·범례·주석·소속·문구). 현재 검증은 LibreOffice/OOXML이며 Microsoft Word 자체 확인이나 저자 승인은 아니다. 현행 지침 조회는 완료했지만 제출 승인은 아님. 저자의 Funding·COI·CRediT·ORCID·AI 사용 공개·cover letter·원고 승인 및 유지관리 확인은 **요청대로 마지막 단계**. 기존 AI 축약/초록 재구성은 단순 맞춤법 수정으로 표현할 수 없으며, OUP/ISCB 작성 정책 적용을 저자/편집부와 해소해야 한다(공개문만으로 허용 보장 안 됨). 미예치 competitor BED·audit 원본 등도 공개 데이터 요건 충족 경로를 확인/협의해야 한다. 숫자 오류로 단정하거나 증거를 만들어 채우지 않는다 (`docs/2026-09-10-final-check/`). DOI 작업도 마지막에 진행한다.
 - [x] **Fig 5 본문 참조·이미지·캡션 삽입** ✅ (2026-09-05, P3 — `manuscript.md:327–331`; `pass3-edits.json` 마지막 항목). 미커밋 편집의 채택 검토는 §0-1 에서 (L-03)
 
 - [x] **§6.20** `sacct -j ... --format=JobID,Elapsed,MaxRSS,State -P` 원문을 체크섬과 함께 예치. ✅ (2026-09-03, `e4ae632`) 34개 잡 sacct 예치, 헤드라인 3개 정확히 일치

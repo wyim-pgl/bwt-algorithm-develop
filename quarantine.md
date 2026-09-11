@@ -1,6 +1,8 @@
 # quarantine.md — BWTandem 격리 대장
 
-> 📌 **정본**: 이 파일이 "**쓰면 안 되는 것**"의 유일한 정본이다. 최종 갱신 **2026-09-10** (§1.4·§3.7 마커·§3.11–3.15·§8.8 추가).
+> 📌 **정본**: 이 파일이 "**쓰면 안 되는 것**"의 유일한 정본이다. 최종 갱신 **2026-09-10** (최근: §8.10-8.12, lab DOCX/표·그림 재편의 폐기 방식과 검증 한계). 미해결 게이트는 `todo.md`에만 둔다.
+>
+> **역사적 ID 주의**: 이 대장의 예전 Table/Figure 번호와 경로는 당시 증거의 식별자다. 현행 원고로 옮길 때 `docs/2026-09-10-lab-docx/display-map.json`을 사용한다. 격리된 측정값이 새 번호를 받았다고 복권되는 것은 아니다.
 
 ## 이 파일에 무엇을 두는가
 
@@ -875,6 +877,30 @@ env 레버 기반 recall/precision 프런티어는 **천장**에 있다.
 파라미터(`0.02002`, `0.72`)와 버전은 원형 유지.
 
 ---
+
+### 8.10 옛 19개 물리 표 강제·중복 S4·이전 표 번호의 무변환 재사용
+
+- **무엇**: 현재 제출본에도 무조건 19개 표 블록을 유지해야 한다는 규칙, 두 개의 다른 분석 표를 S4 하나로 부르는 방식, 옛 S1/S2/S3/S4 번호를 새 원고에 그대로 붙이는 행위.
+- **왜**: 저자가 정보 보존을 전제로 구조 변경을 승인했다. 현재는 표 S1-S18과 identity-sweep 수치 본문이다. 옛 S1(버전/명령)은 S15, 옛 S2(고유 콜)는 S16, 옛 S3는 Methods S2의 수치 본문, 옛 S4의 두 분석은 S17/S18이다. 데이터나 원문이 틀렸다는 판정이 아니라 표시 구조의 교체다. `results/`와 `manuscript_full.md`의 원래 ID는 그대로 둔다.
+- **언제**: 2026-09-10, 적용 `079f40f`·`d7c2cbe`; 이번 장부 요청에서 **후행 기록**했다(적용 커밋과 같은 시점에 기록했다고 주장하지 않는다).
+- **대체물**: 해시로 고정한 19개 원표 → 18표/수치 본문 목적지 매핑, 긴 셀의 P/C/K 키 설명, 문맥상 옛 위치 참조도 수정하는 방식. 없어진 열을 'rightmost column'으로 부르지 않는다. 첫 언급 순서와 보충자료 표시 순서는 별개로 확인한다.
+- **근거 경로**: `docs/2026-09-10-lab-docx/display-map.json`, `check_migration.py`, `main-replay.json`, `supplement-replay.json`, `test_migration_guards.py`. 기존 보존 검증을 지우지 말고 이 승인된 replay와 독립 셀/명령 검사를 쓴다.
+
+### 8.11 혼합 콘텐츠 문단의 run 전면 재구성과 옛 wrap formatter
+
+- **무엇**: 그림·링크·필드가 섞인 문단에 wiki의 옛 `paper-format/format_docx.py`를 검토 없이 적용하는 방식; `submission/format_docx_tables.py`의 wrapping 표를 현재 no-wrap 규격이라고 설명하는 방식.
+- **왜**: 옛 본문 스크립트는 텍스트 run을 제거·재작성하므로 혼합 콘텐츠 손실 위험이 있다. 실제 제출본 그림이 파손됐다는 주장은 아니다. 이전 표 전용 도구는 당시 규격용이며 이후 승인된 TNR/Arial·색상·no-wrap 전체 스타일을 구현하지 않는다. 옛 XLSX wrap 규칙도 새 DOCX 규칙의 근거가 아니다.
+- **언제**: 2026-09-10, wiki `a7141d4`에서 일반 도구를 저장한 뒤 프로젝트에 적용; 현행 toolkit pin `b2dbac6`.
+- **대체물**: `submission/lab-docx/lab_docx.py`. 일반 변경은 wiki에 먼저 저장하고 테스트 후 같은 버전을 vendor한다. 비텍스트 콘텐츠·링크·field를 보존하고, 셀/열 폭과 no-wrap을 검사하며 과도한 긴 셀은 명령/자료 손실 없이 본문으로 옮긴다.
+- **근거 경로**: `submission/lab-docx/README.md`, `test_lab_docx.py`, `docs/2026-09-10-lab-docx/wiki-commit.txt`, `wiki-files.sha256`, `output-check.json`.
+
+### 8.12 서식 플래그·부분 검사를 완성/독립 검증으로 승격하는 주장
+
+- **무엇**: `markdown-implicit_figures`만으로 범례가 같은 페이지에 남는다는 가정, `w:noWrap`만으로 가시적 열 적합성을 인증하는 주장, LibreOffice/OOXML 검사를 Microsoft Word 직접 검사라고 부르는 표현, humanizer 세 개를 독립 과학 리뷰 세 번이라고 부르는 표현.
+- **왜**: Word 첫 검토에서 보충 Fig. S5 범례가 페이지 23/24로 분리돼 플래그만으로는 충분하지 않음을 확인했다. no-wrap은 넓이를 넘긴 셀을 감추지 않는다. 같은 자료에 순차 적용한 문체 체크리스트는 독립적인 증거 검증이나 AI 탐지 실험이 아니다. Word 5/52쪽과 XeLaTeX 3/45쪽도 같은 페이지 수로 인용할 수 없다.
+- **언제**: 2026-09-10, wiki `9bbfcef`·`b2dbac6` 보완 및 최종 프루프 `d7c2cbe`.
+- **대체물**: image/caption keep 규칙, 실제 폰트 메트릭과 렌더 검증, 전체 범례-이미지 페이지 대조, content/media 보존·멱등성 검사, 실제 사용한 도구/커버리지 명시. 제출 승인·정책 허용·MS Word 확인의 대체 증명은 **없음**이며 그 게이트는 `todo.md` D에서 처리한다.
+- **근거 경로**: `docs/2026-09-10-lab-docx/README.md`, `formatter-tests.txt`, `render-check.json`, `humanizer-discovery.json`, `prose-proposals.json`. 이후 늦게 도착한 subagent 완료 알림은 이미 반영한 결과이므로 새 변경이나 재실행 근거로 쓰지 않는다.
 
 ## §9 진단으로 배제된 것 — 다시 조사하지 말 것
 
